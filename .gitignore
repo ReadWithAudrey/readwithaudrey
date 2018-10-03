@@ -1,0 +1,5 @@
+# node
+node_modules/
+
+# macbook
+.DS_Store
