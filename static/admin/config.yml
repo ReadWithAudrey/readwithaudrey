@@ -6,7 +6,7 @@ public_folder: "/images/uploads"
 collections:
   - name: "denis" # Used in routes, e.g., /admin/collections/blog
     label: "Denis UI" # Used in the UI
-    folder: "src/markdown" # The path to the folder where the documents are stored
+    folder: "src/markdown/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
