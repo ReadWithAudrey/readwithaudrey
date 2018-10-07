@@ -1,9 +1,10 @@
 import React from 'react'
+import HeaderStyled from './Header.style'
 
 const Header = ({ siteTitle }) => (
-  <h1>
+  <HeaderStyled>
       {siteTitle}
-  </h1>
+  </HeaderStyled>
 )
 
 export default Header
