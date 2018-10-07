@@ -13,7 +13,7 @@ collections:
     files:
       - label: "Form 1"
         name: "Form1"
-        file: src/markdown/formPart1.md"
+        file: src/markdown/formPart1.md
         fields:
           - {label: "Question 1", name: "q1", widget: "string", required:false}
           - {label: "Question 2", name: "q2", widget: "string", required:false}
