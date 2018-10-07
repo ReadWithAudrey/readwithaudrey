@@ -1,16 +1,19 @@
 backend:
   name: git-gateway
-  branch: cmsSetup # Branch to update (optional; defaults to master)
+  branch: expressBackend # Branch to update (optional; defaults to master)
+
+publish_mode: editorial_workflow
+
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
+
 collections:
-  - name: "denis" # Used in routes, e.g., /admin/collections/blog
+  - name: "markdown" # Used in routes, e.g., /admin/collections/blog
     label: "Denis UI" # Used in the UI
-    folder: "src/markdown/" # The path to the folder where the documents are stored
+    folder: "src/markdown" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Path", name: "path", widget: "string", required:false}
-      - {label: "Date", name: "date", widget: "datetime", required:false}
-      - {label: "Title", name: "title", widget: "string", required:false}
-      - {label: "Body", name: "body", widget: "markdown", required:false}
+      - {label: "Question 1", name: "q1", widget: "string", required:false}
+      - {label: "Question 2", name: "q2", widget: "string", required:false}
+      - {label: "Question 3", name: "q3", widget: "string", required:false}
