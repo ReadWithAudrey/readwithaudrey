@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  repo: ReadWithAudrey/readwithaudrey
+  branch: expressBackend # Branch to update (optional; defaults to master)
+
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images/uploads"
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Form 1"
+        name: "Form1"
+        file: src/markdown/formPart1.md
+        fields:
+          - {label: "Question 1", name: "q1", widget: "string", required:false}
+          - {label: "Question 2", name: "q2", widget: "string", required:false}
+          - {label: "Question 3", name: "q3", widget: "string", required:false}
