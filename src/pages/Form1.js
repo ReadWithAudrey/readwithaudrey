@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import InputBox from '../components/InputBox/InputBox'
 import Question from '../components/Question/Question'
+import SubmitBtn from '../components/Button/Button'
 
 const Form1 = ({ data }) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter
