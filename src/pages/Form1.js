@@ -15,12 +15,12 @@ const Form1 = ({ data }) => {
           community.
         </p>
         <Label>{q1}</Label>
-        <InputBox />
+        <InputBox placeholder="First Name" />
         <Label>{q2}</Label>
-        <InputBox />
+        <InputBox placeholder="Second Name" />
         <Label>{q3}</Label>
-        <InputBox />
-        <Button />
+        <InputBox placeholder="Email Adress" />
+        <Button>Submit</Button>
       </form>
       <Link to="/">Go back to the homepage</Link>
     </Layout>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyledInputBox } from './InputBox.style'
 
-const InputBox = () => <StyledInputBox placeholder="Hello" />
+const InputBox = props => <StyledInputBox placeholder={props.placeholder} />
 
 export default InputBox
