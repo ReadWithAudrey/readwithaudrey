@@ -9,8 +9,8 @@ publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
 
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Forms"
+    name: "forms"
     files:
       - label: "Form 1"
         name: "Form1"
@@ -19,3 +19,4 @@ collections:
           - {label: "Question 1", name: "q1", widget: "string", required:false}
           - {label: "Question 2", name: "q2", widget: "string", required:false}
           - {label: "Question 3", name: "q3", widget: "string", required:false}
+          - {label: "Body", name: "body", widget: "markdown" }
