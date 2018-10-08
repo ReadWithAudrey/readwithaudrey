@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import 'normalize.css'; // css reset stylesheet
+import 'tachyons'; // tachyons css
+
 
 import Layout from '../components/layout'
 
