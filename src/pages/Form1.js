@@ -29,7 +29,7 @@ const Form1 = ({ data }) => {
 }
 
 Form1.propTypes = {
-  data: PropTypes.string,
+  data: PropTypes.object,
 }
 
 export const query = graphql`
