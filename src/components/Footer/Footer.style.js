@@ -10,4 +10,7 @@ export const FooterNav = styled.span`
 
 export const Copyright = styled.span`
   background: #fff;
+  color: #000;
+  width: 800px;
+  margin: 0 auto;
 `
