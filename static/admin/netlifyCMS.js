@@ -1,3 +1,5 @@
+import CMS from 'netlify-cms'
+
 if (window.netlifyIdentity) {
   window.netlifyIdentity.on("init", user => {
     if (!user) {
