@@ -1,5 +1,7 @@
-var api_key = 'bcf56ec9023e62c8767b08c7ce3b0dab-c8e745ec-5150a51a'
-var domain = 'sandbox72ed9b39d939499a93f0196717424330.mailgun.org'
+require('dotenv').config()
+
+var api_key = process.env.mailgunApiKey
+var domain = process.env.domain
 var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain })
 
 var data = {
