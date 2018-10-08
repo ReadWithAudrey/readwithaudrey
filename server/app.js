@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
-const controllers = require('./controllers')
 const bodyParser = require('body-parser');
+const controllers = require('./controllers');
 
 
 const app = express();
