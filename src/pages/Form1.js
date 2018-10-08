@@ -2,9 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import InputBox from '../components/InputBox/InputBox'
-import Question from '../components/Question/Question'
-import SubmitBtn from '../components/Button/Button'
+import { InputBox, Label, Button } from '../components/'
 
 const Form1 = ({ data }) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter
@@ -16,13 +14,13 @@ const Form1 = ({ data }) => {
           Welcome to Audrey, thank you for taking the steps to join our
           community.
         </p>
-        <Question>{q1}</Question>
+        <Label>{q1}</Label>
         <InputBox />
-        <Question>{q2}</Question>
+        <Label>{q2}</Label>
         <InputBox />
-        <Question>{q3}</Question>
+        <Label>{q3}</Label>
         <InputBox />
-        <SubmitBtn />
+        <Button />
       </form>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
