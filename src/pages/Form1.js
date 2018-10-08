@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 
 import Layout from '../components/layout'
 import { InputBox, Label, Button } from '../components/'
@@ -25,6 +26,10 @@ const Form1 = ({ data }) => {
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
+}
+
+Form1.propTypes = {
+  data: PropTypes.string,
 }
 
 export const query = graphql`
