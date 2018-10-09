@@ -1,24 +1,20 @@
-require('dotenv').config()
+require('dotenv').config();
 
-var api_key = process.env.mailgunApiKey
-var domain = process.env.domain
-var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain })
-var path = require('path')
+const api_key = process.env.MAILGUN_API_KEY;
+const domain = process.env.DOMAIN;
+const mailgun = require('mailgun-js')({ apiKey: api_key, domain });
 
-var filepath = path.join(__dirname, 'cv.pdf')
-
-var data = {
+const data = {
   from: 'Rob <readwithaudrey.data@gmail.com>',
   to: '	benjamin-newman@live.co.uk',
   subject: 'Hello Ben! Welcome to readwithaudrey',
   text: 'Testing some Mailgun awesomeness!',
-  attachment: filepath,
-}
+};
 
-mailgun.messages().send(data, function(error, body) {
+mailgun.messages().send(data, (error, body) => {
   if (error) {
-    console.log(error)
+    console.log(error);
   } else {
-    console.log(body)
+    console.log(body);
   }
-})
+});
