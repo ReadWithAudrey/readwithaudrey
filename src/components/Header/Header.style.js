@@ -1,10 +1,8 @@
 import styled from "styled-components"
 
 const HeaderStyled = styled.header.attrs({
-  className: "flex items-center justify-between pa2",
+  className: "flex items-center justify-between ph3 pv2 montserrat white bg-green",
 })`
-  background-color: #4CE0B3;
-  color: white;
-  min-height: 5vh;
+  min-height: 7vh;
 `
 export default HeaderStyled;
