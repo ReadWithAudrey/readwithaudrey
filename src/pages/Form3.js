@@ -29,11 +29,11 @@ const Form3 = ({ data }) => {
         <Label>{q2}</Label>
         <TextBox placeholder="Special Requirements" />
         <Label>{q3}</Label>
-        <RadioButton>1</RadioButton>
+        <RadioButton>1 (Like the idea)</RadioButton>
         <RadioButton>2</RadioButton>
-        <RadioButton>3</RadioButton>
+        <RadioButton>3 (Dont mind) </RadioButton>
         <RadioButton>4</RadioButton>
-        <RadioButton>5</RadioButton>
+        <RadioButton>5 (Really Dont Like)</RadioButton>
         <Button>Submit</Button>
       </form>
       <Link to="/">Go back to the homepage</Link>
