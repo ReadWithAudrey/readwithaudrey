@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const AboutpageStyled = styled.div.attrs({
-  className: "bg-light-green flex flex-column items-center justify-around ph2 pv5 montserrat",
+  className: "bg-light-green flex flex-column items-center justify-around ph4 pv5 montserrat w-100",
 })`
   height: 100vh;
 `
