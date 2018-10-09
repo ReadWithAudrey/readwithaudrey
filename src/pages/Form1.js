@@ -12,8 +12,12 @@ const Form1 = ({ data }) => {
       <form method="POST" action="http://localhost:5000/formPart1">
         <h1>Your Details</h1>
         <StatusBar type="active">1. Basic Details</StatusBar>
-        <StatusBar>2. Further Details</StatusBar>
-        <StatusBar>3. Your Bio</StatusBar>
+        <StatusBar>
+          <Link to="/Form2">2. Further Details</Link>
+        </StatusBar>
+        <StatusBar>
+          <Link to="/Form3">3. Your Bio</Link>
+        </StatusBar>
         <p>
           Welcome to Audrey, thank you for taking the steps to join our
           community.

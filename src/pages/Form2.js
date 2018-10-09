@@ -6,17 +6,21 @@ import Layout from '../components/layout'
 import { InputBox, Label, Button, StatusBar } from '../components/'
 
 const Form2 = ({ data }) => {
-  const { q1, q2, q3 } = data.markdownRemark.frontmatter
+  const { q1, q2, q3, q4, q5 } = data.markdownRemark.frontmatter
   return (
     <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
         <h1>Further Details</h1>
-        <StatusBar>1. Basic Details</StatusBar>
+        <StatusBar>
+          <Link to="/Form1">1. Basic Details</Link>
+        </StatusBar>
         <StatusBar type="active">2. Further Details</StatusBar>
-        <StatusBar>3. Your Bio</StatusBar>
+        <StatusBar>
+          <Link to="/Form3">3. Your Bio</Link>
+        </StatusBar>
         <p>
-          Welcome to Audrey, thank you for taking the steps to join our
-          community.
+          In order to find the best reading partner for you, we need a little
+          bit more information
         </p>
         <Label>{q1}</Label>
         <InputBox placeholder="First Name" />
@@ -24,6 +28,11 @@ const Form2 = ({ data }) => {
         <InputBox placeholder="Second Name" />
         <Label>{q3}</Label>
         <InputBox placeholder="Email Adress" />
+        <Label>Q4: {q4}</Label>
+        <InputBox placeholder="Email Adress" />
+        <Label>{q5}</Label>
+        <InputBox placeholder="Email Adress" />
+
         <Button>Submit</Button>
       </form>
       <Link to="/">Go back to the homepage</Link>
@@ -42,11 +51,13 @@ export const query = graphql`
         title
       }
     }
-    markdownRemark(frontmatter: { title: { eq: "Form Part 1" } }) {
+    markdownRemark(frontmatter: { title: { eq: "Form Part 2" } }) {
       frontmatter {
         q1
         q2
         q3
+        q4
+        q5
       }
     }
   }
