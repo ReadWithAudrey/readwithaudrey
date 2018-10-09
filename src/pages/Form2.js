@@ -3,7 +3,14 @@ import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import Layout from '../components/layout'
-import { InputBox, Label, Button, StatusBar } from '../components/'
+import {
+  InputBox,
+  Label,
+  Button,
+  StatusBar,
+  DropDownBox,
+  RadioButton,
+} from '../components/'
 
 const Form2 = ({ data }) => {
   const { q1, q2, q3, q4, q5 } = data.markdownRemark.frontmatter
@@ -23,16 +30,22 @@ const Form2 = ({ data }) => {
           bit more information
         </p>
         <Label>{q1}</Label>
-        <InputBox placeholder="First Name" />
+        <RadioButton>Male</RadioButton>
+        <RadioButton>Female</RadioButton>
+        <RadioButton>Prefer not to say</RadioButton>
         <Label>{q2}</Label>
-        <InputBox placeholder="Second Name" />
+        <InputBox placeholder="Age" />
         <Label>{q3}</Label>
-        <InputBox placeholder="Email Adress" />
-        <Label>Q4: {q4}</Label>
-        <InputBox placeholder="Email Adress" />
+        <InputBox placeholder="Country" /> <DropDownBox />
+        <Label>{q4}</Label>
+        <RadioButton>Read</RadioButton>
+        <RadioButton>Listen</RadioButton>
+        <RadioButton>Both</RadioButton>
         <Label>{q5}</Label>
+        Please rank the the options below in order - favourite 1st
         <InputBox placeholder="Email Adress" />
-
+        <InputBox placeholder="Email Adress" />
+        <InputBox placeholder="Email Adress" />
         <Button>Submit</Button>
       </form>
       <Link to="/">Go back to the homepage</Link>
