@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import 'normalize.css'; // css reset stylesheet
+import 'tachyons'; // tachyons css
+
 import { Header, Footer } from './index.js'
 
 const Layout = ({ children }) => (
