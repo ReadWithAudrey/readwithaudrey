@@ -1,8 +1,10 @@
 import React from 'react'
-import { StyledInputBox } from './TextBox.style'
+import { StyledTextBox } from './TextBox.style'
 import PropTypes from 'prop-types'
 
-const TextBox = props => <StyledInputBox placeholder={props.placeholder} />
+const TextBox = props => (
+  <StyledTextBox placeholder={props.placeholder} rows="5" />
+)
 
 TextBox.propTypes = {
   placeholder: PropTypes.string,

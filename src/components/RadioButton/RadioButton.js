@@ -1,17 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StyledRadioButton, Label } from './RadioButton.style'
+import { StyledRadioButton, Label, RadioInput } from './RadioButton.style'
 
 const RadioButton = props => {
   return (
-    <React.Fragment>
-      <StyledRadioButton
-        type="radio"
-        value={props.children}
-        name={props.children}
-      />
+    <StyledRadioButton>
+      <RadioInput type="radio" value={props.children} name={props.children} />
       <Label>{props.children}</Label>
-    </React.Fragment>
+    </StyledRadioButton>
   )
 }
 
