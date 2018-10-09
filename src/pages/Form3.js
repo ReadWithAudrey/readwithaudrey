@@ -31,9 +31,9 @@ const Form3 = ({ data }) => {
         <Label>{q3}</Label>
         <RadioButton>1 (Like the idea)</RadioButton>
         <RadioButton>2</RadioButton>
-        <RadioButton>3 (Dont mind) </RadioButton>
+        <RadioButton>3 (Don&apos;t mind) </RadioButton>
         <RadioButton>4</RadioButton>
-        <RadioButton>5 (Really Dont Like)</RadioButton>
+        <RadioButton>5 (Really Don&apos;t Like)</RadioButton>
         <Button>Submit</Button>
       </form>
       <Link to="/">Go back to the homepage</Link>
