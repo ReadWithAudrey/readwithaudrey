@@ -7,6 +7,9 @@ import StatusBar from './StatusBar/StatusBar'
 import DropDownBox from './DropDownBox/DropDownBox'
 import RadioButton from './RadioButton/RadioButton'
 import TextBox from './TextBox/TextBox'
+import Homepage from './Homepage/Homepage'
+import Aboutpage from './Aboutpage/Aboutpage'
+import ASOpage from './ASOpage/ASOpage'
 
 export {
   Header,
@@ -18,4 +21,7 @@ export {
   DropDownBox,
   RadioButton,
   TextBox,
+  Homepage,
+  Aboutpage,
+  ASOpage,
 }

@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import 'normalize.css'; // css reset stylesheet
 import 'tachyons'; // tachyons css
+import '../styles/index.css' // custom css
 
 import { Header, Footer } from './index.js'
 
