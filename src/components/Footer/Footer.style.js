@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledFooter = styled.footer.attrs({
   className: "flex flex-column justify-center items-center montserrat bg-green w-100"
 })`
-  position: absolute;
+  position: fixed;
   bottom: 0;
 `
 

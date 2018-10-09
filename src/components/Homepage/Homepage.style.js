@@ -1,10 +1,9 @@
 import styled from "styled-components"
 
 const HomepageStyled = styled.div.attrs({
-  className: "flex flex-column items-center justify-around pa2 montserrat measure",
+  className: "flex flex-column items-center justify-around ph2 pv5 montserrat",
 })`
   background-color: #fff;
-  max-height: 100vh;
-  min-height: 83vh;
+  height: 100vh;
 `
 export default HomepageStyled;
