@@ -6,6 +6,7 @@ import Button from './Button/Button'
 import StatusBar from './StatusBar/StatusBar'
 import DropDownBox from './DropDownBox/DropDownBox'
 import RadioButton from './RadioButton/RadioButton'
+import TextBox from './TextBox/TextBox'
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   StatusBar,
   DropDownBox,
   RadioButton,
+  TextBox,
 }
