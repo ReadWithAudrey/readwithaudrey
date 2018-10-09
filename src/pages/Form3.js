@@ -17,10 +17,8 @@ const Form3 = ({ data }) => {
         <StatusBar>
           <Link to="/Form2">2. Further Details</Link>
         </StatusBar>
-        <StatusBar type="active">
-          <Link to="/Form3">3. Your Bio</Link>
-        </StatusBar>
-        <p>
+        <StatusBar type="active">3. Your Bio</StatusBar>
+        <p className="montserrat f6 pv2">
           We will use your bio to find you a reading partner. This is also the
           wording we’ll use to introduce you to your reading partner over email.
         </p>

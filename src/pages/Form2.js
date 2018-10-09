@@ -25,7 +25,7 @@ const Form2 = ({ data }) => {
         <StatusBar>
           <Link to="/Form3">3. Your Bio</Link>
         </StatusBar>
-        <p>
+        <p className="montserrat f6 pv2">
           In order to find the best reading partner for you, we need a little
           bit more information
         </p>

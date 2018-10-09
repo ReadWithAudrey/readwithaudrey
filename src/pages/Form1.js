@@ -10,7 +10,7 @@ const Form1 = ({ data }) => {
   return (
     <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
-        <h1>Your Details</h1>
+        <h2>Your Details</h2>
         <StatusBar type="active">1. Basic Details</StatusBar>
         <StatusBar>
           <Link to="/Form2">2. Further Details</Link>
@@ -18,7 +18,7 @@ const Form1 = ({ data }) => {
         <StatusBar>
           <Link to="/Form3">3. Your Bio</Link>
         </StatusBar>
-        <p>
+        <p className="montserrat f6 pv2">
           Welcome to Audrey, thank you for taking the steps to join our
           community.
         </p>

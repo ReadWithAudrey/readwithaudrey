@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-export const StyledLabel = styled.label`
-  color: #ff6482;
-  font-weight: bold;
-  font-size: 0.875em;
+export const StyledLabel = styled.label.attrs({
+  className: 'pink montserrat fw7 f6',
+})`
   display: block;
 `
