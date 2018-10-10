@@ -1,7 +1,8 @@
 require('dotenv').config();
 const base = require('../../dbConnection');
 
-const getNewPairs = new Promise((resolve) => {
+const getNewPairs = new Promise((resolve, reject) => {
+  let allRecords = [];
   base('pairings')
     .select({
       // Selecting the first 3 records in Grid view:
@@ -24,8 +25,7 @@ const getNewPairs = new Promise((resolve) => {
     .eachPage(
       (records, fetchNextPage) => {
         // This function (`page`) will get called for each page of records.
-        resolve(records);
-
+        allRecords = [...allRecords, ...records];
         // To fetch the next page of records, call `fetchNextPage`.
         // If there are more records, `page` will get called again.
         // If there are no more records, `done` will get called.
@@ -33,7 +33,9 @@ const getNewPairs = new Promise((resolve) => {
       },
       (err) => {
         if (err) {
-          console.error(err);
+          reject(err);
+        } else {
+          resolve(allRecords);
         }
       },
     );
