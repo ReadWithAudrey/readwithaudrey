@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Status = styled.section.attrs({
   className: 'fl w-third v-mid montserrat bg-moon-gray fw4 f6 mb3',
 })`
-  min-height: 6.75vh;
+  min-height: 6.85vh;
   color: #fff;
   padding: 1.5%;
   a {

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledRankingBox = styled.section.attrs({
-  className: 'montserrat f6 lh-copy cf:after',
+  className: 'montserrat f6 lh-copy mb3',
 })`
   color: #000;
   display: flex;
@@ -15,10 +15,11 @@ export const InputBox = styled.input.attrs({})`
   height: 23px;
   background: #fff;
   border: #d3d3d3 1px solid;
+  text-align: center;
 `
 
 export const Description = styled.span.attrs({
-  className: 'cf',
+  className: 'ml1 pt1',
 })`
   color: #000;
 `
