@@ -1,17 +1,9 @@
 import styled from 'styled-components'
 
-export const StyledRadioButton = styled.button`
-  background: #4ce0b3;
-  border: 2px solid white;
-  border-radius: 4px;
-  color: white;
-`
-
-export const Select = styled.select.attrs({ className: 'montserrat' })`
+export const Select = styled.select.attrs({
+  className: 'montserrat w-100  mv2 pa2 w-90',
+})`
   background: #fff;
-  width: 50%;
   border: #d3d3d3 1px solid;
-  padding: 7px;
-  margin: 10px 0px;
   border-radius: 10px;
 `

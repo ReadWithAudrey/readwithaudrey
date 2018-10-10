@@ -14,7 +14,7 @@ import {
 } from '../components/'
 
 const Form2 = ({ data }) => {
-  const { q1, q2, q3, q4, q5 } = data.markdownRemark.frontmatter
+  const { q1, q2, q3, q4, q5, q6 } = data.markdownRemark.frontmatter
   return (
     <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
@@ -51,7 +51,7 @@ const Form2 = ({ data }) => {
         <InputBox placeholder="Email Adress" />
         <InputBox placeholder="Email Adress" />
         <InputBox placeholder="Email Adress" />
-        <Button>Submit</Button>
+        <Button type="register">Continue</Button>
       </form>
       <Link to="/">Go back to the homepage</Link>
     </Layout>

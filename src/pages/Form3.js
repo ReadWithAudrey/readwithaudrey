@@ -39,7 +39,7 @@ const Form3 = ({ data }) => {
         <RadioButton>3 (Don&apos;t mind) </RadioButton>
         <RadioButton>4</RadioButton>
         <RadioButton>5 (Really Don&apos;t Like)</RadioButton>
-        <Button>Submit</Button>
+        <Button type="register">Submit</Button>
       </form>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
