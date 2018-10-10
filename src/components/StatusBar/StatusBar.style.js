@@ -5,7 +5,7 @@ export const Status = styled.section.attrs({
 })`
   height: 5vh;
   color: #fff;
-  padding: 0 1%;
+  padding: 1.5%;
   a {
     color: #fff;
     text-decoration: none;

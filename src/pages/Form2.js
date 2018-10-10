@@ -43,7 +43,9 @@ const Form2 = ({ data }) => {
         <RadioButton>Listen</RadioButton>
         <RadioButton>Both</RadioButton>
         <Label>{q5}</Label>
-        Please rank the the options below in order - favourite 1st
+        <TextBox>
+          Please rank the the options below in order - favourite 1st
+        </TextBox>
         <InputBox placeholder="Email Adress" />
         <InputBox placeholder="Email Adress" />
         <InputBox placeholder="Email Adress" />
