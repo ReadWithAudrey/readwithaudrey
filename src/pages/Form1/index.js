@@ -2,8 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import Layout from '../components/layout'
-import { InputBox, Label, Button } from '../components/'
+import { InputBox, Label, Button, Layout } from '../../components/'
 
 const Form1 = ({ data }) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter
