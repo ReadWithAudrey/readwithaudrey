@@ -9,6 +9,7 @@ import {
   Button,
   StatusBar,
   DropDownBox,
+  RankingBox,
   RadioButton,
   TextBox,
 } from '../components/'
@@ -48,12 +49,18 @@ const Form2 = ({ data }) => {
         <TextBox>
           Please rank the the options below in order - favourite 1st
         </TextBox>
-        <InputBox placeholder="Email Adress" />
-        <InputBox placeholder="Email Adress" />
-        <InputBox placeholder="Email Adress" />
+        <RankingBox placeholder="1">Several fantastic short stories</RankingBox>
+        <RankingBox placeholder="2">
+          A wonderful novella (short novel)
+        </RankingBox>
+        <RankingBox placeholder="3">
+          A fascinating work of non-fiction
+        </RankingBox>
         <Button type="register">Continue</Button>
       </form>
-      <Link to="/">Go back to the homepage</Link>
+      <TextBox>
+        <Link to="/">Go back to the homepage</Link>
+      </TextBox>
     </Layout>
   )
 }

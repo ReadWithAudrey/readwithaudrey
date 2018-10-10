@@ -30,7 +30,9 @@ const Form1 = ({ data }) => {
         <InputBox placeholder="Email Adress" />
         <Button type="register">Continue</Button>
       </form>
-      <Link to="/">Go back to the homepage</Link>
+      <TextBox>
+        <Link to="/">Go back to the homepage</Link>
+      </TextBox>
     </Layout>
   )
 }

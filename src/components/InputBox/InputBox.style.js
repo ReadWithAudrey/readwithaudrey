@@ -7,4 +7,5 @@ export const StyledInputBox = styled.input.attrs({
   display: block;
   border: #d3d3d3 1px solid;
   border-radius: 10px;
+  box-sizing: border-box;
 `
