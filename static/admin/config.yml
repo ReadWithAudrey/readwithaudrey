@@ -10,6 +10,7 @@ media_folder: "static/images/uploads"
 collections:
   - label: "Forms"
     name: "forms"
+    delete: false
     files:
       - label: "Form 1"
         name: "Form1"
