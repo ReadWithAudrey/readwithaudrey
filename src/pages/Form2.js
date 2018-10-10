@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import Layout from '../components/layout'
 import {
   InputBox,
   Label,
@@ -12,6 +11,7 @@ import {
   RankingBox,
   RadioButton,
   TextBox,
+  Layout
 } from '../components/'
 
 const Form2 = ({ data }) => {

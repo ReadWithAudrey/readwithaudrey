@@ -1,3 +1,4 @@
+import Layout from './Layout/Layout'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import InputBox from './InputBox/InputBox'
@@ -15,6 +16,7 @@ import ASOpage from './ASOpage/ASOpage'
 import Howpage from './Howpage/Howpage'
 
 export {
+  Layout,
   Header,
   Footer,
   InputBox,

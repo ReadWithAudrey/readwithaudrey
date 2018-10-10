@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
-import Layout from '../components/layout'
 import {
   Label,
   Button,
@@ -10,6 +9,7 @@ import {
   RadioButton,
   TextArea,
   TextBox,
+  Layout
 } from '../components/'
 
 const Form3 = ({ data }) => {
