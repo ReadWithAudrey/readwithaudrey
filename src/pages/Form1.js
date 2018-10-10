@@ -27,7 +27,7 @@ const Form1 = ({ data }) => {
         <Label>{q2}</Label>
         <InputBox placeholder="Second Name" />
         <Label>{q3}</Label>
-        <InputBox placeholder="Email Adress" />
+        <InputBox placeholder="Email Address" />
         <Button type="register">Continue</Button>
       </form>
       <TextBox>

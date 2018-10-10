@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="flex flex-column items-center justify-center h-100 pt5 pb6 mh3">
+        <div className="flex flex-column items-center justify-center">
           {children}
         </div>
         <Footer />
