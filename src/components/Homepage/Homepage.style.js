@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
 const HomepageStyled = styled.div.attrs({
-  className: "bg-white flex flex-column items-center justify-around ph2 pv5 montserrat w-100",
+  className: "bg-white flex flex-column items-center justify-between w-100 vh-100 c-padding",
 })`
-  height: 100vh;
 `
 export default HomepageStyled;
