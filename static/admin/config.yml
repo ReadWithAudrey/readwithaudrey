@@ -15,7 +15,7 @@ collections:
         name: "Form1"
         file: src/markdown/formPart1.md
         fields:
-          - {label: "Question 1", name: "q1", widget: "string", required:false}
-          - {label: "Question 2", name: "q2", widget: "string", required:false}
-          - {label: "Question 3", name: "q3", widget: "string", required:false}
-          - {label: "Body", name: "body", widget: "markdown" }
+          - {label: "title", name: "title", widget:hidden, required: true}
+          - {label: "Question 1", name: "q1", widget: "string", required:true}
+          - {label: "Question 2", name: "q2", widget: "string", required:true}
+          - {label: "Question 3", name: "q3", widget: "string", required:true}
