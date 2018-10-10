@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import 'normalize.css'; // css reset stylesheet
-import 'tachyons'; // tachyons css
+import 'normalize.css' // css reset stylesheet
+import 'tachyons' // tachyons css
 import '../styles/index.css' // custom css
 
 import { Header, Footer } from './index.js'
@@ -32,7 +32,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="flex flex-column items-center justify-center">
+        <div className="flex flex-column items-center justify-center h-100 pt5 pb6 mh3">
           {children}
         </div>
         <Footer />
