@@ -41,7 +41,9 @@ const Form3 = ({ data }) => {
         <RadioButton>5 (Really Don&apos;t Like)</RadioButton>
         <Button type="register">Submit</Button>
       </form>
-      <Link to="/">Go back to the homepage</Link>
+      <TextBox>
+        <Link to="/">Go back to the homepage</Link>
+      </TextBox>
     </Layout>
   )
 }
