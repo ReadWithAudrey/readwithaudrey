@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+Array [
+  <header
+    className="sc-bdVaJa hzJmbW"
+  >
+    Audrey
+  </header>,
+  <footer
+    className="sc-bwzfXH gvypoN"
+  >
+    <span
+      className="sc-htpNat emjJXy"
+    >
+      Home | Our Story | FAQs | Contact Us
+    </span>
+    <span
+      className="sc-bxivhb bckNHt"
+    >
+      © Audrey | Terms | Privacy
+    </span>
+  </footer>,
+]
+`;

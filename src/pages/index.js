@@ -4,7 +4,7 @@ import { Aboutpage } from '../components/index'
 import { ASOpage } from '../components/index'
 import { Howpage } from '../components/index'
 
-import Layout from '../components/layout'
+import {Layout} from '../components'
 
 const IndexPage = () => (
   <Layout>
