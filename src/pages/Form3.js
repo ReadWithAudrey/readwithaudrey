@@ -17,7 +17,7 @@ const Form3 = ({ data }) => {
   return (
     <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
-        <h1 className="f3 pink tc montserrat mb3">Further Details</h1>
+        <h1 className="f3 pink tc montserrat mb3">Your Bio</h1>
         <StatusBar>
           <Link to="/Form1">1. Basic Details</Link>
         </StatusBar>

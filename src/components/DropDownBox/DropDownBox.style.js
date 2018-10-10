@@ -7,8 +7,9 @@ export const StyledRadioButton = styled.button`
   color: white;
 `
 
-export const Select = styled.select`
+export const Select = styled.select.attrs({ className: 'montserrat' })`
   background: #fff;
+  width: 50%;
   border: #d3d3d3 1px solid;
   padding: 7px;
   margin: 10px 0px;

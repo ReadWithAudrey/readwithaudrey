@@ -37,12 +37,14 @@ const Form2 = ({ data }) => {
         <Label>{q2}</Label>
         <InputBox placeholder="Age" />
         <Label>{q3}</Label>
-        <InputBox placeholder="Country" /> <DropDownBox />
+        <InputBox placeholder="Country" />
         <Label>{q4}</Label>
+        <DropDownBox />
+        <Label>{q5}</Label>
         <RadioButton>Read</RadioButton>
         <RadioButton>Listen</RadioButton>
         <RadioButton>Both</RadioButton>
-        <Label>{q5}</Label>
+        <Label>{q6}</Label>
         <TextBox>
           Please rank the the options below in order - favourite 1st
         </TextBox>
@@ -74,6 +76,7 @@ export const query = graphql`
         q3
         q4
         q5
+        q6
       }
     }
   }
