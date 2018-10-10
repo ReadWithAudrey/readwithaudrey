@@ -7,6 +7,7 @@ import StatusBar from './StatusBar/StatusBar'
 import DropDownBox from './DropDownBox/DropDownBox'
 import RadioButton from './RadioButton/RadioButton'
 import TextBox from './TextBox/TextBox'
+import TextArea from './TextArea/TextArea'
 import Homepage from './Homepage/Homepage'
 import Aboutpage from './Aboutpage/Aboutpage'
 import ASOpage from './ASOpage/ASOpage'
@@ -24,4 +25,5 @@ export {
   Homepage,
   Aboutpage,
   ASOpage,
+  TextArea,
 }

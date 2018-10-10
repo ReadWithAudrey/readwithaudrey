@@ -6,8 +6,11 @@ import openbook from '../../images/open-book.svg'
 
 const Header = ({ siteTitle }) => (
   <HeaderStyled>
-    <div id="header-left" className="w-third flex items-center justify-around f4">
-      <img src={ openbook } alt="book icon" className="h2"/>
+    <div
+      id="header-left"
+      className="w-third flex items-center justify-around f4"
+    >
+      <img src={openbook} alt="book icon" className="h2" />
       {siteTitle}
     </div>
     <Button type="header">Join Us</Button>

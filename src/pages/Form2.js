@@ -10,6 +10,7 @@ import {
   StatusBar,
   DropDownBox,
   RadioButton,
+  TextBox,
 } from '../components/'
 
 const Form2 = ({ data }) => {
@@ -17,7 +18,7 @@ const Form2 = ({ data }) => {
   return (
     <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
-        <h1>Further Details</h1>
+        <h1 className="f3 pink tc montserrat mb3">Further Details</h1>
         <StatusBar>
           <Link to="/Form1">1. Basic Details</Link>
         </StatusBar>
@@ -25,10 +26,10 @@ const Form2 = ({ data }) => {
         <StatusBar>
           <Link to="/Form3">3. Your Bio</Link>
         </StatusBar>
-        <p className="montserrat f6 pv2">
+        <TextBox>
           In order to find the best reading partner for you, we need a little
           bit more information
-        </p>
+        </TextBox>
         <Label>{q1}</Label>
         <RadioButton>Male</RadioButton>
         <RadioButton>Female</RadioButton>
