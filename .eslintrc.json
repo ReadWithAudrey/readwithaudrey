@@ -4,10 +4,14 @@
     "strict": 0
   },
   "plugins": [
-    "react"
+    "react",
+    "jest"
   ],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
-  ]
+  ],
+  "env": {
+  "jest/globals": true
+  }
 }
