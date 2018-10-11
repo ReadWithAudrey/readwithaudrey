@@ -33,7 +33,7 @@ Array [
       </Link>
       <Link
         className="no-underline white ph1"
-        to="/story/"
+        to="/Story/"
       >
         Our Story
       </Link>
