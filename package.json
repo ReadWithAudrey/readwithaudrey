@@ -14,15 +14,28 @@
     "gatsby": "^2.0.0",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-postcss": "^2.0.0",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-source-filesystem": "^2.0.1",
     "gatsby-transformer-remark": "^2.1.6",
+<<<<<<< HEAD
     "mailgun-js": "^0.21.0",
+||||||| merged common ancestors
+=======
+    "normalize.css": "^8.0.0",
+    "postcss-clean": "^1.1.0",
+    "postcss-custom-media": "^7.0.4",
+    "postcss-custom-properties": "^8.0.8",
+    "postcss-import": "^12.0.0",
+>>>>>>> master
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
-    "styled-components": "^3.4.9"
+    "styled-components": "^3.4.9",
+    "tachyons": "^4.11.1",
+    "tachyons-aspect-ratios": "^1.0.1",
+    "tachyons-custom": "^4.9.5"
   },
   "keywords": [
     "gatsby"
@@ -65,7 +78,8 @@
     "testRegex": "/.*(__tests__\\/.*)|(.*(test|spec))\\.jsx?$",
     "moduleNameMapper": {
       ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
-      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
+      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "tachyons(.*)": "<rootDir>/__mocks__/styleMock.js"
     },
     "testPathIgnorePatterns": [
       "node_modules",

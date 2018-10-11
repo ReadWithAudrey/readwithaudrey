@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header renders correctly 1`] = `
+exports[`Header component snapshot test renders correctly 1`] = `
 <header
-  className="sc-bdVaJa hzJmbW"
-/>
+  className="sc-bdVaJa flex items-center justify-center ph3 pv2 montserrat white bg-green w-100 f3 eKgzFu"
+>
+  <img
+    alt="book icon"
+    className="h2 ph2"
+    src="test-file-stub"
+  />
+  <Link
+    to="/"
+  />
+</header>
 `;

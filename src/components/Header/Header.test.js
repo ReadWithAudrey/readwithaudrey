@@ -1,9 +1,9 @@
-import React from "react"
-import renderer from "react-test-renderer"
-import Header from "./Header"
+import React from 'react'
+import renderer from 'react-test-renderer'
+import Header from './Header'
 
-describe("Header", () =>
-  it("renders correctly", () => {
+describe('Header component snapshot test', () =>
+  it('renders correctly', () => {
     const tree = renderer.create(<Header />).toJSON()
     expect(tree).toMatchSnapshot()
   }))

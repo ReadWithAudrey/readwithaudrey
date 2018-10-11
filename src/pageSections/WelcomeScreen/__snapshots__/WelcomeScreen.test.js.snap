@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage component snapshot test renders correctly 1`] = `
+<div
+  className="sc-bdVaJa bg-white flex flex-column items-center justify-around w-100 vh-100 c-padding bDWFJH"
+>
+  <div
+    className="flex flex-column items-center justify-around w-100"
+    id="homepage-top"
+  >
+    <h1
+      className="pink tc f1 montserrat lh-title"
+    >
+      Read
+      <br />
+       Aloud
+      <br />
+       Together
+    </h1>
+    <Link
+      className="white"
+      to="/Form1/"
+    >
+      <button
+        className="sc-gzVnrw bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 montserrat bBtqGg"
+      >
+        Get started
+      </button>
+    </Link>
+  </div>
+  <img
+    alt="Cartoon of people reading a book"
+    src="test-file-stub"
+  />
+</div>
+`;
