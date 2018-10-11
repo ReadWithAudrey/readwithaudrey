@@ -72,7 +72,6 @@ const buildPairingEmail = pair => new Promise((resolve, reject) => {
       community. Monday's Audrey Day! It's helpful for many, but it's not
       practical for everyone. In which case we try to encourage Tuesday as
       the alternative. But of course it's up to you.<br><br>
-
       Please will you liaise with each other to confirm a suitable time that
       works for you both (bear in mind time zones - London, UK and Belo
       Horizonte, Brazil). And at the end of your first session we suggest
