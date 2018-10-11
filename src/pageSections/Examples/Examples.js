@@ -1,10 +1,10 @@
 import React from 'react'
-import ExamplespageStyled from './Examplespage.style'
-import { Button } from '../index'
+import ExamplespageStyled from './Examples.style'
+import { Button } from '../../components/index'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
-const Examplespage = () => (
+const Examples = () => (
   <ExamplespageStyled>
     <h1 className="f2 pink tc">Our latest readers</h1>
     <h2 className="f4 tc">We take great pride in our reading pairings. Here are some of our most recent:</h2>
@@ -19,8 +19,8 @@ const Examplespage = () => (
   </ExamplespageStyled>
 )
 
-Examplespage.propTypes = {
+Examples.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-export default Examplespage
+export default Examples

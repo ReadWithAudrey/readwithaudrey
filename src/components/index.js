@@ -10,11 +10,6 @@ import RadioButton from './RadioButton/RadioButton'
 import TextBox from './TextBox/TextBox'
 import RankingBox from './RankingBox/RankingBox'
 import TextArea from './TextArea/TextArea'
-import Homepage from './Homepage/Homepage'
-import Aboutpage from './Aboutpage/Aboutpage'
-import ASOpage from './ASOpage/ASOpage'
-import Howpage from './Howpage/Howpage'
-import Examplespage from './Examplespage/Examplespage'
 
 export {
   Layout,
@@ -28,10 +23,5 @@ export {
   RadioButton,
   RankingBox,
   TextBox,
-  Homepage,
-  Aboutpage,
-  ASOpage,
   TextArea,
-  Howpage,
-  Examplespage
 }

@@ -17,4 +17,8 @@ export const RegisterButton = styled.button.attrs({
   border: 2px solid white;
   display: block;
   margin: 0 auto;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 `

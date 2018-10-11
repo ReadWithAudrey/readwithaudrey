@@ -1,12 +1,12 @@
 import React from 'react'
-import HowpageStyled from './Howpage.style'
+import StyledHowItWorks from './HowItWorks.style'
 import man from '../../images/manicon.svg'
 import pair from '../../images/pairicon.png'
 import book from '../../images/open-book-black.svg'
 import PropTypes from 'prop-types'
 
-const Howpage = () => (
-  <HowpageStyled>
+const HowItWorks = () => (
+  <StyledHowItWorks>
     <div id="how-title">
       <h2 className="f2 pink tc">How it works</h2>
     </div>
@@ -25,11 +25,11 @@ const Howpage = () => (
       <img src={book} alt="Icon of a man" className="small-icon"/>
       <p className="tc">Each reading takes roughly 10 minutes. Afterwards you’re welcome to discuss the experience</p>
     </div>
-  </HowpageStyled>
+  </StyledHowItWorks>
 )
 
-Howpage.propTypes = {
+HowItWorks.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-export default Howpage
+export default HowItWorks

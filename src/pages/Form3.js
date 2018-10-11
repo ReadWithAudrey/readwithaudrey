@@ -9,7 +9,7 @@ import {
   RadioButton,
   TextArea,
   TextBox,
-  Layout
+  Layout,
 } from '../components/'
 
 const Form3 = ({ data }) => {
@@ -39,7 +39,9 @@ const Form3 = ({ data }) => {
         <RadioButton>3 (Don&apos;t mind) </RadioButton>
         <RadioButton>4</RadioButton>
         <RadioButton>5 (Really Don&apos;t Like)</RadioButton>
-        <Button type="register">Submit</Button>
+        <Link to="/thankyou">
+          <Button type="register">Submit</Button>
+        </Link>
       </form>
       <TextBox>
         <Link to="/">Go back to the homepage</Link>
