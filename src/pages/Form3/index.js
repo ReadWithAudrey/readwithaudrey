@@ -10,7 +10,7 @@ import {
   TextArea,
   TextBox,
   Layout,
-} from '../components/'
+} from '../../components/'
 
 const Form3 = ({ data }) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter

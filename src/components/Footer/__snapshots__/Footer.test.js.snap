@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component snapshot test renders correctly 1`] = `
+<footer
+  className="sc-bdVaJa flex flex-column justify-center items-center montserrat bg-green w-100 fePDys"
+>
+  <span
+    className="sc-bwzfXH flex items-center justify-around bg-green w-100 jWjOZT"
+  >
+    <Link
+      className="no-underline white ph1"
+      to="/"
+    >
+      Home
+    </Link>
+    <Link
+      className="no-underline white ph1"
+      to="/Story/"
+    >
+      Our Story
+    </Link>
+    <Link
+      className="no-underline white ph1"
+      to="/FAQs/"
+    >
+      FAQs
+    </Link>
+    <Link
+      className="no-underline white ph1"
+      to="/Contact/"
+    >
+      Contact Us
+    </Link>
+  </span>
+  <span
+    className="sc-htpNat flex justify-around items-center bg-white black w-100 jbutSu"
+  >
+    © Audrey
+    <Link
+      className="no-underline black ph1"
+      to="/Terms/"
+    >
+      Terms
+    </Link>
+    <Link
+      className="no-underline black ph1"
+      to="/Privacy/"
+    >
+      Privacy
+    </Link>
+  </span>
+</footer>
+`;

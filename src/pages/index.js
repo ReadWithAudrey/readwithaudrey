@@ -4,7 +4,7 @@ import {
   AboutAudrey,
   AsSeenOn,
   HowItWorks,
-  Examples
+  Examples,
 } from '../pageSections/index'
 
 import { Layout } from '../components'
