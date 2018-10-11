@@ -1,12 +1,12 @@
 import React from 'react'
-import HomepageStyled from './Homepage.style'
+import Welcome from './WelcomeScreen.style'
 import { Link } from 'gatsby'
-import { Button } from '../index'
+import { Button } from '../../components/'
 import PropTypes from 'prop-types'
 import bookpeople from '../../images/testrwalogo.png'
 
-const Homepage = () => (
-  <HomepageStyled>
+const WelcomeScreen = () => (
+  <Welcome>
     <div
       id="homepage-top"
       className="flex flex-column items-center justify-center"
@@ -17,11 +17,11 @@ const Homepage = () => (
       </Link>
     </div>
     <img src={bookpeople} alt="Cartoon of people reading a book" />
-  </HomepageStyled>
+  </Welcome>
 )
 
-Homepage.propTypes = {
+WelcomeScreen.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-export default Homepage
+export default WelcomeScreen

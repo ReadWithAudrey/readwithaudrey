@@ -11,7 +11,7 @@ import {
   RankingBox,
   RadioButton,
   TextBox,
-  Layout
+  Layout,
 } from '../components/'
 
 const Form2 = ({ data }) => {
@@ -56,7 +56,9 @@ const Form2 = ({ data }) => {
         <RankingBox placeholder="3">
           A fascinating work of non-fiction
         </RankingBox>
-        <Button type="register">Continue</Button>
+        <Link to="/Form3">
+          <Button type="register">Continue</Button>
+        </Link>
       </form>
       <TextBox>
         <Link to="/">Go back to the homepage</Link>
