@@ -4,6 +4,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import 'normalize.css' // css reset stylesheet
+import 'tachyons' // tachyons css
+import '../../styles/index.css' // custom css
+
 import { Header, Footer } from '../index.js'
 
 export const PureLayout = ({ children, data }) => {
@@ -20,7 +24,9 @@ export const PureLayout = ({ children, data }) => {
       <html lang="en" />
     </Helmet>
     <Header siteTitle={data.site.siteMetadata.title} />
-    {children}
+      <div className="flex flex-column items-center justify-center">
+          {children}
+      </div>
     <Footer />
   </React.Fragment>
 )}

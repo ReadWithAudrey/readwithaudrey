@@ -1,0 +1,12 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+.montserrat {
+  font-family: "PT Serif", serif;
+}
+
+@font-face {
+  font-family: "Double Porter";
+  src: url('../fonts/Fenotype\ -\ DoublePorter1.otf') format('opentype');
+}

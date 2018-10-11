@@ -1,15 +1,17 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
+import { Homepage } from '../components/index'
+import { Aboutpage } from '../components/index'
+import { ASOpage } from '../components/index'
+import { Howpage } from '../components/index'
 
 import {Layout} from '../components'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Read Aloud Together</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/Form1/">Sign up now</Link>
+    <Homepage/>
+    <Aboutpage/>
+    <ASOpage/>
+    <Howpage/>
   </Layout>
 )
 
