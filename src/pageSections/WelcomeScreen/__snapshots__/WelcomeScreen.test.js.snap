@@ -18,11 +18,11 @@ exports[`Homepage component snapshot test renders correctly 1`] = `
        Together
     </h1>
     <Link
-      className="white"
+      className="white no-underline w-100"
       to="/Form1/"
     >
       <button
-        className="sc-gzVnrw bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 montserrat bBtqGg"
+        className="sc-dnqmqq bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center kQARHP"
       >
         Get started
       </button>
