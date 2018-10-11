@@ -5,7 +5,7 @@ import { TextBox, Layout } from '../../components/'
 const OurStory = () => {
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt5">Our Story</h1>
+      <h1 className="f2 pink tc montserrat mb3 mt4">Our Story</h1>
       <TextBox>
         Audrey is based in London England, where I saw the benefits of
         peer-to-peer discussion when I used to be a high school teacher.

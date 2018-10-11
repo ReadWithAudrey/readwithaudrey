@@ -13,7 +13,7 @@ import {
 const ContactUs = () => {
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt5">Contact Us</h1>
+      <h1 className="f2 pink tc montserrat mb3 mt4">Contact Us</h1>
       <TextBox>
         We would love to hear from you. Get in touch by filling out the form
         below:

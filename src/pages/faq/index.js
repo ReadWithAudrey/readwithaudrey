@@ -5,7 +5,7 @@ import { TextBox, Layout } from '../../components/'
 const FAQ = () => {
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt5">FAQs</h1>
+      <h1 className="f2 pink tc montserrat mb3 mt4">FAQs</h1>
       <h2 className="f3 pink tc montserrat mb3">What to expect</h2>
       <TextBox>
         The Audrey experience comprises of five separate ten minute reading
