@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { facebook } from '../images/facebook.png'
-import { email } from '../images/email.png'
-import { twitter } from '../images/twitter.png'
+import facebook from '../images/facebook.png'
+import email from '../images/email.png'
+import twitter from '../images/twitter.png'
 
 import { TextBox, Layout } from '../components/'
 
@@ -28,9 +28,9 @@ const ThankYou = () => {
         Why not share the story of Audrey and help us spread the word?
       </TextBox>
       <h3 className="f5 pink tc montserrat mb3">Share On</h3>
-      <img src={facebook} alt="Facebook" />
-      <img src={twitter} alt="Twitter" />
-      <img src={email} alt="Email" />
+      <img src={facebook} alt="Facebook" className="fl" />
+      <img src={twitter} alt="Twitter" className="fl" />
+      <img src={email} alt="Email" className="fl" />
       <TextBox>
         <Link to="/">Go back to the homepage</Link>
       </TextBox>
