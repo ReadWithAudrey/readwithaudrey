@@ -1,7 +1,4 @@
-require('dotenv').config();
-const sgMail = require('@sendgrid/mail');
-
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+const sgMail = require('../emailConnection');
 
 const msg = {
   to: ['readwithaudrey.data@gmail.com'],
@@ -12,4 +9,5 @@ const msg = {
     user2: 'Ben',
   },
 };
+
 sgMail.send(msg);
