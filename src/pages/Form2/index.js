@@ -19,13 +19,13 @@ const Form2 = ({ data }) => {
   return (
     <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
-        <h1 className="f3 pink tc montserrat mb3">Further Details</h1>
+        <h1 className="f2 pink tc montserrat mb3 mt5">Further Details</h1>
         <StatusBar>
-          <Link to="/Form1">1. Basic Details</Link>
+          <Link to="/Form1/">1. Basic Details</Link>
         </StatusBar>
         <StatusBar type="active">2. Further Details</StatusBar>
         <StatusBar>
-          <Link to="/Form3">3. Your Bio</Link>
+          <Link to="/Form3/">3. Your Bio</Link>
         </StatusBar>
         <TextBox>
           In order to find the best reading partner for you, we need a little

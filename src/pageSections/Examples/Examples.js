@@ -29,11 +29,9 @@ const Examples = () => (
       </li>
     </ul>
     <p className="f4 tc">Are you ready to join the Audrey community?</p>
-    <Button>
-      <Link to="/Form1/" className="no-underline white">
-        Get started
-      </Link>
-    </Button>
+    <Link to="/Form1/" className="no-underline white w-100">
+      <Button type="register">Get started</Button>
+    </Link>
   </StyledExamples>
 )
 

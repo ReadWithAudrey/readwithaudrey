@@ -4,10 +4,14 @@ export const StyledButton = styled.button.attrs({
   className: 'bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 montserrat',
 })`
   border: none;
+  display: block;
+  a {
+    color: #fff;
+  }
 `
 
 export const HeaderButton = styled.button.attrs({
-  className: "bg-green hover-bg-pink pa2 white br2 w-third f5 montserrat"})`
+  className: "bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat"})`
   border: 2px solid white;
 `
 

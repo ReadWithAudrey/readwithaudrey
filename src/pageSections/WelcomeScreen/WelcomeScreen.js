@@ -16,11 +16,9 @@ const WelcomeScreen = () => (
         <br /> Aloud
         <br /> Together
       </h1>
-      <Button>
-        <Link to="/Form1/" className="white">
-          Get started
-        </Link>
-      </Button>
+      <Link to="/Form1/" className="white no-underline w-100">
+        <Button type="register">Get started</Button>
+      </Link>
     </div>
     <img src={bookpeople} alt="Cartoon of people reading a book" />
   </Welcome>

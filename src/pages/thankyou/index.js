@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import facebook from '../images/facebook.png'
-import email from '../images/email.png'
-import twitter from '../images/twitter.png'
+import facebook from '../../images/facebook.png'
+import email from '../../images/email.png'
+import twitter from '../../images/twitter.png'
 
-import { TextBox, Layout } from '../components/'
+import { TextBox, Layout } from '../../components/'
 
 const ThankYou = () => {
   return (

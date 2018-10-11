@@ -1,9 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Header from './Header'
+import TextArea from './TextArea'
 
-describe('Header component snapshot test', () =>
+describe('TextArea component snapshot test', () =>
   it('renders correctly', () => {
-    const tree = renderer.create(<Header />).toJSON()
+    const tree = renderer.create(<TextArea />).toJSON()
     expect(tree).toMatchSnapshot()
   }))
