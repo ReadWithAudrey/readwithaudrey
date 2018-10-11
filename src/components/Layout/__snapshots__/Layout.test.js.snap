@@ -16,10 +16,10 @@ Array [
     className="flex flex-column items-center justify-center"
   />,
   <footer
-    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 dAIpGc"
+    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"
   >
     <span
-      className="sc-htpNat flex justify-center items-center bg-green jbutSu"
+      className="sc-htpNat flex items-center justify-around bg-green w-100 jbutSu"
     >
       <Link
         className="no-underline white ph1"
@@ -27,21 +27,18 @@ Array [
       >
         Home
       </Link>
-       
       <Link
         className="no-underline white ph1"
         to="/Story/"
       >
         Our Story
       </Link>
-       
       <Link
         className="no-underline white ph1"
         to="/FAQs/"
       >
         FAQs
       </Link>
-       
       <Link
         className="no-underline white ph1"
         to="/Contact/"
@@ -50,16 +47,15 @@ Array [
       </Link>
     </span>
     <span
-      className="sc-bxivhb flex justify-center items-center bg-white black w-100 cHkvlR"
+      className="sc-bxivhb flex justify-around items-center bg-white black w-100 cHkvlR"
     >
-      © Audrey | 
+      © Audrey
       <Link
         className="no-underline black ph1"
         to="/Terms/"
       >
         Terms
       </Link>
-       | 
       <Link
         className="no-underline black ph1"
         to="/Privacy/"

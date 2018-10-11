@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Aboutpage from './Aboutpage'
+import Aboutpage from './AboutAudrey'
 
 describe('Aboutpage component snapshot test', () =>
   it('renders correctly', () => {
