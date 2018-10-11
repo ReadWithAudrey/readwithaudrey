@@ -5,8 +5,8 @@ import { TextBox, Layout } from '../../components/'
 const FAQ = () => {
   return (
     <Layout>
-      <h1 className="f3 pink tc montserrat mb3">FAQs</h1>
-      <h2 className="f4 pink tc montserrat mb3">What to expect</h2>
+      <h1 className="f2 pink tc montserrat mb3 mt4">FAQs</h1>
+      <h2 className="f3 pink tc montserrat mb3">What to expect</h2>
       <TextBox>
         The Audrey experience comprises of five separate ten minute reading
         sessions. We choose a surprise book for you and divide it into 5
@@ -36,7 +36,7 @@ const FAQ = () => {
         people in their day to day lives.
       </TextBox>
 
-      <h2 className="f4 pink tc montserrat mb3">Before the reading sessions</h2>
+      <h2 className="f3 pink tc montserrat mb3">Before the reading sessions</h2>
       <TextBox>
         People can choose to be either the reader or listener, or have a go at
         both.
@@ -44,7 +44,7 @@ const FAQ = () => {
 
       <TextBox>
         It’s highly unlikely you’ll know the person you are partnered with, but
-        we’ve attempted to pair Readers and Listeners who we think will connect
+        we’ve attempted to pair readers and listeners who we think will connect
         well and enjoy each other’s company.
       </TextBox>
 
@@ -62,16 +62,16 @@ const FAQ = () => {
         attached to the email when we introduce you to your reading partner.
       </TextBox>
 
-      <h2 className="f4 pink tc montserrat mb3">The reading sessions</h2>
+      <h2 className="f3 pink tc montserrat mb3">The reading sessions</h2>
 
       <TextBox>
         You only need a spare 10 minutes to have a reading session. We think
         Mondays are the best day to start reading sessions. In fact we think
-        Mondays are the best day for all reading sessions . We gently encourage
-        this habit within the Audrey community. Monday&apost;s Audrey Day!
-        It&apost;s helpful for many, but it&apost;s not practical for everyone.
+        Mondays are the best day for all reading sessions. We gently encourage
+        this habit within the Audrey community. Monday&apos;s Audrey Day!
+        It&apos;s helpful for many, but it&apos;s not practical for everyone.
         Therefore we suggest Tuesdays as back up. If this isn’t possible either,
-        then we kick you out :)
+        then we kick you out.
       </TextBox>
 
       <TextBox>

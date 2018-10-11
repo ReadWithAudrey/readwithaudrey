@@ -8,7 +8,7 @@ const Footer = () => (
       <Link to="/" className="no-underline white ph1">
         Home
       </Link>
-      <Link to="/Story/" className="no-underline white ph1">
+      <Link to="/story/" className="no-underline white ph1">
         Our Story
       </Link>
       <Link to="/faq/" className="no-underline white ph1">
