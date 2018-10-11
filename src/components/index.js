@@ -14,6 +14,7 @@ import Homepage from './Homepage/Homepage'
 import Aboutpage from './Aboutpage/Aboutpage'
 import ASOpage from './ASOpage/ASOpage'
 import Howpage from './Howpage/Howpage'
+import Examplespage from './Examplespage/Examplespage'
 
 export {
   Layout,
@@ -31,5 +32,6 @@ export {
   Aboutpage,
   ASOpage,
   TextArea,
-  Howpage
+  Howpage,
+  Examplespage
 }
