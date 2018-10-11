@@ -1,7 +1,6 @@
 const axios = require('axios');
 
 const buildPairingEmail = pair => new Promise((resolve, reject) => {
-
   let file = [];
   axios(pair.fields.book_attachments[0].url)
     .then((res) => {
