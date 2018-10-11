@@ -38,15 +38,11 @@ const Form1 = ({ data }) => {
           <Button type="register">Continue</Button>
         </Link>
       </form>
-<<<<<<< HEAD
-      <Link to="/">
-        <TextBox>Go back to the homepage</TextBox>
-      </Link>
-=======
       <TextBox>
-        <Link to="/" className="no-underline">Go back to the homepage</Link>
+        <Link to="/" className="no-underline">
+          Go back to the homepage
+        </Link>
       </TextBox>
->>>>>>> master
     </Layout>
   )
 }
