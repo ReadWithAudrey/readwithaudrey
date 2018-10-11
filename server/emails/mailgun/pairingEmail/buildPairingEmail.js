@@ -2,16 +2,15 @@ const axios = require('axios');
 const request = require('request');
 
 const buildPairingEmail = pair => new Promise((resolve, reject) => {
-  // console.log(pair.fields.book_attachments);
-  // let file = [];
-  // axios(pair.fields.book_attachments[0].url)
-  //   .then((res) => {
-  //     file = res.data;
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //   });
-  const file = request(pair.fields.book_attachments[0].url);
+  // const file = request(pair.fields.book_attachments[0].url);
+
+  let file = [];
+  axios(pair.fields.book_attachments[0].url)
+    .then((res) => {
+      file = res.data;
+    })
+    .catch(err => console.log(err));
+  console.log(file);
 
   const pairingEmail = {
     from: 'Audrey <readwithaudrey.data@gmail.com>',

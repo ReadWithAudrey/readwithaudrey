@@ -6,10 +6,10 @@ const mailgun = require('mailgun-js')({ apiKey: api_key, domain });
 
 const sendEmail = (email) => {
   mailgun.messages().send(email, (error, body) => {
-    if (error) {
-      console.log(`Error sending the email: ${error}`);
+    if (body.message === 'Queued. Thank you.') {
+      console.log('Email sent');
     } else {
-      console.log(body);
+      console.log(`Error sending the email: ${error}`);
     }
   });
 };
