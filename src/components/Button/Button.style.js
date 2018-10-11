@@ -7,7 +7,8 @@ export const StyledButton = styled.button.attrs({
 `
 
 export const HeaderButton = styled.button.attrs({
-  className: "bg-green hover-bg-yellow pa2 white br2 w-third f5 montserrat"})`
+  className: 'bg-green hover-bg-yellow pa2 white br2 w-third f5 montserrat',
+})`
   border: 2px solid white;
 `
 
@@ -17,4 +18,8 @@ export const RegisterButton = styled.button.attrs({
   border: 2px solid white;
   display: block;
   margin: 0 auto;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 `
