@@ -1,9 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Header from './Header'
+import Button from './Button'
 
-describe('Header component snapshot test', () =>
+describe('Button component snapshot test', () =>
   it('renders correctly', () => {
-    const tree = renderer.create(<Header />).toJSON()
+    const tree = renderer.create(<Button />).toJSON()
     expect(tree).toMatchSnapshot()
   }))
