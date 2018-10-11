@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HowItWorks component snapshot test renders correctly 1`] = `
+<div
+  className="sc-bdVaJa bg-light-green flex flex-column items-center justify-around ph4 c-padding montserrat w-100 fORvkZ"
+>
+  <div
+    id="how-title"
+  >
+    <h2
+      className="f2 pink tc"
+    >
+      How it works
+    </h2>
+  </div>
+  <div
+    id="step-1-register"
+  >
+    <h3
+      className="f3 green tc"
+    >
+      Register
+    </h3>
+    <img
+      alt="Icon of a man"
+      className="small-icon"
+      src="test-file-stub"
+    />
+    <p
+      className="tc"
+    >
+      Tell us a little bit about yourself & how you’d like to use Audrey
+    </p>
+  </div>
+  <div
+    id="step-2-connect"
+  >
+    <h3
+      className="f3 green tc"
+    >
+      Connect
+    </h3>
+    <img
+      alt="Icon of a pair of people"
+      className="small-icon"
+      src="test-file-stub"
+    />
+    <p
+      className="tc"
+    >
+      We will pair you with someone we think you will connect well with and help to facilitate your first reading session
+    </p>
+  </div>
+  <div
+    id="step-3-read"
+  >
+    <h3
+      className="f3 green tc"
+    >
+      Read
+    </h3>
+    <img
+      alt="Icon of a man"
+      className="small-icon"
+      src="test-file-stub"
+    />
+    <p
+      className="tc"
+    >
+      Each reading takes roughly 10 minutes. Afterwards you’re welcome to discuss the experience
+    </p>
+  </div>
+</div>
+`;

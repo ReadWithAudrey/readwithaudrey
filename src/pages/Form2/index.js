@@ -12,7 +12,7 @@ import {
   RadioButton,
   TextBox,
   Layout,
-} from '../components/'
+} from '../../components/'
 
 const Form2 = ({ data }) => {
   const { q1, q2, q3, q4, q5, q6 } = data.markdownRemark.frontmatter
@@ -21,11 +21,11 @@ const Form2 = ({ data }) => {
       <form method="POST" action="http://localhost:5000/formPart1">
         <h1 className="f3 pink tc montserrat mb3">Further Details</h1>
         <StatusBar>
-          <Link to="/Form1">1. Basic Details</Link>
+          <Link to="/Form1/">1. Basic Details</Link>
         </StatusBar>
         <StatusBar type="active">2. Further Details</StatusBar>
         <StatusBar>
-          <Link to="/Form3">3. Your Bio</Link>
+          <Link to="/Form3/">3. Your Bio</Link>
         </StatusBar>
         <TextBox>
           In order to find the best reading partner for you, we need a little
@@ -56,7 +56,7 @@ const Form2 = ({ data }) => {
         <RankingBox placeholder="3">
           A fascinating work of non-fiction
         </RankingBox>
-        <Link to="/Form3">
+        <Link to="/Form3/">
           <Button type="register">Continue</Button>
         </Link>
       </form>

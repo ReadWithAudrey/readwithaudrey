@@ -34,7 +34,7 @@ const Form1 = ({ data }) => {
         <InputBox placeholder="Second Name" />
         <Label>{q3}</Label>
         <InputBox placeholder="Email Address" />
-        <Link to="/Form2">
+        <Link to="/Form2/">
           <Button type="register">Continue</Button>
         </Link>
       </form>
