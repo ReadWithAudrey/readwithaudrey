@@ -1,25 +1,13 @@
 require('dotenv').config();
 const base = require('../../dbConnection');
 
-const getNewPairs = new Promise((resolve, reject) => {
+const getNewUser = new Promise((resolve, reject) => {
   let allRecords = [];
-  base('pairings')
+  base('users')
     .select({
       // Selecting the first 3 records in Grid view:
-      filterByFormula: 'AND({confirm_pairing}, NOT({pairing_email_sent}))',
-      fields: [
-        'user1_name',
-        'user1_email',
-        'user1_bio',
-        'user2_name',
-        'user2_email',
-        'user2_bio',
-        'book_name',
-        'book_author',
-        'book_attachments',
-        'book_bio',
-        'mini_book_bio',
-      ],
+      filterByFormula: 'NOT({welcome_email_sent})',
+      fields: ['first_name', 'email'],
     })
     .eachPage(
       (records, fetchNextPage) => {
