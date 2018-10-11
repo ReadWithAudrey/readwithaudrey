@@ -147,7 +147,7 @@
   --light-pink:  #ffa3d7;
   --dark-green:  #137752;
   --green:  #51e0b7; /* AUDREY GREEN */
-  --light-green:  #F6FDFB; /* AUDREY LIGHT BG GREEN */
+  --light-green:  hsl(163, 64%, 85%); /* AUDREY LIGHT BG GREEN */
   --navy:  #001b44;
   --dark-blue:  #00449e;
   --blue:  #357edd;
