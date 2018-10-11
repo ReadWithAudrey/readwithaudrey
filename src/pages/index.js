@@ -4,6 +4,7 @@ import {
   AboutAudrey,
   AsSeenOn,
   HowItWorks,
+  Examples
 } from '../pageSections/index'
 
 import { Layout } from '../components'
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <AboutAudrey />
     <AsSeenOn />
     <HowItWorks />
+    <Examples />
   </Layout>
 )
 
