@@ -12,13 +12,11 @@ export const HeaderButton = styled.button.attrs({
 `
 
 export const RegisterButton = styled.button.attrs({
-  className: 'bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 center',
+  className: 'bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center',
 })`
-  border: 2px solid white;
+  border: none;
   display: block;
-  margin: 0 auto;
   a {
     color: #fff;
-    text-decoration: none;
   }
 `

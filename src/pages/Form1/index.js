@@ -29,17 +29,17 @@ const Form1 = ({ data }) => {
           community.
         </TextBox>
         <Label>{q1}</Label>
-        <InputBox placeholder="First Name" />
+        <InputBox placeholder="Audrey" />
         <Label>{q2}</Label>
-        <InputBox placeholder="Second Name" />
+        <InputBox placeholder="Readerson" />
         <Label>{q3}</Label>
-        <InputBox placeholder="Email Address" />
-        <Link to="/Form2">
+        <InputBox placeholder="audrey@readwithaudrey.com" />
+        <Link to="/Form2" className="no-underline">
           <Button type="register">Continue</Button>
         </Link>
       </form>
       <TextBox>
-        <Link to="/">Go back to the homepage</Link>
+        <Link to="/" className="no-underline">Go back to the homepage</Link>
       </TextBox>
     </Layout>
   )

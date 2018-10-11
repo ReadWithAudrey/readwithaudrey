@@ -9,9 +9,9 @@ import { TextBox, Layout } from '../components/'
 const ThankYou = () => {
   return (
     <Layout>
-      <h1 className="f3 pink tc montserrat mb3">Thank You</h1>
+      <h1 className="f2 pink tc montserrat mb3 mt5">Thank You!</h1>
       <TextBox>
-        Thank you! We’ve received your registration and we will begin to pair
+        We’ve received your registration and we will begin to pair
         you up a reading partner we think you&apos;ll connect well with shortly.
       </TextBox>
       <TextBox>
@@ -21,18 +21,18 @@ const ThankYou = () => {
       <TextBox>
         If you have any questions in the meantime, please do not hesitate to
         contact us at{' '}
-        <a href="mailto:readwithaudrey@gmail.com">readwithaudrey@gmail.com</a>
+        <a href="mailto:readwithaudrey@gmail.com"><strong>readwithaudrey@gmail.com</strong></a>
       </TextBox>
-      <h2 className="f3 pink tc montserrat mb3">Help Spread The Word</h2>
+      <h2 className="f3 pink tc montserrat mb3">Help Spread the Word</h2>
       <TextBox>
         Why not share the story of Audrey and help us spread the word?
       </TextBox>
-      <h3 className="f5 pink tc montserrat mb3">Share On</h3>
+      <h3 className="f5 pink tc montserrat mb3">Share on:</h3>
       <img src={facebook} alt="Facebook" className="fl" />
       <img src={twitter} alt="Twitter" className="fl" />
       <img src={email} alt="Email" className="fl" />
       <TextBox>
-        <Link to="/">Go back to the homepage</Link>
+        <Link to="/" className="no-underline">Go back to the homepage</Link>
       </TextBox>
     </Layout>
   )

@@ -24,7 +24,7 @@ export const PureLayout = ({ children, data }) => {
         <html lang="en" />
       </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="flex flex-column items-center justify-center page-padding ph2">
+      <div className="flex flex-column items-center justify-center page-padding ph4">
         {children}
       </div>
       <Footer />

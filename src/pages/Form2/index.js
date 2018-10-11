@@ -12,12 +12,12 @@ import {
   RadioButton,
   TextBox,
   Layout,
-} from '../components/'
+} from '../../components/'
 
 const Form2 = ({ data }) => {
   const { q1, q2, q3, q4, q5, q6 } = data.markdownRemark.frontmatter
   return (
-    <Layout className="form-padding">
+    <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
         <h1 className="f3 pink tc montserrat mb3">Further Details</h1>
         <StatusBar>
@@ -56,12 +56,12 @@ const Form2 = ({ data }) => {
         <RankingBox placeholder="3">
           A fascinating work of non-fiction
         </RankingBox>
-        <Link to="/Form3">
+        <Link to="/Form3" className="no-underline">
           <Button type="register">Continue</Button>
         </Link>
       </form>
       <TextBox>
-        <Link to="/">Go back to the homepage</Link>
+        <Link to="/" className="no-underline">Go back to the homepage</Link>
       </TextBox>
     </Layout>
   )
