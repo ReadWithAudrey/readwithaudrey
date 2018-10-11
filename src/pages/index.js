@@ -1,14 +1,19 @@
 import React from 'react'
-import { WelcomeScreen, AboutAudrey } from '../pageSection/index'
+import {
+  WelcomeScreen,
+  AboutAudrey,
+  AsSeenOn,
+  HowItWorks,
+} from '../pageSection/index'
 
 import { Layout } from '../components'
 
 const IndexPage = () => (
   <Layout>
-    <Homepage />
-    <Aboutpage />
-    <ASOpage />
-    <Howpage />
+    <WelcomeScreen />
+    <AboutAudrey />
+    <AsSeenOn />
+    <HowItWorks />
   </Layout>
 )
 
