@@ -11,7 +11,6 @@ import '../../styles/index.css' // custom css
 import { Header, Footer } from '../index.js'
 
 export const PureLayout = ({ children, data }) => {
-  console.log(typeof data)
   return (
     <React.Fragment>
       <Helmet
@@ -24,7 +23,7 @@ export const PureLayout = ({ children, data }) => {
         <html lang="en" />
       </Helmet>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="flex flex-column items-center justify-center page-padding ph2">
+      <div className="flex flex-column items-center justify-center">
         {children}
       </div>
       <Footer />
@@ -32,10 +31,10 @@ export const PureLayout = ({ children, data }) => {
   )
 }
 
-export const Layout = ({ children }) => (
+export const HomepageLayout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query HomepageSiteTitleQuery {
         site {
           siteMetadata {
             title
@@ -51,8 +50,8 @@ PureLayout.propTypes = {
   children: PropTypes.node,
   data: PropTypes.object,
 }
-Layout.propTypes = {
+HomepageLayout.propTypes = {
   children: PropTypes.node,
 }
 
-export default Layout
+export default HomepageLayout

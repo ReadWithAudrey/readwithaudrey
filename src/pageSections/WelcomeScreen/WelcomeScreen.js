@@ -9,9 +9,13 @@ const WelcomeScreen = () => (
   <Welcome>
     <div
       id="homepage-top"
-      className="flex flex-column items-center justify-center"
+      className="flex flex-column items-center justify-around w-100"
     >
-      <h1 className="pink tc montserrat">Read Aloud Together</h1>
+      <h1 className="pink tc f1 montserrat lh-title">
+        Read
+        <br /> Aloud
+        <br /> Together
+      </h1>
       <Button>
         <Link to="/Form1/" className="white">
           Get started
