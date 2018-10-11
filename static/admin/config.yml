@@ -10,12 +10,13 @@ media_folder: "static/images/uploads"
 collections:
   - label: "Forms"
     name: "forms"
+    delete: false
     files:
       - label: "Form 1"
         name: "Form1"
         file: src/markdown/formPart1.md
         fields:
-          - {label: "title", name: "title", widget:hidden, required: true}
+          - {label: "Title", name: "title", widget: "select", default: "Form Part 1", options:["Form Part 1"], }
           - {label: "Question 1", name: "q1", widget: "string", required:true}
           - {label: "Question 2", name: "q2", widget: "string", required:true}
           - {label: "Question 3", name: "q3", widget: "string", required:true}
