@@ -29,7 +29,7 @@ Array [
       </Link>
       <Link
         className="no-underline white ph1"
-        to="/Story/"
+        to="/story/"
       >
         Our Story
       </Link>
