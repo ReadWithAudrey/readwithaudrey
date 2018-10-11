@@ -3,7 +3,7 @@
 }
 
 .c-padding {
-  padding-top: calc(5vh + 2%);
+  padding-top: calc(7vh + 2%);
 }
 
 .page-padding {
@@ -12,7 +12,10 @@
 }
 
 .small-icon {
-  max-height: 4rem;
+  max-height: 4.5rem;
   display: block;
   margin: 0 auto;
 }
+ img {
+   margin: 5% 0;
+ }
