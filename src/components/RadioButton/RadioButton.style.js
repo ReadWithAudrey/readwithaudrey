@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledRadioButton = styled.section.attrs({
-  className: 'montserrat fw4 f6 pv1',
+  className: 'montserrat fw4 f5 pv2',
 })`
   color: #fff;
 `

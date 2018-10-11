@@ -2,6 +2,6 @@
 
 exports[`StatusBar component snapshot test renders correctly 1`] = `
 <section
-  className="sc-bdVaJa fl w-third v-mid montserrat bg-moon-gray fw4 f6 mb3 bpnKgt"
+  className="sc-bdVaJa flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 krtKLP"
 />
 `;

@@ -1,4 +1,5 @@
 import Layout from './Layout/Layout'
+import HomepageLayout from './HomepageLayout/HomepageLayout'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import InputBox from './InputBox/InputBox'
@@ -12,6 +13,7 @@ import RankingBox from './RankingBox/RankingBox'
 import TextArea from './TextArea/TextArea'
 
 export {
+  HomepageLayout,
   Layout,
   Header,
   Footer,

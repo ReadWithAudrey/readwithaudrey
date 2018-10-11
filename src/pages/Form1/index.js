@@ -14,9 +14,9 @@ import {
 const Form1 = ({ data }) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter
   return (
-    <Layout className="c-padding">
+    <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
-        <h1 className="f3 pink tc montserrat mb3">Your Details</h1>
+        <h1 className="f2 pink tc montserrat mb3 mt4">Your Details</h1>
         <StatusBar type="active">1. Basic Details</StatusBar>
         <Link to="/Form2">
           <StatusBar>2. Further Details</StatusBar>
@@ -29,18 +29,24 @@ const Form1 = ({ data }) => {
           community.
         </TextBox>
         <Label>{q1}</Label>
-        <InputBox placeholder="First Name" />
+        <InputBox placeholder="Audrey" />
         <Label>{q2}</Label>
-        <InputBox placeholder="Second Name" />
+        <InputBox placeholder="Readerson" />
         <Label>{q3}</Label>
-        <InputBox placeholder="Email Address" />
-        <Link to="/Form2/">
+        <InputBox placeholder="audrey@readwithaudrey.com" />
+        <Link to="/Form2" className="no-underline">
           <Button type="register">Continue</Button>
         </Link>
       </form>
+<<<<<<< HEAD
       <Link to="/">
         <TextBox>Go back to the homepage</TextBox>
       </Link>
+=======
+      <TextBox>
+        <Link to="/" className="no-underline">Go back to the homepage</Link>
+      </TextBox>
+>>>>>>> master
     </Layout>
   )
 }

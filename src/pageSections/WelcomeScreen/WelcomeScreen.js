@@ -9,11 +9,16 @@ const WelcomeScreen = () => (
   <Welcome>
     <div
       id="homepage-top"
-      className="flex flex-column items-center justify-center"
+      className="flex flex-column items-center justify-around w-100"
     >
-      <h1 className="pink tc montserrat">Read Aloud Together</h1>
-      <Link to="/Form1/" className="white">
-        <Button>Get started</Button>
+      <h1 className="pink tc f1 montserrat lh-title m0">
+        Read Aloud
+        <br /> Together
+      </h1>
+      <Link to="/Form1/" className="white no-underline w-100">
+        <Button type="register" className="mt3">
+          Get started
+        </Button>
       </Link>
     </div>
     <img src={bookpeople} alt="Cartoon of people reading a book" />

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledTextBox = styled.p.attrs({
-  className: 'montserrat f6 lh-copy',
+  className: 'montserrat f5 tc lh-copy',
 })`
   color: #000;
   a {

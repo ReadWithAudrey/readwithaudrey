@@ -17,7 +17,7 @@ const Form3 = ({ data }) => {
   return (
     <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
-        <h1 className="f3 pink tc montserrat mb3">Your Bio</h1>
+        <h1 className="f2 pink tc montserrat mb3 mt4">Your Bio</h1>
         <StatusBar>
           <Link to="/Form1">1. Basic Details</Link>
         </StatusBar>
@@ -39,12 +39,12 @@ const Form3 = ({ data }) => {
         <RadioButton>3 (Don&apos;t mind) </RadioButton>
         <RadioButton>4</RadioButton>
         <RadioButton>5 (Really Don&apos;t Like)</RadioButton>
-        <Link to="/thankyou">
+        <Link to="/thankyou" className="no-underline">
           <Button type="register">Submit</Button>
         </Link>
       </form>
       <TextBox>
-        <Link to="/">Go back to the homepage</Link>
+        <Link to="/" className="no-underline">Go back to the homepage</Link>
       </TextBox>
     </Layout>
   )

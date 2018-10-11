@@ -2,7 +2,7 @@
 
 exports[`Examples component snapshot test renders correctly 1`] = `
 <div
-  className="sc-bdVaJa bg-white flex flex-column items-center justify-between ph4 c-padding montserrat w-100 fORvkZ"
+  className="sc-bdVaJa bg-white flex flex-column items-center justify-between ph4 page-padding montserrat w-100 fePDys"
 >
   <h1
     className="f2 pink tc"
@@ -44,11 +44,11 @@ exports[`Examples component snapshot test renders correctly 1`] = `
     Are you ready to join the Audrey community?
   </p>
   <Link
-    className="no-underline white"
+    className="no-underline white w-100"
     to="/Form1/"
   >
     <button
-      className="sc-gzVnrw bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 montserrat bBtqGg"
+      className="sc-dnqmqq bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center kQARHP"
     >
       Get started
     </button>

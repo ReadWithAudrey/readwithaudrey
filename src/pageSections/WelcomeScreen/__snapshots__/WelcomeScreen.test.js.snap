@@ -2,23 +2,25 @@
 
 exports[`Homepage component snapshot test renders correctly 1`] = `
 <div
-  className="sc-bdVaJa bg-white flex flex-column items-center justify-between w-100 vh-100 c-padding bDWFJH"
+  className="sc-bdVaJa bg-white flex flex-column items-center justify-around w-100 vh-100 c-padding bDWFJH"
 >
   <div
-    className="flex flex-column items-center justify-center"
+    className="flex flex-column items-center justify-around w-100"
     id="homepage-top"
   >
     <h1
-      className="pink tc montserrat"
+      className="pink tc f1 montserrat lh-title m0"
     >
-      Read Aloud Together
+      Read Aloud
+      <br />
+       Together
     </h1>
     <Link
-      className="white"
+      className="white no-underline w-100"
       to="/Form1/"
     >
       <button
-        className="sc-gzVnrw bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 montserrat bBtqGg"
+        className="sc-dnqmqq bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center kQARHP"
       >
         Get started
       </button>

@@ -7,16 +7,16 @@ import {
   Examples,
 } from '../pageSections/index'
 
-import { Layout } from '../components'
+import { HomepageLayout } from '../components'
 
 const IndexPage = () => (
-  <Layout>
+  <HomepageLayout>
     <WelcomeScreen />
     <AboutAudrey />
     <AsSeenOn />
     <HowItWorks />
     <Examples />
-  </Layout>
+  </HomepageLayout>
 )
 
 export default IndexPage

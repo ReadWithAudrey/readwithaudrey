@@ -19,7 +19,7 @@ const Form2 = ({ data }) => {
   return (
     <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
-        <h1 className="f3 pink tc montserrat mb3">Further Details</h1>
+        <h1 className="f2 pink tc montserrat mb3 mt4">Further Details</h1>
         <StatusBar>
           <Link to="/Form1/">1. Basic Details</Link>
         </StatusBar>
@@ -56,12 +56,12 @@ const Form2 = ({ data }) => {
         <RankingBox placeholder="3">
           A fascinating work of non-fiction
         </RankingBox>
-        <Link to="/Form3/">
+        <Link to="/Form3" className="no-underline">
           <Button type="register">Continue</Button>
         </Link>
       </form>
       <TextBox>
-        <Link to="/">Go back to the homepage</Link>
+        <Link to="/" className="no-underline">Go back to the homepage</Link>
       </TextBox>
     </Layout>
   )
