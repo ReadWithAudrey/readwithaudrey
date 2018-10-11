@@ -14,7 +14,7 @@ import {
 const Form1 = ({ data }) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter
   return (
-    <Layout className="c-padding">
+    <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
         <h1 className="f3 pink tc montserrat mb3">Your Details</h1>
         <StatusBar type="active">1. Basic Details</StatusBar>

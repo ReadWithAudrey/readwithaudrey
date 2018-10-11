@@ -11,7 +11,7 @@ const Footer = () => (
       <Link to="/Story/" className="no-underline white ph1">
         Our Story
       </Link>
-      <Link to="/FAQs/" className="no-underline white ph1">
+      <Link to="/faq/" className="no-underline white ph1">
         FAQs
       </Link>
       <Link to="/contact/" className="no-underline white ph1">
