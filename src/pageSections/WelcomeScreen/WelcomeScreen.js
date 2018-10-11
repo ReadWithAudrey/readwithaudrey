@@ -1,7 +1,7 @@
 import React from 'react'
 import Welcome from './WelcomeScreen.style'
 import { Link } from 'gatsby'
-import { Button } from '../index'
+import { Button } from '../../components/'
 import PropTypes from 'prop-types'
 import bookpeople from '../../images/testrwalogo.png'
 
