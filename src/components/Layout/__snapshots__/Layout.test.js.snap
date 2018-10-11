@@ -3,22 +3,69 @@
 exports[`Layout renders correctly 1`] = `
 Array [
   <header
-    className="sc-bdVaJa hzJmbW"
+    className="sc-bdVaJa flex items-center justify-center ph3 pv2 montserrat white bg-green w-100 f3 kMnosB"
   >
+    <img
+      alt="book icon"
+      className="h2 ph2"
+      src="test-file-stub"
+    />
     Audrey
   </header>,
+  <div
+    className="flex flex-column items-center justify-center"
+  />,
   <footer
-    className="sc-bwzfXH gvypoN"
+    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 dAIpGc"
   >
     <span
-      className="sc-htpNat emjJXy"
+      className="sc-htpNat flex justify-center items-center bg-green jbutSu"
     >
-      Home | Our Story | FAQs | Contact Us
+      <Link
+        className="no-underline white ph1"
+        to="/"
+      >
+        Home
+      </Link>
+       
+      <Link
+        className="no-underline white ph1"
+        to="/Story/"
+      >
+        Our Story
+      </Link>
+       
+      <Link
+        className="no-underline white ph1"
+        to="/FAQs/"
+      >
+        FAQs
+      </Link>
+       
+      <Link
+        className="no-underline white ph1"
+        to="/Contact/"
+      >
+        Contact Us
+      </Link>
     </span>
     <span
-      className="sc-bxivhb bckNHt"
+      className="sc-bxivhb flex justify-center items-center bg-white black w-100 cHkvlR"
     >
-      © Audrey | Terms | Privacy
+      © Audrey | 
+      <Link
+        className="no-underline black ph1"
+        to="/Terms/"
+      >
+        Terms
+      </Link>
+       | 
+      <Link
+        className="no-underline black ph1"
+        to="/Privacy/"
+      >
+        Privacy
+      </Link>
     </span>
   </footer>,
 ]
