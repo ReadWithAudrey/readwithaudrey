@@ -14,7 +14,7 @@ const Footer = () => (
       <Link to="/faq/" className="no-underline white ph1">
         FAQs
       </Link>
-      <Link to="/Contact/" className="no-underline white ph1">
+      <Link to="/contact/" className="no-underline white ph1">
         Contact Us
       </Link>
     </FooterNav>

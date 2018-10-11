@@ -3,17 +3,21 @@
 exports[`Layout renders correctly 1`] = `
 Array [
   <header
-    className="sc-bdVaJa flex items-center justify-center ph3 pv2 montserrat white bg-green w-100 f3 kMnosB"
+    className="sc-bdVaJa flex items-center justify-center ph3 pv2 montserrat white bg-green w-100 f3 eKgzFu"
   >
     <img
       alt="book icon"
       className="h2 ph2"
       src="test-file-stub"
     />
-    Audrey
+    <Link
+      to="/"
+    >
+      Audrey
+    </Link>
   </header>,
   <div
-    className="flex flex-column items-center justify-center"
+    className="flex flex-column items-center justify-center page-padding ph2"
   />,
   <footer
     className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"
@@ -35,13 +39,13 @@ Array [
       </Link>
       <Link
         className="no-underline white ph1"
-        to="/FAQs/"
+        to="/faq/"
       >
         FAQs
       </Link>
       <Link
         className="no-underline white ph1"
-        to="/Contact/"
+        to="/contact/"
       >
         Contact Us
       </Link>
