@@ -9,11 +9,12 @@ const DropDownBox = () => {
       <option value="-11">(GMT-11:00) Midway Island, Samoa</option>
       <option value="-10">(GMT-10:00) Hawaii</option>
       <option value="-9">(GMT-09:00) Alaska</option>
-      <option value="-8">(GMT-08:00) Pacific Time (US & Canada)</option>
-      <option value="-8">(GMT-08:00) Tijuana, Baja California</option>
-      <option value="-7">(GMT-07:00) Arizona</option>
-      <option value="-7">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
-      <option value="-7">(GMT-07:00) Mountain Time (US & Canada)</option>
+      <option value="-8">
+        (GMT-08:00) Pacific Time (US & Canada), Tijuaba
+      </option>
+      <option value="-7">
+        (GMT-07:00) Mountain Time (US & Canada), Arizona, La Paz
+      </option>
       <option value="-6">(GMT-06:00) Central America</option>
       <option value="-6">(GMT-06:00) Central Time (US & Canada)</option>
       <option value="-6">
