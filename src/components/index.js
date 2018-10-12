@@ -1,5 +1,6 @@
 import Layout from './Layout/Layout'
 import HomepageLayout from './HomepageLayout/HomepageLayout'
+import FormLayout from './FormLayout/FormLayout'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import InputBox from './InputBox/InputBox'
@@ -26,4 +27,5 @@ export {
   RankingBox,
   TextBox,
   TextArea,
+  FormLayout,
 }

@@ -6,7 +6,7 @@ import {
   InputBox,
   Label,
   Button,
-  Layout,
+  FormLayout,
   StatusBar,
   TextBox,
 } from '../../components/'
@@ -14,7 +14,7 @@ import {
 const Form1 = ({ data }) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter
   return (
-    <Layout>
+    <FormLayout>
       <form method="POST" action="http://localhost:5000/formPart1">
         <h1 className="f2 pink tc montserrat mb3 mt4">Your Details</h1>
         <StatusBar type="active">1. Basic Details</StatusBar>
@@ -39,9 +39,11 @@ const Form1 = ({ data }) => {
         </Link>
       </form>
       <TextBox>
-        <Link to="/" className="no-underline">Go back to the homepage</Link>
+        <Link to="/" className="no-underline">
+          Go back to the homepage
+        </Link>
       </TextBox>
-    </Layout>
+    </FormLayout>
   )
 }
 

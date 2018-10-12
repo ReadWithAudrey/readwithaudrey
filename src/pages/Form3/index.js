@@ -9,13 +9,13 @@ import {
   RadioButton,
   TextArea,
   TextBox,
-  Layout,
+  FormLayout,
 } from '../../components/'
 
 const Form3 = ({ data }) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter
   return (
-    <Layout>
+    <FormLayout>
       <form method="POST" action="http://localhost:5000/formPart1">
         <h1 className="f2 pink tc montserrat mb3 mt4">Your Bio</h1>
         <StatusBar>
@@ -43,10 +43,7 @@ const Form3 = ({ data }) => {
           <Button type="register">Submit</Button>
         </Link>
       </form>
-      <TextBox>
-        <Link to="/" className="no-underline">Go back to the homepage</Link>
-      </TextBox>
-    </Layout>
+    </FormLayout>
   )
 }
 
