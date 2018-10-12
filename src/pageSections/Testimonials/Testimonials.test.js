@@ -1,9 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Examples from './Examples'
+import Testimonials from './Testimonials'
 
 describe('Examples component snapshot test', () =>
   it('renders correctly', () => {
-    const tree = renderer.create(<Examples />).toJSON()
+    const tree = renderer.create(<Testimonials />).toJSON()
     expect(tree).toMatchSnapshot()
   }))

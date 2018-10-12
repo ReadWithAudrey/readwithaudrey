@@ -4,13 +4,18 @@ exports[`HowItWorks component snapshot test renders correctly 1`] = `
 <div
   className="sc-kgoBCf bg-light-green flex flex-column items-center justify-around ph4 pt4 pb5 montserrat w-100 kVSTZj"
 >
+  <h2
+    className="f2 pink tc"
+  >
+    Three steps to begin your reading adventure
+  </h2>
   <div
     id="step-1-register"
   >
     <h2
-      className="f2 pink tc"
+      className="f3 pink tc"
     >
-      Register
+      Join
     </h2>
     <img
       alt="Icon of a man"
@@ -20,14 +25,14 @@ exports[`HowItWorks component snapshot test renders correctly 1`] = `
     <p
       className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
     >
-      Tell us a little bit about yourself & how you’d like to use Audrey
+      Tell us a little about yourself and decide how you’d like to use Audrey e.g. as a reader or listener, or both.
     </p>
   </div>
   <div
     id="step-2-connect"
   >
     <h2
-      className="f2 pink tc"
+      className="f3 pink tc"
     >
       Connect
     </h2>
@@ -39,14 +44,14 @@ exports[`HowItWorks component snapshot test renders correctly 1`] = `
     <p
       className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
     >
-      We will pair you with someone we think you will connect well with and help to facilitate your first reading session
+      We’ll introduce you to your reading partner, share a hand-picked book, and help facilitate your first reading session.
     </p>
   </div>
   <div
     id="step-3-read"
   >
     <h2
-      className="f2 pink tc"
+      className="f3 pink tc"
     >
       Read
     </h2>
@@ -58,8 +63,18 @@ exports[`HowItWorks component snapshot test renders correctly 1`] = `
     <p
       className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
     >
-      Each reading takes roughly 10 minutes. Afterwards you’re welcome to discuss the experience
+      Begin reading your chosen book together. Each reading takes 10-15 minutes. Enjoy interesting conversations with each other.
     </p>
   </div>
+  <Link
+    className="no-underline white w-100"
+    to="/Form1/"
+  >
+    <button
+      className="sc-htoDjs bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center fHOsVa"
+    >
+      Get started
+    </button>
+  </Link>
 </div>
 `;
