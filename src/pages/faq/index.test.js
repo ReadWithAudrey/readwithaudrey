@@ -4,7 +4,6 @@ import FAQ from './index.js'
 
 describe('FAQ page snapshot test', () =>
   it('renders correctly', () => {
-    // console.log(Thankyou)
     const tree = renderer.create(<FAQ />).toJSON()
     expect(tree).toMatchSnapshot()
   }))

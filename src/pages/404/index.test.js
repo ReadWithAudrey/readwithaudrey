@@ -4,7 +4,6 @@ import NotFoundPage from './index.js'
 
 describe('NotFoundPage page snapshot test', () =>
   it('renders correctly', () => {
-    // console.log(Thankyou)
     const tree = renderer.create(<NotFoundPage />).toJSON()
     expect(tree).toMatchSnapshot()
   }))
