@@ -2,7 +2,7 @@
 
 exports[`HowItWorks component snapshot test renders correctly 1`] = `
 <div
-  className="sc-kgoBCf bg-light-green flex flex-column items-center justify-around ph4 pt4 pb5 montserrat w-100 kVSTZj"
+  className="sc-kGXeez bg-light-green flex flex-column items-center justify-around ph4 pt4 pb5 montserrat w-100 eIIwaK"
 >
   <div
     id="step-1-register"
