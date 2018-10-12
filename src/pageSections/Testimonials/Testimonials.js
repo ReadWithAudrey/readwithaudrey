@@ -36,9 +36,9 @@ const Testimonials = () => (
     </TextBox>
 
     <p className="f4 tc">
-      Every week people are reading to each other all around the world.
+      Every week people are reading to each other all around the world. Are you
+      read to join them?
     </p>
-    <p className="f4 tc">Are you ready to join the Audrey community?</p>
     <Link to="/Form1/" className="no-underline white w-100">
       <Button type="register">Get started</Button>
     </Link>
