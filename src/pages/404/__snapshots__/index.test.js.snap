@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`thankyou page snapshot test renders correctly 1`] = `
+exports[`NotFoundPage page snapshot test renders correctly 1`] = `
 Array [
   <header
     className="sc-bdVaJa flex items-center justify-between ph3 montserrat white bg-green w-100 f3 chiVga"
@@ -34,70 +34,11 @@ Array [
   <div
     className="flex flex-column items-center justify-center page-padding ph4"
   >
-    <h1
-      className="f3 pink tc montserrat mb3"
-    >
-      Thank You
+    <h1>
+      NOT FOUND
     </h1>
-    <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
-    >
-      Thank you! We’ve received your registration and we will begin to pair you up a reading partner we think you'll connect well with shortly.
-    </p>
-    <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
-    >
-      We'll email you to introduce you and your reading partner once this is complete.
-    </p>
-    <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
-    >
-      If you have any questions in the meantime, please do not hesitate to contact us at
-       
-      <a
-        href="mailto:readwithaudrey@gmail.com"
-      >
-        readwithaudrey@gmail.com
-      </a>
-    </p>
-    <h2
-      className="f3 pink tc montserrat mb3"
-    >
-      Help Spread The Word
-    </h2>
-    <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
-    >
-      Why not share the story of Audrey and help us spread the word?
-    </p>
-    <h3
-      className="f5 pink tc montserrat mb3"
-    >
-      Share On
-    </h3>
-    <img
-      alt="Facebook"
-      className="fl"
-      src="test-file-stub"
-    />
-    <img
-      alt="Twitter"
-      className="fl"
-      src="test-file-stub"
-    />
-    <img
-      alt="Email"
-      className="fl"
-      src="test-file-stub"
-    />
-    <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
-    >
-      <Link
-        to="/"
-      >
-        Go back to the homepage
-      </Link>
+    <p>
+      You just hit a route that doesn't exist... the sadness.
     </p>
   </div>,
   <footer

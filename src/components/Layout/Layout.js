@@ -11,11 +11,11 @@ import '../../styles/index.css'
 import { Header, Footer } from '../index.js'
 
 export const PureLayout = ({ children, data }) => {
-  console.log(typeof data)
+  const title = data !== undefined ? data.site.siteMetadata.title : 'Audrey'
   return (
     <React.Fragment>
       <Helmet
-        title={data.site.siteMetadata.title}
+        title={title}
         meta={[
           { name: 'description', content: 'Sample' },
           { name: 'keywords', content: 'sample, something' },
@@ -23,7 +23,7 @@ export const PureLayout = ({ children, data }) => {
       >
         <html lang="en" />
       </Helmet>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={title} />
       <div className="flex flex-column items-center justify-center page-padding ph4">
         {children}
       </div>
@@ -32,7 +32,7 @@ export const PureLayout = ({ children, data }) => {
   )
 }
 
-export const Layout = ({ children }) => (
+const QueryLayout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -51,8 +51,15 @@ PureLayout.propTypes = {
   children: PropTypes.node,
   data: PropTypes.object,
 }
-Layout.propTypes = {
+QueryLayout.propTypes = {
   children: PropTypes.node,
+}
+
+let Layout
+if (process.env.NODE_ENV === 'test') {
+  Layout = PureLayout
+} else {
+  Layout = QueryLayout
 }
 
 export default Layout

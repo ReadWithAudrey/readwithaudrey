@@ -1,10 +1,10 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Thankyou from './index.js'
+import NotFoundPage from './index.js'
 
-describe('thankyou page snapshot test', () =>
+describe('NotFoundPage page snapshot test', () =>
   it('renders correctly', () => {
     // console.log(Thankyou)
-    const tree = renderer.create(<Thankyou />).toJSON()
+    const tree = renderer.create(<NotFoundPage />).toJSON()
     expect(tree).toMatchSnapshot()
   }))
