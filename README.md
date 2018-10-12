@@ -21,7 +21,7 @@ Built with:
 * NetlifyCMS
 * Netlify
 * Heroku
-* Mailgun
+* SendGrid
 * Mailchimp
 
 
