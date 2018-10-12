@@ -18,12 +18,12 @@ const Form3 = ({ data }) => {
     <Layout>
       <form method="POST" action="http://localhost:5000/formPart1">
         <h1 className="f2 pink tc montserrat mb3 mt4">Your Bio</h1>
-        <StatusBar>
-          <Link to="/Form1">1. Basic Details</Link>
-        </StatusBar>
-        <StatusBar>
-          <Link to="/Form2">2. Further Details</Link>
-        </StatusBar>
+        <Link to="/Form1">
+          <StatusBar>1. Basic Details</StatusBar>
+        </Link>
+        <Link to="/Form2">
+          <StatusBar>2. Further Details</StatusBar>
+        </Link>
         <StatusBar type="active">3. Your Bio</StatusBar>
         <TextBox>
           We will use your bio to find you a reading partner. This is also the
@@ -43,9 +43,9 @@ const Form3 = ({ data }) => {
           <Button type="register">Submit</Button>
         </Link>
       </form>
-      <TextBox>
-        <Link to="/" className="no-underline">Go back to the homepage</Link>
-      </TextBox>
+      <Link to="/" className="no-underline">
+        <TextBox>Go back to the homepage</TextBox>
+      </Link>
     </Layout>
   )
 }

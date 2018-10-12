@@ -109,16 +109,16 @@ Array [
         </button>
       </Link>
     </form>
-    <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+    <Link
+      className="no-underline"
+      to="/"
     >
-      <Link
-        className="no-underline"
-        to="/"
+      <p
+        className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
       >
         Go back to the homepage
-      </Link>
-    </p>
+      </p>
+    </Link>
   </div>,
   <footer
     className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"

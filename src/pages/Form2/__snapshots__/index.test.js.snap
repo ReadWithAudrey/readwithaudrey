@@ -43,29 +43,29 @@ Array [
       >
         Further Details
       </h1>
-      <section
-        className="sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
+      <Link
+        to="/Form1/"
       >
-        <Link
-          to="/Form1/"
+        <section
+          className="sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
         >
           1. Basic Details
-        </Link>
-      </section>
+        </section>
+      </Link>
       <section
         className="sc-iwsKbI fl w-third v-mid bg-green montserrat inTyLg sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
       >
         2. Further Details
       </section>
-      <section
-        className="sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
+      <Link
+        to="/Form3/"
       >
-        <Link
-          to="/Form3/"
+        <section
+          className="sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
         >
           3. Your Bio
-        </Link>
-      </section>
+        </section>
+      </Link>
       <p
         className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
       >
@@ -434,16 +434,16 @@ Array [
         </button>
       </Link>
     </form>
-    <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+    <Link
+      className="no-underline"
+      to="/"
     >
-      <Link
-        className="no-underline"
-        to="/"
+      <p
+        className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
       >
         Go back to the homepage
-      </Link>
-    </p>
+      </p>
+    </Link>
   </div>,
   <footer
     className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"

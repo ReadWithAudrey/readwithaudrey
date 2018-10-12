@@ -38,11 +38,9 @@ const Form1 = ({ data }) => {
           <Button type="register">Continue</Button>
         </Link>
       </form>
-      <TextBox>
-        <Link to="/" className="no-underline">
-          Go back to the homepage
-        </Link>
-      </TextBox>
+      <Link to="/" className="no-underline">
+        <TextBox>Go back to the homepage</TextBox>
+      </Link>
     </Layout>
   )
 }
