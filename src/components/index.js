@@ -1,6 +1,5 @@
 import Layout from './Layout/Layout'
 import HomepageLayout from './HomepageLayout/HomepageLayout'
-import FormLayout from './FormLayout/FormLayout'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import InputBox from './InputBox/InputBox'
@@ -12,6 +11,7 @@ import RadioButton from './RadioButton/RadioButton'
 import TextBox from './TextBox/TextBox'
 import RankingBox from './RankingBox/RankingBox'
 import TextArea from './TextArea/TextArea'
+import FormSection from './FormSection/FormSection'
 
 export {
   HomepageLayout,
@@ -27,5 +27,5 @@ export {
   RankingBox,
   TextBox,
   TextArea,
-  FormLayout,
+  FormSection,
 }
