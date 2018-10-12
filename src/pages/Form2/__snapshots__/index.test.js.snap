@@ -452,7 +452,7 @@ Array [
       className="sc-htpNat flex items-center justify-around bg-green w-100 jbutSu"
     >
       <Link
-        className="no-underline white ph1"
+        className="no-underline white ph1 "
         to="/"
       >
         Home
