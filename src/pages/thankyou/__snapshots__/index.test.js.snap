@@ -53,13 +53,12 @@ Array [
       className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
     >
       If you have any questions in the meantime, please do not hesitate to contact us at
-       
-      <a
-        href="mailto:readwithaudrey@gmail.com"
-      >
-        readwithaudrey@gmail.com
-      </a>
     </p>
+    <a
+      href="mailto:readwithaudrey@gmail.com"
+    >
+      readwithaudrey@gmail.com
+    </a>
     <h2
       className="f3 pink tc montserrat mb3"
     >
@@ -90,15 +89,15 @@ Array [
       className="fl"
       src="test-file-stub"
     />
-    <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+    <Link
+      to="/"
     >
-      <Link
-        to="/"
+      <p
+        className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
       >
         Go back to the homepage
-      </Link>
-    </p>
+      </p>
+    </Link>
   </div>,
   <footer
     className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"

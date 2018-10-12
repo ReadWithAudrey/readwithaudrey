@@ -20,9 +20,9 @@ const ThankYou = () => {
       </TextBox>
       <TextBox>
         If you have any questions in the meantime, please do not hesitate to
-        contact us at{' '}
-        <a href="mailto:readwithaudrey@gmail.com">readwithaudrey@gmail.com</a>
+        contact us at
       </TextBox>
+      <a href="mailto:readwithaudrey@gmail.com">readwithaudrey@gmail.com</a>
       <h2 className="f3 pink tc montserrat mb3">Help Spread The Word</h2>
       <TextBox>
         Why not share the story of Audrey and help us spread the word?
@@ -31,9 +31,9 @@ const ThankYou = () => {
       <img src={facebook} alt="Facebook" className="fl" />
       <img src={twitter} alt="Twitter" className="fl" />
       <img src={email} alt="Email" className="fl" />
-      <TextBox>
-        <Link to="/">Go back to the homepage</Link>
-      </TextBox>
+      <Link to="/">
+        <TextBox>Go back to the homepage</TextBox>
+      </Link>
     </Layout>
   )
 }
