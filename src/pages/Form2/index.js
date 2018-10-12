@@ -21,18 +21,18 @@ const Form2 = ({ data }) => {
     <Layout>
       <h1 className="f2 pink tc montserrat mb3 mt4">Further Details</h1>
       <FormSection>
+        <StatusBar>
+          <Link to="/Form1/">1. Basic Details</Link>
+        </StatusBar>
+        <StatusBar type="active">2. Further Details</StatusBar>
+        <StatusBar>
+          <Link to="/Form3/">3. Your Bio</Link>
+        </StatusBar>
+        <TextBox>
+          In order to find the best reading partner for you, we need a little
+          bit more information
+        </TextBox>
         <form method="POST" action="http://localhost:5000/formPart1">
-          <StatusBar>
-            <Link to="/Form1/">1. Basic Details</Link>
-          </StatusBar>
-          <StatusBar type="active">2. Further Details</StatusBar>
-          <StatusBar>
-            <Link to="/Form3/">3. Your Bio</Link>
-          </StatusBar>
-          <TextBox>
-            In order to find the best reading partner for you, we need a little
-            bit more information
-          </TextBox>
           <Label>{q1}</Label>
           <RadioButton>Male</RadioButton>
           <RadioButton>Female</RadioButton>
