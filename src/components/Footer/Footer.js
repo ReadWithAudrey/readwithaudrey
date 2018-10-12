@@ -5,7 +5,7 @@ import { StyledFooter, FooterNav, Copyright } from './Footer.style'
 const Footer = () => (
   <StyledFooter>
     <FooterNav>
-      <Link to="/" className="no-underline white ph1">
+      <Link to="/" className="no-underline white ph1 ">
         Home
       </Link>
       <Link to="/story/" className="no-underline white ph1">
