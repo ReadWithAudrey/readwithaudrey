@@ -25,11 +25,6 @@ export const Nav = styled.nav.attrs({
   a:visited {
     color: #fff;
   }
-  @media (min-width: 480px) {
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
-  }
 `
 export const DesktopMenu = styled.section.attrs({
   className: 'montserrat',
@@ -41,7 +36,12 @@ export const DesktopMenu = styled.section.attrs({
     padding: 10px;
   }
   a:hover {
-    text-decoration: underline;
+    background: --var(--pink);
+  }
+  @media (min-width: 480px) {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
   }
 `
 export const BurgerMenu = styled.section`
