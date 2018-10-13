@@ -13,7 +13,7 @@ exports[`Aboutpage component snapshot test renders correctly 1`] = `
       What is Audrey?
     </h2>
     <p
-      className="sc-jzJRlG montserrat f5 tc lh-copy etWKQu"
+      className="sc-kgoBCf montserrat f5 tc lh-copy cGiKxM"
     >
       Audrey is a platform which matches readers with listeners to read thought-provoking fiction and non-fiction aloud together.
     </p>
@@ -27,7 +27,7 @@ exports[`Aboutpage component snapshot test renders correctly 1`] = `
       Who is it for?
     </h2>
     <p
-      className="sc-jzJRlG montserrat f5 tc lh-copy etWKQu"
+      className="sc-kgoBCf montserrat f5 tc lh-copy cGiKxM"
     >
       People who enjoy reading and social connection, and like to hear diverse viewpoints.
     </p>
@@ -41,7 +41,7 @@ exports[`Aboutpage component snapshot test renders correctly 1`] = `
       Who do I read with?
     </h2>
     <p
-      className="sc-jzJRlG montserrat f5 tc lh-copy etWKQu"
+      className="sc-kgoBCf montserrat f5 tc lh-copy cGiKxM"
     >
       We match people with shared interests, but diverse life journeys. You can choose to be either the reader or listener.
     </p>
