@@ -25,45 +25,39 @@ export const Nav = styled.nav.attrs({
   a:visited {
     color: #fff;
   }
-
-  .navWide {
-    display: none;
-    margin: 0 auto;
-
-    .wideDiv {
-      text-align: right;
-      display: flex;
-      justify-content: space-between;
-
-      a {
-        text-decoration: none;
-        display: inline-block;
-        padding: 10px;
-      }
-      a:hover {
-        background: --var-pink;
-      }
-    }
-  }
-
   @media (min-width: 480px) {
-    .navWide {
-      display: block;
-    }
-
-    .navNarrow {
-      display: none;
-    }
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+  }
+`
+export const DesktopMenu = styled.section.attrs({
+  className: 'montserrat',
+})`
+  display: none;
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+`
+export const BurgerMenu = styled.section`
+  @media (min-width: 480px) {
+    display: none;
   }
 `
 
 export const MobileMenu = styled.section.attrs({
-  className: 'montserrat  bg-green tc f4',
+  className: 'montserrat  bg-green tc f4 page-padding',
 })`
   display: block;
   a {
     text-decoration: none;
     display: block;
-    padding: 0.25em 0;
+    padding: 1.3em 0;
     color: #fff;
+  }
 `
