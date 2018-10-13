@@ -6,7 +6,6 @@ import {
   DesktopMenu,
   BurgerMenu,
 } from './Header.style'
-import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import openbook from '../../images/open-book.svg'
 
@@ -56,10 +55,6 @@ class Header extends Component {
       </React.Fragment>
     )
   }
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
 }
 
 export default Header
