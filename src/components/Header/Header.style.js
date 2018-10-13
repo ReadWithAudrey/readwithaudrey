@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const HeaderStyled = styled.header.attrs({
   className:
-    'flex items-center justify-between ph3 montserrat white bg-green w-100 f3',
+    'flex items-center justify-between ph3 pv2 montserrat white bg-green w-100 f3',
 })`
   position: fixed;
   top: 0;
@@ -10,6 +10,8 @@ const HeaderStyled = styled.header.attrs({
   margin-bottom: 7vh;
   a {
     color: #fff;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
   }
 `
