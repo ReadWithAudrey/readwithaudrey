@@ -70,54 +70,32 @@ Array [
     </nav>
   </header>,
   <div
-    className="flex flex-column items-center justify-center page-padding ph4"
+    className="page-padding ph4 w-100 w-70-l center"
   />,
   <footer
-    className="sc-EHOje flex flex-column justify-center items-center montserrat bg-green w-100 kSzTaY"
+    className="sc-EHOje flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green jvzENE"
   >
     <span
-      className="sc-bZQynM flex items-center justify-around bg-green w-100 jrqyAQ"
-    >
-      <Link
-        className="no-underline white ph1 "
-        to="/"
-      >
-        Home
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/story/"
-      >
-        Our Story
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/faq/"
-      >
-        FAQs
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/contact/"
-      >
-        Contact Us
-      </Link>
-    </span>
-    <span
-      className="sc-gzVnrw flex justify-around items-center bg-white black w-100 hZtFAF"
+      className="sc-bZQynM flex justify-around items-center bg-white black w-100  pa2 jrqyAQ"
     >
       © Audrey
       <Link
         className="no-underline black ph1"
-        to="/Terms/"
+        to="/terms/"
       >
         Terms
       </Link>
       <Link
         className="no-underline black ph1"
-        to="/Privacy/"
+        to="/privacy/"
       >
         Privacy
+      </Link>
+      <Link
+        className="no-underline black ph1"
+        to="/contact/"
+      >
+        Contact
       </Link>
     </span>
   </footer>,

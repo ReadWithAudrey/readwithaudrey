@@ -11,6 +11,7 @@ import RadioButton from './RadioButton/RadioButton'
 import TextBox from './TextBox/TextBox'
 import RankingBox from './RankingBox/RankingBox'
 import TextArea from './TextArea/TextArea'
+import FormSection from './FormSection/FormSection'
 
 export {
   HomepageLayout,
@@ -26,4 +27,5 @@ export {
   RankingBox,
   TextBox,
   TextArea,
+  FormSection,
 }
