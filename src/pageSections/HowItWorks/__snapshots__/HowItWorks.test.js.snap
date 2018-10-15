@@ -2,11 +2,7 @@
 
 exports[`HowItWorks component snapshot test renders correctly 1`] = `
 <div
-<<<<<<< HEAD
-  className="sc-chPdSV bg-light-green flex flex-column items-center justify-around ph4 pt4 pb5 montserrat w-100 byfFmt"
-=======
-  className="sc-kGXeez bg-light-green flex flex-column items-center justify-around ph4 pt4 pb5 montserrat w-100 eIIwaK"
->>>>>>> master
+  className="sc-kgoBCf bg-light-green flex flex-column items-center justify-around ph4 pt4 pb5 montserrat w-100 kVSTZj"
 >
   <h2
     className="f2 pink tc"
@@ -75,7 +71,7 @@ exports[`HowItWorks component snapshot test renders correctly 1`] = `
     to="/Form1/"
   >
     <button
-      className="sc-htoDjs bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center fHOsVa"
+      className="sc-gzVnrw bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center giBLup"
     >
       Get started
     </button>
