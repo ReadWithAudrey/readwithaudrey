@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Story from './index.js'
+import Story from './index'
 
 describe('Story page snapshot test', () =>
   it('renders correctly', () => {
