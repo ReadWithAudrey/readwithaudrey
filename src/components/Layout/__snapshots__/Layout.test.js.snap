@@ -32,7 +32,7 @@ Array [
     </Link>
   </header>,
   <div
-    className="flex flex-column items-center justify-center page-padding ph4"
+    className="page-padding ph4 w-100 w-70-l center"
   />,
   <footer
     className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Status = styled.section.attrs({
-  className: 'flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3',
+  className: 'flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3',
 })`
   min-height: 8vh;
   color: #fff;
@@ -12,7 +12,7 @@ export const Status = styled.section.attrs({
   }
 `
 export const StatusActive = styled(Status).attrs({
-  className: 'fl w-third v-mid bg-green montserrat',
+  className: 'fl w-third bg-green montserrat',
 })`
   color: #fff;
   font-weight: bold;

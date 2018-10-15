@@ -1,0 +1,18 @@
+import styled from 'styled-components'
+
+export const StyledForm = styled.section.attrs({
+  className: 'b--green',
+})`
+  color: #000;
+  margin: 0;
+  padding: 0;
+  form {
+    margin: 0px;
+    padding: 0px;
+  }
+  @media (min-width:801px)  { border: var(--green) 5px solid;
+  form {
+    padding: 20px;
+    } }
+  }
+`

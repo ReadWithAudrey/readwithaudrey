@@ -12,14 +12,15 @@ import {
   RadioButton,
   TextBox,
   Layout,
+  FormSection,
 } from '../../components/'
 
 const Form2 = ({ data }) => {
   const { q1, q2, q3, q4, q5, q6 } = data.markdownRemark.frontmatter
   return (
     <Layout>
-      <form method="POST" action="http://localhost:5000/formPart1">
-        <h1 className="f2 pink tc montserrat mb3 mt4">Further Details</h1>
+      <h1 className="f2 pink tc montserrat mb3 mt4">Further Details</h1>
+      <FormSection>
         <Link to="/Form1/">
           <StatusBar>1. Basic Details</StatusBar>
         </Link>
@@ -31,38 +32,39 @@ const Form2 = ({ data }) => {
           In order to find the best reading partner for you, we need a little
           bit more information
         </TextBox>
-        <Label>{q1}</Label>
-        <RadioButton>Male</RadioButton>
-        <RadioButton>Female</RadioButton>
-        <RadioButton>Prefer not to say</RadioButton>
-        <Label>{q2}</Label>
-        <InputBox placeholder="Age" />
-        <Label>{q3}</Label>
-        <InputBox placeholder="Country" />
-        <Label>{q4}</Label>
-        <DropDownBox />
-        <Label>{q5}</Label>
-        <RadioButton>Read</RadioButton>
-        <RadioButton>Listen</RadioButton>
-        <RadioButton>Both</RadioButton>
-        <Label>{q6}</Label>
-        <TextBox>
-          Please rank the the options below in order - favourite 1st
-        </TextBox>
-        <RankingBox placeholder="1">Several fantastic short stories</RankingBox>
-        <RankingBox placeholder="2">
-          A wonderful novella (short novel)
-        </RankingBox>
-        <RankingBox placeholder="3">
-          A fascinating work of non-fiction
-        </RankingBox>
-        <Link to="/Form3" className="no-underline">
-          <Button type="register">Continue</Button>
-        </Link>
-      </form>
-      <Link to="/" className="no-underline">
-        <TextBox>Go back to the homepage</TextBox>
-      </Link>
+        <form method="POST" action="http://localhost:5000/formPart1">
+          <Label>{q1}</Label>
+          <RadioButton>Male</RadioButton>
+          <RadioButton>Female</RadioButton>
+          <RadioButton>Prefer not to say</RadioButton>
+          <Label>{q2}</Label>
+          <InputBox placeholder="Age" />
+          <Label>{q3}</Label>
+          <InputBox placeholder="Country" />
+          <Label>{q4}</Label>
+          <DropDownBox />
+          <Label>{q5}</Label>
+          <RadioButton>Read</RadioButton>
+          <RadioButton>Listen</RadioButton>
+          <RadioButton>Both</RadioButton>
+          <Label>{q6}</Label>
+          <TextBox>
+            Please rank the the options below in order - favourite 1st
+          </TextBox>
+          <RankingBox placeholder="1">
+            Several fantastic short stories
+          </RankingBox>
+          <RankingBox placeholder="2">
+            A wonderful novella (short novel)
+          </RankingBox>
+          <RankingBox placeholder="3">
+            A fascinating work of non-fiction
+          </RankingBox>
+          <Link to="/Form3" className="no-underline">
+            <Button type="register">Continue</Button>
+          </Link>
+        </form>
+      </FormSection>
     </Layout>
   )
 }
