@@ -15,6 +15,11 @@ exports[`Homepage component snapshot test renders correctly 1`] = `
       <br />
        Together
     </h1>
+    <h2
+      className="green tc f4 montserrat m0"
+    >
+      Let's find you a reading partner
+    </h2>
     <Link
       className="white no-underline w-100"
       to="/Form1/"

@@ -15,7 +15,7 @@ exports[`Aboutpage component snapshot test renders correctly 1`] = `
     <p
       className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
     >
-      Audrey is a platform which matches readers with listeners to read thought-provoking fiction and non-fiction aloud together.
+      Audrey matches readers with listeners to read thought-provoking books aloud together, sparking interesting conversations and creating meaningful relationships.
     </p>
   </div>
   <div
@@ -29,7 +29,7 @@ exports[`Aboutpage component snapshot test renders correctly 1`] = `
     <p
       className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
     >
-      People who enjoy reading and social connection, and like to hear diverse viewpoints.
+      Anyone who enjoys reading, would like to develop a sense of connectedness with someone new, and values other people’s perspectives.
     </p>
   </div>
   <div
@@ -43,7 +43,7 @@ exports[`Aboutpage component snapshot test renders correctly 1`] = `
     <p
       className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
     >
-      We match people with shared interests, but diverse life journeys. You can choose to be either the reader or listener.
+      From within our community, we’ll take care to identify a reading partner we think you’ll connect well with. Someone with some shared interests to you.
     </p>
   </div>
 </div>
