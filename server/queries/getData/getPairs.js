@@ -5,8 +5,7 @@ const getNewPairs = new Promise((resolve, reject) => {
   let allRecords = [];
   base('pairings')
     .select({
-      // Selecting the first 3 records in Grid view:
-      filterByFormula: 'AND({confirm_pairing}, NOT({pairing_email_sent}))',
+      filterByFormula: 'AND({user1_id}, {user2_id}, {book_id},{confirm_pairing}, NOT({pairing_email_sent}))',
       fields: [
         'user1_name',
         'user1_email',
