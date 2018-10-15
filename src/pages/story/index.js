@@ -2,7 +2,7 @@ import React from 'react'
 
 import { TextBox, Layout } from '../../components/'
 
-const OurStory = () => {
+const Story = () => {
   return (
     <Layout>
       <h1 className="f2 pink tc montserrat mb3 mt4">Our Story</h1>
@@ -26,4 +26,4 @@ const OurStory = () => {
   )
 }
 
-export default OurStory
+export default Story
