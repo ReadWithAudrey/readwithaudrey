@@ -3,33 +3,71 @@
 exports[`Form2 page snapshot test renders correctly 1`] = `
 Array [
   <header
-    className="sc-bdVaJa flex items-center justify-between ph3 montserrat white bg-green w-100 f3 chiVga"
+    className="sc-bdVaJa flex items-center justify-between ph3 pv2 montserrat white bg-green w-100 f3 gzTCKs"
   >
     <div
       className="flex items-center"
       id="header-left"
     >
-      <img
-        alt="book icon"
-        className="h2 ph2"
-        src="test-file-stub"
-      />
+      <Link
+        to="/"
+      >
+        <img
+          alt="book icon"
+          className="h2 ph2"
+          src="test-file-stub"
+        />
+      </Link>
       <Link
         to="/"
       >
         Audrey
       </Link>
     </div>
-    <Link
-      className="w-third"
-      to="/Form1/"
+    <nav
+      className="sc-bwzfXH w-65 w-40-l montserrat f4 gQAWUv"
     >
-      <button
-        className="sc-bZQynM bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat krNSkU"
+      <section
+        className="sc-htpNat montserrat bRYTxq"
       >
-        Join Us
-      </button>
-    </Link>
+        <Link
+          to="/story/"
+        >
+          Why?
+        </Link>
+        <Link
+          to="/faq/"
+        >
+          FAQ
+        </Link>
+        <Link
+          to="/contact/"
+        >
+          Contact
+        </Link>
+        <Link
+          className="mv2 white br2 ba bw1 b--white"
+          to="/Form1"
+        >
+          Join Us
+        </Link>
+      </section>
+      <section
+        className="sc-bxivhb igYaY"
+      >
+        <a
+          className="dtc fr tr v-mid dn-ns p0-ns link dim white"
+          onClick={[Function]}
+        >
+          <span
+            className="db w2 mt1 mb2 bw2 pb2 bt bb b--white"
+          />
+          <span
+            className="db w2 mt1 bw2 pb1 bt b--white"
+          />
+        </a>
+      </section>
+    </nav>
   </header>,
   <div
     className="flex flex-column items-center justify-center page-padding ph4"
@@ -40,19 +78,19 @@ Array [
       Further Details
     </h1>
     <section
-      className="sc-chPdSV b--green jHBcBB"
+      className="sc-dxgOiQ b--green cGznzi"
     >
       <Link
         to="/Form1/"
       >
         <section
-          className="sc-htoDjs flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 fnsbPi"
+          className="sc-gqjmRU flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 bypQGG"
         >
           1. Basic Details
         </section>
       </Link>
       <section
-        className="sc-dnqmqq fl w-third bg-green montserrat icLxSS sc-htoDjs flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 fnsbPi"
+        className="sc-VigVT fl w-third bg-green montserrat ehcWMy sc-gqjmRU flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 bypQGG"
       >
         2. Further Details
       </section>
@@ -60,13 +98,13 @@ Array [
         to="/Form3/"
       >
         <section
-          className="sc-htoDjs flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 fnsbPi"
+          className="sc-gqjmRU flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 bypQGG"
         >
           3. Your Bio
         </section>
       </Link>
       <p
-        className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+        className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
       >
         In order to find the best reading partner for you, we need a little bit more information
       </p>
@@ -75,80 +113,80 @@ Array [
         method="POST"
       >
         <label
-          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
+          className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
         >
           Gender
         </label>
         <section
-          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
         >
           <input
-            className="sc-gqjmRU fcuJZS"
+            className="sc-jzJRlG fsyDfV"
             name="Male"
             type="radio"
             value="Male"
           />
           <span
-            className="sc-VigVT kXTXQI"
+            className="sc-cSHVUG bVIEwX"
           >
             Male
           </span>
         </section>
         <section
-          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
         >
           <input
-            className="sc-gqjmRU fcuJZS"
+            className="sc-jzJRlG fsyDfV"
             name="Female"
             type="radio"
             value="Female"
           />
           <span
-            className="sc-VigVT kXTXQI"
+            className="sc-cSHVUG bVIEwX"
           >
             Female
           </span>
         </section>
         <section
-          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
         >
           <input
-            className="sc-gqjmRU fcuJZS"
+            className="sc-jzJRlG fsyDfV"
             name="Prefer not to say"
             type="radio"
             value="Prefer not to say"
           />
           <span
-            className="sc-VigVT kXTXQI"
+            className="sc-cSHVUG bVIEwX"
           >
             Prefer not to say
           </span>
         </section>
         <label
-          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
+          className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
         >
           Age
         </label>
         <input
-          className="sc-bxivhb montserrat mv2 pa2 w-100 hCZtbo"
+          className="sc-gzVnrw montserrat mv2 pa2 w-100 ildXbv"
           placeholder="Age"
         />
         <label
-          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
+          className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
         >
           Location
         </label>
         <input
-          className="sc-bxivhb montserrat mv2 pa2 w-100 hCZtbo"
+          className="sc-gzVnrw montserrat mv2 pa2 w-100 ildXbv"
           placeholder="Country"
         />
         <label
-          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
+          className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
         >
           Time Zone
         </label>
         <select
-          className="sc-iwsKbI montserrat w-100  mv2 pa2 w-90 iXhDte"
+          className="sc-jTzLTM montserrat w-100  mv2 pa2 w-90 gFxkFW"
         >
           <option
             value="-12"
@@ -328,100 +366,100 @@ Array [
           </option>
         </select>
         <label
-          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
+          className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
         >
           Reader, Listener or Both?
         </label>
         <section
-          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
         >
           <input
-            className="sc-gqjmRU fcuJZS"
+            className="sc-jzJRlG fsyDfV"
             name="Read"
             type="radio"
             value="Read"
           />
           <span
-            className="sc-VigVT kXTXQI"
+            className="sc-cSHVUG bVIEwX"
           >
             Read
           </span>
         </section>
         <section
-          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
         >
           <input
-            className="sc-gqjmRU fcuJZS"
+            className="sc-jzJRlG fsyDfV"
             name="Listen"
             type="radio"
             value="Listen"
           />
           <span
-            className="sc-VigVT kXTXQI"
+            className="sc-cSHVUG bVIEwX"
           >
             Listen
           </span>
         </section>
         <section
-          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
         >
           <input
-            className="sc-gqjmRU fcuJZS"
+            className="sc-jzJRlG fsyDfV"
             name="Both"
             type="radio"
             value="Both"
           />
           <span
-            className="sc-VigVT kXTXQI"
+            className="sc-cSHVUG bVIEwX"
           >
             Both
           </span>
         </section>
         <label
-          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
+          className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
         >
           What would you like to read?
         </label>
         <p
-          className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+          className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
         >
           Please rank the the options below in order - favourite 1st
         </p>
         <section
-          className="sc-fjdhpX montserrat f5 lh-copy mb3 kGEFSP"
+          className="sc-chPdSV montserrat f5 lh-copy mb3 gPRYKl"
         >
           <input
-            className="sc-jzJRlG cZsaBz"
+            className="sc-kgoBCf hqvUHk"
             placeholder="1"
           />
           <span
-            className="sc-cSHVUG ml1 WCfjr"
+            className="sc-kGXeez ml1 clAZHx"
           >
             Several fantastic short stories
           </span>
         </section>
         <section
-          className="sc-fjdhpX montserrat f5 lh-copy mb3 kGEFSP"
+          className="sc-chPdSV montserrat f5 lh-copy mb3 gPRYKl"
         >
           <input
-            className="sc-jzJRlG cZsaBz"
+            className="sc-kgoBCf hqvUHk"
             placeholder="2"
           />
           <span
-            className="sc-cSHVUG ml1 WCfjr"
+            className="sc-kGXeez ml1 clAZHx"
           >
             A wonderful novella (short novel)
           </span>
         </section>
         <section
-          className="sc-fjdhpX montserrat f5 lh-copy mb3 kGEFSP"
+          className="sc-chPdSV montserrat f5 lh-copy mb3 gPRYKl"
         >
           <input
-            className="sc-jzJRlG cZsaBz"
+            className="sc-kgoBCf hqvUHk"
             placeholder="3"
           />
           <span
-            className="sc-cSHVUG ml1 WCfjr"
+            className="sc-kGXeez ml1 clAZHx"
           >
             A fascinating work of non-fiction
           </span>
@@ -431,7 +469,7 @@ Array [
           to="/Form3"
         >
           <button
-            className="sc-gzVnrw bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center giBLup"
+            className="sc-gZMcBi bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center gTtpNx"
           >
             Continue
           </button>
@@ -440,10 +478,10 @@ Array [
     </section>
   </div>,
   <footer
-    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green uTxCW"
+    className="sc-EHOje flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green jvzENE"
   >
     <span
-      className="sc-htpNat flex justify-around items-center bg-white black w-100  pa2 jbutSu"
+      className="sc-bZQynM flex justify-around items-center bg-white black w-100  pa2 jrqyAQ"
     >
       © Audrey
       <Link

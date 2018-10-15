@@ -3,33 +3,71 @@
 exports[`FAQ page snapshot test renders correctly 1`] = `
 Array [
   <header
-    className="sc-bdVaJa flex items-center justify-between ph3 montserrat white bg-green w-100 f3 chiVga"
+    className="sc-bdVaJa flex items-center justify-between ph3 pv2 montserrat white bg-green w-100 f3 gzTCKs"
   >
     <div
       className="flex items-center"
       id="header-left"
     >
-      <img
-        alt="book icon"
-        className="h2 ph2"
-        src="test-file-stub"
-      />
+      <Link
+        to="/"
+      >
+        <img
+          alt="book icon"
+          className="h2 ph2"
+          src="test-file-stub"
+        />
+      </Link>
       <Link
         to="/"
       >
         Audrey
       </Link>
     </div>
-    <Link
-      className="w-third"
-      to="/Form1/"
+    <nav
+      className="sc-bwzfXH w-65 w-40-l montserrat f4 gQAWUv"
     >
-      <button
-        className="sc-bZQynM bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat krNSkU"
+      <section
+        className="sc-htpNat montserrat bRYTxq"
       >
-        Join Us
-      </button>
-    </Link>
+        <Link
+          to="/story/"
+        >
+          Why?
+        </Link>
+        <Link
+          to="/faq/"
+        >
+          FAQ
+        </Link>
+        <Link
+          to="/contact/"
+        >
+          Contact
+        </Link>
+        <Link
+          className="mv2 white br2 ba bw1 b--white"
+          to="/Form1"
+        >
+          Join Us
+        </Link>
+      </section>
+      <section
+        className="sc-bxivhb igYaY"
+      >
+        <a
+          className="dtc fr tr v-mid dn-ns p0-ns link dim white"
+          onClick={[Function]}
+        >
+          <span
+            className="db w2 mt1 mb2 bw2 pb2 bt bb b--white"
+          />
+          <span
+            className="db w2 mt1 bw2 pb1 bt b--white"
+          />
+        </a>
+      </section>
+    </nav>
   </header>,
   <div
     className="flex flex-column items-center justify-center page-padding ph4"
@@ -45,17 +83,17 @@ Array [
       What to expect
     </h2>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       The Audrey experience comprises of five separate ten minute reading sessions. We choose a surprise book for you and divide it into 5 chapters to correspond with the five reading sessions. There’s a real mix of how regularly community members meet to read together. Some reading partners do one regular session each week, and therefore read the book over the course of about a month. Others read together over consecutive evenings and complete the book within a week. It’s really up to you and your reading partner. What we do encourage is that you only read one chapter during each session – even if it’s tempting to read on.
     </p>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       Our community spend about ten minutes reading together, and then anything from just a couple of minutes right up to an hour chatting. This usually starts with a conversation about the text, and moves on to wider topics covering almost anything.
     </p>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       Most people feedback and tell us that the intimacy of reading together helps them to feel at ease with their partner and allows them to build a deep and meaningful social connection together. Almost everyone who tries Audrey feeds back saying the experience helps them to feel relaxed. Our community often find themselves engaged in conversations with their reading partner that they might not usually have with the people in their day to day lives.
     </p>
@@ -65,22 +103,22 @@ Array [
       Before the reading sessions
     </h2>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       People can choose to be either the reader or listener, or have a go at both.
     </p>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       It’s highly unlikely you’ll know the person you are partnered with, but we’ve attempted to pair readers and listeners who we think will connect well and enjoy each other’s company.
     </p>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       We will introduce you to each other over email. We’ll share bios, provide contact details, and assist with arranging a time for the first reading session. We will provide details about the book you’ll be reading, so that you both have an idea of what to expect before the reading session.
     </p>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       We will make sure you both receive a copy of the book (usually in a digital format) before the first reading session. This is usually attached to the email when we introduce you to your reading partner.
     </p>
@@ -90,22 +128,22 @@ Array [
       The reading sessions
     </h2>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       You only need a spare 10 minutes to have a reading session. We think Mondays are the best day to start reading sessions. In fact we think Mondays are the best day for all reading sessions. We gently encourage this habit within the Audrey community. Monday's Audrey Day! It's helpful for many, but it's not practical for everyone. Therefore we suggest Tuesdays as back up. If this isn’t possible either, then we kick you out.
     </p>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       Reading sessions can take place over the phone (audio only) or you can use a messaging app (e.g. Whatsapp, Facebook Messenger or Apple Facetime) where you’ll have access to audio and video. You can decide this with your reading partner once you’ve been introduced over email.
     </p>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       For each session you can expect the reading to take 10 minutes. Afterwards you’re welcome to open up conversations about the reading, but this is entirely up to you. There’s complete flexibility here - some users chat for a couple of minutes, some for up to an hour... some only talk about their thoughts on the book ... others dive into topics loosely connected to the story... often users end up talking about topics completely unrelated to the book.
     </p>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       Don’t forget to agree the time for your next session before you say goodbye.
     </p>
@@ -115,26 +153,26 @@ Array [
       After the reading sessions
     </h2>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       We hope that the experience is mutually enjoyable and the book interesting and thought-provoking. It would be great to receive some feedback. Positives and negatives. Anything you enjoyed or did not enjoy about it. Ways that we could improve the experience etc.
     </p>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       If you want to read another book, either with the same person, or someone else, please let us know. We’ll be delighted to organise this for you.
     </p>
     <p
-      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
       Any questions, please get in touch.
     </p>
   </div>,
   <footer
-    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green uTxCW"
+    className="sc-EHOje flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green jvzENE"
   >
     <span
-      className="sc-htpNat flex justify-around items-center bg-white black w-100  pa2 jbutSu"
+      className="sc-bZQynM flex justify-around items-center bg-white black w-100  pa2 jrqyAQ"
     >
       © Audrey
       <Link
