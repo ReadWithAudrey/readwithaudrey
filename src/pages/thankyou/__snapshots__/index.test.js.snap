@@ -25,7 +25,7 @@ Array [
       to="/Form1/"
     >
       <button
-        className="sc-gzVnrw bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat iQUxnM"
+        className="sc-bZQynM bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat krNSkU"
       >
         Join Us
       </button>
@@ -40,17 +40,17 @@ Array [
       Thank You
     </h1>
     <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
     >
       Thank you! We’ve received your registration and we will begin to pair you up a reading partner we think you'll connect well with shortly.
     </p>
     <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
     >
       We'll email you to introduce you and your reading partner once this is complete.
     </p>
     <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
     >
       If you have any questions in the meantime, please do not hesitate to contact us at
     </p>
@@ -65,7 +65,7 @@ Array [
       Help Spread The Word
     </h2>
     <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
     >
       Why not share the story of Audrey and help us spread the word?
     </p>
@@ -93,58 +93,36 @@ Array [
       to="/"
     >
       <p
-        className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+        className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
       >
         Go back to the homepage
       </p>
     </Link>
   </div>,
   <footer
-    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"
+    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green uTxCW"
   >
     <span
-      className="sc-htpNat flex items-center justify-around bg-green w-100 jbutSu"
-    >
-      <Link
-        className="no-underline white ph1 "
-        to="/"
-      >
-        Home
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/story/"
-      >
-        Our Story
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/faq/"
-      >
-        FAQs
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/contact/"
-      >
-        Contact Us
-      </Link>
-    </span>
-    <span
-      className="sc-bxivhb flex justify-around items-center bg-white black w-100 cHkvlR"
+      className="sc-htpNat flex justify-around items-center bg-white black w-100  pa2 jbutSu"
     >
       © Audrey
       <Link
         className="no-underline black ph1"
-        to="/Terms/"
+        to="/terms/"
       >
         Terms
       </Link>
       <Link
         className="no-underline black ph1"
-        to="/Privacy/"
+        to="/privacy/"
       >
         Privacy
+      </Link>
+      <Link
+        className="no-underline black ph1"
+        to="/contact/"
+      >
+        Contact
       </Link>
     </span>
   </footer>,

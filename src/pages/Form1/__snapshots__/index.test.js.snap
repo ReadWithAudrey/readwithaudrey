@@ -25,7 +25,7 @@ Array [
       to="/Form1/"
     >
       <button
-        className="sc-gzVnrw bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat iQUxnM"
+        className="sc-bZQynM bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat krNSkU"
       >
         Join Us
       </button>
@@ -34,17 +34,16 @@ Array [
   <div
     className="flex flex-column items-center justify-center page-padding ph4"
   >
-    <form
-      action="http://localhost:5000/formPart1"
-      method="POST"
+    <h1
+      className="f2 pink tc montserrat mb3 mt4"
     >
-      <h1
-        className="f2 pink tc montserrat mb3 mt4"
-      >
-        Your Details
-      </h1>
+      Your Details
+    </h1>
+    <section
+      className="sc-chPdSV b--green jHBcBB"
+    >
       <section
-        className="sc-iwsKbI fl w-third v-mid bg-green montserrat inTyLg sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
+        className="sc-dnqmqq fl w-third bg-green montserrat icLxSS sc-htoDjs flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 fnsbPi"
       >
         1. Basic Details
       </section>
@@ -52,7 +51,7 @@ Array [
         to="/Form2"
       >
         <section
-          className="sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
+          className="sc-htoDjs flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 fnsbPi"
         >
           2. Further Details
         </section>
@@ -61,111 +60,84 @@ Array [
         to="/Form3"
       >
         <section
-          className="sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
+          className="sc-htoDjs flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 fnsbPi"
         >
           3. Your Bio
         </section>
       </Link>
       <p
-        className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+        className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
       >
         Welcome to Audrey, thank you for taking the steps to join our community.
       </p>
-      <label
-        className="sc-EHOje pink montserrat fw9 f5 pv2 kyfnqM"
+      <form
+        action="http://localhost:5000/formPart1"
+        method="POST"
       >
-        First Name
-      </label>
-      <input
-        className="sc-ifAKCX montserrat mv2 pa2 w-100 hfCXAg"
-        placeholder="Audrey"
-      />
-      <label
-        className="sc-EHOje pink montserrat fw9 f5 pv2 kyfnqM"
-      >
-        Surname
-      </label>
-      <input
-        className="sc-ifAKCX montserrat mv2 pa2 w-100 hfCXAg"
-        placeholder="Readerson"
-      />
-      <label
-        className="sc-EHOje pink montserrat fw9 f5 pv2 kyfnqM"
-      >
-        Email Address
-      </label>
-      <input
-        className="sc-ifAKCX montserrat mv2 pa2 w-100 hfCXAg"
-        placeholder="audrey@readwithaudrey.com"
-      />
-      <Link
-        className="no-underline"
-        to="/Form2"
-      >
-        <button
-          className="sc-htoDjs bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center fHOsVa"
+        <label
+          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
         >
-          Continue
-        </button>
-      </Link>
-    </form>
-    <Link
-      className="no-underline"
-      to="/"
-    >
-      <p
-        className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
-      >
-        Go back to the homepage
-      </p>
-    </Link>
+          First Name
+        </label>
+        <input
+          className="sc-bxivhb montserrat mv2 pa2 w-100 hCZtbo"
+          placeholder="Audrey"
+        />
+        <label
+          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
+        >
+          Surname
+        </label>
+        <input
+          className="sc-bxivhb montserrat mv2 pa2 w-100 hCZtbo"
+          placeholder="Readerson"
+        />
+        <label
+          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
+        >
+          Email Address
+        </label>
+        <input
+          className="sc-bxivhb montserrat mv2 pa2 w-100 hCZtbo"
+          placeholder="audrey@readwithaudrey.com"
+        />
+        <Link
+          className="no-underline"
+          to="/Form2"
+        >
+          <button
+            className="sc-gzVnrw bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center giBLup"
+          >
+            Continue
+          </button>
+        </Link>
+      </form>
+    </section>
   </div>,
   <footer
-    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"
+    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green uTxCW"
   >
     <span
-      className="sc-htpNat flex items-center justify-around bg-green w-100 jbutSu"
-    >
-      <Link
-        className="no-underline white ph1 "
-        to="/"
-      >
-        Home
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/story/"
-      >
-        Our Story
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/faq/"
-      >
-        FAQs
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/contact/"
-      >
-        Contact Us
-      </Link>
-    </span>
-    <span
-      className="sc-bxivhb flex justify-around items-center bg-white black w-100 cHkvlR"
+      className="sc-htpNat flex justify-around items-center bg-white black w-100  pa2 jbutSu"
     >
       © Audrey
       <Link
         className="no-underline black ph1"
-        to="/Terms/"
+        to="/terms/"
       >
         Terms
       </Link>
       <Link
         className="no-underline black ph1"
-        to="/Privacy/"
+        to="/privacy/"
       >
         Privacy
+      </Link>
+      <Link
+        className="no-underline black ph1"
+        to="/contact/"
+      >
+        Contact
       </Link>
     </span>
   </footer>,

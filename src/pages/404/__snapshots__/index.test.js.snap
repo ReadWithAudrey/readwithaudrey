@@ -25,7 +25,7 @@ Array [
       to="/Form1/"
     >
       <button
-        className="sc-gzVnrw bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat iQUxnM"
+        className="sc-bZQynM bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat krNSkU"
       >
         Join Us
       </button>
@@ -42,51 +42,29 @@ Array [
     </p>
   </div>,
   <footer
-    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"
+    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green uTxCW"
   >
     <span
-      className="sc-htpNat flex items-center justify-around bg-green w-100 jbutSu"
-    >
-      <Link
-        className="no-underline white ph1 "
-        to="/"
-      >
-        Home
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/story/"
-      >
-        Our Story
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/faq/"
-      >
-        FAQs
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/contact/"
-      >
-        Contact Us
-      </Link>
-    </span>
-    <span
-      className="sc-bxivhb flex justify-around items-center bg-white black w-100 cHkvlR"
+      className="sc-htpNat flex justify-around items-center bg-white black w-100  pa2 jbutSu"
     >
       © Audrey
       <Link
         className="no-underline black ph1"
-        to="/Terms/"
+        to="/terms/"
       >
         Terms
       </Link>
       <Link
         className="no-underline black ph1"
-        to="/Privacy/"
+        to="/privacy/"
       >
         Privacy
+      </Link>
+      <Link
+        className="no-underline black ph1"
+        to="/contact/"
+      >
+        Contact
       </Link>
     </span>
   </footer>,

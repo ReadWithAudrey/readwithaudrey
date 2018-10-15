@@ -25,7 +25,7 @@ Array [
       to="/Form1/"
     >
       <button
-        className="sc-gzVnrw bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat iQUxnM"
+        className="sc-bZQynM bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat krNSkU"
       >
         Join Us
       </button>
@@ -40,7 +40,7 @@ Array [
       Contact Us
     </h1>
     <p
-      className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+      className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
     >
       We would love to hear from you. Get in touch by filling out the form below:
     </p>
@@ -49,21 +49,21 @@ Array [
       method="POST"
     >
       <label
-        className="sc-EHOje pink montserrat fw9 f5 pv2 kyfnqM"
+        className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
       >
         Your Name
       </label>
       <input
-        className="sc-ifAKCX montserrat mv2 pa2 w-100 hfCXAg"
+        className="sc-bxivhb montserrat mv2 pa2 w-100 hCZtbo"
         placeholder="Your Name"
       />
       <label
-        className="sc-EHOje pink montserrat fw9 f5 pv2 kyfnqM"
+        className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
       >
         Your Message
       </label>
       <textarea
-        className="sc-chPdSV montserrat mZiEN"
+        className="sc-kAzzGY montserrat euYHPE"
         placeholder="Your Message"
         rows="5"
       />
@@ -72,7 +72,7 @@ Array [
         to="/thankyou"
       >
         <button
-          className="sc-htoDjs bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center fHOsVa"
+          className="sc-gzVnrw bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center giBLup"
         >
           Submit
         </button>
@@ -80,51 +80,29 @@ Array [
     </form>
   </div>,
   <footer
-    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"
+    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green uTxCW"
   >
     <span
-      className="sc-htpNat flex items-center justify-around bg-green w-100 jbutSu"
-    >
-      <Link
-        className="no-underline white ph1 "
-        to="/"
-      >
-        Home
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/story/"
-      >
-        Our Story
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/faq/"
-      >
-        FAQs
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/contact/"
-      >
-        Contact Us
-      </Link>
-    </span>
-    <span
-      className="sc-bxivhb flex justify-around items-center bg-white black w-100 cHkvlR"
+      className="sc-htpNat flex justify-around items-center bg-white black w-100  pa2 jbutSu"
     >
       © Audrey
       <Link
         className="no-underline black ph1"
-        to="/Terms/"
+        to="/terms/"
       >
         Terms
       </Link>
       <Link
         className="no-underline black ph1"
-        to="/Privacy/"
+        to="/privacy/"
       >
         Privacy
+      </Link>
+      <Link
+        className="no-underline black ph1"
+        to="/contact/"
+      >
+        Contact
       </Link>
     </span>
   </footer>,

@@ -25,7 +25,7 @@ Array [
       to="/Form1/"
     >
       <button
-        className="sc-gzVnrw bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat iQUxnM"
+        className="sc-bZQynM bg-green hover-bg-pink pa2 mv2 white br2 w-100 f5 montserrat krNSkU"
       >
         Join Us
       </button>
@@ -34,20 +34,19 @@ Array [
   <div
     className="flex flex-column items-center justify-center page-padding ph4"
   >
-    <form
-      action="http://localhost:5000/formPart1"
-      method="POST"
+    <h1
+      className="f2 pink tc montserrat mb3 mt4"
     >
-      <h1
-        className="f2 pink tc montserrat mb3 mt4"
-      >
-        Your Bio
-      </h1>
+      Your Bio
+    </h1>
+    <section
+      className="sc-chPdSV b--green jHBcBB"
+    >
       <Link
         to="/Form1"
       >
         <section
-          className="sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
+          className="sc-htoDjs flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 fnsbPi"
         >
           1. Basic Details
         </section>
@@ -56,189 +55,162 @@ Array [
         to="/Form2"
       >
         <section
-          className="sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
+          className="sc-htoDjs flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 fnsbPi"
         >
           2. Further Details
         </section>
       </Link>
       <section
-        className="sc-iwsKbI fl w-third v-mid bg-green montserrat inTyLg sc-dnqmqq flex items-center fl w-third v-mid montserrat bg-moon-gray fw4 f5 mb3 jPedQA"
+        className="sc-dnqmqq fl w-third bg-green montserrat icLxSS sc-htoDjs flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 fnsbPi"
       >
         3. Your Bio
       </section>
       <p
-        className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
+        className="sc-jTzLTM montserrat f5 tc lh-copy dDfTnQ"
       >
         We will use your bio to find you a reading partner. This is also the wording we’ll use to introduce you to your reading partner over email.
       </p>
-      <label
-        className="sc-EHOje pink montserrat fw9 f5 pv2 kyfnqM"
+      <form
+        action="http://localhost:5000/formPart1"
+        method="POST"
       >
-        Your Bio
-      </label>
-      <textarea
-        className="sc-chPdSV montserrat mZiEN"
-        placeholder="About You"
-        rows="5"
-      />
-      <label
-        className="sc-EHOje pink montserrat fw9 f5 pv2 kyfnqM"
-      >
-        Special Requirements
-      </label>
-      <textarea
-        className="sc-chPdSV montserrat mZiEN"
-        placeholder="Special Requirements"
-        rows="5"
-      />
-      <label
-        className="sc-EHOje pink montserrat fw9 f5 pv2 kyfnqM"
-      >
-        How do you feel about Abridged books?
-      </label>
-      <section
-        className="sc-gqjmRU montserrat fw4 f5 pv2 fcuJZS"
-      >
-        <input
-          className="sc-VigVT bjRZMr"
-          name="1 (Like the idea)"
-          type="radio"
-          value="1 (Like the idea)"
+        <label
+          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
+        >
+          Your Bio
+        </label>
+        <textarea
+          className="sc-kAzzGY montserrat euYHPE"
+          placeholder="About You"
+          rows="5"
         />
-        <span
-          className="sc-jTzLTM jiXzUf"
+        <label
+          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
         >
-          1 (Like the idea)
-        </span>
-      </section>
-      <section
-        className="sc-gqjmRU montserrat fw4 f5 pv2 fcuJZS"
-      >
-        <input
-          className="sc-VigVT bjRZMr"
-          name="2"
-          type="radio"
-          value="2"
+          Special Requirements
+        </label>
+        <textarea
+          className="sc-kAzzGY montserrat euYHPE"
+          placeholder="Special Requirements"
+          rows="5"
         />
-        <span
-          className="sc-jTzLTM jiXzUf"
+        <label
+          className="sc-ifAKCX pink montserrat fw9 f5 pv2 kXFzZl"
         >
-          2
-        </span>
-      </section>
-      <section
-        className="sc-gqjmRU montserrat fw4 f5 pv2 fcuJZS"
-      >
-        <input
-          className="sc-VigVT bjRZMr"
-          name="3 (Don't mind) "
-          type="radio"
-          value="3 (Don't mind) "
-        />
-        <span
-          className="sc-jTzLTM jiXzUf"
+          How do you feel about Abridged books?
+        </label>
+        <section
+          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
         >
-          3 (Don't mind) 
-        </span>
-      </section>
-      <section
-        className="sc-gqjmRU montserrat fw4 f5 pv2 fcuJZS"
-      >
-        <input
-          className="sc-VigVT bjRZMr"
-          name="4"
-          type="radio"
-          value="4"
-        />
-        <span
-          className="sc-jTzLTM jiXzUf"
+          <input
+            className="sc-gqjmRU fcuJZS"
+            name="1 (Like the idea)"
+            type="radio"
+            value="1 (Like the idea)"
+          />
+          <span
+            className="sc-VigVT kXTXQI"
+          >
+            1 (Like the idea)
+          </span>
+        </section>
+        <section
+          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
         >
-          4
-        </span>
-      </section>
-      <section
-        className="sc-gqjmRU montserrat fw4 f5 pv2 fcuJZS"
-      >
-        <input
-          className="sc-VigVT bjRZMr"
-          name="5 (Really Don't Like)"
-          type="radio"
-          value="5 (Really Don't Like)"
-        />
-        <span
-          className="sc-jTzLTM jiXzUf"
+          <input
+            className="sc-gqjmRU fcuJZS"
+            name="2"
+            type="radio"
+            value="2"
+          />
+          <span
+            className="sc-VigVT kXTXQI"
+          >
+            2
+          </span>
+        </section>
+        <section
+          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
         >
-          5 (Really Don't Like)
-        </span>
-      </section>
-      <Link
-        className="no-underline"
-        to="/thankyou"
-      >
-        <button
-          className="sc-htoDjs bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center fHOsVa"
+          <input
+            className="sc-gqjmRU fcuJZS"
+            name="3 (Don't mind) "
+            type="radio"
+            value="3 (Don't mind) "
+          />
+          <span
+            className="sc-VigVT kXTXQI"
+          >
+            3 (Don't mind) 
+          </span>
+        </section>
+        <section
+          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
         >
-          Submit
-        </button>
-      </Link>
-    </form>
-    <Link
-      className="no-underline"
-      to="/"
-    >
-      <p
-        className="sc-fjdhpX montserrat f5 tc lh-copy jcPxQN"
-      >
-        Go back to the homepage
-      </p>
-    </Link>
+          <input
+            className="sc-gqjmRU fcuJZS"
+            name="4"
+            type="radio"
+            value="4"
+          />
+          <span
+            className="sc-VigVT kXTXQI"
+          >
+            4
+          </span>
+        </section>
+        <section
+          className="sc-gZMcBi montserrat fw4 f5 pv2 GAHxM"
+        >
+          <input
+            className="sc-gqjmRU fcuJZS"
+            name="5 (Really Don't Like)"
+            type="radio"
+            value="5 (Really Don't Like)"
+          />
+          <span
+            className="sc-VigVT kXTXQI"
+          >
+            5 (Really Don't Like)
+          </span>
+        </section>
+        <Link
+          className="no-underline"
+          to="/thankyou"
+        >
+          <button
+            className="sc-gzVnrw bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center giBLup"
+          >
+            Submit
+          </button>
+        </Link>
+      </form>
+    </section>
   </div>,
   <footer
-    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bFHdpU"
+    className="sc-bwzfXH flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green uTxCW"
   >
     <span
-      className="sc-htpNat flex items-center justify-around bg-green w-100 jbutSu"
-    >
-      <Link
-        className="no-underline white ph1 "
-        to="/"
-      >
-        Home
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/story/"
-      >
-        Our Story
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/faq/"
-      >
-        FAQs
-      </Link>
-      <Link
-        className="no-underline white ph1"
-        to="/contact/"
-      >
-        Contact Us
-      </Link>
-    </span>
-    <span
-      className="sc-bxivhb flex justify-around items-center bg-white black w-100 cHkvlR"
+      className="sc-htpNat flex justify-around items-center bg-white black w-100  pa2 jbutSu"
     >
       © Audrey
       <Link
         className="no-underline black ph1"
-        to="/Terms/"
+        to="/terms/"
       >
         Terms
       </Link>
       <Link
         className="no-underline black ph1"
-        to="/Privacy/"
+        to="/privacy/"
       >
         Privacy
+      </Link>
+      <Link
+        className="no-underline black ph1"
+        to="/contact/"
+      >
+        Contact
       </Link>
     </span>
   </footer>,
