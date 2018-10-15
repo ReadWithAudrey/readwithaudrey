@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Examples component snapshot test renders correctly 1`] = `
+<div
+  className="sc-bdVaJa bg-light-green flex flex-column items-center justify-between ph4 page-padding montserrat w-100 bDWFJH"
+>
+  <h1
+    className="f2 pink tc"
+  >
+    What our community are saying
+  </h1>
+  <p
+    className="sc-jzJRlG montserrat f5 tc lh-copy etWKQu"
+  >
+    "The reading sessions are getting longer each week because we find that there's so much to talk about!" Cristina, Sao Paulo.
+  </p>
+  <p
+    className="sc-jzJRlG montserrat f5 tc lh-copy etWKQu"
+  >
+    "I like the fact that I can talk about the book with a person that I don't know - I can be honest and don't feel like I need to impress anyone." Shreya, Bangalore.
+  </p>
+  <p
+    className="sc-jzJRlG montserrat f5 tc lh-copy etWKQu"
+  >
+    "You’re not only discovering new books, you’re having a chance to look at the book from a completely different perspective". Matt, London.
+  </p>
+  <p
+    className="sc-jzJRlG montserrat f5 tc lh-copy etWKQu"
+  >
+    "I loved my experience with Sara and I think she would agree that we’ve bonded in a very strong way. We’ve kept in touch". Maria, Mexico City.
+  </p>
+  <p
+    className="sc-jzJRlG montserrat f5 tc lh-copy etWKQu"
+  >
+    "Things are going great and I am enjoying the reading sessions. I think we will be ready this week for book #3 if you can believe it!" Stefanie, Chicago.
+  </p>
+  <p
+    className="f4 tc"
+  >
+    Every week people are reading to each other all around the world. Are you read to join them?
+  </p>
+  <Link
+    className="no-underline white w-100"
+    to="/Form1/"
+  >
+    <button
+      className="sc-dnqmqq bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center kQARHP"
+    >
+      Get started
+    </button>
+  </Link>
+</div>
+`;
