@@ -81,7 +81,7 @@ Array [
       className="sc-dxgOiQ b--green cGznzi"
     >
       <Link
-        to="/Form1"
+        to="/form1"
       >
         <section
           className="sc-gqjmRU flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 bypQGG"
@@ -90,7 +90,7 @@ Array [
         </section>
       </Link>
       <Link
-        to="/Form2"
+        to="/form2"
       >
         <section
           className="sc-gqjmRU flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 bypQGG"
