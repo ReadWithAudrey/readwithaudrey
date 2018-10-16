@@ -5,22 +5,31 @@ import { TextBox, Layout } from '../../components/'
 const Story = () => {
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4">Our Story</h1>
+      <h1 className="f2 pink tc montserrat mb3 mt4">Our Why</h1>
       <TextBox>
-        Audrey is based in London England, where I saw the benefits of
-        peer-to-peer discussion when I used to be a high school teacher.
+        We passionately believe that by connecting people to read aloud
+        together, Audrey can help to build relationships, remind us how much
+        more we have in common than divides us, and create a more compassionate
+        world.
       </TextBox>
 
       <TextBox>
-        I&apos;ve always been interested in literacy as a subject are and this,
-        plus my interest in using technology for worthwhile causes, lead me to
-        create Audrey. Audrey started in 2017 and has connected people from X
-        amount of countries across the world.
+        The shared experience of reading aloud together enables us to reflect on
+        the human condition, stirs empathy and encourages conversations.
       </TextBox>
 
       <TextBox>
-        We look forward to you becoming a part of our community and ultimately
-        our story.
+        Reading aloud together moves us to talk about our own stories and
+        emotions and develop a real sense of connectedness with others.
+      </TextBox>
+      <TextBox>
+        Reading aloud together can expose us to new ideas and help us to see
+        things from another’s viewpoint. It teaches the value of listening.
+      </TextBox>
+      <TextBox>
+        Audrey is founded upon the belief that the simple act of reading aloud
+        with someone else can inspire us, help us to focus on what’s important
+        to us, and make a meaningful difference in our everyday lives.
       </TextBox>
     </Layout>
   )
