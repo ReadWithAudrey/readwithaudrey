@@ -1,13 +1,12 @@
-const sendEmail = require('./sendEmail');
+const sendPairingEmail = require('./sendPairingEmail');
 const getNewPairs = require('../../queries/getData/getPairs');
 const updateSentStatus = require('../../queries/postData/updateSentStatus');
 
-let pairingId = '';
 getNewPairs
   .then((pairs) => {
     pairs.forEach((pair) => {
-      pairingId = pair.id;
-      sendEmail(pair);
+      sendPairingEmail(pair)
+        .then(console.log);
       // .then(updateSentStatus(pairingId));
     });
   })
