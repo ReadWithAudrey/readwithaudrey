@@ -469,7 +469,7 @@ Array [
           to="/Form3"
         >
           <button
-            className="sc-gZMcBi bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center gTtpNx"
+            className="sc-gZMcBi bg-pink hover-bg-orange white pa2 br2 w-40 w-30-ns h3 f3 mt4 center gTtpNx"
           >
             Continue
           </button>
