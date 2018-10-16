@@ -1,6 +1,8 @@
+/* eslint-disable */
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
+import { SignupContext } from '../../contexts/SignupContext'
 
 import {
   InputBox,
@@ -29,17 +31,36 @@ const Form1 = ({ data }) => {
           Welcome to Audrey, thank you for taking the steps to join our
           community.
         </TextBox>
-        <form method="POST" action="http://localhost:5000/formPart1">
-          <Label>{q1}</Label>
-          <InputBox placeholder="Audrey" />
-          <Label>{q2}</Label>
-          <InputBox placeholder="Readerson" />
-          <Label>{q3}</Label>
-          <InputBox placeholder="audrey@readwithaudrey.com" />
-          <Link to="/Form2" className="no-underline">
-            <Button type="register">Continue</Button>
-          </Link>
-        </form>
+        <SignupContext.Consumer>
+          {({ firstName, secondName, emailAddress, updateForm }) => (
+            <form method="POST" action="http://localhost:5000/formPart1">
+              <Label>{q1}</Label>
+              <InputBox
+                placeholder="Audrey"
+                onChange={updateForm}
+                name="firstName"
+                value={firstName}
+              />
+              <Label>{q2}</Label>
+              <InputBox
+                placeholder="Readerson"
+                onChange={updateForm}
+                name="secondName"
+                value={secondName}
+              />
+              <Label>{q3}</Label>
+              <InputBox
+                placeholder="audrey@readwithaudrey.comn"
+                onChange={updateForm}
+                name="emailAddress"
+                value={emailAddress}
+              />
+              <Link to="/Form2" className="no-underline">
+                <Button type="register">Continue</Button>
+              </Link>
+            </form>
+          )}
+        </SignupContext.Consumer>
       </FormSection>
     </Layout>
   )
