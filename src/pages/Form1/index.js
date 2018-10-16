@@ -2,7 +2,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import { SignupContext } from '../../contexts/SignupContext'
+import Consumer from '../../contexts/SignupContext'
 
 import {
   InputBox,
@@ -31,7 +31,7 @@ const Form1 = ({ data }) => {
           You&apos;re warmly invited to join our community. Let’s get the ball
           rolling. Please complete the questions below.
         </TextBox>
-        <SignupContext.Consumer>
+        <Consumer>
           {({ firstName, secondName, emailAddress, updateForm }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
@@ -63,7 +63,7 @@ const Form1 = ({ data }) => {
               </Link>
             </form>
           )}
-        </SignupContext.Consumer>
+        </Consumer>
       </FormSection>
     </Layout>
   )

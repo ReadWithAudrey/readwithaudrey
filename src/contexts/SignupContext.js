@@ -1,8 +1,8 @@
 /* eslint-disable */
-import React from 'react'
+import React, { Component, createContext } from 'react'
 import PropTypes from 'prop-types'
-export const SignupContext = React.createContext()
-export class SignupProvider extends React.Component {
+const { Provider, Consumer } = createContext()
+class SignupProvider extends Component {
   updateForm = event => {
     this.setState({ [event.target.name]: event.target.value })
   }
@@ -14,12 +14,14 @@ export class SignupProvider extends React.Component {
   }
   render() {
     return (
-      <SignupContext.Provider value={this.state}>
-        {this.props.children}
-      </SignupContext.Provider>
+      <Provider value={{ state: this.state }}>{this.props.children}</Provider>
     )
   }
 }
+
+export { SignupProvider }
+
+export default Consumer
 
 SignupProvider.propTypes = {
   children: PropTypes.object,
