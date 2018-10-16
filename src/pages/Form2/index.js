@@ -21,13 +21,13 @@ const Form2 = ({ data }) => {
     <Layout>
       <h1 className="f2 pink tc montserrat mb3 mt4">Further Details</h1>
       <FormSection>
-        <StatusBar>
-          <Link to="/Form1/">1. Basic Details</Link>
-        </StatusBar>
+        <Link to="/form1/">
+          <StatusBar>1. Basic Details</StatusBar>
+        </Link>
         <StatusBar type="active">2. Further Details</StatusBar>
-        <StatusBar>
-          <Link to="/Form3/">3. Your Bio</Link>
-        </StatusBar>
+        <Link to="/form3/">
+          <StatusBar>3. Your Bio</StatusBar>
+        </Link>
         <TextBox>
           In order to find the best reading partner for you, we need a little
           bit more information

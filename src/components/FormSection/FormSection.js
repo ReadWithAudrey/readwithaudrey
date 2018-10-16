@@ -7,7 +7,7 @@ const FormSection = props => {
 }
 
 FormSection.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.array,
 }
 
 export default FormSection

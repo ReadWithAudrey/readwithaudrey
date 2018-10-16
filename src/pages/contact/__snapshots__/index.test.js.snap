@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout component snapshot test renders correctly 1`] = `
+exports[`ContactUs page snapshot test renders correctly 1`] = `
 Array [
   <header
     className="sc-bdVaJa flex items-center justify-between ph3 pv2 montserrat white bg-green w-100 f3 gzTCKs"
@@ -71,7 +71,52 @@ Array [
   </header>,
   <div
     className="flex flex-column items-center justify-center page-padding ph4"
-  />,
+  >
+    <h1
+      className="f2 pink tc montserrat mb3 mt4"
+    >
+      Contact Us
+    </h1>
+    <p
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+    >
+      We would love to hear from you. Get in touch by filling out the form below:
+    </p>
+    <form
+      action="http://localhost:5000/formPart1"
+      method="POST"
+    >
+      <label
+        className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
+      >
+        Your Name
+      </label>
+      <input
+        className="sc-gzVnrw montserrat mv2 pa2 w-100 ildXbv"
+        placeholder="Your Name"
+      />
+      <label
+        className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
+      >
+        Your Message
+      </label>
+      <textarea
+        className="sc-kpOJdX montserrat eZKhxe"
+        placeholder="Your Message"
+        rows="5"
+      />
+      <Link
+        className="no-underline"
+        to="/thankyou"
+      >
+        <button
+          className="sc-gZMcBi bg-pink hover-bg-orange white pa2 br2 w-40 w-30-ns h3 f3 mt4 center gTtpNx"
+        >
+          Submit
+        </button>
+      </Link>
+    </form>
+  </div>,
   <footer
     className="sc-EHOje flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green jvzENE"
   >

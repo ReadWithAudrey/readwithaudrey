@@ -19,13 +19,13 @@ const Form3 = ({ data }) => {
     <Layout>
       <h1 className="f2 pink tc montserrat mb3 mt4">Nearly there…</h1>
       <FormSection>
-        <StatusBar>
-          <Link to="/Form1">1. Contact Details</Link>
-        </StatusBar>
-        <StatusBar>
-          <Link to="/Form2">2. Further Details</Link>
-        </StatusBar>
-        <StatusBar type="active">3. Your Story</StatusBar>
+        <Link to="/form1">
+          <StatusBar>1. Basic Details</StatusBar>
+        </Link>
+        <Link to="/form2">
+          <StatusBar>2. Further Details</StatusBar>
+        </Link>
+        <StatusBar type="active">3. Your Bio</StatusBar>
         <TextBox>
           Please tell us about yourself in up to 100 words. We’ll use your story
           (bio) to match you up with a reading partner. We’ll also use it when
