@@ -12,7 +12,7 @@ const InputBox = props => (
 
 InputBox.propTypes = {
   placeholder: PropTypes.string,
-  onChange: PropTypes.fnc,
+  onChange: PropTypes.func,
   name: PropTypes.string,
 }
 
