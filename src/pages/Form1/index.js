@@ -14,7 +14,7 @@ import {
   FormSection,
 } from '../../components/'
 
-const Form1 = ({ data }) => {
+const Form1 = ({ data }, context) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter
   return (
     <Layout>
