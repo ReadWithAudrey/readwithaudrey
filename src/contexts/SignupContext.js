@@ -10,6 +10,8 @@ export class SignupProvider extends React.Component {
     firstName: '',
     secondName: '',
     emailAddress: '',
+    story: '',
+    specialRequests: '',
     updateForm: this.updateForm,
   }
   render() {
