@@ -1,7 +1,11 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from 'react'
+import { SignupProvider } from './src/contexts/SignupContext'
+import PropTypes from 'prop-types'
 
-// You can delete this file if you're not using it
+export const wrapRootElement = ({ element }) => {
+  return <SignupProvider>{element}</SignupProvider>
+}
+
+wrapRootElement.propTypes = {
+  element: PropTypes.object,
+}

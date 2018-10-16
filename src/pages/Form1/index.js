@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
@@ -14,7 +13,7 @@ import {
   FormSection,
 } from '../../components/'
 
-const Form1 = ({ data }, context) => {
+const Form1 = ({ data }) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter
   return (
     <Layout>
