@@ -18,18 +18,18 @@ const Form1 = ({ data }) => {
   const { q1, q2, q3 } = data.markdownRemark.frontmatter
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4">Your Details</h1>
+      <h1 className="f2 pink tc montserrat mb3 mt4">Welcome to Audrey.</h1>
       <FormSection>
-        <StatusBar type="active">1. Basic Details</StatusBar>
+        <StatusBar type="active">1. Contact Info</StatusBar>
         <StatusBar>
           <Link to="/Form2">2. Further Details</Link>
         </StatusBar>
         <StatusBar>
-          <Link to="/Form3">3. Your Bio</Link>
+          <Link to="/Form3">3. Your Story</Link>
         </StatusBar>
         <TextBox>
-          Welcome to Audrey, thank you for taking the steps to join our
-          community.
+          You&apos;re warmly invited to join our community. Let’s get the ball
+          rolling. Please complete the questions below.
         </TextBox>
         <SignupContext.Consumer>
           {({ firstName, secondName, emailAddress, updateForm }) => (
@@ -55,6 +55,9 @@ const Form1 = ({ data }) => {
                 name="emailAddress"
                 value={emailAddress}
               />
+              <TextBox>
+                We&apos;ll use this to introduce you to your reading partner
+              </TextBox>
               <Link to="/Form2" className="no-underline">
                 <Button type="register">Continue</Button>
               </Link>
