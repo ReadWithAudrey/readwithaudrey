@@ -32,28 +32,28 @@ const Form1 = ({ data }) => {
           rolling. Please complete the questions below.
         </TextBox>
         <SignupContext.Consumer>
-          {context => (
+          {({ firstName, secondName, emailAddress, updateForm }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
               <InputBox
                 placeholder="Audrey"
-                onChange={context.updateForm}
+                onChange={updateForm}
                 name="firstName"
-                value={context.firstName}
+                value={firstName}
               />
               <Label>{q2}</Label>
               <InputBox
                 placeholder="Readerson"
-                onChange={context.updateForm}
+                onChange={updateForm}
                 name="secondName"
-                value={context.secondName}
+                value={secondName}
               />
               <Label>{q3}</Label>
               <InputBox
                 placeholder="audrey@readwithaudrey.comn"
-                onChange={context.updateForm}
+                onChange={updateForm}
                 name="emailAddress"
-                value={context.emailAddress}
+                value={emailAddress}
               />
               <TextBox>
                 We&apos;ll use this to introduce you to your reading partner
