@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form3 page snapshot test renders correctly 1`] = `
+Array [
+  <header
+    className="sc-bdVaJa flex items-center justify-between ph3 pv2 montserrat white bg-green w-100 f3 gzTCKs"
+  >
+    <div
+      className="flex items-center"
+      id="header-left"
+    >
+      <Link
+        to="/"
+      >
+        <img
+          alt="book icon"
+          className="h2 ph2"
+          src="test-file-stub"
+        />
+      </Link>
+      <Link
+        to="/"
+      >
+        Audrey
+      </Link>
+    </div>
+    <nav
+      className="sc-bwzfXH w-65 w-40-l montserrat f4 gQAWUv"
+    >
+      <section
+        className="sc-htpNat montserrat bRYTxq"
+      >
+        <Link
+          to="/story/"
+        >
+          Why?
+        </Link>
+        <Link
+          to="/faq/"
+        >
+          FAQ
+        </Link>
+        <Link
+          to="/contact/"
+        >
+          Contact
+        </Link>
+        <Link
+          className="mv2 white br2 ba bw1 b--white"
+          to="/Form1"
+        >
+          Join Us
+        </Link>
+      </section>
+      <section
+        className="sc-bxivhb igYaY"
+      >
+        <a
+          className="dtc fr tr v-mid dn-ns p0-ns link dim white"
+          onClick={[Function]}
+        >
+          <span
+            className="db w2 mt1 mb2 bw2 pb2 bt bb b--white"
+          />
+          <span
+            className="db w2 mt1 bw2 pb1 bt b--white"
+          />
+        </a>
+      </section>
+    </nav>
+  </header>,
+  <div
+    className="flex flex-column items-center justify-center page-padding ph4"
+  >
+    <h1
+      className="f2 pink tc montserrat mb3 mt4"
+    >
+      Your Bio
+    </h1>
+    <section
+      className="sc-dxgOiQ b--green cGznzi"
+    >
+      <Link
+        to="/form1"
+      >
+        <section
+          className="sc-gqjmRU flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 bypQGG"
+        >
+          1. Basic Details
+        </section>
+      </Link>
+      <Link
+        to="/form2"
+      >
+        <section
+          className="sc-gqjmRU flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 bypQGG"
+        >
+          2. Further Details
+        </section>
+      </Link>
+      <section
+        className="sc-VigVT fl w-third bg-green montserrat ehcWMy sc-gqjmRU flex items-center fl w-third montserrat bg-moon-gray fw4 f5 mb3 bypQGG"
+      >
+        3. Your Bio
+      </section>
+      <p
+        className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+      >
+        We will use your bio to find you a reading partner. This is also the wording we’ll use to introduce you to your reading partner over email.
+      </p>
+      <form
+        action="http://localhost:5000/formPart1"
+        method="POST"
+      >
+        <label
+          className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
+        >
+          Your Bio
+        </label>
+        <textarea
+          className="sc-kpOJdX montserrat eZKhxe"
+          placeholder="About You"
+          rows="5"
+        />
+        <label
+          className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
+        >
+          Special Requirements
+        </label>
+        <textarea
+          className="sc-kpOJdX montserrat eZKhxe"
+          placeholder="Special Requirements"
+          rows="5"
+        />
+        <label
+          className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
+        >
+          How do you feel about Abridged books?
+        </label>
+        <section
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
+        >
+          <input
+            className="sc-jzJRlG fsyDfV"
+            name="1 (Like the idea)"
+            type="radio"
+            value="1 (Like the idea)"
+          />
+          <span
+            className="sc-cSHVUG bVIEwX"
+          >
+            1 (Like the idea)
+          </span>
+        </section>
+        <section
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
+        >
+          <input
+            className="sc-jzJRlG fsyDfV"
+            name="2"
+            type="radio"
+            value="2"
+          />
+          <span
+            className="sc-cSHVUG bVIEwX"
+          >
+            2
+          </span>
+        </section>
+        <section
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
+        >
+          <input
+            className="sc-jzJRlG fsyDfV"
+            name="3 (Don't mind) "
+            type="radio"
+            value="3 (Don't mind) "
+          />
+          <span
+            className="sc-cSHVUG bVIEwX"
+          >
+            3 (Don't mind) 
+          </span>
+        </section>
+        <section
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
+        >
+          <input
+            className="sc-jzJRlG fsyDfV"
+            name="4"
+            type="radio"
+            value="4"
+          />
+          <span
+            className="sc-cSHVUG bVIEwX"
+          >
+            4
+          </span>
+        </section>
+        <section
+          className="sc-fjdhpX montserrat fw4 f5 pv2 eQHpIT"
+        >
+          <input
+            className="sc-jzJRlG fsyDfV"
+            name="5 (Really Don't Like)"
+            type="radio"
+            value="5 (Really Don't Like)"
+          />
+          <span
+            className="sc-cSHVUG bVIEwX"
+          >
+            5 (Really Don't Like)
+          </span>
+        </section>
+        <Link
+          className="no-underline"
+          to="/thankyou"
+        >
+          <button
+            className="sc-gZMcBi bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 mt4 center gTtpNx"
+          >
+            Submit
+          </button>
+        </Link>
+      </form>
+    </section>
+  </div>,
+  <footer
+    className="sc-EHOje flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green jvzENE"
+  >
+    <span
+      className="sc-bZQynM flex justify-around items-center bg-white black w-100  pa2 jrqyAQ"
+    >
+      © Audrey
+      <Link
+        className="no-underline black ph1"
+        to="/terms/"
+      >
+        Terms
+      </Link>
+      <Link
+        className="no-underline black ph1"
+        to="/privacy/"
+      >
+        Privacy
+      </Link>
+      <Link
+        className="no-underline black ph1"
+        to="/contact/"
+      >
+        Contact
+      </Link>
+    </span>
+  </footer>,
+]
+`;
