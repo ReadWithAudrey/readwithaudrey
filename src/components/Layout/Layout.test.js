@@ -1,13 +1,13 @@
-import React from "react"
-import renderer from "react-test-renderer"
-import {PureLayout as Layout} from "./Layout"
+import React from 'react'
+import renderer from 'react-test-renderer'
+import { PureLayout as Layout } from './Layout'
 
-describe("Layout", () =>
-  it("renders correctly", () => {
+describe('Layout component snapshot test', () =>
+  it('renders correctly', () => {
     const data = {
       site: {
         siteMetadata: {
-          title: "Audrey",
+          title: 'Audrey',
         },
       },
     }
