@@ -16,12 +16,26 @@ import {
 } from '../../components/'
 
 const Form2 = ({ data }) => {
-  const { q1, q2, q3, q4, q5 } = data.markdownRemark.frontmatter
+  const {
+    heading,
+    description,
+    q1,
+    q1Placeholder,
+    q2,
+    q2Placeholder,
+    q3,
+    readlisten1,
+    readlisten2,
+    readlisten3,
+    q4,
+    booktype1,
+    booktype2,
+    booktype3,
+    q5,
+  } = data.markdownRemark.frontmatter
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4">
-        A few more details would be really helpful too.
-      </h1>
+      <h1 className="f2 pink tc montserrat mb3 mt4">{heading}</h1>
       <FormSection>
         <Link to="/form1/">
           <StatusBar>1. Contact Details</StatusBar>
@@ -30,23 +44,20 @@ const Form2 = ({ data }) => {
         <Link to="/form3/">
           <StatusBar>3. Your Story</StatusBar>
         </Link>
-        <TextBox>
-          In order to find you a reading partner we’ll need a little more
-          information.
-        </TextBox>
+        <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
           {({ gender, age, readlisten, updateForm }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
               <InputBox
-                placeholder="Female"
+                placeholder={q1Placeholder}
                 onChange={updateForm}
                 name="gender"
                 value={gender}
               />
               <Label>{q2}</Label>
               <InputBox
-                placeholder="Age"
+                placeholder={q2Placeholder}
                 onChange={updateForm}
                 name="age"
                 value={age}
@@ -59,31 +70,31 @@ const Form2 = ({ data }) => {
                 onChange={updateForm}
                 value={readlisten}
               >
-                Read
+                {readlisten1}
               </RadioButton>
               <RadioButton
                 name="readlisten"
                 onChange={updateForm}
                 value={readlisten}
               >
-                Listen
+                {readlisten2}
               </RadioButton>
               <RadioButton
                 name="readlisten"
                 onChange={updateForm}
                 value={readlisten}
               >
-                Both
+                {readlisten3}
               </RadioButton>
               <Label>{q5}</Label>
               <RadioButton name="booktype" onChange={updateForm}>
-                Fiction
+                {booktype1}
               </RadioButton>
               <RadioButton name="booktype" onChange={updateForm}>
-                Non-Fiction
+                {booktype2}
               </RadioButton>
               <RadioButton name="booktype" onChange={updateForm}>
-                Don&apos;t Mind
+                {booktype3}
               </RadioButton>
               <Link to="/form3" className="no-underline">
                 <Button type="register">Continue</Button>
@@ -109,10 +120,20 @@ export const query = graphql`
     }
     markdownRemark(frontmatter: { title: { eq: "Form Part 2" } }) {
       frontmatter {
+        heading
+        description
         q1
+        q1Placeholder
         q2
+        q2Placeholder
         q3
+        readlisten1
+        readlisten2
+        readlisten3
         q4
+        booktype1
+        booktype2
+        booktype3
         q5
       }
     }

@@ -14,10 +14,18 @@ import {
 } from '../../components/'
 
 const Form3 = ({ data }) => {
-  const { q1, q2 } = data.markdownRemark.frontmatter
+  const {
+    heading,
+    description,
+    q1,
+    q1Placeholder,
+    q2,
+    q2Placeholder,
+    tips,
+  } = data.markdownRemark.frontmatter
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4">Nearly there…</h1>
+      <h1 className="f2 pink tc montserrat mb3 mt4">{heading}</h1>
       <FormSection>
         <Link to="/form1">
           <StatusBar>1. Basic Details</StatusBar>
@@ -26,33 +34,21 @@ const Form3 = ({ data }) => {
           <StatusBar>2. Further Details</StatusBar>
         </Link>
         <StatusBar type="active">3. Your Bio</StatusBar>
-        <TextBox>
-          Please tell us about yourself in up to 100 words. We’ll use your story
-          (bio) to match you up with a reading partner. We’ll also use it when
-          we introduce you to your reading partner.
-        </TextBox>
+        <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
           {({ story, specialRequests, updateForm }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
               <TextArea
-                placeholder="About You"
+                placeholder={q1Placeholder}
                 onChange={updateForm}
                 name="story"
                 value={story}
               />
-              <TextBox className="f">
-                Tips: The most effective matches tend to happen when members
-                share bios that are open and interesting, share a touch of
-                quirkiness, and feel light-hearted in spirit. Consider
-                describing the things you’re passionate about. It’s helpful to
-                share your interests and what you do in your spare time. Try to
-                avoid overused phrases e.g. easy-going. Instead, consider what
-                makes you special ☺
-              </TextBox>
+              <TextBox className="f">{tips}</TextBox>
               <Label>{q2}</Label>
               <TextArea
-                placeholder="Any special requests for instance"
+                placeholder={q2Placeholder}
                 onChange={updateForm}
                 name="specialRequests"
                 value={specialRequests}
@@ -81,8 +77,13 @@ export const query = graphql`
     }
     markdownRemark(frontmatter: { title: { eq: "Form Part 3" } }) {
       frontmatter {
+        heading
+        description
         q1
+        q1Placeholder
+        tips
         q2
+        q2Placeholder
       }
     }
   }
