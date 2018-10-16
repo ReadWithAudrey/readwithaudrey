@@ -14,10 +14,20 @@ import {
 } from '../../components/'
 
 const Form1 = ({ data }) => {
-  const { q1, q2, q3 } = data.markdownRemark.frontmatter
+  const {
+    heading,
+    description,
+    q1,
+    q2,
+    q3,
+    q1Placeholder,
+    q2Placeholder,
+    q3Placeholder,
+    finalText,
+  } = data.markdownRemark.frontmatter
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4">Welcome to Audrey.</h1>
+      <h1 className="f2 pink tc montserrat mb3 mt4">{heading}</h1>
       <FormSection>
         <StatusBar type="active">1. Contact Info</StatusBar>
         <StatusBar>
@@ -26,37 +36,32 @@ const Form1 = ({ data }) => {
         <StatusBar>
           <Link to="/Form3">3. Your Story</Link>
         </StatusBar>
-        <TextBox>
-          You&apos;re warmly invited to join our community. Let’s get the ball
-          rolling. Please complete the questions below.
-        </TextBox>
+        <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
           {({ firstName, secondName, emailAddress, updateForm }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
               <InputBox
-                placeholder="Audrey"
+                placeholder={q1Placeholder}
                 onChange={updateForm}
                 name="firstName"
                 value={firstName}
               />
               <Label>{q2}</Label>
               <InputBox
-                placeholder="Readerson"
+                placeholder={q2Placeholder}
                 onChange={updateForm}
                 name="secondName"
                 value={secondName}
               />
               <Label>{q3}</Label>
               <InputBox
-                placeholder="audrey@readwithaudrey.comn"
+                placeholder={q3Placeholder}
                 onChange={updateForm}
                 name="emailAddress"
                 value={emailAddress}
               />
-              <TextBox>
-                We&apos;ll use this to introduce you to your reading partner
-              </TextBox>
+              <TextBox>{finalText}</TextBox>
               <Link to="/Form2" className="no-underline">
                 <Button type="register">Continue</Button>
               </Link>
@@ -81,9 +86,15 @@ export const query = graphql`
     }
     markdownRemark(frontmatter: { title: { eq: "Form Part 1" } }) {
       frontmatter {
+        heading
+        description
+        finalText
         q1
         q2
         q3
+        q1Placeholder
+        q2Placeholder
+        q3Placeholder
       }
     }
   }
