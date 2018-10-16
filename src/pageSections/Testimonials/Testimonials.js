@@ -39,7 +39,7 @@ const Testimonials = () => (
       Every week people are reading to each other all around the world. Are you
       read to join them?
     </p>
-    <Link to="/Form1/" className="no-underline white w-100">
+    <Link to="/form1/" className="no-underline white w-100">
       <Button type="register">Get started</Button>
     </Link>
   </StyledTestimonials>

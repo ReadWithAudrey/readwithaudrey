@@ -62,7 +62,7 @@ const Form1 = ({ data }) => {
                 value={emailAddress}
               />
               <TextBox>{finalText}</TextBox>
-              <Link to="/Form2" className="no-underline">
+              <Link to="/form2" className="no-underline">
                 <Button type="register">Continue</Button>
               </Link>
             </form>

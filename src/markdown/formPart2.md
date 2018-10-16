@@ -1,11 +1,8 @@
 ---
 title: 'Form Part 2'
-q1: 'Gender'
-q2: 'Age'
-q3: 'Location'
-q4: 'Time Zone'
-q5: 'Reader, Listener or Both?'
-q6: 'What would you like to read?'
+q1: 'What term reflects your gender?'
+q2: 'What’s your age? (How rude!)'
+q3: 'What time zone are you in?'
+q4: 'Would you rather be a Reader or a Listener, or Both'
+q5: 'What do you fancy reading?'
 ---
-
-Part 2 of form goes here!

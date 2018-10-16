@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Select } from './DropDownBox.style'
 
-const DropDownBox = () => {
+const DropDownBox = props => {
   return (
-    <Select>
+    <Select onChange={props.onChange} name={props.name}>
       <option value="-12">(GMT-12:00) International Date Line West</option>
       <option value="-11">(GMT-11:00) Midway Island, Samoa</option>
       <option value="-10">(GMT-10:00) Hawaii</option>
@@ -74,6 +74,8 @@ const DropDownBox = () => {
 
 DropDownBox.propTypes = {
   children: PropTypes.string,
+  onChange: PropTypes.func,
+  name: PropTypes.string,
 }
 
 export default DropDownBox

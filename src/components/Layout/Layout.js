@@ -24,9 +24,7 @@ export const PureLayout = ({ children, data }) => {
         <html lang="en" />
       </Helmet>
       <Header siteTitle={title} />
-      <div className="flex flex-column items-center justify-center page-padding ph4">
-        {children}
-      </div>
+      <div className="page-padding ph4 w-100 w-70-l center">{children}</div>
       <Footer />
     </React.Fragment>
   )
