@@ -47,7 +47,7 @@ Array [
         </Link>
         <Link
           className="mv2 white br2 ba bw1 b--white"
-          to="/Form1"
+          to="/form1"
         >
           Join Us
         </Link>
@@ -70,7 +70,7 @@ Array [
     </nav>
   </header>,
   <div
-    className="flex flex-column items-center justify-center page-padding ph4"
+    className="page-padding ph4 w-100 w-70-l center"
   >
     <h1>
       NOT FOUND
