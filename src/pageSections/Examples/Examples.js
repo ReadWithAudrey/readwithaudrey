@@ -7,27 +7,12 @@ const Examples = () => (
   <StaticQuery
     query={query}
     render={data => {
-      const {
-        header,
-        e1,
-        e2,
-        e3,
-        e4,
-        e5,
-        e6,
-        footer,
-      } = data.markdownRemark.frontmatter
+      const { html } = data.markdownRemark
+      const { header, footer } = data.markdownRemark.frontmatter
       return (
         <StyledExamples>
           <h1 className="f2 pink tc">{header}</h1>
-          <ul className="tl">
-            <li className="pv2">{e1}</li>
-            <li className="pv2">{e2}</li>
-            <li className="pv2">{e3}</li>
-            <li className="pv2">{e4}</li>
-            <li className="pv2">{e5}</li>
-            <li className="pv2">{e6}</li>
-          </ul>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
           <p className="f4 tc">{footer}</p>
         </StyledExamples>
       )
@@ -47,14 +32,9 @@ const query = graphql`
       }
     }
     markdownRemark(frontmatter: { title: { eq: "Examples" } }) {
+      html
       frontmatter {
         header
-        e1
-        e2
-        e3
-        e4
-        e5
-        e6
         footer
       }
     }
