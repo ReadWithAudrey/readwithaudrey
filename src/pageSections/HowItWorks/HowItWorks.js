@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import { TextBox } from '../../components'
 import StyledHowItWorks from './HowItWorks.style'
 import man from '../../images/manicon.svg'
@@ -6,7 +7,6 @@ import pair from '../../images/pairicon.png'
 import book from '../../images/open-book-black.svg'
 import PropTypes from 'prop-types'
 import { Button } from '../../components/index'
-import { Link, StaticQuery, graphql } from 'gatsby'
 
 const HowItWorks = () => (
   <StaticQuery
@@ -57,7 +57,7 @@ HowItWorks.propTypes = {
   data: PropTypes.object,
 }
 
-export const query = graphql`
+const query = graphql`
   query {
     site {
       siteMetadata {

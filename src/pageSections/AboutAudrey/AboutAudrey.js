@@ -36,7 +36,7 @@ AboutAudrey.propTypes = {
   data: PropTypes.object,
 }
 
-export const query = graphql`
+const query = graphql`
   query {
     site {
       siteMetadata {
