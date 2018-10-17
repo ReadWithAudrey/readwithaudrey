@@ -6,5 +6,5 @@ t2: "'I like the fact that I can talk about the book with a person that I don't 
 t3: "'You’re not only discovering new books, you’re having a chance to look at the book from a completely different perspective.' - Matt, London."
 t4: "'I loved my experience with Sara and I think she would agree that we’ve bonded in a very strong way. We’ve kept in touch.' - Maria, Mexico City."
 t5: "'Things are going great and I am enjoying the reading sessions. I think we will be ready this week for book #3 if you can believe it!' - Stefanie, Chicago."
-footer: 'Every week people are reading to each other all around the world. Are you read to join them?'
+footer: 'Every week people are reading to each other all around the world.'
 ---
