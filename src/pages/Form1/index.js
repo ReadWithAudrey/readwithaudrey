@@ -46,6 +46,7 @@ const Form1 = ({ data }) => {
                 onChange={updateForm}
                 name="firstName"
                 value={firstName}
+                required
               />
               <Label>{q2}</Label>
               <InputBox
@@ -53,6 +54,7 @@ const Form1 = ({ data }) => {
                 onChange={updateForm}
                 name="secondName"
                 value={secondName}
+                required
               />
               <Label>{q3}</Label>
               <InputBox
@@ -60,9 +62,10 @@ const Form1 = ({ data }) => {
                 onChange={updateForm}
                 name="emailAddress"
                 value={emailAddress}
+                required
               />
               <TextBox>{finalText}</TextBox>
-              <Link to="/form2" className="no-underline">
+              <Link to="/Form2" className="no-underline">
                 <Button type="register">Continue</Button>
               </Link>
             </form>

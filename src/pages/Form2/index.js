@@ -96,7 +96,7 @@ const Form2 = ({ data }) => {
               <RadioButton name="booktype" onChange={updateForm}>
                 {booktype3}
               </RadioButton>
-              <Link to="/form3" className="no-underline">
+              <Link to="/Form3" className="no-underline">
                 <Button type="register">Continue</Button>
               </Link>
             </form>

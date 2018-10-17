@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledButton = styled.button.attrs({
-  className: 'bg-pink hover-bg-orange white pa2 br2 w-50 h3 f3 montserrat',
+  className: 'bg-pink hover-bg-dark-pink white pa2 br2 w-50 h3 f3 montserrat',
 })`
   border: none;
   display: block;
@@ -18,7 +18,7 @@ export const HeaderButton = styled.button.attrs({
 
 export const RegisterButton = styled.button.attrs({
   className:
-    'bg-pink hover-bg-orange white pa2 br2 w-40 w-30-ns h3 f3 mt4 center',
+    'bg-pink hover-bg-dark-pink white pa2 br2 w-40 w-30-ns h3 f3 mt4 center',
 })`
   border: none;
   display: block;
