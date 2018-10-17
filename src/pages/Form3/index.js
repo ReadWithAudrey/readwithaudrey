@@ -12,6 +12,7 @@ import {
   TextBox,
   Layout,
   FormSection,
+  ErrorSpan,
 } from '../../components/'
 
 class Form3 extends React.Component {
@@ -47,7 +48,15 @@ class Form3 extends React.Component {
       })
   }
   render() {
-    const { story, specialRequests, updateForm } = this.props.value
+    const {
+      story,
+      specialRequests,
+      updateForm,
+      storyError,
+      storyErrorSpan,
+      storyTipsBox,
+      showTips,
+    } = this.props.value
     const {
       heading,
       description,
@@ -73,7 +82,12 @@ class Form3 extends React.Component {
               name="story"
               value={story}
             />
-            <TextBox className="f">{tips}</TextBox>
+            <ErrorSpan type={storyErrorSpan}>{storyError}</ErrorSpan>
+
+            <a onClick={showTips} className="flex justify-center underline mb2">
+              (Need tips?)
+            </a>
+            {storyTipsBox && <TextBox className="f">{tips}</TextBox>}
             <Label>{q2}</Label>
             <TextArea
               placeholder={q2Placeholder}

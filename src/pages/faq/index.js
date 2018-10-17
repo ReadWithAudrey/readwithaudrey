@@ -1,119 +1,193 @@
 import React from 'react'
-
+import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 import { TextBox, Layout } from '../../components/'
 
-const FAQ = () => {
+const FAQ = ({ data }) => {
+  const {
+    header1,
+    q11,
+    a11,
+    q12,
+    a12,
+    q13,
+    a13,
+    q14,
+    a14,
+    q15,
+    a15,
+    header2,
+    q21,
+    a21,
+    q22,
+    a22,
+    q23,
+    a23,
+    q24,
+    a24,
+    header3,
+    q31,
+    a31,
+    q32,
+    a32,
+    q33,
+    a33,
+    q34,
+    a34,
+    header4,
+    q41,
+    a41,
+    q42,
+    a42,
+    q43,
+    a43,
+    q44,
+    a44,
+    q45,
+    a45,
+    q46,
+    a46,
+    header5,
+    q51,
+    a51,
+    q52,
+    a52,
+    q53,
+    a53,
+    header6,
+    q61,
+    a61,
+    footer,
+  } = data.markdownRemark.frontmatter
   return (
     <Layout>
       <h1 className="f2 pink tc montserrat mb3 mt4">FAQs</h1>
-      <h2 className="f3 pink tc montserrat mb3">What to expect</h2>
-      <TextBox>
-        The Audrey experience comprises of five separate ten minute reading
-        sessions. We choose a surprise book for you and divide it into 5
-        chapters to correspond with the five reading sessions. There’s a real
-        mix of how regularly community members meet to read together. Some
-        reading partners do one regular session each week, and therefore read
-        the book over the course of about a month. Others read together over
-        consecutive evenings and complete the book within a week. It’s really up
-        to you and your reading partner. What we do encourage is that you only
-        read one chapter during each session – even if it’s tempting to read on.
-      </TextBox>
+      <h2 className="f3 pink tc montserrat mb3">{header1}</h2>
+      <h3>{q11}</h3>
+      <TextBox>{a11}</TextBox>
+      <h3>{q12}</h3>
+      <TextBox>{a12}</TextBox>
+      <h3>{q13}</h3>
+      <TextBox>{a13}</TextBox>
+      <h3>{q14}</h3>
+      <TextBox>{a14}</TextBox>
+      <h3>{q15}</h3>
+      <TextBox>{a15}</TextBox>
+      <h2 className="f3 pink tc montserrat mb3">{header2}</h2>
+      <h3>{q21}</h3>
+      <TextBox>{a21}</TextBox>
+      <h3>{q22}</h3>
+      <TextBox>{a22}</TextBox>
+      <h3>{q23}</h3>
+      <TextBox>{a23}</TextBox>
+      <h3>{q24}</h3>
+      <TextBox>{a24}</TextBox>
+      <h2 className="f3 pink tc montserrat mb3">{header3}</h2>
+      <h3>{q31}</h3>
+      <TextBox>{a31}</TextBox>
+      <h3>{q32}</h3>
+      <TextBox>{a32}</TextBox>
+      <h3>{q33}</h3>
+      <TextBox>{a33}</TextBox>
+      <h3>{q34}</h3>
+      <TextBox>{a34}</TextBox>
+      <h2 className="f3 pink tc montserrat mb3">{header4}</h2>
+      <h3>{q41}</h3>
+      <TextBox>{a41}</TextBox>
+      <h3>{q42}</h3>
+      <TextBox>{a42}</TextBox>
+      <h3>{q43}</h3>
+      <TextBox>{a43}</TextBox>
+      <h3>{q44}</h3>
+      <TextBox>{a44}</TextBox>
+      <h3>{q45}</h3>
+      <TextBox>{a45}</TextBox>
+      <h3>{q46}</h3>
+      <TextBox>{a46}</TextBox>
+      <h2 className="f3 pink tc montserrat mb3">{header5}</h2>
+      <h3>{q51}</h3>
+      <TextBox>{a51}</TextBox>
+      <h3>{q52}</h3>
+      <TextBox>{a52}</TextBox>
+      <h3>{q53}</h3>
+      <TextBox>{a53}</TextBox>
+      <h2 className="f3 pink tc montserrat mb3">{header6}</h2>
+      <h3>{q61}</h3>
+      <TextBox>{a61}</TextBox>
 
-      <TextBox>
-        Our community spend about ten minutes reading together, and then
-        anything from just a couple of minutes right up to an hour chatting.
-        This usually starts with a conversation about the text, and moves on to
-        wider topics covering almost anything.
-      </TextBox>
-
-      <TextBox>
-        Most people feedback and tell us that the intimacy of reading together
-        helps them to feel at ease with their partner and allows them to build a
-        deep and meaningful social connection together. Almost everyone who
-        tries Audrey feeds back saying the experience helps them to feel
-        relaxed. Our community often find themselves engaged in conversations
-        with their reading partner that they might not usually have with the
-        people in their day to day lives.
-      </TextBox>
-
-      <h2 className="f3 pink tc montserrat mb3">Before the reading sessions</h2>
-      <TextBox>
-        People can choose to be either the reader or listener, or have a go at
-        both.
-      </TextBox>
-
-      <TextBox>
-        It’s highly unlikely you’ll know the person you are partnered with, but
-        we’ve attempted to pair readers and listeners who we think will connect
-        well and enjoy each other’s company.
-      </TextBox>
-
-      <TextBox>
-        We will introduce you to each other over email. We’ll share bios,
-        provide contact details, and assist with arranging a time for the first
-        reading session. We will provide details about the book you’ll be
-        reading, so that you both have an idea of what to expect before the
-        reading session.
-      </TextBox>
-
-      <TextBox>
-        We will make sure you both receive a copy of the book (usually in a
-        digital format) before the first reading session. This is usually
-        attached to the email when we introduce you to your reading partner.
-      </TextBox>
-
-      <h2 className="f3 pink tc montserrat mb3">The reading sessions</h2>
-
-      <TextBox>
-        You only need a spare 10 minutes to have a reading session. We think
-        Mondays are the best day to start reading sessions. In fact we think
-        Mondays are the best day for all reading sessions. We gently encourage
-        this habit within the Audrey community. Monday&apos;s Audrey Day!
-        It&apos;s helpful for many, but it&apos;s not practical for everyone.
-        Therefore we suggest Tuesdays as back up. If this isn’t possible either,
-        then we kick you out.
-      </TextBox>
-
-      <TextBox>
-        Reading sessions can take place over the phone (audio only) or you can
-        use a messaging app (e.g. Whatsapp, Facebook Messenger or Apple
-        Facetime) where you’ll have access to audio and video. You can decide
-        this with your reading partner once you’ve been introduced over email.
-      </TextBox>
-
-      <TextBox>
-        For each session you can expect the reading to take 10 minutes.
-        Afterwards you’re welcome to open up conversations about the reading,
-        but this is entirely up to you. There’s complete flexibility here - some
-        users chat for a couple of minutes, some for up to an hour... some only
-        talk about their thoughts on the book ... others dive into topics
-        loosely connected to the story... often users end up talking about
-        topics completely unrelated to the book.
-      </TextBox>
-
-      <TextBox>
-        Don’t forget to agree the time for your next session before you say
-        goodbye.
-      </TextBox>
-
-      <h2 className="f4 pink tc montserrat mb3">After the reading sessions</h2>
-
-      <TextBox>
-        We hope that the experience is mutually enjoyable and the book
-        interesting and thought-provoking. It would be great to receive some
-        feedback. Positives and negatives. Anything you enjoyed or did not enjoy
-        about it. Ways that we could improve the experience etc.
-      </TextBox>
-
-      <TextBox>
-        If you want to read another book, either with the same person, or
-        someone else, please let us know. We’ll be delighted to organise this
-        for you.
-      </TextBox>
-
-      <TextBox>Any questions, please get in touch.</TextBox>
+      <TextBox>{footer}</TextBox>
     </Layout>
   )
 }
+
+FAQ.propTypes = {
+  data: PropTypes.object,
+}
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(frontmatter: { title: { eq: "FAQs" } }) {
+      frontmatter {
+        header1
+        q11
+        a11
+        q12
+        a12
+        q13
+        a13
+        q14
+        a14
+        q15
+        a15
+        header2
+        q21
+        a21
+        q22
+        a22
+        q23
+        a23
+        q24
+        a24
+        header3
+        q31
+        a31
+        q32
+        a32
+        q33
+        a33
+        q34
+        a34
+        header4
+        q41
+        a41
+        q42
+        a42
+        q43
+        a43
+        q44
+        a44
+        q45
+        a45
+        q46
+        a46
+        header5
+        q51
+        a51
+        q52
+        a52
+        q53
+        a53
+        header6
+        q61
+        a61
+        footer
+      }
+    }
+  }
+`
 
 export default FAQ

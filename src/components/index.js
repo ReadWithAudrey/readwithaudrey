@@ -11,6 +11,7 @@ import RadioButton from './RadioButton/RadioButton'
 import TextBox from './TextBox/TextBox'
 import TextArea from './TextArea/TextArea'
 import FormSection from './FormSection/FormSection'
+import ErrorSpan from './ErrorSpan/ErrorSpan'
 
 export {
   HomepageLayout,
@@ -26,4 +27,5 @@ export {
   TextBox,
   TextArea,
   FormSection,
+  ErrorSpan,
 }
