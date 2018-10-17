@@ -12,25 +12,17 @@ const HowItWorks = () => (
   <StaticQuery
     query={query}
     render={data => {
-      const {
-        h1,
-        Join,
-        p1,
-        Connect,
-        p2,
-        Read,
-        p3,
-      } = data.markdownRemark.frontmatter
+      const { header, p1, p2, p3 } = data.markdownRemark.frontmatter
       return (
         <StyledHowItWorks>
-          <h2 className="f2 pink tc">{h1}</h2>
+          <h2 className="f2 pink tc">{header}</h2>
           <div id="step-1-register">
-            <h2 className="f3 pink tc">{Join}</h2>
+            <h2 className="f3 pink tc">Join</h2>
             <img src={man} alt="Icon of a man" className="small-icon" />
             <TextBox>{p1}</TextBox>
           </div>
           <div id="step-2-connect">
-            <h2 className="f3 pink tc">{Connect}</h2>
+            <h2 className="f3 pink tc">Connect</h2>
             <img
               src={pair}
               alt="Icon of a pair of people"
@@ -39,7 +31,7 @@ const HowItWorks = () => (
             <TextBox>{p2}</TextBox>
           </div>
           <div id="step-3-read">
-            <h2 className="f3 pink tc">{Read}</h2>
+            <h2 className="f3 pink tc">Read</h2>
             <img src={book} alt="Icon of a man" className="small-icon" />
             <TextBox>{p3}</TextBox>
           </div>
@@ -66,12 +58,9 @@ const query = graphql`
     }
     markdownRemark(frontmatter: { title: { eq: "How It Works" } }) {
       frontmatter {
-        h1
-        Join
+        header
         p1
-        Connect
         p2
-        Read
         p3
       }
     }
