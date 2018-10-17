@@ -37,7 +37,7 @@ const Form3 = ({ data }) => {
         <StatusBar type="active">3. Your Bio</StatusBar>
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
-          {({ story, storyError, storyErrorSpan, specialRequests, updateForm, handleSubmit }) => (
+          {({ story, storyError, storyErrorSpan, storyTipsBox, specialRequests, updateForm, handleSubmit, showTips }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
               <ErrorSpan type={storyErrorSpan}>{storyError}</ErrorSpan>
@@ -47,7 +47,10 @@ const Form3 = ({ data }) => {
                 name="story"
                 value={story}
               />
-              <TextBox className="f">{tips}</TextBox>
+              <a onClick={showTips} className="flex justify-center underline mb2">(Need tips?)</a>
+              {storyTipsBox && (
+                <TextBox className="f">{tips}</TextBox>
+              )}
               <Label>{q2}</Label>
               <TextArea
                 placeholder={q2Placeholder}

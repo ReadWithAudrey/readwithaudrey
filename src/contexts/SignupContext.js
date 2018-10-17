@@ -83,6 +83,7 @@ export class SignupProvider extends React.Component {
       this.setState({ storyErrorSpan: "hidden"})
     }
   }
+  showTips = () => this.setState({ storyTipsBox: !this.state.storyTipsBox })
   state = {
     firstName: null,
     nameErrorSpan: 'hidden',
@@ -96,6 +97,7 @@ export class SignupProvider extends React.Component {
     story: null,
     storyError: null,
     storyErrorSpan: 'hidden',
+    storyTipsBox: false,
     specialRequests: '',
     gender: '',
     age: '',
@@ -110,6 +112,7 @@ export class SignupProvider extends React.Component {
     handleNext1: this.handleNext1,
     handleNext2: this.handleNext2,
     handleSubmit: this.handleSubmit,
+    showTips: this.showTips,
   }
   render() {
     return (
