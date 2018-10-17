@@ -30,13 +30,11 @@ const ThankYou = () => {
       <TextBox>
         Why not share the story of Audrey and help us spread the word?
       </TextBox>
-      <TextBox>Have a great day!</TextBox>
-      <TextBox>Rob and the Audrey team</TextBox>
-      <h3 className="f5 pink tc montserrat mb3">Help spread the word</h3>
-      <TextBox>Why not share the story of Audrey?</TextBox>
       <img src={facebook} alt="Facebook" className="fl" />
       <img src={twitter} alt="Twitter" className="fl" />
       <img src={email} alt="Email" className="fl" />
+      <TextBox>Have a great day!</TextBox>
+      <TextBox>Rob and the Audrey team</TextBox>
       <Link to="/">
         <TextBox>Go back to the homepage</TextBox>
       </Link>
