@@ -5,7 +5,12 @@ import { StyledRadioButton, Label, RadioInput } from './RadioButton.style'
 const RadioButton = props => {
   return (
     <StyledRadioButton>
-      <RadioInput type="radio" value={props.children} name={props.children} />
+      <RadioInput
+        type="radio"
+        value={props.children}
+        name={props.name}
+        onChange={props.onChange}
+      />
       <Label>{props.children}</Label>
     </StyledRadioButton>
   )
@@ -13,6 +18,8 @@ const RadioButton = props => {
 
 RadioButton.propTypes = {
   children: PropTypes.string,
+  name: PropTypes.string,
+  onChange: PropTypes.func,
 }
 
 export default RadioButton

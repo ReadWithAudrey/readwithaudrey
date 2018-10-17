@@ -35,7 +35,7 @@ const HowItWorks = () => (
         minutes. Enjoy interesting conversations with each other.
       </TextBox>
     </div>
-    <Link to="/Form1/" className="no-underline white w-100">
+    <Link to="/form1/" className="no-underline white w-100">
       <Button type="register">Get started</Button>
     </Link>
   </StyledHowItWorks>
