@@ -11,6 +11,7 @@ import {
   TextBox,
   Layout,
   FormSection,
+  ErrorSpan,
 } from '../../components/'
 
 const Form3 = ({ data }) => {
@@ -27,25 +28,29 @@ const Form3 = ({ data }) => {
     <Layout>
       <h1 className="f2 pink tc montserrat mb3 mt4">{heading}</h1>
       <FormSection>
-        <Link to="/form1">
+        <Link to="/Form1">
           <StatusBar>1. Basic Details</StatusBar>
         </Link>
-        <Link to="/form2">
+        <Link to="/Form2">
           <StatusBar>2. Further Details</StatusBar>
         </Link>
         <StatusBar type="active">3. Your Bio</StatusBar>
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
-          {({ story, specialRequests, updateForm }) => (
+          {({ story, storyError, storyErrorSpan, storyTipsBox, specialRequests, updateForm, handleSubmit, showTips }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
+              <ErrorSpan type={storyErrorSpan}>{storyError}</ErrorSpan>
               <TextArea
                 placeholder={q1Placeholder}
                 onChange={updateForm}
                 name="story"
                 value={story}
               />
-              <TextBox className="f">{tips}</TextBox>
+              <a onClick={showTips} className="flex justify-center underline mb2">(Need tips?)</a>
+              {storyTipsBox && (
+                <TextBox className="f">{tips}</TextBox>
+              )}
               <Label>{q2}</Label>
               <TextArea
                 placeholder={q2Placeholder}
@@ -53,7 +58,7 @@ const Form3 = ({ data }) => {
                 name="specialRequests"
                 value={specialRequests}
               />
-              <Link to="/thankyou" className="no-underline">
+              <Link to="/thankyou" className="no-underline" onClick={handleSubmit}>
                 <Button type="register">Submit</Button>
               </Link>
             </form>
