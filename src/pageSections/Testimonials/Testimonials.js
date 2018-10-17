@@ -1,52 +1,97 @@
 import React from 'react'
 import StyledTestimonials from './Testimonials.style'
 import { Button, TextBox } from '../../components/index'
-import { Link } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 const Testimonials = () => (
-  <StyledTestimonials>
-    <h1 className="f2 pink tc">What our community are saying</h1>
-    <TextBox>
-      &quot;The reading sessions are getting longer each week because we find
-      that there&apos;s so much to talk about!&quot; Cristina, Sao Paulo.
-    </TextBox>
+  <StaticQuery
+    query={query}
+    render={data => {
+      const {
+        header,
+        n1,
+        n2,
+        n3,
+        n4,
+        n5,
+        t1,
+        t2,
+        t3,
+        t4,
+        t5,
+        footer,
+      } = data.markdownRemark.frontmatter
+      return (
+        <StyledTestimonials>
+          <h1 className="f2 pink tc">{header}</h1>
+          <TextBox>
+            &quot;
+            {t1}
+            &quot; - {n1}
+            Paulo.
+          </TextBox>
 
-    <TextBox>
-      &quot;I like the fact that I can talk about the book with a person that I
-      don&apos;t know - I can be honest and don&apos;t feel like I need to
-      impress anyone.&quot; Shreya, Bangalore.
-    </TextBox>
+          <TextBox>
+            &quot;
+            {t2}
+            &quot; - {n2}
+          </TextBox>
 
-    <TextBox>
-      &quot;You’re not only discovering new books, you’re having a chance to
-      look at the book from a completely different perspective&quot;. Matt,
-      London.
-    </TextBox>
-    <TextBox>
-      &quot;I loved my experience with Sara and I think she would agree that
-      we’ve bonded in a very strong way. We’ve kept in touch&quot;. Maria,
-      Mexico City.
-    </TextBox>
+          <TextBox>
+            &quot;
+            {t3}
+            &quot; - {n3}
+          </TextBox>
+          <TextBox>
+            &quot;
+            {t4}
+            &quot; - {n4}
+          </TextBox>
 
-    <TextBox>
-      &quot;Things are going great and I am enjoying the reading sessions. I
-      think we will be ready this week for book #3 if you can believe it!&quot;
-      Stefanie, Chicago.
-    </TextBox>
+          <TextBox>
+            &quot;
+            {t5}
+            &quot; - {n5}
+          </TextBox>
 
-    <p className="f4 tc">
-      Every week people are reading to each other all around the world. Are you
-      read to join them?
-    </p>
-    <Link to="/form1/" className="no-underline white w-100">
-      <Button type="register">Get started</Button>
-    </Link>
-  </StyledTestimonials>
+          <p className="f4 tc">{footer}</p>
+          <Link to="/Form1/" className="no-underline white w-100">
+            <Button type="register">Get started</Button>
+          </Link>
+        </StyledTestimonials>
+      )
+    }}
+  />
 )
 
 Testimonials.propTypes = {
   siteTitle: PropTypes.string,
 }
 
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(frontmatter: { title: { eq: "Testimonials" } }) {
+      frontmatter {
+        header
+        n1
+        n2
+        n3
+        n4
+        n5
+        t1
+        t2
+        t3
+        t4
+        t5
+        footer
+      }
+    }
+  }
+`
 export default Testimonials
