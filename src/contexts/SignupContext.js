@@ -106,7 +106,7 @@ export class SignupProvider extends React.Component {
     storyTipsBox: false,
     specialRequests: '',
     gender: '',
-    age: '',
+    age: '18-24',
     timezone: '0',
     readlisten: null,
     roleErrorSpan: 'hidden',

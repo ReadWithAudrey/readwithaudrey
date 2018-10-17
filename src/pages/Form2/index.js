@@ -28,7 +28,6 @@ class Form2 extends React.Component {
       q1,
       q1Placeholder,
       q2,
-      q2Placeholder,
       q3,
       readlisten1,
       readlisten2,
@@ -41,7 +40,6 @@ class Form2 extends React.Component {
     } = this.props.data.markdownRemark.frontmatter
     const {
       gender,
-      age,
       readlisten,
       bookErrorSpan,
       bookError,
@@ -66,14 +64,13 @@ class Form2 extends React.Component {
               value={gender}
             />
             <Label>{q2}</Label>
-            <InputBox
-              placeholder={q2Placeholder}
-              onChange={updateForm}
-              name="age"
-              value={age}
-            />
+            <DropDownBox onChange={updateForm} type="age" name="age" />
             <Label>{q3}</Label>
-            <DropDownBox onChange={updateForm} name="timezone" />
+            <DropDownBox
+              onChange={updateForm}
+              type="timezone"
+              name="timezone"
+            />
             <Label>{q4}</Label>
             <ErrorSpan type={roleErrorSpan}>{roleError}</ErrorSpan>
             <RadioButton
