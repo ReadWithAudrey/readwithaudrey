@@ -75,12 +75,12 @@ Array [
     <h1
       className="f2 pink tc montserrat mb3 mt4"
     >
-      Contact Us
+      How can we help you?
     </h1>
     <p
       className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
-      We would love to hear from you. Get in touch by filling out the form below:
+      We would love to hear from you. Your questions and comments are important to us. The best way to reach us is in writing. Please fill out the contact form below:
     </p>
     <form
       action="http://localhost:5000/formPart1"
@@ -94,6 +94,15 @@ Array [
       <input
         className="sc-gzVnrw montserrat mv2 pa2 w-100 ildXbv"
         placeholder="Your Name"
+      />
+      <label
+        className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
+      >
+        Your Email
+      </label>
+      <input
+        className="sc-gzVnrw montserrat mv2 pa2 w-100 ildXbv"
+        placeholder="Your Email"
       />
       <label
         className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
@@ -115,6 +124,21 @@ Array [
           Submit
         </button>
       </Link>
+      <p
+        className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+      >
+        Want to get involved and help us do amazing things? We’d be delighted to chat.
+      </p>
+      <p
+        className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+      >
+        Fancy a coffee? We float between independent bookshops, coffee houses and libraries in Kings Cross, London, England – around the corner from Platform 9¾.
+      </p>
+      <p
+        className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+      >
+        Oh…. almost forgot…. if you’ve got a great book recommendation please please share it with us!
+      </p>
     </form>
   </div>,
   <footer
