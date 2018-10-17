@@ -97,7 +97,7 @@ const Form2 = ({ data }) => {
                 {booktype3}
               </RadioButton>
               <Link to="/form3" className="no-underline">
-                <Button type="register">Continue</Button>
+                <Button style="register">Continue</Button>
               </Link>
             </form>
           )}

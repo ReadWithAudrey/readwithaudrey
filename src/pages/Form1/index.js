@@ -62,9 +62,9 @@ const Form1 = ({ data }) => {
                 value={emailAddress}
               />
               <TextBox>{finalText}</TextBox>
-              <Link to="/form2" className="no-underline">
-                <Button type="register">Continue</Button>
-              </Link>
+              <Button type="submit" style="register">
+                Continue
+              </Button>
             </form>
           )}
         </SignupContext.Consumer>

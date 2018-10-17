@@ -54,7 +54,7 @@ const Form3 = ({ data }) => {
                 value={specialRequests}
               />
               <Link to="/thankyou" className="no-underline">
-                <Button type="register">Submit</Button>
+                <Button style="register">Submit</Button>
               </Link>
             </form>
           )}

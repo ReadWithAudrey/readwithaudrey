@@ -19,7 +19,7 @@ const WelcomeScreen = () => (
         Let&apos;s find you a reading partner
       </h2>
       <Link to="/form1/" className="white no-underline w-100">
-        <Button type="register" className="mt3">
+        <Button style="register" className="mt3">
           Get started
         </Button>
       </Link>

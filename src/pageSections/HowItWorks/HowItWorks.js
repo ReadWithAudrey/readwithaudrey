@@ -36,7 +36,7 @@ const HowItWorks = () => (
       </TextBox>
     </div>
     <Link to="/form1/" className="no-underline white w-100">
-      <Button type="register">Get started</Button>
+      <Button style="register">Get started</Button>
     </Link>
   </StyledHowItWorks>
 )
