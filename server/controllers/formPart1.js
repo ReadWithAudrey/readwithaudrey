@@ -1,6 +1,6 @@
 const { postLead } = require('../queries/postData/');
 
 exports.post = (req, res) => {
-  postLead(req.body);
-  res.redirect('http://localhost:8000/form2');
+  console.log(req.body);
+  res.send(200);
 };

@@ -1,10 +1,8 @@
-/* eslint-disable */
 import React from 'react'
 import PropTypes from 'prop-types'
 export const SignupContext = React.createContext()
 export class SignupProvider extends React.Component {
   updateForm = event => {
-    console.log(event.target)
     this.setState({ [event.target.name]: event.target.value })
   }
   state = {
@@ -15,7 +13,7 @@ export class SignupProvider extends React.Component {
     specialRequests: '',
     gender: '',
     age: '',
-    timezone: '',
+    timezone: '0',
     readlisten: '',
     booktype: '',
     updateForm: this.updateForm,
