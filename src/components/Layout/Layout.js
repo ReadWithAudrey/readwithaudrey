@@ -11,7 +11,6 @@ import '../../styles/index.css'
 import { Header, Footer } from '../index.js'
 
 export const PureLayout = ({ children, data }) => {
-  console.log(typeof data)
   return (
     <React.Fragment>
       <Helmet

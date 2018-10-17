@@ -1,13 +1,43 @@
-const sendPairingEmail = require('./sendPairingEmail');
-const getNewPairs = require('../../queries/getData/getPairs');
+const getNewPairs = require('../../queries/getData/getNewPairs');
 const updateSentStatus = require('../../queries/postData/updateSentStatus');
+const {
+  downloadAttachments,
+  formatAttachments,
+  orgAttachments,
+  sendPairingEmail,
+} = require('./sendPairingEmail');
 
-getNewPairs
-  .then((pairs) => {
+const sendAllPairingEmails = () => {
+  getNewPairs().then((pairs) => {
     pairs.forEach((pair) => {
-      sendPairingEmail(pair)
-        .then(console.log);
-      // .then(updateSentStatus(pairingId));
+      downloadAttachments(pair)
+        .then(formatAttachments)
+        .then(formatedAtt => orgAttachments(pair, formatedAtt))
+        .then(orgAtt => sendPairingEmail(pair, orgAtt))
+        .then(() => console.log('Success email sent'))
+        .catch(e => console.log('A pair has raised an error', e.message));
     });
-  })
-  .catch(err => console.log(err));
+  });
+};
+
+sendAllPairingEmails();
+//
+//       }).catch(e => console.log('error during pair query', e)
+//     sendPairingEmail(pair)
+//       .then((res) => {
+//         console.log('matched a pair');
+//         const { personalizations } = JSON.parse(res.config.data);
+//         const { dynamic_template_data: { pairingId } } = personalizations[0];
+//         return updateSentStatus(pairingId);
+//       });
+//   });
+// };
+// const pairingEmail = () => {
+//   getNewPairs()
+//     .then(sendAllPairingEmails).catch(err => console.log(err));
+// };
+//
+//
+// pairingEmail();
+
+module.exports = sendAllPairingEmails;

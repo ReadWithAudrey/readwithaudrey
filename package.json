@@ -3,6 +3,15 @@
   "description": "Gatsby default starter",
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "serve": "gatsby serve",
+    "format": "prettier --write '**/*.js'",
+    "start": "node server/index.js",
+    "devstart": "nodemon server/index.js",
+    "test": "jest"
+  },
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
     "airtable": "^0.5.6",
@@ -32,19 +41,7 @@
     "tachyons-aspect-ratios": "^1.0.1",
     "tachyons-custom": "^4.9.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop",
-    "serve": "gatsby serve",
-    "format": "prettier --write '**/*.js'",
-    "start": "node server/index.js",
-    "devstart": "nodemon server/index.js",
-    "test": "jest"
-  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
@@ -64,8 +61,13 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
     "prettier": "^1.14.2",
-    "react-test-renderer": "^16.5.2"
+    "react-test-renderer": "^16.5.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
   },
+  "keywords": [
+    "gatsby"
+  ],
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js"
