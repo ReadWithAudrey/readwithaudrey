@@ -13,6 +13,7 @@ import {
   TextBox,
   Layout,
   FormSection,
+  ErrorSpan,
 } from '../../components/'
 
 const Form2 = ({ data }) => {
@@ -45,7 +46,7 @@ const Form2 = ({ data }) => {
         </Link>
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
-          {({ gender, readlisten, updateForm }) => (
+          {({ gender, readlisten, roleError, roleErrorSpan, booktype, bookError, bookErrorSpan, updateForm, handleNext2 }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
               <InputBox
@@ -59,6 +60,7 @@ const Form2 = ({ data }) => {
               <Label>{q3}</Label>
               <DropDownBox onChange={updateForm} name="timezone" type="timezone" />
               <Label>{q4}</Label>
+              <ErrorSpan type={roleErrorSpan}>{roleError}</ErrorSpan>
               <RadioButton
                 name="readlisten"
                 onChange={updateForm}
@@ -81,16 +83,29 @@ const Form2 = ({ data }) => {
                 {readlisten3}
               </RadioButton>
               <Label>{q5}</Label>
-              <RadioButton name="booktype" onChange={updateForm}>
+              <ErrorSpan type={bookErrorSpan}>{bookError}</ErrorSpan>
+              <RadioButton
+                name="booktype"
+                onChange={updateForm}
+                value={booktype}
+              >
                 {booktype1}
               </RadioButton>
-              <RadioButton name="booktype" onChange={updateForm}>
+              <RadioButton
+                name="booktype"
+                onChange={updateForm}
+                value={booktype}
+              >
                 {booktype2}
               </RadioButton>
-              <RadioButton name="booktype" onChange={updateForm}>
+              <RadioButton
+                name="booktype"
+                onChange={updateForm}
+                value={booktype}
+              >
                 {booktype3}
               </RadioButton>
-              <Link to="/Form3" className="no-underline">
+              <Link to="/Form3" className="no-underline" onClick={handleNext2}>
                 <Button type="register">Continue</Button>
               </Link>
             </form>

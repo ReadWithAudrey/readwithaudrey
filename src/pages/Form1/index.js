@@ -39,7 +39,7 @@ const Form1 = ({ data }) => {
         </Link>
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
-          {({ firstName, secondName, emailAddress, nameErrorSpan, nameError, surnameErrorSpan, surnameError, emailErrorSpan, emailError, updateForm, handleNext }) => (
+          {({ firstName, secondName, emailAddress, nameErrorSpan, nameError, surnameErrorSpan, surnameError, emailErrorSpan, emailError, updateForm, handleNext1 }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
               <ErrorSpan type={nameErrorSpan}>{nameError}</ErrorSpan>
@@ -69,7 +69,7 @@ const Form1 = ({ data }) => {
                 required
               />
               <TextBox>{finalText}</TextBox>
-              <Link to="/Form2" className="no-underline" onClick={handleNext}>
+              <Link to="/Form2" className="no-underline" onClick={handleNext1}>
                 <Button type="register">Continue</Button>
               </Link>
             </form>

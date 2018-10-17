@@ -6,7 +6,7 @@ export class SignupProvider extends React.Component {
   updateForm = event => {
     this.setState({ [event.target.name]: event.target.value })
   }
-  handleNext = event => {
+  handleNext1 = event => {
     // first name
     let name = this.state.firstName
     if (name === null) {
@@ -53,28 +53,53 @@ export class SignupProvider extends React.Component {
       }
     }
   }
+  handleNext2 = event => {
+    // read or listen
+    let role = this.state.readlisten
+    if (role === null) {
+      event.preventDefault()
+      this.state.roleError = "Please choose a role"
+      this.setState({ roleErrorSpan: "visible"})
+    } else {
+      this.setState({ roleErrorSpan: "hidden"})
+    }
+    // book type
+    let book = this.state.booktype
+    if (book === null) {
+      event.preventDefault()
+      this.state.bookError = "Please choose a book type"
+      this.setState({ bookErrorSpan: "visible"})
+    } else {
+      this.setState({ bookErrorSpan: "hidden"})
+    }
+  }
   // handleSubmit = () => {
 
   // }
   state = {
     firstName: null,
+    nameErrorSpan: 'hidden',
+    nameError: null,
     secondName: null,
+    surnameErrorSpan: 'hidden',
+    surnameError: null,
     emailAddress: null,
+    emailErrorSpan: 'hidden',
+    emailError: null,
     story: null,
     specialRequests: '',
     gender: '',
     age: '',
     timezone: '',
-    readlisten: '',
-    booktype: '',
-    nameErrorSpan: 'hidden',
-    nameError: null,
-    surnameErrorSpan: 'hidden',
-    surnameError: null,
-    emailErrorSpan: 'hidden',
-    emailError: null,
+    readlisten: null,
+    roleErrorSpan: 'hidden',
+    roleError: null,
+    booktype: null,
+    bookErrorSpan: 'hidden',
+    bookError: null,
     updateForm: this.updateForm,
-    handleNext: this.handleNext,
+    handleNext1: this.handleNext1,
+    handleNext2: this.handleNext2
     // handleSubmit: this.handleSubmit,
   }
   render() {
