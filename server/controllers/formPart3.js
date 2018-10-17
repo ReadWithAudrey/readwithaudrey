@@ -1,6 +1,7 @@
 const { postNewUser } = require('../queries/postData/');
 
 exports.post = (req, res) => {
+  console.log(req.body);
   postNewUser(req.body);
-  res.redirect('http://localhost:8000/thankyou');
+  res.sendStatus(200);
 };

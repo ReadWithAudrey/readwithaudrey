@@ -2,7 +2,6 @@ require('dotenv').config();
 const base = require('../../dbConnection');
 
 const postLead = (lead) => {
-  console.log(lead);
   base('leads')
     .select({
       filterByFormula: `AND(email='${lead.emailAddress}')`,
