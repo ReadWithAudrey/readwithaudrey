@@ -31,7 +31,7 @@ Array [
         className="sc-htpNat montserrat bRYTxq"
       >
         <Link
-          to="/story/"
+          to="/why/"
         >
           Why?
         </Link>
