@@ -1,6 +1,6 @@
 const { postLead } = require('../queries/postData/');
 
 exports.post = (req, res) => {
-  console.log(req.body);
-  res.send(200);
+  postLead(req.body);
+  res.sendStatus(200);
 };
