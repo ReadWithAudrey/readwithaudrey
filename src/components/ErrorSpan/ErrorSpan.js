@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import { VisibleSpan, HiddenSpan } from './ErrorSpan.style'
 
 const ErrorSpan = props => {
-  if (props.type === 'visible') {
-    return <VisibleSpan>{props.children}</VisibleSpan>
-  } else if (props.type === 'hidden') {
+  if (props.type === 'hidden') {
     return <HiddenSpan>{props.children}</HiddenSpan>
+  } else {
+    return <VisibleSpan>{props.children}</VisibleSpan>
   }
 }
 

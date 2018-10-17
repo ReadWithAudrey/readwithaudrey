@@ -71,26 +71,26 @@ const DropDownBox = props => {
         <option value="13">(GMT+13:00) Nukualofa</option>
       </Select>
     )
-  } else if (props.type === 'age') {
+  } else {
     return (
-    <Select onChange={props.onChange} name={props.name}>
-      <option value="18-24">18-24</option>
-      <option value="25-34">25-34</option>
-      <option value="35-44">35-44</option>
-      <option value="45-54">45-54</option>
-      <option value="55-64">55-64</option>
-      <option value="65-74">65-74</option>
-      <option value="75+">75+</option>
-    </Select>
+      <Select onChange={props.onChange} name={props.name}>
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-44">35-44</option>
+        <option value="45-54">45-54</option>
+        <option value="55-64">55-64</option>
+        <option value="65-74">65-74</option>
+        <option value="75+">75+</option>
+      </Select>
     )
   }
 }
 
-  DropDownBox.propTypes = {
-    children: PropTypes.string,
-    onChange: PropTypes.func,
-    name: PropTypes.string,
-    type: PropTypes.string,
-  }
+DropDownBox.propTypes = {
+  children: PropTypes.string,
+  onChange: PropTypes.func,
+  name: PropTypes.string,
+  type: PropTypes.string,
+}
 
-  export default DropDownBox
+export default DropDownBox
