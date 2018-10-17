@@ -9,8 +9,7 @@ const Testimonials = () => (
     query={query}
     render={data => {
       const {
-        h1,
-        f1,
+        header,
         n1,
         n2,
         n3,
@@ -21,10 +20,11 @@ const Testimonials = () => (
         t3,
         t4,
         t5,
+        footer,
       } = data.markdownRemark.frontmatter
       return (
         <StyledTestimonials>
-          <h1 className="f2 pink tc">{h1}</h1>
+          <h1 className="f2 pink tc">{header}</h1>
           <TextBox>
             &quot;
             {t1}
@@ -55,7 +55,7 @@ const Testimonials = () => (
             &quot; - {n5}
           </TextBox>
 
-          <p className="f4 tc">{f1}</p>
+          <p className="f4 tc">{footer}</p>
           <Link to="/Form1/" className="no-underline white w-100">
             <Button type="register">Get started</Button>
           </Link>
@@ -78,8 +78,7 @@ export const query = graphql`
     }
     markdownRemark(frontmatter: { title: { eq: "Testimonials" } }) {
       frontmatter {
-        f1
-        h1
+        header
         n1
         n2
         n3
@@ -90,6 +89,7 @@ export const query = graphql`
         t3
         t4
         t5
+        footer
       }
     }
   }
