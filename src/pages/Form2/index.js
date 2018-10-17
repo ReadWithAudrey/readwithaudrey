@@ -37,11 +37,11 @@ const Form2 = ({ data }) => {
     <Layout>
       <h1 className="f2 pink tc montserrat mb3 mt4">{heading}</h1>
       <FormSection>
-        <Link to="/form1/">
+        <Link to="/Form1/">
           <StatusBar>1. Contact Details</StatusBar>
         </Link>
         <StatusBar type="active">2. Further Details</StatusBar>
-        <Link to="/form3/">
+        <Link to="/Form3/">
           <StatusBar>3. Your Story</StatusBar>
         </Link>
         <TextBox>{description}</TextBox>

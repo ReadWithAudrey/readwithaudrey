@@ -27,10 +27,10 @@ const Form3 = ({ data }) => {
     <Layout>
       <h1 className="f2 pink tc montserrat mb3 mt4">{heading}</h1>
       <FormSection>
-        <Link to="/form1">
+        <Link to="/Form1">
           <StatusBar>1. Basic Details</StatusBar>
         </Link>
-        <Link to="/form2">
+        <Link to="/Form2">
           <StatusBar>2. Further Details</StatusBar>
         </Link>
         <StatusBar type="active">3. Your Bio</StatusBar>
