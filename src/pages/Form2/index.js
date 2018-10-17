@@ -22,7 +22,6 @@ const Form2 = ({ data }) => {
     q1,
     q1Placeholder,
     q2,
-    q2Placeholder,
     q3,
     readlisten1,
     readlisten2,
@@ -46,7 +45,7 @@ const Form2 = ({ data }) => {
         </Link>
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
-          {({ gender, age, readlisten, updateForm }) => (
+          {({ gender, readlisten, updateForm }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
               <InputBox
@@ -56,14 +55,9 @@ const Form2 = ({ data }) => {
                 value={gender}
               />
               <Label>{q2}</Label>
-              <InputBox
-                placeholder={q2Placeholder}
-                onChange={updateForm}
-                name="age"
-                value={age}
-              />
+              <DropDownBox onChange={updateForm} name="age" type="age" />
               <Label>{q3}</Label>
-              <DropDownBox onChange={updateForm} name="timezone" />
+              <DropDownBox onChange={updateForm} name="timezone" type="timezone" />
               <Label>{q4}</Label>
               <RadioButton
                 name="readlisten"
