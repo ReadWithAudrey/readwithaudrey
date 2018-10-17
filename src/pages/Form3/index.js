@@ -11,6 +11,7 @@ import {
   TextBox,
   Layout,
   FormSection,
+  ErrorSpan,
 } from '../../components/'
 
 const Form3 = ({ data }) => {
@@ -36,9 +37,10 @@ const Form3 = ({ data }) => {
         <StatusBar type="active">3. Your Bio</StatusBar>
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
-          {({ story, specialRequests, updateForm }) => (
+          {({ story, storyError, storyErrorSpan, specialRequests, updateForm, handleSubmit }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
+              <ErrorSpan type={storyErrorSpan}>{storyError}</ErrorSpan>
               <TextArea
                 placeholder={q1Placeholder}
                 onChange={updateForm}
@@ -53,7 +55,7 @@ const Form3 = ({ data }) => {
                 name="specialRequests"
                 value={specialRequests}
               />
-              <Link to="/thankyou" className="no-underline">
+              <Link to="/thankyou" className="no-underline" onClick={handleSubmit}>
                 <Button type="register">Submit</Button>
               </Link>
             </form>

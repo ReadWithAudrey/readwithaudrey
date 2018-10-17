@@ -73,9 +73,16 @@ export class SignupProvider extends React.Component {
       this.setState({ bookErrorSpan: "hidden"})
     }
   }
-  // handleSubmit = () => {
-
-  // }
+  handleSubmit = event => {
+    let story = this.state.story
+    if (story === null) {
+      event.preventDefault()
+      this.state.storyError = "Please tell us something about yourself so we can match you"
+      this.setState({ storyErrorSpan: "visible"})
+    } else {
+      this.setState({ storyErrorSpan: "hidden"})
+    }
+  }
   state = {
     firstName: null,
     nameErrorSpan: 'hidden',
@@ -87,6 +94,8 @@ export class SignupProvider extends React.Component {
     emailErrorSpan: 'hidden',
     emailError: null,
     story: null,
+    storyError: null,
+    storyErrorSpan: 'hidden',
     specialRequests: '',
     gender: '',
     age: '',
@@ -99,8 +108,8 @@ export class SignupProvider extends React.Component {
     bookError: null,
     updateForm: this.updateForm,
     handleNext1: this.handleNext1,
-    handleNext2: this.handleNext2
-    // handleSubmit: this.handleSubmit,
+    handleNext2: this.handleNext2,
+    handleSubmit: this.handleSubmit,
   }
   render() {
     return (
