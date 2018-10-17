@@ -8,20 +8,22 @@ const AboutAudrey = () => (
   <StaticQuery
     query={query}
     render={data => {
-      const { q1, a1, q2, a2, q3, a3 } = data.markdownRemark.frontmatter
+      const {
+        text1,
+        text2,
+        text3,
+        text4,
+        text5,
+      } = data.markdownRemark.frontmatter
       return (
         <About>
-          <div id="what-is-audrey">
-            <h2 className="f2 pink tc">{q1}</h2>
-            <TextBox className="tc lh-copy f4">{a1}</TextBox>
-          </div>
-          <div id="who-for">
-            <h2 className="f2 pink tc">{q2}</h2>
-            <TextBox className="tc lh-copy f4">{a2}</TextBox>
-          </div>
-          <div id="who-with">
-            <h2 className="f2 pink tc">{q3}</h2>
-            <TextBox className="tc lh-copy f4">{a3}</TextBox>
+          <div id="why-maintext">
+            <h2 className="f2 pink tc">Why</h2>
+            <TextBox className="tc lh-copy f4">{text1}</TextBox>
+            <TextBox className="tc lh-copy f4">{text2}</TextBox>
+            <TextBox className="tc lh-copy f4">{text3}</TextBox>
+            <TextBox className="tc lh-copy f4">{text4}</TextBox>
+            <TextBox className="tc lh-copy f4">{text5}</TextBox>
           </div>
         </About>
       )
@@ -43,12 +45,11 @@ export const query = graphql`
     }
     markdownRemark(frontmatter: { title: { eq: "About Audrey" } }) {
       frontmatter {
-        q1
-        a1
-        q2
-        a2
-        q3
-        a3
+        text1
+        text2
+        text3
+        text4
+        text5
       }
     }
   }

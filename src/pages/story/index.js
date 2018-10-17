@@ -1,38 +1,46 @@
 import React from 'react'
-
+import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 import { TextBox, Layout } from '../../components/'
 
-const Story = () => {
+const Story = ({ data }) => {
+  const { text1, text2, text3, text4, text5 } = data.markdownRemark.frontmatter
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4">Our Why</h1>
-      <TextBox>
-        We passionately believe that by connecting people to read aloud
-        together, Audrey can help to build relationships, remind us how much
-        more we have in common than divides us, and create a more compassionate
-        world.
-      </TextBox>
+      <h1 className="f2 pink tc montserrat mb3 mt4">Why</h1>
+      <TextBox>{text1}</TextBox>
 
-      <TextBox>
-        The shared experience of reading aloud together enables us to reflect on
-        the human condition, stirs empathy and encourages conversations.
-      </TextBox>
+      <TextBox>{text2}</TextBox>
 
-      <TextBox>
-        Reading aloud together moves us to talk about our own stories and
-        emotions and develop a real sense of connectedness with others.
-      </TextBox>
-      <TextBox>
-        Reading aloud together can expose us to new ideas and help us to see
-        things from another’s viewpoint. It teaches the value of listening.
-      </TextBox>
-      <TextBox>
-        Audrey is founded upon the belief that the simple act of reading aloud
-        with someone else can inspire us, help us to focus on what’s important
-        to us, and make a meaningful difference in our everyday lives.
-      </TextBox>
+      <TextBox>{text3}</TextBox>
+
+      <TextBox>{text4}</TextBox>
+
+      <TextBox>{text5}</TextBox>
     </Layout>
   )
 }
 
+Story.propTypes = {
+  data: PropTypes.object,
+}
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(frontmatter: { title: { eq: "Story" } }) {
+      frontmatter {
+        text1
+        text2
+        text3
+        text4
+        text5
+      }
+    }
+  }
+`
 export default Story
