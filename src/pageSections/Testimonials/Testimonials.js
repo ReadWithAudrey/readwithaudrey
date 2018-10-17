@@ -1,7 +1,7 @@
 import React from 'react'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import StyledTestimonials from './Testimonials.style'
 import { Button, TextBox } from '../../components/index'
-import { Link, StaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 const Testimonials = () => (
@@ -30,7 +30,7 @@ Testimonials.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-export const query = graphql`
+const query = graphql`
   query {
     site {
       siteMetadata {
