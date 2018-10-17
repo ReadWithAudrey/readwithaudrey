@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: ReadWithAudrey/readwithaudrey
-  branch: markdown # Branch to update (optional; defaults to master)
+  branch: master # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
 
