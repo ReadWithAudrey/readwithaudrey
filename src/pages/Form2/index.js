@@ -47,7 +47,7 @@ const Form2 = ({ data }) => {
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
           {({ gender, age, readlisten, updateForm }) => (
-            <form method="POST" action="http://localhost:5000/formPart1">
+            <form method="POST">
               <Label>{q1}</Label>
               <InputBox
                 placeholder={q1Placeholder}

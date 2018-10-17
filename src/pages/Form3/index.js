@@ -6,6 +6,7 @@ import { SignupContext } from '../../contexts/SignupContext'
 import {
   Label,
   Button,
+  InputBox,
   StatusBar,
   TextArea,
   TextBox,
@@ -36,8 +37,30 @@ const Form3 = ({ data }) => {
         <StatusBar type="active">3. Your Bio</StatusBar>
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
-          {({ story, specialRequests, updateForm }) => (
-            <form method="POST" action="http://localhost:5000/formPart1">
+          {({
+            firstName,
+            secondName,
+            emailAddress,
+            gender,
+            age,
+            readlisten,
+            booktype,
+            story,
+            specialRequests,
+            updateForm,
+          }) => (
+            <form method="POST" action="http://localhost:5000/formPart3">
+              <InputBox type="hidden" name="firstName" value={firstName} />
+              <InputBox type="hidden" name="secondName" value={secondName} />
+              <InputBox
+                type="hidden"
+                name="emailAddress"
+                value={emailAddress}
+              />
+              <InputBox type="hidden" name="gender" value={gender} />
+              <InputBox type="hidden" name="age" value={age} />
+              <InputBox type="hidden" name="booktype" value={booktype} />
+              <InputBox type="hidden" name="readlisten" value={readlisten} />
               <Label>{q1}</Label>
               <TextArea
                 placeholder={q1Placeholder}
@@ -53,9 +76,9 @@ const Form3 = ({ data }) => {
                 name="specialRequests"
                 value={specialRequests}
               />
-              <Link to="/thankyou" className="no-underline">
-                <Button style="register">Submit</Button>
-              </Link>
+              <Button type="submit" style="register">
+                Submit
+              </Button>
             </form>
           )}
         </SignupContext.Consumer>

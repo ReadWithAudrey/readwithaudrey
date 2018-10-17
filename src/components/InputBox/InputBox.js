@@ -7,6 +7,7 @@ const InputBox = props => (
     placeholder={props.placeholder}
     onChange={props.onChange}
     name={props.name}
+    type={props.type}
   />
 )
 
@@ -14,6 +15,7 @@ InputBox.propTypes = {
   placeholder: PropTypes.string,
   onChange: PropTypes.func,
   name: PropTypes.string,
+  type: PropTypes.string,
 }
 
 export default InputBox
