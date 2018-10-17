@@ -8,23 +8,14 @@ const Testimonials = () => (
   <StaticQuery
     query={query}
     render={data => {
-      const {
-        header,
-        t1,
-        t2,
-        t3,
-        t4,
-        t5,
-        footer,
-      } = data.markdownRemark.frontmatter
+      const { html } = data.markdownRemark
+      const { header, footer } = data.markdownRemark.frontmatter
       return (
         <StyledTestimonials>
           <h1 className="f2 pink tc">{header}</h1>
-          <TextBox>{t1}</TextBox>
-          <TextBox>{t2}</TextBox>
-          <TextBox>{t3}</TextBox>
-          <TextBox>{t4}</TextBox>
-          <TextBox>{t5}</TextBox>
+          <TextBox>
+            <div dangerouslySetInnerHTML={{ __html: html }} />
+          </TextBox>
 
           <p className="f4 tc">{footer}</p>
           <Link to="/Form1/" className="no-underline white w-100">
@@ -48,13 +39,9 @@ export const query = graphql`
       }
     }
     markdownRemark(frontmatter: { title: { eq: "Testimonials" } }) {
+      html
       frontmatter {
         header
-        t1
-        t2
-        t3
-        t4
-        t5
         footer
       }
     }
