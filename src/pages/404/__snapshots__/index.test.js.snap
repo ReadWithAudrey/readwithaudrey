@@ -47,7 +47,7 @@ Array [
         </Link>
         <Link
           className="mv2 white br2 ba bw1 b--white"
-          to="/form1"
+          to="/Form1"
         >
           Join Us
         </Link>

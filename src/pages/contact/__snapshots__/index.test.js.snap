@@ -47,7 +47,7 @@ Array [
         </Link>
         <Link
           className="mv2 white br2 ba bw1 b--white"
-          to="/form1"
+          to="/Form1"
         >
           Join Us
         </Link>
@@ -119,7 +119,7 @@ Array [
         to="/thankyou"
       >
         <button
-          className="sc-gZMcBi bg-pink hover-bg-orange white pa2 br2 w-40 w-30-ns h3 f3 mt4 center gTtpNx"
+          className="sc-gZMcBi bg-pink hover-bg-dark-pink white pa2 br2 w-40 w-30-ns h3 f3 mt4 center gTtpNx"
         >
           Submit
         </button>
