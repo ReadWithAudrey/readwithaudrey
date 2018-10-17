@@ -54,9 +54,10 @@ const HowItWorks = () => (
 
 HowItWorks.propTypes = {
   siteTitle: PropTypes.string,
+  data: PropTypes.object,
 }
 
-const query = graphql`
+export const query = graphql`
   query {
     site {
       siteMetadata {
