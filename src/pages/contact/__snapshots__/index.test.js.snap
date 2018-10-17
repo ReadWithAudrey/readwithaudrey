@@ -47,7 +47,7 @@ Array [
         </Link>
         <Link
           className="mv2 white br2 ba bw1 b--white"
-          to="/Form1"
+          to="/form1"
         >
           Join Us
         </Link>
@@ -70,17 +70,17 @@ Array [
     </nav>
   </header>,
   <div
-    className="flex flex-column items-center justify-center page-padding ph4"
+    className="page-padding ph4 w-100 w-70-l center"
   >
     <h1
       className="f2 pink tc montserrat mb3 mt4"
     >
-      Contact Us
+      How can we help you?
     </h1>
     <p
       className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
-      We would love to hear from you. Get in touch by filling out the form below:
+      We would love to hear from you. Your questions and comments are important to us. The best way to reach us is in writing. Please fill out the contact form below:
     </p>
     <form
       action="http://localhost:5000/formPart1"
@@ -98,10 +98,19 @@ Array [
       <label
         className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
       >
+        Your Email
+      </label>
+      <input
+        className="sc-gzVnrw montserrat mv2 pa2 w-100 ildXbv"
+        placeholder="Your Email"
+      />
+      <label
+        className="sc-htoDjs pink montserrat fw9 f5 pv2 kGbKV"
+      >
         Your Message
       </label>
       <textarea
-        className="sc-kpOJdX montserrat eZKhxe"
+        className="sc-chPdSV montserrat mZiEN"
         placeholder="Your Message"
         rows="5"
       />
@@ -115,6 +124,21 @@ Array [
           Submit
         </button>
       </Link>
+      <p
+        className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+      >
+        Want to get involved and help us do amazing things? We’d be delighted to chat.
+      </p>
+      <p
+        className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+      >
+        Fancy a coffee? We float between independent bookshops, coffee houses and libraries in Kings Cross, London, England – around the corner from Platform 9¾.
+      </p>
+      <p
+        className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+      >
+        Oh…. almost forgot…. if you’ve got a great book recommendation please please share it with us!
+      </p>
     </form>
   </div>,
   <footer

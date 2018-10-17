@@ -47,7 +47,7 @@ Array [
         </Link>
         <Link
           className="mv2 white br2 ba bw1 b--white"
-          to="/Form1"
+          to="/form1"
         >
           Join Us
         </Link>
@@ -70,33 +70,38 @@ Array [
     </nav>
   </header>,
   <div
-    className="flex flex-column items-center justify-center page-padding ph4"
+    className="page-padding ph4 w-100 w-70-l center"
   >
     <h1
       className="f3 pink tc montserrat mb3"
     >
-      Thank You
+      Great… you’re in… Welcome!
     </h1>
     <p
       className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
-      Thank you! We’ve received your registration and we will begin to pair you up a reading partner we think you'll connect well with shortly.
+      Thank you for completing the sign up. That’s the hard part done. Welcome to our community. We’re delighted to have you on board!
     </p>
     <p
       className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
-      We'll email you to introduce you and your reading partner once this is complete.
+      We’ve received your responses and now we’ll begin the process of pairing you up with a reading partner.
     </p>
     <p
       className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
-      If you have any questions in the meantime, please do not hesitate to contact us at
+      Expect to receive an email from us in the next day or two introducing you to your reading partner
     </p>
-    <a
-      href="mailto:readwithaudrey@gmail.com"
+    <p
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
     >
-      readwithaudrey@gmail.com
-    </a>
+      If you have any questions in the meantime, please
+      <Link
+        to="/contact"
+      >
+        contact us
+      </Link>
+    </p>
     <h2
       className="f3 pink tc montserrat mb3"
     >
@@ -107,11 +112,26 @@ Array [
     >
       Why not share the story of Audrey and help us spread the word?
     </p>
+    <p
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+    >
+      Have a great day!
+    </p>
+    <p
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+    >
+      Rob and the Audrey team
+    </p>
     <h3
       className="f5 pink tc montserrat mb3"
     >
-      Share On
+      Help spread the word
     </h3>
+    <p
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+    >
+      Why not share the story of Audrey?
+    </p>
     <img
       alt="Facebook"
       className="fl"
