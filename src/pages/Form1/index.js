@@ -11,6 +11,7 @@ import {
   StatusBar,
   TextBox,
   FormSection,
+  ErrorSpan,
 } from '../../components/'
 
 const Form1 = ({ data }) => {
@@ -38,9 +39,10 @@ const Form1 = ({ data }) => {
         </Link>
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
-          {({ firstName, secondName, emailAddress, updateForm }) => (
+          {({ firstName, secondName, emailAddress, nameErrorSpan, nameError, surnameErrorSpan, surnameError, emailErrorSpan, emailError, updateForm, handleNext }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
+              <ErrorSpan type={nameErrorSpan}>{nameError}</ErrorSpan>
               <InputBox
                 placeholder={q1Placeholder}
                 onChange={updateForm}
@@ -49,6 +51,7 @@ const Form1 = ({ data }) => {
                 required
               />
               <Label>{q2}</Label>
+              <ErrorSpan type={surnameErrorSpan}>{surnameError}</ErrorSpan>
               <InputBox
                 placeholder={q2Placeholder}
                 onChange={updateForm}
@@ -57,6 +60,7 @@ const Form1 = ({ data }) => {
                 required
               />
               <Label>{q3}</Label>
+              <ErrorSpan type={emailErrorSpan}>{emailError}</ErrorSpan>
               <InputBox
                 placeholder={q3Placeholder}
                 onChange={updateForm}
@@ -65,7 +69,7 @@ const Form1 = ({ data }) => {
                 required
               />
               <TextBox>{finalText}</TextBox>
-              <Link to="/Form2" className="no-underline">
+              <Link to="/Form2" className="no-underline" onClick={handleNext}>
                 <Button type="register">Continue</Button>
               </Link>
             </form>

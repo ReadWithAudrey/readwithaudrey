@@ -31,7 +31,7 @@ const DropDownBox = props => {
         </option>
         <option value="-2">(GMT-02:00) Mid-Atlantic</option>
         <option value="-1">(GMT-01:00) Azores, Cape Verde Is.</option>
-        <option value="0" selected="selected">
+        <option value="0">
           (GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London
         </option>
         <option value="1">
