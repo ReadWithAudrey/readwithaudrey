@@ -1,15 +1,15 @@
 backend:
   name: git-gateway
   repo: ReadWithAudrey/readwithaudrey
-  branch: master # Branch to update (optional; defaults to master)
+  branch: markdown # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
 
 media_folder: "static/images/uploads"
 
 collections:
-  - label: "Forms"
-    name: "forms"
+  - label: "Welcome Page"
+    name: "welcome page"
     delete: false
     files:
       - label: "Testimonials"
