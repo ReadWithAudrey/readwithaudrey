@@ -14,7 +14,6 @@ import {
   StatusBar,
   TextBox,
   FormSection,
-  ErrorSpan,
 } from '../../components/'
 
 class Form1 extends React.Component {
@@ -33,18 +32,7 @@ class Form1 extends React.Component {
       })
   }
   render() {
-    const {
-      firstName,
-      secondName,
-      emailAddress,
-      updateForm,
-      nameErrorSpan,
-      nameError,
-      surnameError,
-      surnameErrorSpan,
-      emailError,
-      emailErrorSpan,
-    } = this.props.value
+    const { firstName, secondName, emailAddress, updateForm } = this.props.value
     const {
       heading,
       description,
@@ -66,28 +54,31 @@ class Form1 extends React.Component {
           <TextBox>{description}</TextBox>
           <form onSubmit={this.handleSubmit}>
             <Label>{q1}</Label>
-            <ErrorSpan type={nameErrorSpan}>{nameError}</ErrorSpan>
             <InputBox
               placeholder={q1Placeholder}
               onChange={updateForm}
               name="firstName"
               value={firstName}
+              type="text"
+              required="true"
             />
             <Label>{q2}</Label>
-            <ErrorSpan type={surnameErrorSpan}>{surnameError}</ErrorSpan>
             <InputBox
               placeholder={q2Placeholder}
               onChange={updateForm}
               name="secondName"
               value={secondName}
+              type="text"
+              required="true"
             />
             <Label>{q3}</Label>
-            <ErrorSpan type={emailErrorSpan}>{emailError}</ErrorSpan>
             <InputBox
               placeholder={q3Placeholder}
               onChange={updateForm}
               name="emailAddress"
               value={emailAddress}
+              type="email"
+              required="true"
             />
             <TextBox>{finalText}</TextBox>
             <Button style="register">Continue</Button>
