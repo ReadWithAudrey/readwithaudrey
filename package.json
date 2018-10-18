@@ -10,7 +10,8 @@
     "format": "prettier --write '**/*.js'",
     "start": "node server/index.js",
     "devstart": "nodemon server/index.js",
-    "test": "jest"
+    "test": "jest --coverage",
+    "report-coverage": "codecov"
   },
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
@@ -43,16 +44,6 @@
     "tachyons-custom": "^4.9.5"
   },
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop",
-    "serve": "gatsby serve",
-    "format": "prettier --write '**/*.js'",
-    "start": "node server/index.js",
-    "devstart": "nodemon server/index.js",
-    "test": "jest --coverage",
-    "report-coverage": "codecov"
-  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",

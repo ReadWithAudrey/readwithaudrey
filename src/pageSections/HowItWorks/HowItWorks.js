@@ -35,7 +35,7 @@ const HowItWorks = () => (
             <img src={book} alt="Icon of a man" className="small-icon" />
             <TextBox>{p3}</TextBox>
           </div>
-          <Link to="/Form1/" className="no-underline white w-100">
+          <Link to="/form1/" className="no-underline white w-100">
             <Button type="register">Get started</Button>
           </Link>
         </StyledHowItWorks>
