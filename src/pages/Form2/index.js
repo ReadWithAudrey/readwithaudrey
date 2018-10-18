@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql, navigate } from 'gatsby'
 import PropTypes from 'prop-types'
+import { withSignupContext } from '../../contexts/contextWrapper'
 
 import {
   InputBox,
@@ -8,67 +9,113 @@ import {
   Button,
   StatusBar,
   DropDownBox,
-  RankingBox,
   RadioButton,
   TextBox,
   Layout,
+  FormSection,
+  ErrorSpan,
 } from '../../components/'
 
-const Form2 = ({ data }) => {
-  const { q1, q2, q3, q4, q5, q6 } = data.markdownRemark.frontmatter
-  return (
-    <Layout>
-      <form method="POST" action="http://localhost:5000/formPart1">
-        <h1 className="f2 pink tc montserrat mb3 mt4">Further Details</h1>
-        <StatusBar>
-          <Link to="/Form1/">1. Basic Details</Link>
-        </StatusBar>
-        <StatusBar type="active">2. Further Details</StatusBar>
-        <StatusBar>
-          <Link to="/Form3/">3. Your Bio</Link>
-        </StatusBar>
-        <TextBox>
-          In order to find the best reading partner for you, we need a little
-          bit more information
-        </TextBox>
-        <Label>{q1}</Label>
-        <RadioButton>Male</RadioButton>
-        <RadioButton>Female</RadioButton>
-        <RadioButton>Prefer not to say</RadioButton>
-        <Label>{q2}</Label>
-        <InputBox placeholder="Age" />
-        <Label>{q3}</Label>
-        <InputBox placeholder="Country" />
-        <Label>{q4}</Label>
-        <DropDownBox />
-        <Label>{q5}</Label>
-        <RadioButton>Read</RadioButton>
-        <RadioButton>Listen</RadioButton>
-        <RadioButton>Both</RadioButton>
-        <Label>{q6}</Label>
-        <TextBox>
-          Please rank the the options below in order - favourite 1st
-        </TextBox>
-        <RankingBox placeholder="1">Several fantastic short stories</RankingBox>
-        <RankingBox placeholder="2">
-          A wonderful novella (short novel)
-        </RankingBox>
-        <RankingBox placeholder="3">
-          A fascinating work of non-fiction
-        </RankingBox>
-        <Link to="/Form3" className="no-underline">
-          <Button type="register">Continue</Button>
-        </Link>
-      </form>
-      <TextBox>
-        <Link to="/" className="no-underline">Go back to the homepage</Link>
-      </TextBox>
-    </Layout>
-  )
+class Form2 extends React.Component {
+  handleSubmit = event => {
+    event.preventDefault()
+    navigate('/Form3/')
+  }
+  render() {
+    const {
+      heading,
+      description,
+      q1,
+      q1Placeholder,
+      q2,
+      q3,
+      readlisten1,
+      readlisten2,
+      readlisten3,
+      q4,
+      booktype1,
+      booktype2,
+      booktype3,
+      q5,
+    } = this.props.data.markdownRemark.frontmatter
+    const {
+      gender,
+      readlisten,
+      bookErrorSpan,
+      bookError,
+      roleErrorSpan,
+      roleError,
+      updateForm,
+    } = this.props.value
+    return (
+      <Layout>
+        <h1 className="f2 pink tc montserrat mb3 mt4">{heading}</h1>
+        <FormSection>
+          <StatusBar>1. Contact Details</StatusBar>
+          <StatusBar type="active">2. Further Details</StatusBar>
+          <StatusBar>3. Your Story</StatusBar>
+          <TextBox>{description}</TextBox>
+          <form onSubmit={this.handleSubmit}>
+            <Label>{q1}</Label>
+            <InputBox
+              placeholder={q1Placeholder}
+              onChange={updateForm}
+              name="gender"
+              value={gender}
+            />
+            <Label>{q2}</Label>
+            <DropDownBox onChange={updateForm} type="age" name="age" />
+            <Label>{q3}</Label>
+            <DropDownBox
+              onChange={updateForm}
+              type="timezone"
+              name="timezone"
+            />
+            <Label>{q4}</Label>
+            <ErrorSpan type={roleErrorSpan}>{roleError}</ErrorSpan>
+            <RadioButton
+              name="readlisten"
+              onChange={updateForm}
+              value={readlisten}
+            >
+              {readlisten1}
+            </RadioButton>
+            <RadioButton
+              name="readlisten"
+              onChange={updateForm}
+              value={readlisten}
+            >
+              {readlisten2}
+            </RadioButton>
+            <RadioButton
+              name="readlisten"
+              onChange={updateForm}
+              value={readlisten}
+            >
+              {readlisten3}
+            </RadioButton>
+            <Label>{q5}</Label>
+            <ErrorSpan type={bookErrorSpan}>{bookError}</ErrorSpan>
+            <RadioButton name="booktype" onChange={updateForm}>
+              {booktype1}
+            </RadioButton>
+            <RadioButton name="booktype" onChange={updateForm}>
+              {booktype2}
+            </RadioButton>
+            <RadioButton name="booktype" onChange={updateForm}>
+              {booktype3}
+            </RadioButton>
+            <Button style="register">Continue</Button>
+          </form>
+        </FormSection>
+      </Layout>
+    )
+  }
 }
 
 Form2.propTypes = {
   data: PropTypes.object,
+  value: PropTypes.object,
 }
 
 export const query = graphql`
@@ -80,15 +127,24 @@ export const query = graphql`
     }
     markdownRemark(frontmatter: { title: { eq: "Form Part 2" } }) {
       frontmatter {
+        heading
+        description
         q1
+        q1Placeholder
         q2
+        q2Placeholder
         q3
+        readlisten1
+        readlisten2
+        readlisten3
         q4
+        booktype1
+        booktype2
+        booktype3
         q5
-        q6
       }
     }
   }
 `
 
-export default Form2
+export default withSignupContext(Form2)

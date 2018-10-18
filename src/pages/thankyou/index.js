@@ -9,31 +9,35 @@ import { TextBox, Layout } from '../../components/'
 const ThankYou = () => {
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt5">Thank You!</h1>
+      <h1 className="f3 pink tc montserrat mb3">Great… you’re in… Welcome!</h1>
       <TextBox>
-        We’ve received your registration and we will begin to pair
-        you up a reading partner we think you&apos;ll connect well with shortly.
+        Thank you for completing the sign up. That’s the hard part done. Welcome
+        to our community. We’re delighted to have you on board!
       </TextBox>
       <TextBox>
-        We&apos;ll email you to introduce you and your reading partner once this
-        is complete.
+        We’ve received your responses and now we’ll begin the process of pairing
+        you up with a reading partner.
       </TextBox>
       <TextBox>
-        If you have any questions in the meantime, please do not hesitate to
-        contact us at{' '}
-        <a href="mailto:readwithaudrey@gmail.com"><strong>readwithaudrey@gmail.com</strong></a>
+        Expect to receive an email from us in the next day or two introducing
+        you to your reading partner
       </TextBox>
-      <h2 className="f3 pink tc montserrat mb3">Help Spread the Word</h2>
+      <TextBox>
+        If you have any questions in the meantime, please
+        <Link to="/contact">contact us</Link>
+      </TextBox>
+      <h2 className="f3 pink tc montserrat mb3">Help Spread The Word</h2>
       <TextBox>
         Why not share the story of Audrey and help us spread the word?
       </TextBox>
-      <h3 className="f5 pink tc montserrat mb3">Share on:</h3>
       <img src={facebook} alt="Facebook" className="fl" />
       <img src={twitter} alt="Twitter" className="fl" />
       <img src={email} alt="Email" className="fl" />
-      <TextBox>
-        <Link to="/" className="no-underline">Go back to the homepage</Link>
-      </TextBox>
+      <TextBox>Have a great day!</TextBox>
+      <TextBox>Rob and the Audrey team</TextBox>
+      <Link to="/">
+        <TextBox>Go back to the homepage</TextBox>
+      </Link>
     </Layout>
   )
 }

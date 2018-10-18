@@ -1,4 +1,4 @@
-/* eslint-disable camel */
+/* eslint-disable camelcase */
 require('dotenv').config();
 const axios = require('axios');
 

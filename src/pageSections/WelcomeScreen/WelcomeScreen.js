@@ -15,8 +15,11 @@ const WelcomeScreen = () => (
         Read Aloud
         <br /> Together
       </h1>
-      <Link to="/Form1/" className="white no-underline w-100">
-        <Button type="register" className="mt3">
+      <h2 className="green tc f4 montserrat m0">
+        Let&apos;s find you a reading partner
+      </h2>
+      <Link to="/form1/" className="white no-underline w-100">
+        <Button style="register" className="mt3">
           Get started
         </Button>
       </Link>

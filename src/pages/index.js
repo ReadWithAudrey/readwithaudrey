@@ -5,6 +5,7 @@ import {
   AsSeenOn,
   HowItWorks,
   Examples,
+  Testimonials,
 } from '../pageSections/index'
 
 import { HomepageLayout } from '../components'
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <AsSeenOn />
     <HowItWorks />
     <Examples />
+    <Testimonials />
   </HomepageLayout>
 )
 

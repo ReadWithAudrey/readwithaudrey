@@ -1,2 +1,8 @@
 language: node_js
-node_js: v10.12.0
+node_js: v10.11.0
+after_success:
+  - npm run report-coverage
+notifications:
+  email:
+    on_success: never
+    on_failure: never

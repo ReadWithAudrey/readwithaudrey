@@ -8,15 +8,44 @@ publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
 
 collections:
-  - label: "Forms"
-    name: "forms"
-    delete: false
+  - name: "pages"
+    label: "Pages"
     files:
-      - label: "Form 1"
-        name: "Form1"
-        file: src/markdown/formPart1.md
+      - file: src/markdown/testimonials.md
+        label: "Testimonials"
+        name: "testimonials"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Form Part 1", options:["Form Part 1"], }
-          - {label: "Question 1", name: "q1", widget: "string", required:true}
-          - {label: "Question 2", name: "q2", widget: "string", required:true}
-          - {label: "Question 3", name: "q3", widget: "string", required:true}
+          - {label: "Title", name: "title", widget: "select", default: "Testimonials", options:["Testimonials"], }
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Footer", name: "footer", widget: "string"}
+          - {label: "Main text", name: "body", widget: "markdown"}
+      - file: src/markdown/faq.md
+        label: "FAQs"
+        name: "faqs"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "FAQs", options:["FAQs"], }
+          - {label: "Footer", name: "footer", widget: "string"}
+          - {label: "Main text", name: "body", widget: "markdown"}
+      - file: src/markdown/examples.md
+        label: "FAQs"
+        name: "faqs"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "Recent Pairings", options:["Recent Pairings"], }
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Footer", name: "footer", widget: "string"}
+          - {label: "Main text", name: "body", widget: "markdown"}
+      - file: src/markdown/story.md
+        label: "Story"
+        name: "story"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "Story", options:["Story"], }
+          - {label: "Main text", name: "body", widget: "markdown"}
+      - file: src/markdown/howItWorks.md
+        label: "How It Works"
+        name: "how it works"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "How It Works", options:["How It Works"], }
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "p1", name: "p1", widget: "string"}
+          - {label: "p2", name: "p2", widget: "string"}
+          - {label: "p3", name: "p3", widget: "string"}

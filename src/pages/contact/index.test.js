@@ -1,9 +1,9 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Examples from './Examples'
+import ContactUs from './index.js'
 
-describe('Examples component snapshot test', () =>
+describe('ContactUs page snapshot test', () =>
   it('renders correctly', () => {
-    const tree = renderer.create(<Examples />).toJSON()
+    const tree = renderer.create(<ContactUs />).toJSON()
     expect(tree).toMatchSnapshot()
   }))

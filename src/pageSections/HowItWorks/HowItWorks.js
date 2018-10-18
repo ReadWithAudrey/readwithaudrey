@@ -1,41 +1,70 @@
 import React from 'react'
+import { Link, StaticQuery, graphql } from 'gatsby'
 import { TextBox } from '../../components'
 import StyledHowItWorks from './HowItWorks.style'
 import man from '../../images/manicon.svg'
 import pair from '../../images/pairicon.png'
 import book from '../../images/open-book-black.svg'
 import PropTypes from 'prop-types'
+import { Button } from '../../components/index'
 
 const HowItWorks = () => (
-  <StyledHowItWorks>
-    <div id="step-1-register">
-      <h2 className="f2 pink tc">Register</h2>
-      <img src={man} alt="Icon of a man" className="small-icon" />
-      <TextBox>
-        Tell us a little bit about yourself & how you’d like to use Audrey
-      </TextBox>
-    </div>
-    <div id="step-2-connect">
-      <h2 className="f2 pink tc">Connect</h2>
-      <img src={pair} alt="Icon of a pair of people" className="small-icon" />
-      <TextBox>
-        We will pair you with someone we think you will connect well with and
-        help to facilitate your first reading session
-      </TextBox>
-    </div>
-    <div id="step-3-read">
-      <h2 className="f2 pink tc">Read</h2>
-      <img src={book} alt="Icon of a man" className="small-icon" />
-      <TextBox>
-        Each reading takes roughly 10 minutes. Afterwards you’re welcome to
-        discuss the experience
-      </TextBox>
-    </div>
-  </StyledHowItWorks>
+  <StaticQuery
+    query={query}
+    render={data => {
+      const { header, p1, p2, p3 } = data.markdownRemark.frontmatter
+      return (
+        <StyledHowItWorks>
+          <h2 className="f2 pink tc">{header}</h2>
+          <div id="step-1-register">
+            <h2 className="f3 pink tc">Join</h2>
+            <img src={man} alt="Icon of a man" className="small-icon" />
+            <TextBox>{p1}</TextBox>
+          </div>
+          <div id="step-2-connect">
+            <h2 className="f3 pink tc">Connect</h2>
+            <img
+              src={pair}
+              alt="Icon of a pair of people"
+              className="small-icon"
+            />
+            <TextBox>{p2}</TextBox>
+          </div>
+          <div id="step-3-read">
+            <h2 className="f3 pink tc">Read</h2>
+            <img src={book} alt="Icon of a man" className="small-icon" />
+            <TextBox>{p3}</TextBox>
+          </div>
+          <Link to="/Form1/" className="no-underline white w-100">
+            <Button type="register">Get started</Button>
+          </Link>
+        </StyledHowItWorks>
+      )
+    }}
+  />
 )
 
 HowItWorks.propTypes = {
   siteTitle: PropTypes.string,
+  data: PropTypes.object,
 }
+
+const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(frontmatter: { title: { eq: "How It Works" } }) {
+      frontmatter {
+        header
+        p1
+        p2
+        p3
+      }
+    }
+  }
+`
 
 export default HowItWorks

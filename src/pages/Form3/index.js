@@ -1,57 +1,111 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import axios from 'axios'
+import { graphql, navigate } from 'gatsby'
 import PropTypes from 'prop-types'
+import { withSignupContext } from '../../contexts/contextWrapper'
 
 import {
   Label,
   Button,
   StatusBar,
-  RadioButton,
   TextArea,
   TextBox,
   Layout,
+  FormSection,
+  ErrorSpan,
 } from '../../components/'
 
-const Form3 = ({ data }) => {
-  const { q1, q2, q3 } = data.markdownRemark.frontmatter
-  return (
-    <Layout>
-      <form method="POST" action="http://localhost:5000/formPart1">
-        <h1 className="f2 pink tc montserrat mb3 mt4">Your Bio</h1>
-        <StatusBar>
-          <Link to="/Form1">1. Basic Details</Link>
-        </StatusBar>
-        <StatusBar>
-          <Link to="/Form2">2. Further Details</Link>
-        </StatusBar>
-        <StatusBar type="active">3. Your Bio</StatusBar>
-        <TextBox>
-          We will use your bio to find you a reading partner. This is also the
-          wording we’ll use to introduce you to your reading partner over email.
-        </TextBox>
-        <Label>{q1}</Label>
-        <TextArea placeholder="About You" />
-        <Label>{q2}</Label>
-        <TextArea placeholder="Special Requirements" />
-        <Label>{q3}</Label>
-        <RadioButton>1 (Like the idea)</RadioButton>
-        <RadioButton>2</RadioButton>
-        <RadioButton>3 (Don&apos;t mind) </RadioButton>
-        <RadioButton>4</RadioButton>
-        <RadioButton>5 (Really Don&apos;t Like)</RadioButton>
-        <Link to="/thankyou" className="no-underline">
-          <Button type="register">Submit</Button>
-        </Link>
-      </form>
-      <TextBox>
-        <Link to="/" className="no-underline">Go back to the homepage</Link>
-      </TextBox>
-    </Layout>
-  )
+class Form3 extends React.Component {
+  handleSubmit = event => {
+    const {
+      firstName,
+      secondName,
+      emailAddress,
+      gender,
+      age,
+      readlisten,
+      timezone,
+      booktype,
+      story,
+      specialRequests,
+    } = this.props.value
+    event.preventDefault()
+    axios
+      .post(`http://localhost:5000/formPart3`, {
+        firstName,
+        secondName,
+        emailAddress,
+        gender,
+        timezone,
+        age,
+        readlisten,
+        booktype,
+        story,
+        specialRequests,
+      })
+      .then(() => {
+        navigate('/thankyou/')
+      })
+  }
+  render() {
+    const {
+      story,
+      specialRequests,
+      updateForm,
+      storyError,
+      storyErrorSpan,
+      storyTipsBox,
+      showTips,
+    } = this.props.value
+    const {
+      heading,
+      description,
+      q1,
+      q1Placeholder,
+      q2,
+      q2Placeholder,
+      tips,
+    } = this.props.data.markdownRemark.frontmatter
+    return (
+      <Layout>
+        <h1 className="f2 pink tc montserrat mb3 mt4">{heading}</h1>
+        <FormSection>
+          <StatusBar>1. Contact Details</StatusBar>
+          <StatusBar>2. Further Details</StatusBar>
+          <StatusBar type="active">3. Your Bio</StatusBar>
+          <TextBox>{description}</TextBox>
+          <form onSubmit={this.handleSubmit}>
+            <Label>{q1}</Label>
+            <TextArea
+              placeholder={q1Placeholder}
+              onChange={updateForm}
+              name="story"
+              value={story}
+            />
+            <ErrorSpan type={storyErrorSpan}>{storyError}</ErrorSpan>
+
+            <a onClick={showTips} className="flex justify-center underline mb2">
+              (Need tips?)
+            </a>
+            {storyTipsBox && <TextBox className="f">{tips}</TextBox>}
+            <Label>{q2}</Label>
+            <TextArea
+              placeholder={q2Placeholder}
+              onChange={updateForm}
+              name="specialRequests"
+              value={specialRequests}
+            />
+            <Button style="register">Submit</Button>
+          </form>
+        </FormSection>
+      </Layout>
+    )
+  }
 }
 
 Form3.propTypes = {
   data: PropTypes.object,
+  value: PropTypes.object,
 }
 
 export const query = graphql`
@@ -63,12 +117,16 @@ export const query = graphql`
     }
     markdownRemark(frontmatter: { title: { eq: "Form Part 3" } }) {
       frontmatter {
+        heading
+        description
         q1
+        q1Placeholder
+        tips
         q2
-        q3
+        q2Placeholder
       }
     }
   }
 `
 
-export default Form3
+export default withSignupContext(Form3)
