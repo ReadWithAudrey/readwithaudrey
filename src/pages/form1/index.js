@@ -29,7 +29,7 @@ class Form1 extends React.Component {
       })
       .then(res => {
         console.log(res)
-        navigate('/form2/')
+        navigate('/Form2/')
       })
   }
   render() {
