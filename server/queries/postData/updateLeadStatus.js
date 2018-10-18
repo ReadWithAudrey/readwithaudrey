@@ -1,13 +1,13 @@
 // require('dotenv').config();
 // const base = require('../../dbConnection');
 //
-// const updateSentStatus = ({ id }) => {
+// const updateLeadStatus = ({ email }) => {
 //   console.log('Updating sent status');
 //   return new Promise((resolve, reject) => {
-//     base('pairings').update(
+//     base('leads').update(
 //       id,
 //       {
-//         pairing_email_sent: true,
+//         signup_complete: true,
 //       },
 //       (err) => {
 //         if (err) {
@@ -19,4 +19,4 @@
 //     );
 //   });
 // };
-// module.exports = updateSentStatus;
+// module.exports = updateLeadStatus;
