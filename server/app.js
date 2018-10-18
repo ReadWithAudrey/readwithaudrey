@@ -4,10 +4,8 @@ const bodyParser = require('body-parser');
 const controllers = require('./controllers');
 const pairingEmail = require('./emails/pairingEmail');
 
-
 const app = express();
-app.set('PORT', process.env.PORT || 5000);
-
+app.set('PORT', process.env.PORT || 5001);
 
 setInterval(pairingEmail, 1000 * 60 * 60);
 
