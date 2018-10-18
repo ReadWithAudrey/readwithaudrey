@@ -29,7 +29,7 @@ const ContactUs = ({ data }) => {
         <Label>Your Message</Label>
         <TextArea placeholder="Your Message" />
         <Link to="/thankyou" className="no-underline">
-          <Button type="register">Submit</Button>
+          <Button style="register">Submit</Button>
         </Link>
         <TextBox>
           <div dangerouslySetInnerHTML={{ __html: html }} />

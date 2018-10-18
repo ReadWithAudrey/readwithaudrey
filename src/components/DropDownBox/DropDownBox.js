@@ -5,7 +5,7 @@ import { Select } from './DropDownBox.style'
 const DropDownBox = props => {
   if (props.type === 'timezone') {
     return (
-      <Select onChange={props.onChange} name={props.name}>
+      <Select onChange={props.onChange} name={props.name} defaultValue="0">
         <option value="-12">(GMT-12:00) International Date Line West</option>
         <option value="-11">(GMT-11:00) Midway Island, Samoa</option>
         <option value="-10">(GMT-10:00) Hawaii</option>
