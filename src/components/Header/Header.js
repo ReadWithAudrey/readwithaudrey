@@ -49,7 +49,7 @@ class Header extends Component {
             <Link to="/why/">Why?</Link>
             <Link to="/faq/">FAQ</Link>
             <Link to="/contact/">Contact</Link>
-            <Link to="/Form1">Join Us</Link>
+            <Link to="/form1">Join Us</Link>
           </MobileMenu>
         )}
       </React.Fragment>
