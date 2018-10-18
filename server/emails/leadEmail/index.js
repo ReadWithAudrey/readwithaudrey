@@ -16,6 +16,4 @@ const sendLeadEmails = () => {
     }).catch(console.log);
 };
 
-sendLeadEmails();
-
 module.exports = sendLeadEmails;

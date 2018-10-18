@@ -11,7 +11,7 @@ const getLeads = () => {
     base('leads')
       .select({
         filterByFormula:
-        'AND((DATETIME_DIFF(NOW(), {date_of_lead}, "m") >= 1), NOT({signup_complete}), NOT({reminder_email_sent}))',
+        'AND((DATETIME_DIFF(NOW(), {date_of_lead}, "hours") >= 1), NOT({signup_complete}), NOT({reminder_email_sent}))',
         fields: [
           'email',
           'first_name',
