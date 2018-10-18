@@ -16,7 +16,6 @@ const Testimonials = () => (
           <TextBox>
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </TextBox>
-
           <p className="f4 tc">{footer}</p>
           <Link to="/Form1/" className="no-underline white w-100">
             <Button type="register">Get started</Button>

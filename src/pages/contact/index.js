@@ -27,7 +27,7 @@ const ContactUs = () => {
         <Label>Your Message</Label>
         <TextArea placeholder="Your Message" />
         <Link to="/thankyou" className="no-underline">
-          <Button type="register">Submit</Button>
+          <Button style="register">Submit</Button>
         </Link>
         <TextBox>
           Want to get involved and help us do amazing things? We’d be delighted

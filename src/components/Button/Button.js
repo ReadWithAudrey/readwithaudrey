@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { StyledButton, HeaderButton, RegisterButton } from './Button.style'
 
 const Button = props => {
-  if (props.type === 'header') {
+  if (props.style === 'header') {
     return <HeaderButton>{props.children}</HeaderButton>
-  } else if (props.type === 'register') {
+  } else if (props.style === 'register') {
     return <RegisterButton>{props.children}</RegisterButton>
   } else {
     return <StyledButton>{props.children}</StyledButton>
