@@ -36,8 +36,6 @@ module.exports = {
         head: false,
         // Setting this parameter is optional
         anonymize: true,
-        // Any additional create only fields (optional)
-        siteSpeedSampleRate: 10,
         cookieDomain: 'https://www.readwithaudrey.com',
       },
     },
