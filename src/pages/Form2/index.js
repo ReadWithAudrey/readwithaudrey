@@ -19,7 +19,7 @@ import {
 class Form2 extends React.Component {
   handleSubmit = event => {
     event.preventDefault()
-    navigate('/form3/')
+    navigate('/Form3/')
   }
   render() {
     const {
