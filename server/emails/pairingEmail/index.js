@@ -1,5 +1,5 @@
 const { getNewPairs } = require('../../queries/getData');
-const updateSentStatus = require('../../queries/postData/updateSentStatus');
+const updateSentStatus = require('../../queries/postData/updatePairingEmailStatus');
 const {
   downloadAttachments,
   formatAttachments,

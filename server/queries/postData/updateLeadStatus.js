@@ -1,22 +1,21 @@
-// require('dotenv').config();
-// const base = require('../../dbConnection');
-//
-// const updateLeadStatus = ({ email }) => {
-//   console.log('Updating sent status');
-//   return new Promise((resolve, reject) => {
-//     base('leads').update(
-//       id,
-//       {
-//         signup_complete: true,
-//       },
-//       (err) => {
-//         if (err) {
-//           reject(err);
-//         } else {
-//           resolve();
-//         }
-//       },
-//     );
-//   });
-// };
-// module.exports = updateLeadStatus;
+require('dotenv').config();
+const base = require('../../dbConnection');
+
+const updateLeadStatus = (id) => {
+  console.log('in update lead status');
+  base('leads').update(
+    id,
+    {
+      signup_complete: true,
+    },
+    (err, res) => {
+      if (err) {
+        console.log(err);
+      } else {
+        console.log(res);
+      }
+    },
+  );
+};
+
+module.exports = updateLeadStatus;
