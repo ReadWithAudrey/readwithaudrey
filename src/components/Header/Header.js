@@ -30,7 +30,7 @@ class Header extends Component {
               <Link to="/faq/">FAQ</Link>
               <Link to="/contact/">Contact</Link>
               <Link to="/Form1" className="mv2 white br2 ba bw1 b--white">
-                Join Us
+                Get Started
               </Link>
             </DesktopMenu>
             <BurgerMenu>
@@ -49,7 +49,7 @@ class Header extends Component {
             <Link to="/why/">Why?</Link>
             <Link to="/faq/">FAQ</Link>
             <Link to="/contact/">Contact</Link>
-            <Link to="/Form1">Join Us</Link>
+            <Link to="/Form1">Get Started</Link>
           </MobileMenu>
         )}
       </React.Fragment>
