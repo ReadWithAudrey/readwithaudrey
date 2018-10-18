@@ -13,8 +13,10 @@ import {
 } from '../../components/'
 
 const ContactUs = ({ data }) => {
-  const { header1, p1 } = data.markdownRemark.frontmatter
-  const { html } = data.markdownRemark
+  const {
+    html,
+    frontmatter: { header1, p1 },
+  } = data.markdownRemark
   return (
     <Layout>
       <h1 className="f2 pink tc montserrat mb3 mt4">{header1}</h1>
