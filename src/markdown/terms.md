@@ -19,10 +19,7 @@ You must be at least 18 years of age to use this Website. By using the Website a
 
 ## Prohibited use
 
-4.  You may not use the Website for any of the following purposes:
-    a. in any way which causes, or may cause, damage to the Website or interferes with any other person's use or enjoyment of the Website;
-    b. in any way which is harmful, unlawful, illegal, abusive, harassing, threatening or otherwise objectionable or in breach of any applicable law, regulation, governmental order;
-    c. making, transmitting or storing electronic copies of Content protected by copyright without the permission of the owner.
+4.  You may not use the Website for any of the following purposes: (a) in any way which causes, or may cause, damage to the Website or interferes with any other person's use or enjoyment of the Website; (b) in any way which is harmful, unlawful, illegal, abusive, harassing, threatening or otherwise objectionable or in breach of any applicable law, regulation, governmental order; or (c) making, transmitting or storing electronic copies of Content protected by copyright without the permission of the owner.
 
 ## Registration
 
@@ -33,7 +30,7 @@ You must be at least 18 years of age to use this Website. By using the Website a
 
 ## Privacy Policy
 
-9.  Use of the Website is also governed by our Privacy Policy, which is incorporated into these terms and conditions by this reference. To view the Privacy Policy, please click on the following: www.readwithaudrey.com/privacy.
+9.  Use of the Website is also governed by our Privacy Policy, which is incorporated into these terms and conditions by this reference. To view the Privacy Policy, please click on the following: [www.readwithaudrey.com/privacy](/privacy).
 
 ## Availability of the Website and disclaimers
 
@@ -46,10 +43,7 @@ You must be at least 18 years of age to use this Website. By using the Website a
 
 14. Nothing in these terms and conditions will: (a) limit or exclude our or your liability for death or personal injury resulting from our or your negligence, as applicable; (b) limit or exclude our or your liability for fraud or fraudulent misrepresentation; or (c) limit or exclude any of our or your liabilities in any way that is not permitted under applicable law.
 15. We will not be liable to you in respect of any losses arising out of events beyond our reasonable control.
-16. To the maximum extent permitted by law, Read With Audrey accepts no liability for any of the following:
-    a. any business losses, such as loss of profits, income, revenue, anticipated savings, business, contracts, goodwill or commercial opportunities;
-    b. loss or corruption of any data, database or software;
-    c. any special, indirect or consequential loss or damage.
+16. To the maximum extent permitted by law, Read With Audrey accepts no liability for any of the following: (a) any business losses, such as loss of profits, income, revenue, anticipated savings, business, contracts, goodwill or commercial opportunities; (b) loss or corruption of any data, database or software; or (c) any special, indirect or consequential loss or damage.
 
 ## General
 
