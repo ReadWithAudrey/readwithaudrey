@@ -6,7 +6,6 @@ const sendLeadEmails = () => {
   getLeads()
     .then((leads) => {
       if (leads.length > 0) {
-      const uniqueLeads = leads.filter(() => {
         leads.forEach((lead) => {
           sendLeadEmail(lead)
             .then(() => updateLeadEmailSent(lead))
