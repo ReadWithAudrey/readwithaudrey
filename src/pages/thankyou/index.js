@@ -12,10 +12,9 @@ const ThankYou = ({ data }) => {
   const { html } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f3 pink tc montserrat mt5 mb4">{header1}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-      <Link to="/contact">contact us</Link>
-      <h2 className="f3 pink tc montserrat mt5 mb4">{header2}</h2>
+      <h1 className="f2 pink tc montserrat mt5 mb4">{header1}</h1>
+      <div className="f4 mid-gray tc" dangerouslySetInnerHTML={{ __html: html }} />
+      <h2 className="f2 pink tc montserrat mt5 mb4">{header2}</h2>
       <TextBox>{p1}</TextBox>
       <div id="social-logos" className="flex justify-around w-100 flex-ns ph6-ns pv4">
         <img src={facebook} alt="Facebook" className="small-icon mw-25 h3-ns" />
