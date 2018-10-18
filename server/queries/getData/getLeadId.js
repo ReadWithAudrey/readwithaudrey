@@ -1,6 +1,7 @@
 const base = require('../../dbConnection');
 
 const getLeadId = emailAddress => new Promise((resolve, reject) => {
+  console.log('getting a lead');
   let allRecords = [];
   const leadIds = [];
   base('leads')
@@ -17,13 +18,14 @@ const getLeadId = emailAddress => new Promise((resolve, reject) => {
         if (err) {
           reject(err);
         } else {
-          allRecords.forEach(record => leadIds.push(record.id));
+          allRecords.forEach((record) => {
+            leadIds.push(record.id);
+          });
           resolve(leadIds);
         }
       },
     );
 });
 
-getLeadId('testmatt@gmail.com').then(leadIds => console.log(leadIds));
 
-module.exports = getLeadId;
+module.exports = { getLeadId };

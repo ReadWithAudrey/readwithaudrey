@@ -1,4 +1,3 @@
-require('dotenv').config();
 const base = require('../../dbConnection');
 
 const postNewUser = (user) => {
@@ -21,7 +20,7 @@ const postNewUser = (user) => {
         if (err) {
           reject(err);
         }
-        resolve(user.emailAddress);
+        resolve();
       },
     );
   });
