@@ -10,7 +10,7 @@ const postNewUser = (user) => {
       gender: user.gender,
       age: user.age,
       time_zone: user.timezone,
-      reading_preference: user.readliste,
+      reading_preference: user.readlisten,
       book_preference: user.booktype,
       user_bio: user.story,
       special_requirements: user.specialRequests,
