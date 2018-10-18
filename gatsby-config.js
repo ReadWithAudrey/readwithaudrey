@@ -28,6 +28,21 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-127720093-1',
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Any additional create only fields (optional)
+        siteSpeedSampleRate: 10,
+        cookieDomain: 'https://www.readwithaudrey.com',
+      },
+    },
     'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
