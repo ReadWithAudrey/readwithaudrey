@@ -11,6 +11,83 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - file: src/markdown/faq.md
+        label: "FAQs"
+        name: "faqs"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "FAQs" }
+          - {label: "Footer", name: "footer", widget: "string"}
+          - {label: "Main text", name: "body", widget: "markdown"}
+      - file: src/markdown/why.md
+        label: "Our Why"
+        name: "our why"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "Our Why" }
+          - {label: "Main text", name: "body", widget: "markdown"}
+      - file: src/markdown/terms.md
+        label: "Terms"
+        name: "terms"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "Terms" }
+          - {label: "Main text", name: "body", widget: "markdown"}
+      - file: src/markdown/privacy.md
+        label: "Privacy"
+        name: "privacy"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "Privacy" }
+          - {label: "Main text", name: "body", widget: "markdown"}
+      - file: src/markdown/thankyou.md
+        label: "Thank You"
+        name: "thank you"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "Thank You" }
+          - {label: "Header 1", name: "header1", widget: "string"}
+          - {label: "Header 2", name: "header2", widget: "string"}
+          - {label: "p1", name: "p1", widget: "string"}
+          - {label: "p2", name: "p2", widget: "string"}
+          - {label: "p3", name: "p3", widget: "string"}
+          - {label: "p4", name: "p4", widget: "string"}
+          - {label: "Main text", name: "body", widget: "markdown"}
+      - file: src/markdown/contact.md
+        label: "Contact"
+        name: "contact"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "Contact" }
+          - {label: "Header 1", name: "header1", widget: "string"}
+          - {label: "p1", name: "p1", widget: "string"}
+          - {label: "Main text", name: "body", widget: "markdown"}
+#WELCOME PAGE _________________________________________________________________
+  - name: "welcome page"
+    label: "Welcome Page"
+    files:
+      - file: src/markdown/aboutAudrey.md
+        label: "About Audrey"
+        name: "about audrey"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "About Audrey" }
+          - {label: "Header 1", name: "header1", widget: "string"}
+          - {label: "Text1", name: "text1", widget: "string"}
+          - {label: "Header 2", name: "header2", widget: "string"}
+          - {label: "Text2", name: "text2", widget: "string"}
+          - {label: "Header 2", name: "header2", widget: "string"}
+          - {label: "Text2", name: "text3", widget: "string"}
+      - file: src/markdown/howItWorks.md
+        label: "How It Works"
+        name: "how it works"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "How It Works" }
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "p1", name: "p1", widget: "string"}
+          - {label: "p2", name: "p2", widget: "string"}
+        - {label: "p3", name: "p3", widget: "string"}
+      - file: src/markdown/examples.md
+        label: "Recent reading partners"
+        name: "recent reading partners"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "Recent Pairings" }
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Footer", name: "footer", widget: "string"}
+          - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/testimonials.md
         label: "Testimonials"
         name: "testimonials"
@@ -19,33 +96,47 @@ collections:
           - {label: "Header", name: "header", widget: "string"}
           - {label: "Footer", name: "footer", widget: "string"}
           - {label: "Main text", name: "body", widget: "markdown"}
-      - file: src/markdown/faq.md
-        label: "FAQs"
-        name: "faqs"
+#FORMS ________________________________________________________________________
+  - name: "forms"
+    label: "Forms"
+    files:
+      - file: src/markdown/formPart1.md
+        label: "Form 1"
+        name: "form 1"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "FAQs", options:["FAQs"], }
-          - {label: "Footer", name: "footer", widget: "string"}
-          - {label: "Main text", name: "body", widget: "markdown"}
-      - file: src/markdown/examples.md
-        label: "FAQs"
-        name: "faqs"
+          - {label: "Title", name: "title", widget: "select", default: "Form 1"}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "description", name: "description", widget: "string"}
+          - {label: "q1", name: "q1", widget: "string"}
+          - {label: "q1 placeholder", name: "q1Placeholder", widget: "string"}
+          - {label: "q2", name: "q2", widget: "string"}
+          - {label: "q2 placeholder", name: "q2Placeholder", widget: "string"}
+          - {label: "q3", name: "q3", widget: "string"}
+          - {label: "q3 placeholder", name: "q3Placeholder", widget: "string"}
+          - {label: "finalText", name: "finalText", widget: "string"}
+      - file: src/markdown/formPart2.md
+        label: "Form 2"
+        name: "form 2"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Recent Pairings", options:["Recent Pairings"], }
-          - {label: "Header", name: "header", widget: "string"}
-          - {label: "Footer", name: "footer", widget: "string"}
-          - {label: "Main text", name: "body", widget: "markdown"}
-      - file: src/markdown/story.md
-        label: "Story"
-        name: "story"
+          - {label: "Title", name: "title", widget: "select", default: "Form 2"}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "description", name: "description", widget: "string"}
+          - {label: "q1", name: "q1", widget: "string"}
+          - {label: "q1 placeholder", name: "q1Placeholder", widget: "string"}
+          - {label: "q2", name: "q2", widget: "string"}
+          - {label: "q2 placeholder", name: "q2Placeholder", widget: "string"}
+          - {label: "q3", name: "q3", widget: "string"}
+          - {label: "q4", name: "q5", widget: "string"}
+          - {label: "q5", name: "q5", widget: "string"}
+      - file: src/markdown/formPart3.md
+        label: "Form 3"
+        name: "form 3"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Story", options:["Story"], }
-          - {label: "Main text", name: "body", widget: "markdown"}
-      - file: src/markdown/howItWorks.md
-        label: "How It Works"
-        name: "how it works"
-        fields:
-          - {label: "Title", name: "title", widget: "select", default: "How It Works", options:["How It Works"], }
-          - {label: "Header", name: "header", widget: "string"}
-          - {label: "p1", name: "p1", widget: "string"}
-          - {label: "p2", name: "p2", widget: "string"}
-          - {label: "p3", name: "p3", widget: "string"}
+          - {label: "Title", name: "title", widget: "select", default: "Form 3"}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "description", name: "description", widget: "string"}
+          - {label: "q1", name: "q1", widget: "string"}
+          - {label: "q1 placeholder", name: "q1Placeholder", widget: "string"}
+          - {label: "q2", name: "q2", widget: "string"}
+          - {label: "q2 placeholder", name: "q2Placeholder", widget: "string"}
+          - {label: "Tips", name: "tips", widget: "string"}
