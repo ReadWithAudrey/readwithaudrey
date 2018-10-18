@@ -13,7 +13,6 @@ import {
   TextBox,
   Layout,
   FormSection,
-  ErrorSpan,
 } from '../../components/'
 
 class Form2 extends React.Component {
@@ -38,15 +37,7 @@ class Form2 extends React.Component {
       booktype3,
       q5,
     } = this.props.data.markdownRemark.frontmatter
-    const {
-      gender,
-      readlisten,
-      bookErrorSpan,
-      bookError,
-      roleErrorSpan,
-      roleError,
-      updateForm,
-    } = this.props.value
+    const { gender, readlisten, updateForm } = this.props.value
     return (
       <Layout>
         <h1 className="f2 pink tc montserrat mb3 mt4">{heading}</h1>
@@ -62,6 +53,7 @@ class Form2 extends React.Component {
               onChange={updateForm}
               name="gender"
               value={gender}
+              type="text"
             />
             <Label>{q2}</Label>
             <DropDownBox onChange={updateForm} type="age" name="age" />
@@ -72,7 +64,6 @@ class Form2 extends React.Component {
               name="timezone"
             />
             <Label>{q4}</Label>
-            <ErrorSpan type={roleErrorSpan}>{roleError}</ErrorSpan>
             <RadioButton
               name="readlisten"
               onChange={updateForm}
@@ -95,7 +86,6 @@ class Form2 extends React.Component {
               {readlisten3}
             </RadioButton>
             <Label>{q5}</Label>
-            <ErrorSpan type={bookErrorSpan}>{bookError}</ErrorSpan>
             <RadioButton name="booktype" onChange={updateForm}>
               {booktype1}
             </RadioButton>
