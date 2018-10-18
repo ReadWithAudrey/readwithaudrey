@@ -15,32 +15,32 @@ collections:
         label: "FAQs"
         name: "faqs"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "FAQs" }
+          - {label: "Title", name: "title", widget: "select", default: "FAQs", options: ["FAQs"] }
           - {label: "Footer", name: "footer", widget: "string"}
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/why.md
         label: "Our Why"
         name: "our why"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Our Why" }
+          - {label: "Title", name: "title", widget: "select", default: "Our Why", options: ["Our Why"] }
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/terms.md
         label: "Terms"
         name: "terms"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Terms" }
+          - {label: "Title", name: "title", widget: "select", default: "Terms", , options: ["Terms"] }
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/privacy.md
         label: "Privacy"
         name: "privacy"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Privacy" }
+          - {label: "Title", name: "title", widget: "select", default: "Privacy", options: ["Privacy"] }
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/thankyou.md
         label: "Thank You"
         name: "thank you"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Thank You" }
+          - {label: "Title", name: "title", widget: "select", default: "Thank You", options: ["Thank You"] }
           - {label: "Header 1", name: "header1", widget: "string"}
           - {label: "Header 2", name: "header2", widget: "string"}
           - {label: "p1", name: "p1", widget: "string"}
@@ -52,7 +52,7 @@ collections:
         label: "Contact"
         name: "contact"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Contact" }
+          - {label: "Title", name: "title", widget: "select", default: "Contact", options: ["Contact"] }
           - {label: "Header 1", name: "header1", widget: "string"}
           - {label: "p1", name: "p1", widget: "string"}
           - {label: "Main text", name: "body", widget: "markdown"}
@@ -64,7 +64,7 @@ collections:
         label: "About Audrey"
         name: "about audrey"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "About Audrey" }
+          - {label: "Title", name: "title", widget: "select", default: "About Audrey", options: ["About Audrey"] }
           - {label: "Header 1", name: "header1", widget: "string"}
           - {label: "Text1", name: "text1", widget: "string"}
           - {label: "Header 2", name: "header2", widget: "string"}
@@ -75,7 +75,7 @@ collections:
         label: "How It Works"
         name: "how it works"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "How It Works" }
+          - {label: "Title", name: "title", widget: "select", default: "How It Works", options: ["How It Works"] }
           - {label: "Header", name: "header", widget: "string"}
           - {label: "p1", name: "p1", widget: "string"}
           - {label: "p2", name: "p2", widget: "string"}
@@ -84,7 +84,7 @@ collections:
         label: "Recent reading partners"
         name: "recent reading partners"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Recent Pairings" }
+          - {label: "Title", name: "title", widget: "select", default: "Recent Pairings", options: ["Recent Pairings"] }
           - {label: "Header", name: "header", widget: "string"}
           - {label: "Footer", name: "footer", widget: "string"}
           - {label: "Main text", name: "body", widget: "markdown"}
@@ -104,7 +104,7 @@ collections:
         label: "Form 1"
         name: "form 1"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Form 1"}
+          - {label: "Title", name: "title", widget: "select", default: "Form 1", options: ["Form 1"]}
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "description", name: "description", widget: "string"}
           - {label: "q1", name: "q1", widget: "string"}
@@ -118,7 +118,7 @@ collections:
         label: "Form 2"
         name: "form 2"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Form 2"}
+          - {label: "Title", name: "title", widget: "select", default: "Form 2", options: ["Form 2"]}
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "description", name: "description", widget: "string"}
           - {label: "q1", name: "q1", widget: "string"}
@@ -132,7 +132,7 @@ collections:
         label: "Form 3"
         name: "form 3"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Form 3"}
+          - {label: "Title", name: "title", widget: "select", default: "Form 3", options: ["Form 3"]}
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "description", name: "description", widget: "string"}
           - {label: "q1", name: "q1", widget: "string"}
