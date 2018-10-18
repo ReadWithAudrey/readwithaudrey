@@ -1,13 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { VisibleSpan, HiddenSpan } from './ErrorSpan.style'
+import { StyledErrorSpan } from './ErrorSpan.style'
 
 const ErrorSpan = props => {
-  if (props.type === 'hidden') {
-    return <HiddenSpan>{props.children}</HiddenSpan>
-  } else {
-    return <VisibleSpan>{props.children}</VisibleSpan>
-  }
+  return <StyledErrorSpan>{props.children}</StyledErrorSpan>
 }
 
 ErrorSpan.propTypes = {

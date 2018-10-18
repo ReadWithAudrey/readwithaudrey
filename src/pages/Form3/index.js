@@ -12,7 +12,6 @@ import {
   TextBox,
   Layout,
   FormSection,
-  ErrorSpan,
 } from '../../components/'
 
 class Form3 extends React.Component {
@@ -52,8 +51,6 @@ class Form3 extends React.Component {
       story,
       specialRequests,
       updateForm,
-      storyError,
-      storyErrorSpan,
       storyTipsBox,
       showTips,
     } = this.props.value
@@ -81,8 +78,8 @@ class Form3 extends React.Component {
               onChange={updateForm}
               name="story"
               value={story}
+              required
             />
-            <ErrorSpan type={storyErrorSpan}>{storyError}</ErrorSpan>
 
             <a onClick={showTips} className="flex justify-center underline mb2">
               (Need tips?)

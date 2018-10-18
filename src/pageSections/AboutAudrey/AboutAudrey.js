@@ -9,21 +9,22 @@ const AboutAudrey = () => (
     query={query}
     render={data => {
       const {
+        header1,
         text1,
+        header2,
         text2,
+        header3,
         text3,
-        text4,
-        text5,
       } = data.markdownRemark.frontmatter
       return (
         <About>
           <div id="why-maintext">
-            <h2 className="f2 pink tc">Why</h2>
+            <h3 className="f2 pink tc">{header1}</h3>
             <TextBox className="tc lh-copy f4">{text1}</TextBox>
+            <h3 className="f2 pink tc">{header2}</h3>
             <TextBox className="tc lh-copy f4">{text2}</TextBox>
+            <h3 className="f2 pink tc">{header3}</h3>
             <TextBox className="tc lh-copy f4">{text3}</TextBox>
-            <TextBox className="tc lh-copy f4">{text4}</TextBox>
-            <TextBox className="tc lh-copy f4">{text5}</TextBox>
           </div>
         </About>
       )
@@ -45,11 +46,12 @@ const query = graphql`
     }
     markdownRemark(frontmatter: { title: { eq: "About Audrey" } }) {
       frontmatter {
+        header1
         text1
+        header2
         text2
+        header3
         text3
-        text4
-        text5
       }
     }
   }

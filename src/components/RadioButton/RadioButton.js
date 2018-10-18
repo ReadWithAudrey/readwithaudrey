@@ -10,6 +10,7 @@ const RadioButton = props => {
         value={props.children}
         name={props.name}
         onChange={props.onChange}
+        required
       />
       <Label>{props.children}</Label>
     </StyledRadioButton>

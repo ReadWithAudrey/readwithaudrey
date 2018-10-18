@@ -5,7 +5,6 @@ const controllers = require('./controllers');
 const pairingEmail = require('./emails/pairingEmail');
 const leadEmail = require('./emails/leadEmail');
 
-
 const app = express();
 app.set('PORT', process.env.PORT || 5000);
 

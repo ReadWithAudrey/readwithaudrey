@@ -18,6 +18,10 @@ import {
 } from '../../components/'
 
 class Form1 extends React.Component {
+  state = {
+    error: false,
+    errorMessage: 'Test',
+  }
   handleSubmit = event => {
     const { firstName, secondName, emailAddress } = this.props.value
     event.preventDefault()
@@ -28,23 +32,25 @@ class Form1 extends React.Component {
         emailAddress,
       })
       .then(res => {
-        console.log(res)
-        navigate('/Form2/')
+        if (res.data === 'email exists') {
+          this.setState({
+            error: true,
+            errorMessage:
+              'Sorry, a user with that e-mail address already exists, please chose another e-mail or check your inbox',
+          })
+        } else if (res.data === 'server error') {
+          this.setState({
+            error: true,
+            errorMessage:
+              'Sorry, a server error has occured. Please try again.',
+          })
+        } else {
+          navigate('/Form2/')
+        }
       })
   }
   render() {
-    const {
-      firstName,
-      secondName,
-      emailAddress,
-      updateForm,
-      nameErrorSpan,
-      nameError,
-      surnameError,
-      surnameErrorSpan,
-      emailError,
-      emailErrorSpan,
-    } = this.props.value
+    const { firstName, secondName, emailAddress, updateForm } = this.props.value
     const {
       heading,
       description,
@@ -64,30 +70,34 @@ class Form1 extends React.Component {
           <StatusBar>2. Further Details</StatusBar>
           <StatusBar>3. Your Story</StatusBar>
           <TextBox>{description}</TextBox>
+          {this.state.error && <ErrorSpan>{this.state.errorMessage}</ErrorSpan>}
           <form onSubmit={this.handleSubmit}>
             <Label>{q1}</Label>
-            <ErrorSpan type={nameErrorSpan}>{nameError}</ErrorSpan>
             <InputBox
               placeholder={q1Placeholder}
               onChange={updateForm}
               name="firstName"
               value={firstName}
+              type="text"
+              required="true"
             />
             <Label>{q2}</Label>
-            <ErrorSpan type={surnameErrorSpan}>{surnameError}</ErrorSpan>
             <InputBox
               placeholder={q2Placeholder}
               onChange={updateForm}
               name="secondName"
               value={secondName}
+              type="text"
+              required="true"
             />
             <Label>{q3}</Label>
-            <ErrorSpan type={emailErrorSpan}>{emailError}</ErrorSpan>
             <InputBox
               placeholder={q3Placeholder}
               onChange={updateForm}
               name="emailAddress"
               value={emailAddress}
+              type="email"
+              required="true"
             />
             <TextBox>{finalText}</TextBox>
             <Button style="register">Continue</Button>
