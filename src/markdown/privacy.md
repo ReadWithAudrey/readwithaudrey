@@ -3,30 +3,27 @@ title: Privacy
 ---
 This privacy policy applies between you, the User of this Website and Read With Audrey, the owner and provider of this Website. Read With Audrey takes the privacy of your information very seriously. This privacy policy applies to our use of any and all Data collected by us or provided by you in relation to your use of the Website.
 
-This privacy policy should be read alongside, and in addition to, our Terms and Conditions, which can be found at: www.readwithaudrey.com/terms.
+This privacy policy should be read alongside, and in addition to, our Terms and Conditions, which can be found at: [www.readwithaudrey.com/terms](/terms).
 
-**Please read this privacy policy carefully**
+**Please read this privacy policy carefully.**
 
 ## Definitions and interpretation
 
 1. In this privacy policy, the following definitions are used:
-
-| Term                       | Definition                                                                                                                                                                                                                                                                              |                 |                                                                                                                                                                                                                                                                                                                |
-| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Data**                   | collectively all information that you submit to Read With Audrey via the Website. This definition incorporates, where applicable, the definitions provided in the Data Protection Laws;                                                                                                 |                 |                                                                                                                                                                                                                                                                                                                |
-| **Cookies**                | a small text file placed on your computer by this Website when you visit certain parts of the Website and/or when you use certain features of the Website. Details of the cookies used by this Website are set out in the clause below (Cookies);                                       |                 |                                                                                                                                                                                                                                                                                                                |
-| **Data Protection Laws**   | any applicable law relating to the processing of personal Data, including but not limited to the Directive 96/46/EC (Data Protection Directive) or the GDPR, and any national implementing laws, regulations and secondary legislation, for as long as the GDPR is effective in the UK; |                 |                                                                                                                                                                                                                                                                                                                |
-| **GDPR**                   | the General Data Protection Regulation (EU) 2016/679;                                                                                                                                                                                                                                   |                 |                                                                                                                                                                                                                                                                                                                |
-| **Read With Audrey** or us | Read With Audrey of Churchill House , 137 Brent Street, London, NW4 4DJ;                                                                                                                                                                                                                |                 |                                                                                                                                                                                                                                                                                                                |
-| **UK and EU Cookie Law**   | the Privacy and Electronic Communications (EC Directive) Regulations 2003 as amended by the Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2011                                                                                                           | **User** or you | any third party that accesses the Website and is not either (i) employed by Read With Audrey and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to Read With Audrey and accessing the Website in connection with the provision of such services; and |
-| **Website**                | the website that you are currently using, www.readwithaudrey.com, and any sub-domains of this site unless expressly excluded by their own terms and conditions.                                                                                                                         |                 |                                                                                                                                                                                                                                                                                                                |
-
+    * **Data**: collectively all information that you submit to Read With Audrey via the Website. This definition incorporates, where applicable, the definitions provided in the Data Protection Laws;                           
+    * **Cookies**: a small text file placed on your computer by this Website when you visit certain parts of the Website and/or when you use certain features of the Website. Details of the cookies used by this Website are set out in the clause below (Cookies);
+    * **Data Protection Laws**: any applicable law relating to the processing of personal Data, including but not limited to the Directive 96/46/EC (Data Protection Directive) or the GDPR, and any national implementing laws, regulations and secondary legislation, for as long as the GDPR is effective in the UK;
+    * **GDPR** the General Data Protection Regulation (EU) 2016/679;
+    * **Read With Audrey** or us | Read With Audrey of Churchill House , 137 Brent Street, London, NW4 4DJ;
+    * **UK and EU Cookie Law** the Privacy and Electronic Communications (EC Directive) Regulations 2003 as amended by the Privacy and Electronic Communications (EC Directive) (Amendment) Regulations 2011
+    * **User** or you | any third party that accesses the Website and is not either (i) employed by Read With Audrey and acting in the course of their employment or (ii) engaged as a consultant or otherwise providing services to Read With Audrey and accessing the Website in connection with the provision of such services; and
+    * **Website** the website that you are currently using, www.readwithaudrey.com, and any sub-domains of this site unless expressly excluded by their own terms and conditions.
 2. In this privacy policy, unless the context requires a different interpretation:
-   a.the singular includes the plural and vice versa;
-   b.references to sub-clauses, clauses, schedules or appendices are to sub-clauses, clauses, schedules or appendices of this privacy policy;
-   c.a reference to a person includes firms, companies, government entities, trusts and partnerships;
-   d."including" is understood to mean "including without limitation";
-   e.reference to any statutory provision includes any modification or amendment of it; f.the headings and sub-headings do not form part of this privacy policy.
+   (a) the singular includes the plural and vice versa;
+   (b) references to sub-clauses, clauses, schedules or appendices are to sub-clauses, clauses, schedules or appendices of this privacy policy;
+   (c) a reference to a person includes firms, companies, government entities, trusts and partnerships;
+   (d) "including" is understood to mean "including without limitation";
+   (e) reference to any statutory provision includes any modification or amendment of it; f.the headings and sub-headings do not form part of this privacy policy.
 
 ### Scope of this privacy policy
 
@@ -37,19 +34,17 @@ This privacy policy should be read alongside, and in addition to, our Terms and 
 
 5. We may collect the following Data, which includes personal Data, from you:
 6. We may collect the following Data, which includes personal Data, from you:
-   a. name;
-   b. gender;
-   c. contact Information such as email addresses and telephone numbers;
-   d. demographic information such as postcode, preferences and interests;
-   e. IP address (automatically collected);
-   f. web browser type and version (automatically collected);
-   g. operating system (automatically collected);
-   h. in each case, in accordance with this privacy policy.
-   How we collect Data
+   (a) name;
+   (b) gender;
+   (c) contact Information such as email addresses and telephone numbers;
+   (d) demographic information such as postcode, preferences and interests;
+   (e) IP address (automatically collected);
+   (f) web browser type and version (automatically collected);
+   (g) operating system (automatically collected);
+   (g) in each case, in accordance with this privacy policy.
 7. We collect Data in the following ways:
-   a. data is given to us by you; and
-   b. data is collected automatically.
-   Data that is given to us by you
+   (a) data is given to us by you; and
+   (b) data is collected automatically.
 8. Read With Audrey will collect your Data in a number of ways, for example:
    a. when you contact us through the Website, by telephone, post, e-mail or through any other means;
    b. when you register with us and set up an account to receive our products/services;
