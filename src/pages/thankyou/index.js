@@ -13,9 +13,7 @@ const ThankYou = ({ data }) => {
   return (
     <Layout>
       <h1 className="f3 pink tc montserrat mb3">{header1}</h1>
-      <TextBox>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </TextBox>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
       <Link to="/contact">contact us</Link>
       <h2 className="f3 pink tc montserrat mb3">{header2}</h2>
       <TextBox>{p1}</TextBox>
