@@ -79,7 +79,7 @@ collections:
           - {label: "Header", name: "header", widget: "string"}
           - {label: "p1", name: "p1", widget: "string"}
           - {label: "p2", name: "p2", widget: "string"}
-        - {label: "p3", name: "p3", widget: "string"}
+          - {label: "p3", name: "p3", widget: "string"}
       - file: src/markdown/examples.md
         label: "Recent reading partners"
         name: "recent reading partners"
