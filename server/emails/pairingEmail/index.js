@@ -1,14 +1,24 @@
-const sendEmail = require('./sendEmail');
-const getNewPairs = require('../../queries/getData/getPairs');
+const getNewPairs = require('../../queries/getData/getNewPairs');
 const updateSentStatus = require('../../queries/postData/updateSentStatus');
+const {
+  downloadAttachments,
+  formatAttachments,
+  orgAttachments,
+  sendPairingEmail,
+} = require('./sendPairingEmail');
 
-let pairingId = '';
-getNewPairs
-  .then((pairs) => {
+const sendAllPairingEmails = () => {
+  getNewPairs().then((pairs) => {
     pairs.forEach((pair) => {
-      pairingId = pair.id;
-      sendEmail(pair)
-        .then(updateSentStatus(pairingId));
+      downloadAttachments(pair)
+        .then(formatAttachments)
+        .then(formatedAtt => orgAttachments(pair, formatedAtt))
+        .then(orgAtt => sendPairingEmail(pair, orgAtt))
+        .then(() => updateSentStatus(pair))
+        .then(() => console.log('Success email sent'))
+        .catch(e => console.log('A pair has raised an error', e.message));
     });
-  })
-  .catch(err => console.log(err));
+  });
+};
+
+module.exports = sendAllPairingEmails;

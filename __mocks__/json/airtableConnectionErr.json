@@ -1,0 +1,7 @@
+{ "Error": "getaddrinfo ENOTFOUND api.airtable.com api.airtable.com:443 at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:57:26)",
+  "errno": "ENOTFOUND",
+  "code": "ENOTFOUND",
+  "syscall": "getaddrinfo",
+  "hostname": "api.airtable.com",
+  "host": "api.airtable.com",
+  "port": 443 }

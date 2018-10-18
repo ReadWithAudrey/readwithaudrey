@@ -3,6 +3,16 @@
   "description": "Gatsby default starter",
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "serve": "gatsby serve",
+    "format": "prettier --write '**/*.js'",
+    "start": "node server/index.js",
+    "devstart": "nodemon server/index.js",
+    "test": "jest --coverage",
+    "report-coverage": "codecov"
+  },
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
     "airtable": "^0.5.6",
@@ -12,6 +22,7 @@
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "gatsby": "^2.0.0",
+    "gatsby-plugin-google-analytics": "^2.0.6",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-postcss": "^2.0.0",
@@ -32,20 +43,7 @@
     "tachyons-aspect-ratios": "^1.0.1",
     "tachyons-custom": "^4.9.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop",
-    "serve": "gatsby serve",
-    "format": "prettier --write '**/*.js'",
-    "start": "node server/index.js",
-    "devstart": "nodemon server/index.js",
-    "test": "jest --coverage",
-    "report-coverage": "codecov"
-  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
@@ -68,6 +66,9 @@
     "prettier": "^1.14.2",
     "react-test-renderer": "^16.5.2"
   },
+  "keywords": [
+    "gatsby"
+  ],
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js"

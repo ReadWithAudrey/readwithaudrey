@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import axios from 'axios'
+import { graphql, navigate } from 'gatsby'
 import PropTypes from 'prop-types'
-import { SignupContext } from '../../contexts/SignupContext'
+import { withSignupContext } from '../../contexts/contextWrapper'
 
 import {
   Label,
@@ -11,66 +12,97 @@ import {
   TextBox,
   Layout,
   FormSection,
-  ErrorSpan,
 } from '../../components/'
 
-const Form3 = ({ data }) => {
-  const {
-    heading,
-    description,
-    q1,
-    q1Placeholder,
-    q2,
-    q2Placeholder,
-    tips,
-  } = data.markdownRemark.frontmatter
-  return (
-    <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">{heading}</h1>
-      <FormSection>
-        <Link to="/Form1">
-          <StatusBar>1. Basic Details</StatusBar>
-        </Link>
-        <Link to="/Form2">
+class Form3 extends React.Component {
+  handleSubmit = event => {
+    const {
+      firstName,
+      secondName,
+      emailAddress,
+      gender,
+      age,
+      readlisten,
+      timezone,
+      booktype,
+      story,
+      specialRequests,
+    } = this.props.value
+    event.preventDefault()
+    axios
+      .post(`http://localhost:5000/formPart3`, {
+        firstName,
+        secondName,
+        emailAddress,
+        gender,
+        timezone,
+        age,
+        readlisten,
+        booktype,
+        story,
+        specialRequests,
+      })
+      .then(() => {
+        navigate('/thankyou/')
+      })
+  }
+  render() {
+    const {
+      story,
+      specialRequests,
+      updateForm,
+      storyTipsBox,
+      showTips,
+    } = this.props.value
+    const {
+      heading,
+      description,
+      q1,
+      q1Placeholder,
+      q2,
+      q2Placeholder,
+      tips,
+    } = this.props.data.markdownRemark.frontmatter
+    return (
+      <Layout>
+        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">{heading}</h1>
+        <FormSection>
+          <StatusBar>1. Contact Details</StatusBar>
           <StatusBar>2. Further Details</StatusBar>
-        </Link>
-        <StatusBar type="active">3. Your Bio</StatusBar>
-        <TextBox>{description}</TextBox>
-        <SignupContext.Consumer>
-          {({ story, storyError, storyErrorSpan, storyTipsBox, specialRequests, updateForm, handleSubmit, showTips }) => (
-            <form method="POST" action="http://localhost:5000/formPart1">
-              <Label>{q1}</Label>
-              <ErrorSpan type={storyErrorSpan}>{storyError}</ErrorSpan>
-              <TextArea
-                placeholder={q1Placeholder}
-                onChange={updateForm}
-                name="story"
-                value={story}
-              />
-              <a onClick={showTips} className="flex justify-center underline mb2">(Need tips?)</a>
-              {storyTipsBox && (
-                <TextBox className="f">{tips}</TextBox>
-              )}
-              <Label>{q2}</Label>
-              <TextArea
-                placeholder={q2Placeholder}
-                onChange={updateForm}
-                name="specialRequests"
-                value={specialRequests}
-              />
-              <Link to="/thankyou" className="no-underline" onClick={handleSubmit}>
-                <Button type="register">Submit</Button>
-              </Link>
-            </form>
-          )}
-        </SignupContext.Consumer>
-      </FormSection>
-    </Layout>
-  )
+          <StatusBar type="active">3. Your Bio</StatusBar>
+          <TextBox>{description}</TextBox>
+          <form onSubmit={this.handleSubmit}>
+            <Label>{q1}</Label>
+            <TextArea
+              placeholder={q1Placeholder}
+              onChange={updateForm}
+              name="story"
+              value={story}
+              required
+            />
+
+            <a onClick={showTips} className="flex justify-center underline mb2">
+              (Need tips?)
+            </a>
+            {storyTipsBox && <TextBox className="f">{tips}</TextBox>}
+            <Label>{q2}</Label>
+            <TextArea
+              placeholder={q2Placeholder}
+              onChange={updateForm}
+              name="specialRequests"
+              value={specialRequests}
+            />
+            <Button style="register">Submit</Button>
+          </form>
+        </FormSection>
+      </Layout>
+    )
+  }
 }
 
 Form3.propTypes = {
   data: PropTypes.object,
+  value: PropTypes.object,
 }
 
 export const query = graphql`
@@ -94,4 +126,4 @@ export const query = graphql`
   }
 `
 
-export default Form3
+export default withSignupContext(Form3)

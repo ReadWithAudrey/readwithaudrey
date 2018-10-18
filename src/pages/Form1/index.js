@@ -1,7 +1,10 @@
+/* eslint-disable */
+
+import axios from 'axios'
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql, navigate } from 'gatsby'
 import PropTypes from 'prop-types'
-import { SignupContext } from '../../contexts/SignupContext'
+import { withSignupContext } from '../../contexts/contextWrapper'
 
 import {
   InputBox,
@@ -11,77 +14,84 @@ import {
   StatusBar,
   TextBox,
   FormSection,
-  ErrorSpan,
 } from '../../components/'
 
-const Form1 = ({ data }) => {
-  const {
-    heading,
-    description,
-    q1,
-    q2,
-    q3,
-    q1Placeholder,
-    q2Placeholder,
-    q3Placeholder,
-    finalText,
-  } = data.markdownRemark.frontmatter
-  return (
-    <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">{heading}</h1>
-      <FormSection>
-        <StatusBar type="active">1. Contact Info</StatusBar>
-        <Link to="/Form2">
+class Form1 extends React.Component {
+  handleSubmit = event => {
+    const { firstName, secondName, emailAddress } = this.props.value
+    event.preventDefault()
+    axios
+      .post(`http://localhost:5000/formPart1`, {
+        firstName,
+        secondName,
+        emailAddress,
+      })
+      .then(res => {
+        console.log(res)
+        navigate('/Form2/')
+      })
+  }
+  render() {
+    const { firstName, secondName, emailAddress, updateForm } = this.props.value
+    const {
+      heading,
+      description,
+      q1,
+      q2,
+      q3,
+      q1Placeholder,
+      q2Placeholder,
+      q3Placeholder,
+      finalText,
+    } = this.props.data.markdownRemark.frontmatter
+    return (
+      <Layout>
+        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">{heading}</h1>
+        <FormSection>
+          <StatusBar type="active">1. Contact Details</StatusBar>
           <StatusBar>2. Further Details</StatusBar>
-        </Link>
-        <Link to="/Form3">
           <StatusBar>3. Your Story</StatusBar>
-        </Link>
-        <TextBox>{description}</TextBox>
-        <SignupContext.Consumer>
-          {({ firstName, secondName, emailAddress, nameErrorSpan, nameError, surnameErrorSpan, surnameError, emailErrorSpan, emailError, updateForm, handleNext1 }) => (
-            <form method="POST" action="http://localhost:5000/formPart1">
-              <Label>{q1}</Label>
-              <ErrorSpan type={nameErrorSpan}>{nameError}</ErrorSpan>
-              <InputBox
-                placeholder={q1Placeholder}
-                onChange={updateForm}
-                name="firstName"
-                value={firstName}
-                required
-              />
-              <Label>{q2}</Label>
-              <ErrorSpan type={surnameErrorSpan}>{surnameError}</ErrorSpan>
-              <InputBox
-                placeholder={q2Placeholder}
-                onChange={updateForm}
-                name="secondName"
-                value={secondName}
-                required
-              />
-              <Label>{q3}</Label>
-              <ErrorSpan type={emailErrorSpan}>{emailError}</ErrorSpan>
-              <InputBox
-                placeholder={q3Placeholder}
-                onChange={updateForm}
-                name="emailAddress"
-                value={emailAddress}
-                required
-              />
-              <TextBox>{finalText}</TextBox>
-              <Link to="/Form2" className="no-underline" onClick={handleNext1}>
-                <Button type="register">Continue</Button>
-              </Link>
-            </form>
-          )}
-        </SignupContext.Consumer>
-      </FormSection>
-    </Layout>
-  )
+          <TextBox>{description}</TextBox>
+          <form onSubmit={this.handleSubmit}>
+            <Label>{q1}</Label>
+            <InputBox
+              placeholder={q1Placeholder}
+              onChange={updateForm}
+              name="firstName"
+              value={firstName}
+              type="text"
+              required="true"
+            />
+            <Label>{q2}</Label>
+            <InputBox
+              placeholder={q2Placeholder}
+              onChange={updateForm}
+              name="secondName"
+              value={secondName}
+              type="text"
+              required="true"
+            />
+            <Label>{q3}</Label>
+            <InputBox
+              placeholder={q3Placeholder}
+              onChange={updateForm}
+              name="emailAddress"
+              value={emailAddress}
+              type="email"
+              required="true"
+            />
+            <TextBox>{finalText}</TextBox>
+            <Button style="register">Continue</Button>
+          </form>
+        </FormSection>
+      </Layout>
+    )
+  }
 }
 
 Form1.propTypes = {
   data: PropTypes.object,
+  value: PropTypes.object,
 }
 
 export const query = graphql`
@@ -107,4 +117,4 @@ export const query = graphql`
   }
 `
 
-export default Form1
+export default withSignupContext(Form1)
