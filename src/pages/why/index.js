@@ -7,9 +7,9 @@ const Story = ({ data }) => {
   const { html } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mt5 mb4">Our Why?</h1>
+      <h1 className="f1 pink tc montserrat mt5 mb4">Our Why?</h1>
       <TextBox>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="mid-gray f4" dangerouslySetInnerHTML={{ __html: html }} />
       </TextBox>
     </Layout>
   )
