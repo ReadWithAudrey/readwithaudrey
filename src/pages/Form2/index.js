@@ -13,6 +13,7 @@ import {
   TextBox,
   Layout,
   FormSection,
+  ErrorSpan,
 } from '../../components/'
 
 const Form2 = ({ data }) => {
@@ -22,7 +23,6 @@ const Form2 = ({ data }) => {
     q1,
     q1Placeholder,
     q2,
-    q2Placeholder,
     q3,
     readlisten1,
     readlisten2,
@@ -37,16 +37,16 @@ const Form2 = ({ data }) => {
     <Layout>
       <h1 className="f2 pink tc montserrat mb3 mt4">{heading}</h1>
       <FormSection>
-        <Link to="/form1/">
+        <Link to="/Form1/">
           <StatusBar>1. Contact Details</StatusBar>
         </Link>
         <StatusBar type="active">2. Further Details</StatusBar>
-        <Link to="/form3/">
+        <Link to="/Form3/">
           <StatusBar>3. Your Story</StatusBar>
         </Link>
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
-          {({ gender, age, readlisten, updateForm }) => (
+          {({ gender, readlisten, roleError, roleErrorSpan, booktype, bookError, bookErrorSpan, updateForm, handleNext2 }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
               <InputBox
@@ -56,15 +56,11 @@ const Form2 = ({ data }) => {
                 value={gender}
               />
               <Label>{q2}</Label>
-              <InputBox
-                placeholder={q2Placeholder}
-                onChange={updateForm}
-                name="age"
-                value={age}
-              />
+              <DropDownBox onChange={updateForm} name="age" type="age" />
               <Label>{q3}</Label>
-              <DropDownBox onChange={updateForm} name="timezone" />
+              <DropDownBox onChange={updateForm} name="timezone" type="timezone" />
               <Label>{q4}</Label>
+              <ErrorSpan type={roleErrorSpan}>{roleError}</ErrorSpan>
               <RadioButton
                 name="readlisten"
                 onChange={updateForm}
@@ -87,16 +83,29 @@ const Form2 = ({ data }) => {
                 {readlisten3}
               </RadioButton>
               <Label>{q5}</Label>
-              <RadioButton name="booktype" onChange={updateForm}>
+              <ErrorSpan type={bookErrorSpan}>{bookError}</ErrorSpan>
+              <RadioButton
+                name="booktype"
+                onChange={updateForm}
+                value={booktype}
+              >
                 {booktype1}
               </RadioButton>
-              <RadioButton name="booktype" onChange={updateForm}>
+              <RadioButton
+                name="booktype"
+                onChange={updateForm}
+                value={booktype}
+              >
                 {booktype2}
               </RadioButton>
-              <RadioButton name="booktype" onChange={updateForm}>
+              <RadioButton
+                name="booktype"
+                onChange={updateForm}
+                value={booktype}
+              >
                 {booktype3}
               </RadioButton>
-              <Link to="/form3" className="no-underline">
+              <Link to="/Form3" className="no-underline" onClick={handleNext2}>
                 <Button type="register">Continue</Button>
               </Link>
             </form>

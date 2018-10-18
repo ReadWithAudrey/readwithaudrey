@@ -31,7 +31,7 @@ Array [
         className="sc-htpNat montserrat bRYTxq"
       >
         <Link
-          to="/story/"
+          to="/why/"
         >
           Why?
         </Link>
@@ -47,7 +47,7 @@ Array [
         </Link>
         <Link
           className="mv2 white br2 ba bw1 b--white"
-          to="/form1"
+          to="/Form1"
         >
           Join Us
         </Link>
@@ -112,26 +112,6 @@ Array [
     >
       Why not share the story of Audrey and help us spread the word?
     </p>
-    <p
-      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
-    >
-      Have a great day!
-    </p>
-    <p
-      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
-    >
-      Rob and the Audrey team
-    </p>
-    <h3
-      className="f5 pink tc montserrat mb3"
-    >
-      Help spread the word
-    </h3>
-    <p
-      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
-    >
-      Why not share the story of Audrey?
-    </p>
     <img
       alt="Facebook"
       className="fl"
@@ -147,6 +127,16 @@ Array [
       className="fl"
       src="test-file-stub"
     />
+    <p
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+    >
+      Have a great day!
+    </p>
+    <p
+      className="sc-kAzzGY montserrat f5 tc lh-copy jdrnSq"
+    >
+      Rob and the Audrey team
+    </p>
     <Link
       to="/"
     >
