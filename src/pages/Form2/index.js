@@ -24,13 +24,7 @@ const Form2 = ({ data }) => {
     q1Placeholder,
     q2,
     q3,
-    readlisten1,
-    readlisten2,
-    readlisten3,
     q4,
-    booktype1,
-    booktype2,
-    booktype3,
     q5,
   } = data.markdownRemark.frontmatter
   return (
@@ -46,7 +40,17 @@ const Form2 = ({ data }) => {
         </Link>
         <TextBox>{description}</TextBox>
         <SignupContext.Consumer>
-          {({ gender, readlisten, roleError, roleErrorSpan, booktype, bookError, bookErrorSpan, updateForm, handleNext2 }) => (
+          {({
+            gender,
+            readlisten,
+            roleError,
+            roleErrorSpan,
+            booktype,
+            bookError,
+            bookErrorSpan,
+            updateForm,
+            handleNext2,
+          }) => (
             <form method="POST" action="http://localhost:5000/formPart1">
               <Label>{q1}</Label>
               <InputBox
@@ -58,7 +62,11 @@ const Form2 = ({ data }) => {
               <Label>{q2}</Label>
               <DropDownBox onChange={updateForm} name="age" type="age" />
               <Label>{q3}</Label>
-              <DropDownBox onChange={updateForm} name="timezone" type="timezone" />
+              <DropDownBox
+                onChange={updateForm}
+                name="timezone"
+                type="timezone"
+              />
               <Label>{q4}</Label>
               <ErrorSpan type={roleErrorSpan}>{roleError}</ErrorSpan>
               <RadioButton
@@ -66,21 +74,21 @@ const Form2 = ({ data }) => {
                 onChange={updateForm}
                 value={readlisten}
               >
-                {readlisten1}
+                Read
               </RadioButton>
               <RadioButton
                 name="readlisten"
                 onChange={updateForm}
                 value={readlisten}
               >
-                {readlisten2}
+                Listen
               </RadioButton>
               <RadioButton
                 name="readlisten"
                 onChange={updateForm}
                 value={readlisten}
               >
-                {readlisten3}
+                Both
               </RadioButton>
               <Label>{q5}</Label>
               <ErrorSpan type={bookErrorSpan}>{bookError}</ErrorSpan>
@@ -89,21 +97,21 @@ const Form2 = ({ data }) => {
                 onChange={updateForm}
                 value={booktype}
               >
-                {booktype1}
+                Fiction
               </RadioButton>
               <RadioButton
                 name="booktype"
                 onChange={updateForm}
                 value={booktype}
               >
-                {booktype2}
+                Non-Fiction
               </RadioButton>
               <RadioButton
                 name="booktype"
                 onChange={updateForm}
                 value={booktype}
               >
-                {booktype3}
+                Don&#39;t Mind
               </RadioButton>
               <Link to="/Form3" className="no-underline" onClick={handleNext2}>
                 <Button type="register">Continue</Button>
@@ -136,13 +144,7 @@ export const query = graphql`
         q2
         q2Placeholder
         q3
-        readlisten1
-        readlisten2
-        readlisten3
         q4
-        booktype1
-        booktype2
-        booktype3
         q5
       }
     }
