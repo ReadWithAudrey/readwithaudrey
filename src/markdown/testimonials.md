@@ -1,7 +1,7 @@
 ---
 title: Testimonials
-header: 'What our community are saying'
-footer: 'Every week people are reading to each other all around the world.'
+header: What our community are saying
+footer: Every week people are reading to each other all around the world.
 ---
 
 "The reading sessions are getting longer each week because we find that there's so much to talk about!" - Cristina, Sao Paulo.

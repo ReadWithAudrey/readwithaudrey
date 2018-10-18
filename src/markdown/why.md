@@ -1,5 +1,5 @@
 ---
-title: 'Story'
+title: 'Our Why'
 ---
 
 We passionately believe that by connecting people to read aloud together, Audrey can help to build relationships, remind us how much more we have in common than divides us, and create a more compassionate world.

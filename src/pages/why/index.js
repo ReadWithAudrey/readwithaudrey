@@ -7,7 +7,7 @@ const Story = ({ data }) => {
   const { html } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4">Why</h1>
+      <h1 className="f2 pink tc montserrat mb3 mt4">Our Why</h1>
       <TextBox>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </TextBox>
@@ -26,7 +26,7 @@ export const query = graphql`
         title
       }
     }
-    markdownRemark(frontmatter: { title: { eq: "Story" } }) {
+    markdownRemark(frontmatter: { title: { eq: "Our Why" } }) {
       html
     }
   }

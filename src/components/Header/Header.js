@@ -26,7 +26,7 @@ class Header extends Component {
           </div>
           <Nav>
             <DesktopMenu>
-              <Link to="/story/">Why?</Link>
+              <Link to="/why/">Why?</Link>
               <Link to="/faq/">FAQ</Link>
               <Link to="/contact/">Contact</Link>
               <Link to="/Form1" className="mv2 white br2 ba bw1 b--white">
@@ -46,7 +46,7 @@ class Header extends Component {
         </HeaderStyled>
         {this.state.visible && (
           <MobileMenu>
-            <Link to="/story/">Why?</Link>
+            <Link to="/why/">Why?</Link>
             <Link to="/faq/">FAQ</Link>
             <Link to="/contact/">Contact</Link>
             <Link to="/Form1">Join Us</Link>
