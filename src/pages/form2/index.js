@@ -29,17 +29,7 @@ class Form2 extends React.Component {
       q1Placeholder,
       q2,
       q3,
-<<<<<<< HEAD
       q4,
-=======
-      readlisten1,
-      readlisten2,
-      readlisten3,
-      q4,
-      booktype1,
-      booktype2,
-      booktype3,
->>>>>>> master
       q5,
     } = this.props.data.markdownRemark.frontmatter
     const {
@@ -82,54 +72,32 @@ class Form2 extends React.Component {
               onChange={updateForm}
               value={readlisten}
             >
-<<<<<<< HEAD
               Read
-=======
-              {readlisten1}
->>>>>>> master
             </RadioButton>
             <RadioButton
               name="readlisten"
               onChange={updateForm}
               value={readlisten}
             >
-<<<<<<< HEAD
               Listen
-=======
-              {readlisten2}
->>>>>>> master
             </RadioButton>
             <RadioButton
               name="readlisten"
               onChange={updateForm}
               value={readlisten}
             >
-<<<<<<< HEAD
               Both
-=======
-              {readlisten3}
->>>>>>> master
             </RadioButton>
             <Label>{q5}</Label>
             <ErrorSpan type={bookErrorSpan}>{bookError}</ErrorSpan>
             <RadioButton name="booktype" onChange={updateForm}>
-<<<<<<< HEAD
               Fiction
             </RadioButton>
             <RadioButton name="booktype" onChange={updateForm}>
-              Non-fiction
+              Non-Fiction
             </RadioButton>
             <RadioButton name="booktype" onChange={updateForm}>
               Don&#39;t Mind
-=======
-              {booktype1}
-            </RadioButton>
-            <RadioButton name="booktype" onChange={updateForm}>
-              {booktype2}
-            </RadioButton>
-            <RadioButton name="booktype" onChange={updateForm}>
-              {booktype3}
->>>>>>> master
             </RadioButton>
             <Button style="register">Continue</Button>
           </form>
@@ -160,17 +128,7 @@ export const query = graphql`
         q2
         q2Placeholder
         q3
-<<<<<<< HEAD
         q4
-=======
-        readlisten1
-        readlisten2
-        readlisten3
-        q4
-        booktype1
-        booktype2
-        booktype3
->>>>>>> master
         q5
       }
     }
