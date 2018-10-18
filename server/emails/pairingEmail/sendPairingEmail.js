@@ -64,9 +64,7 @@ const sendPairingEmail = (pair, attachments) => {
   const {
     book_name, book_bio, mini_book_bio, book_author,
   } = pair.fields;
-  // Check that we have all the data we need here
-  // const fields = [id, user1_name, user1_email, user1_bio, book_name,
-  // book_bio, mini_book_bio, book_author];
+
   if (user1_email[0] === user2_email[0]) {
     return Promise.reject(new Error('user emails are the same'));
   }

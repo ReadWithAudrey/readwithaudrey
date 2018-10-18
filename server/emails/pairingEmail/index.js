@@ -21,24 +21,4 @@ const sendAllPairingEmails = () => {
   });
 };
 
-sendAllPairingEmails();
-//
-//       }).catch(e => console.log('error during pair query', e)
-//     sendPairingEmail(pair)
-//       .then((res) => {
-//         console.log('matched a pair');
-//         const { personalizations } = JSON.parse(res.config.data);
-//         const { dynamic_template_data: { pairingId } } = personalizations[0];
-//         return updateSentStatus(pairingId);
-//       });
-//   });
-// };
-// const pairingEmail = () => {
-//   getNewPairs()
-//     .then(sendAllPairingEmails).catch(err => console.log(err));
-// };
-//
-//
-// pairingEmail();
-
 module.exports = sendAllPairingEmails;
