@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+/* eslint-disable camel */
 require('dotenv').config();
 const axios = require('axios');
 
@@ -65,11 +65,11 @@ const sendPairingEmail = (pair, attachments) => {
     book_name, book_bio, mini_book_bio, book_author,
   } = pair.fields;
   // Check that we have all the data we need here
-  // const fields = [id, user1_name, user1_email, user1_bio, book_name, book_bio, mini_book_bio, book_author];
+  // const fields = [id, user1_name, user1_email, user1_bio, book_name,
+  // book_bio, mini_book_bio, book_author];
   if (user1_email[0] === user2_email[0]) {
     return Promise.reject(new Error('user emails are the same'));
   }
-
 
   return axios('https://sendgrid.com/v3/mail/send', {
     headers: { Authorization: `Bearer ${process.env.SENDGRID_API_KEY}` },
@@ -87,51 +87,35 @@ const sendPairingEmail = (pair, attachments) => {
               name: user2_name[0],
             },
           ],
+          dynamic_template_data: {
+            pairingId: id,
+            user1: user1_name[0],
+            user2: user2_name[0],
+            user1_bio: user1_bio[0],
+            user2_bio: user2_bio[0],
+            book_name: book_name[0],
+            book_bio: book_bio[0],
+            mini_book_bio: mini_book_bio[0],
+            book_author: book_author[0],
+            who_reads: whoReads(pair),
+          },
         },
       ],
-      from: {
-        email: 'sam.smith@example.com',
-        name: 'Sam Smith',
-      },
-      reply_to: {
-        email: 'sam.smith@example.com',
-        name: 'Sam Smith',
-      },
-      // personalizations: [
-      //   {
-      //     to: [
-      //       {
-      //         email: user1_email[0],
-      //         name: user1_name[0],
-      //       },
-      //       {
-      //         email: user2_email[0],
-      //         name: user2_name[0],
-      //       },
-      //     ],
-      dynamic_template_data: {
-        pairingId: id,
-        user1: user1_name[0],
-        user2: user2_name[0],
-        user1_bio: user1_bio[0],
-        user2_bio: user2_bio[0],
-        book_name: book_name[0],
-        book_bio: book_bio[0],
-        mini_book_bio: mini_book_bio[0],
-        book_author: book_author[0],
-        // who_reads: whoReads(pair),
-      },
-      //   },
-      // ],
-      template_id: 'd-74d18868e6d84290860df912d769464d',
       from: {
         email: 'readwithaudrey.data@gmail.com',
         name: 'Audrey',
       },
+      reply_to: {
+        email: 'readwithaudrey.data@gmail.com',
+        name: 'Audrey',
+      },
+      template_id: 'd-74d18868e6d84290860df912d769464d',
+
       attachments,
     },
   });
 };
+
 module.exports = {
   downloadAttachments,
   formatAttachments,

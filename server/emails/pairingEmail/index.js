@@ -14,6 +14,7 @@ const sendAllPairingEmails = () => {
         .then(formatAttachments)
         .then(formatedAtt => orgAttachments(pair, formatedAtt))
         .then(orgAtt => sendPairingEmail(pair, orgAtt))
+        .then(() => updateSentStatus(pair))
         .then(() => console.log('Success email sent'))
         .catch(e => console.log('A pair has raised an error', e.message));
     });
