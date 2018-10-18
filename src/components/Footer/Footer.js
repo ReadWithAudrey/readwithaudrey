@@ -5,7 +5,7 @@ import { StyledFooter, Copyright } from './Footer.style'
 const Footer = () => (
   <StyledFooter>
     <Copyright>
-      <p className="mid-gray ph2 ph4-ns">&copy; Audrey</p>
+      <p className="mid-gray ph2 ph4-ns f5">&copy; Audrey</p>
       <Link to="/terms/" className="no-underline mid-gray ph2 ph4-ns">
         Terms
       </Link>
