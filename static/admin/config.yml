@@ -23,14 +23,14 @@ collections:
         label: "FAQs"
         name: "faqs"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "FAQs", options:["FAQs"], }
+          - {label: "Title", name: "title", widget: "select", default: "FAQs" }
           - {label: "Footer", name: "footer", widget: "string"}
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/examples.md
         label: "FAQs"
         name: "faqs"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Recent Pairings", options:["Recent Pairings"], }
+          - {label: "Title", name: "title", widget: "select", default: "Recent Pairings" }
           - {label: "Header", name: "header", widget: "string"}
           - {label: "Footer", name: "footer", widget: "string"}
           - {label: "Main text", name: "body", widget: "markdown"}
@@ -38,14 +38,39 @@ collections:
         label: "Story"
         name: "story"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Story", options:["Story"], }
+          - {label: "Title", name: "title", widget: "select", default: "Story" }
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/howItWorks.md
         label: "How It Works"
         name: "how it works"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "How It Works", options:["How It Works"], }
+          - {label: "Title", name: "title", widget: "select", default: "How It Works" }
           - {label: "Header", name: "header", widget: "string"}
           - {label: "p1", name: "p1", widget: "string"}
           - {label: "p2", name: "p2", widget: "string"}
           - {label: "p3", name: "p3", widget: "string"}
+ - name: "forms"
+   label: "Forms"
+   files:
+     - file: src/markdown/formPart1.md
+       label: "Form 1"
+       name: "form 1"
+       fields:
+         - {label: "Title", name: "title", widget: "select", default: "Form 1", options:["Form 1"], }
+         - {label: "Heading", name: "heading", widget: "string"}
+         - {label: "description", name: "description", widget: "string"}
+         - {label: "q1", name: "q1", widget: "string"}
+         - {label: "q1Placeholder", name: "q1Placeholder", widget: "string"}
+         - {label: "q2", name: "q2", widget: "string"}
+         - {label: "q2Placeholder", name: "q2Placeholder", widget: "string"}
+         - {label: "q3", name: "q3", widget: "string"}
+         - {label: "q3Placeholder", name: "q3Placeholder", widget: "string"}
+         - {label: "finalText", name: "finalText", widget: "string"}
+     - file: src/markdown/formPart2.md
+       label: "Testimonials"
+       name: "testimonials"
+       fields:
+         - {label: "Title", name: "title", widget: "select", default: "Testimonials", options:["Testimonials"], }
+         - {label: "Header", name: "header", widget: "string"}
+         - {label: "Footer", name: "footer", widget: "string"}
+         - {label: "Main text", name: "body", widget: "markdown"}
