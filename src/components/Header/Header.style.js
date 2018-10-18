@@ -6,8 +6,9 @@ export const HeaderStyled = styled.header.attrs({
 })`
   position: fixed;
   top: 0;
-  min-height: 5vh;
+  height: 10vh;
   margin-bottom: 7vh;
+  overflow: hidden;
   a {
     color: #fff;
     padding: 0;
@@ -54,6 +55,9 @@ export const MobileMenu = styled.section.attrs({
   className: 'montserrat  bg-green tc f4 page-padding',
 })`
   display: block;
+  position: fixed;
+  top: 10vh;
+  width: 100%;
   a {
     text-decoration: none;
     display: block;
