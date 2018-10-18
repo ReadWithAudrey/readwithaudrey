@@ -5,7 +5,7 @@ const controllers = require('./controllers');
 const pairingEmail = require('./emails/pairingEmail');
 
 const app = express();
-app.set('PORT', process.env.PORT || 5001);
+app.set('PORT', process.env.PORT || 5000);
 
 setInterval(pairingEmail, 1000 * 60 * 60);
 
