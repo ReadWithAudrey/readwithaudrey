@@ -1,0 +1,343 @@
+{
+  "statusCode": 200,
+  "body": {
+    "records": [
+      {
+        "id": "recEya7cL9blZVukN",
+        "fields": {
+          "reader": "user1",
+          "user1_email": [
+            "readwithaudrey.data@gmail.com"
+          ],
+          "user2_email": [
+            "kentdenis6@hotmail.co.uk"
+          ],
+          "user1_name": [
+            "Ben"
+          ],
+          "user2_name": [
+            "Matt"
+          ],
+          "user2_bio": [
+            "Hi I am Matt, I hate programming."
+          ],
+          "user1_bio": [
+            "Hi my name is Ben. I like to program. I like long walks in the park"
+          ],
+          "book_attachments": [
+            {
+              "id": "attiYk3NgCTe5kaWV",
+              "url": "https://dl.airtable.com/gw3afJnxR3OalXGGa6t9_Travelling%20in%20a%20Strange%20Land%20-%20Book%20Summary.docx",
+              "filename": "Travelling in a Strange Land - Book Summary.docx",
+              "size": 12695,
+              "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/attiYk3NgCTe5kaWV-c98314e3b6a920f8-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/attiYk3NgCTe5kaWV-7e88250b2e1391a6-226x320.jpg",
+                  "width": 226,
+                  "height": 320
+                }
+              }
+            },
+            {
+              "id": "attpUWaApTbEv8Mv0",
+              "url": "https://dl.airtable.com/AWAEz6m9R2mcZSxJHI1k_Travelling%20in%20a%20Strange%20Land%20-%20Chapter%201.pdf",
+              "filename": "Travelling in a Strange Land - Chapter 1.pdf",
+              "size": 370600,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/attpUWaApTbEv8Mv0-1dfb067cd4e7326c-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/attpUWaApTbEv8Mv0-68ed2b5a6108e67d-247x320.jpg",
+                  "width": 247,
+                  "height": 320
+                }
+              }
+            },
+            {
+              "id": "attVNurtOUlALM1aR",
+              "url": "https://dl.airtable.com/ETDRAZkSB6DSa1fUOr89_Travelling%20in%20a%20Strange%20Land%20-%20Chapter%202.pdf",
+              "filename": "Travelling in a Strange Land - Chapter 2.pdf",
+              "size": 364591,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/attVNurtOUlALM1aR-2e4c7c88a918d7ac-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/attVNurtOUlALM1aR-1a4e5c0d9dc3b810-247x320.jpg",
+                  "width": 247,
+                  "height": 320
+                }
+              }
+            },
+            {
+              "id": "attp1K2RGoUm0Fk3w",
+              "url": "https://dl.airtable.com/N27PYJDgQ52dFO8iL3MJ_Travelling%20in%20a%20Strange%20Land%20-%20Chapter%203.pdf",
+              "filename": "Travelling in a Strange Land - Chapter 3.pdf",
+              "size": 362822,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/attp1K2RGoUm0Fk3w-cb2430ec67b5a2b3-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/attp1K2RGoUm0Fk3w-942846a3d897206a-247x320.jpg",
+                  "width": 247,
+                  "height": 320
+                }
+              }
+            },
+            {
+              "id": "att3gBByZFu5Bnp24",
+              "url": "https://dl.airtable.com/QmBgFoVlQTFt8jDDzM1E_Travelling%20in%20a%20Strange%20Land%20-%20Chapter%204.pdf",
+              "filename": "Travelling in a Strange Land - Chapter 4.pdf",
+              "size": 341605,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/att3gBByZFu5Bnp24-a3c679de6d08ba13-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/att3gBByZFu5Bnp24-97bc3c2736dbb125-247x320.jpg",
+                  "width": 247,
+                  "height": 320
+                }
+              }
+            },
+            {
+              "id": "attk774qviIJ2x6n2",
+              "url": "https://dl.airtable.com/slmbg09ZS0CMgP6ZY4kv_Travelling%20in%20a%20Strange%20Land%20-%20Chapter%205.pdf",
+              "filename": "Travelling in a Strange Land - Chapter 5.pdf",
+              "size": 232691,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/attk774qviIJ2x6n2-16c2ea7cba77416b-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/attk774qviIJ2x6n2-6051496a872780cd-247x320.jpg",
+                  "width": 247,
+                  "height": 320
+                }
+              }
+            }
+          ],
+          "book_bio": [
+            "The world is shrouded in snow. Transport has ground to a halt. Tom\nmust venture out into a treacherous landscape to collect his son, sick\nand stranded in student lodgings. During his solitary journey from\nBelfast to Sunderland by car and boat, Tom is drawn into another\njourney, one without map or guide, and is forced to chart pathways of\nfamily history haunted by memory and clouded in regret; meditating on\nlove, marriage, parenthood, grief and ambition. Tom reflects on his\nlife: the beloved wife he leaves behind, the son he is driving\ntowards, yet struggles to connect with; the disappointments of his\nphotography career; and the absence that is always there as a voice in\nhis head – his other son, Daniel."
+          ],
+          "book_name": [
+            "Wind in the Willows"
+          ],
+          "mini_book_bio": [
+            "This novel is a psychologically astute, compassionately\nobserved, portrait of a father’s inner life and a family in crisis."
+          ],
+          "book_author": [
+            "Kenneth Grahame"
+          ]
+        },
+        "createdTime": "2018-10-10T09:54:27.000Z"
+      },
+      {
+        "id": "recGkK0TigkgXkolR",
+        "fields": {
+          "reader": "both",
+          "user1_email": [
+            "readwithaudrey.data@gmail.com"
+          ],
+          "user2_email": [
+            "kentdenis6@hotmail.co.uk"
+          ],
+          "user1_name": [
+            "Ben"
+          ],
+          "user2_name": [
+            "Matt"
+          ],
+          "user2_bio": [
+            "Hi I am Matt, I hate programming."
+          ],
+          "user1_bio": [
+            "Hi my name is Ben. I like to program. I like long walks in the park"
+          ],
+          "book_attachments": [
+            {
+              "id": "att7WjSp1tNnoG0aF",
+              "url": "https://dl.airtable.com/FEAOTfdORweTFbsDrxUU_Travelling%20in%20a%20Strange%20Land%20-%20Book%20Summary.docx",
+              "filename": "Travelling in a Strange Land - Book Summary.docx",
+              "size": 12695,
+              "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/att7WjSp1tNnoG0aF-e0d059ba4f58b25e-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/att7WjSp1tNnoG0aF-d60d0a942b058dc2-226x320.jpg",
+                  "width": 226,
+                  "height": 320
+                }
+              }
+            },
+            {
+              "id": "attkcDblPbgzsP5ei",
+              "url": "https://dl.airtable.com/ew4YlsucQACRH9Nv66Ns_Travelling%20in%20a%20Strange%20Land%20-%20Chapter%205.pdf",
+              "filename": "Travelling in a Strange Land - Chapter 5.pdf",
+              "size": 232691,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/attkcDblPbgzsP5ei-d396ae0e97b63cc8-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/attkcDblPbgzsP5ei-0132a021207ccde2-247x320.jpg",
+                  "width": 247,
+                  "height": 320
+                }
+              }
+            },
+            {
+              "id": "attaGJW607ScYYceR",
+              "url": "https://dl.airtable.com/ftzOM92rSCa2AnmLMrBg_Travelling%20in%20a%20Strange%20Land%20-%20Chapter%204.pdf",
+              "filename": "Travelling in a Strange Land - Chapter 4.pdf",
+              "size": 341605,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/attaGJW607ScYYceR-3dbde2854370b0eb-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/attaGJW607ScYYceR-2108e28cf25145b3-247x320.jpg",
+                  "width": 247,
+                  "height": 320
+                }
+              }
+            },
+            {
+              "id": "attG1cUoG9mqhzCSb",
+              "url": "https://dl.airtable.com/fPkUO1nvQWGd6dagTIOV_Travelling%20in%20a%20Strange%20Land%20-%20Chapter%203.pdf",
+              "filename": "Travelling in a Strange Land - Chapter 3.pdf",
+              "size": 362822,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/attG1cUoG9mqhzCSb-ee9721abcbb39dda-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/attG1cUoG9mqhzCSb-a4bdfb2d2ff8f66f-247x320.jpg",
+                  "width": 247,
+                  "height": 320
+                }
+              }
+            },
+            {
+              "id": "attLaYCc9ivlgR8Wo",
+              "url": "https://dl.airtable.com/WjQEDaFFQouPiBb3DmA1_Travelling%20in%20a%20Strange%20Land%20-%20Chapter%202.pdf",
+              "filename": "Travelling in a Strange Land - Chapter 2.pdf",
+              "size": 364591,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/attLaYCc9ivlgR8Wo-a8185d910b579e0f-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/attLaYCc9ivlgR8Wo-3ca7ace6b6ed9128-247x320.jpg",
+                  "width": 247,
+                  "height": 320
+                }
+              }
+            },
+            {
+              "id": "attxoS94DwSekTd2F",
+              "url": "https://dl.airtable.com/eBLpSHq2SxeYSeaep9u6_Travelling%20in%20a%20Strange%20Land%20-%20Chapter%201.pdf",
+              "filename": "Travelling in a Strange Land - Chapter 1.pdf",
+              "size": 370600,
+              "type": "application/pdf",
+              "thumbnails": {
+                "small": {
+                  "url": "https://dl.airtable.com/attxoS94DwSekTd2F-8d27a6de9176327d-32x32.jpg",
+                  "width": 32,
+                  "height": 32
+                },
+                "large": {
+                  "url": "https://dl.airtable.com/attxoS94DwSekTd2F-ef042b84c7018590-247x320.jpg",
+                  "width": 247,
+                  "height": 320
+                }
+              }
+            }
+          ],
+          "book_bio": [
+            "The world is shrouded in snow. Transport has ground to a halt. Tom\nmust venture out into a treacherous landscape to collect his son, sick\nand stranded in student lodgings. During his solitary journey from\nBelfast to Sunderland by car and boat, Tom is drawn into another\njourney, one without map or guide, and is forced to chart pathways of\nfamily history haunted by memory and clouded in regret; meditating on\nlove, marriage, parenthood, grief and ambition. Tom reflects on his\nlife: the beloved wife he leaves behind, the son he is driving\ntowards, yet struggles to connect with; the disappointments of his\nphotography career; and the absence that is always there as a voice in\nhis head – his other son, Daniel."
+          ],
+          "book_name": [
+            "Brave New World"
+          ],
+          "mini_book_bio": [
+            "This novel is a psychologically astute, compassionately\nobserved, portrait of a father’s inner life and a family in crisis."
+          ],
+          "book_author": [
+            "Auxley Huxley"
+          ]
+        },
+        "createdTime": "2018-10-16T12:15:29.000Z"
+      }
+    ]
+  },
+  "headers": {
+    "access-control-allow-headers": "authorization,content-length,content-type,user-agent,x-airtable-application-id,x-airtable-user-agent,x-api-version,x-requested-with",
+    "access-control-allow-methods": "DELETE,GET,OPTIONS,PATCH,POST,PUT",
+    "access-control-allow-origin": "*",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 17 Oct 2018 13:41:06 GMT",
+    "etag": "W/\"2144-WQtX4lFqQD9nbmNyDNqGiSj2CzA\"",
+    "server": "Tengine",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "vary": "Accept-Encoding",
+    "content-length": "8516",
+    "connection": "Close"
+  },
+  "request": {
+    "uri": {
+      "protocol": "https:",
+      "slashes": true,
+      "auth": null,
+      "host": "api.airtable.com",
+      "port": 443,
+      "hostname": "api.airtable.com",
+      "hash": null,
+      "search": "?filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=mini_book_bio&fields%5B%5D=reader",
+      "query": "filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=mini_book_bio&fields%5B%5D=reader",
+      "pathname": "/v0/appTrGvqQ9ItVRYOb/pairings",
+      "path": "/v0/appTrGvqQ9ItVRYOb/pairings?filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=mini_book_bio&fields%5B%5D=reader",
+      "href": "https://api.airtable.com/v0/appTrGvqQ9ItVRYOb/pairings?filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=mini_book_bio&fields%5B%5D=reader"
+    },
+    "method": "GET"
+  }
+}
