@@ -1,22 +1,23 @@
 require('dotenv').config();
 const base = require('../../dbConnection');
 
-const updateSentStatus = ({ id }) => {
+const updateFeedbackEmailStatus = ({ id }) => {
   console.log('Updating sent status');
   return new Promise((resolve, reject) => {
     base('pairings').update(
       id,
       {
-        pairing_email_sent: Date.now(),
+        feedback_email_sent: true,
       },
       (err) => {
         if (err) {
           reject(err);
         } else {
-          resolve();
+          resolve('updated table with email sent status');
         }
       },
     );
   });
 };
-module.exports = updateSentStatus;
+
+module.exports = updateFeedbackEmailStatus;
