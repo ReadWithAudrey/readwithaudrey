@@ -56,3 +56,7 @@ li {
   font-family: "PT Serif", serif;
   line-height: 1.2;
 }
+
+.overflow {
+  overflow-x: hidden;
+}
