@@ -48,7 +48,6 @@ const createLead = lead => new Promise((resolve, reject) => {
       if (err2) {
         reject(err2);
       }
-      console.log(record.getId());
       resolve(record.getId());
     },
   );
