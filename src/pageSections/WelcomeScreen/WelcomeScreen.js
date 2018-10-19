@@ -9,7 +9,7 @@ const WelcomeScreen = () => (
   <Welcome>
     <div
       id="homepage-top"
-      className="flex flex-column items-center justify-around w-100 absolute top-1 vh-100"
+      className="flex flex-column items-center justify-around-ns justify-start w-100 absolute-ns top-1 vh-100"
     >
       <h1 className="pink tc f1 montserrat lh-title pt4 pt3-ns f-subheadline-ns">
         Read Aloud
