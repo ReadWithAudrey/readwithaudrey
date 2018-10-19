@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import facebook from '../../images/facebook.png'
-import email from '../../images/email.png'
-import twitter from '../../images/twitter.png'
+import facebook from '../../images/facebook.svg'
+import email from '../../images/gmail.svg'
+import twitter from '../../images/twitter.svg'
 
 import { TextBox, Layout } from '../../components/'
 
@@ -12,14 +12,15 @@ const ThankYou = ({ data }) => {
   const { html } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f3 pink tc montserrat mb3">{header1}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-      <Link to="/contact">contact us</Link>
-      <h2 className="f3 pink tc montserrat mb3">{header2}</h2>
+      <h1 className="f2 pink tc montserrat mt5 mb4">{header1}</h1>
+      <div className="f4 mid-gray tc" dangerouslySetInnerHTML={{ __html: html }} />
+      <h2 className="f2 pink tc montserrat mt5 mb4">{header2}</h2>
       <TextBox>{p1}</TextBox>
-      <img src={facebook} alt="Facebook" className="fl" />
-      <img src={twitter} alt="Twitter" className="fl" />
-      <img src={email} alt="Email" className="fl" />
+      <div id="social-logos" className="flex justify-around w-100 flex-ns ph6-ns pv4">
+        <img src={facebook} alt="Facebook" className="small-icon mw-25 h3-ns" />
+        <img src={twitter} alt="Twitter" className="small-icon mw-25 h3-ns" />
+        <img src={email} alt="Email" className="small-icon mw-25 h3-ns" />
+      </div>
       <TextBox>{p2}</TextBox>
       <TextBox>{p3}</TextBox>
       <Link to="/">

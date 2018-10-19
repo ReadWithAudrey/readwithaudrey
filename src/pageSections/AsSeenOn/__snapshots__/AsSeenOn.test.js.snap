@@ -5,49 +5,58 @@ exports[`AsSeenOn component snapshot test renders correctly 1`] = `
   className="sc-bdVaJa bg-white flex flex-column items-center justify-between ph4 pt4 pb5 montserrat w-100 fePDys"
 >
   <h2
-    className="f2 pink tc fw7"
+    className="f1 pink tc fw7"
   >
     As seen on:
   </h2>
-  <a
-    href="https://www.gadgette.com/2018/06/17/read-with-audrey/"
-    rel="noopener noreferrer"
-    target="_blank"
-  />
-  <img
-    alt="Gadgette logo"
-    className="h4 pv2"
-    src="test-file-stub"
-  />
-  <a
-    href="https://lifehacker.com/why-you-should-read-a-book-with-a-stranger-1827717296"
-    rel="noopener noreferrer"
-    target="_blank"
-  />
-  <img
-    alt="Lifehacker logo"
-    className="h3 pv2"
-    src="test-file-stub"
-  />
-  <a
-    href="https://www.irishexaminer.com/breakingnews/technow/meet-audrey-the-online-book-app-where-users-read-aloud-to-one-another-854650.html"
-    rel="noopener noreferrer"
-    target="_blank"
-  />
-  <img
-    alt="Irish Examiner logo"
-    className="h3 pv2"
-    src="test-file-stub"
-  />
-  <a
-    href="https://www.thriveglobal.com/stories/36262-audrey"
-    rel="noopener noreferrer"
-    target="_blank"
-  />
-  <img
-    alt="Thrive Global logo"
-    className="h4 pv2"
-    src="test-file-stub"
-  />
+  <div
+    className="w-100 flex items-center justify-center flex-column flex-row-ns"
+    id="logos"
+  >
+    <a
+      href="https://www.gadgette.com/2018/06/17/read-with-audrey/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Gadgette logo"
+        className="logo ma4"
+        src="test-file-stub"
+      />
+    </a>
+    <a
+      href="https://lifehacker.com/why-you-should-read-a-book-with-a-stranger-1827717296"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Lifehacker logo"
+        className="logo ma4"
+        src="test-file-stub"
+      />
+    </a>
+    <a
+      href="https://www.irishexaminer.com/breakingnews/technow/meet-audrey-the-online-book-app-where-users-read-aloud-to-one-another-854650.html"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Irish Examiner logo"
+        className="logo ma4"
+        src="test-file-stub"
+      />
+    </a>
+    <a
+      href="https://www.thriveglobal.com/stories/36262-audrey"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Thrive Global logo"
+        className="logo ma4"
+        src="test-file-stub"
+      />
+    </a>
+  </div>
 </div>
 `;

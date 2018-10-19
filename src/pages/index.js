@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   WelcomeScreen,
-  AboutAudrey,
   AsSeenOn,
   HowItWorks,
   Examples,
@@ -13,9 +12,8 @@ import { HomepageLayout } from '../components'
 const IndexPage = () => (
   <HomepageLayout>
     <WelcomeScreen />
-    <AboutAudrey />
-    <AsSeenOn />
     <HowItWorks />
+    <AsSeenOn />
     <Examples />
     <Testimonials />
   </HomepageLayout>

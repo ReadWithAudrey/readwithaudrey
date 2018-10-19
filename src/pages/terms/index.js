@@ -6,7 +6,7 @@ const Terms = ({ data }) => {
   const { html } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4">
+      <h1 className="f1 pink tc montserrat mb4 mt5">
         Terms and conditions of use
       </h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />

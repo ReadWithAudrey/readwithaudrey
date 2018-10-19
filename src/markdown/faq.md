@@ -3,7 +3,7 @@ title: 'FAQs'
 footer: If you weren’t able to find an answer for your question please head over to the contact page.
 ---
 
-## MY READING PARTNER
+## My Reading Partner
 
 ### How does Audrey choose a reading partner for me?
 
@@ -25,7 +25,7 @@ We recommend that you kick off with one reading partner and see how it goes. If 
 
 Sorry about that, we don't get it right every time. Please let us know as soon as possible and we can identify a new reading partner for you. Don’t worry about having to tell your reading partner if it makes you feel uneasy. So long as you let us know, we’re very happy to do this on your behalf.
 
-## OUR READING
+## Our Reading
 
 ### How does Audrey choose a book for us to read?
 
@@ -49,7 +49,7 @@ We sometimes adapt novels and works of non-fiction to suit the medium of reading
 
 Sometimes members of our community prefer to read for longer than 15 minutes (up to 1 hr) and more regularly than once a week. We take this into account when selecting a reading for you, and choose a book whose length harmonises with your time preferences.
 
-## THE SCHEDULING
+## The Scheduling
 
 ### What sort of time commitment can I expect?
 
@@ -73,7 +73,7 @@ If you’ve reached out to your reading partner and you haven’t heard back fro
 
 Sorry to hear that you won’t be able to make your reading session. We understand there’s probably a good reason. Please, let your reading partner know as soon as you can. I’m sure they will want to reschedule if you’re able to. It can be disappointing and frustrating for your reading partner if you cancel at short notice or forget to tell them. Their time is valuable.
 
-## READING ALOUD TOGETHER
+## Reading Aloud Together
 
 ### What can I expect from my Audrey experience?
 
@@ -107,7 +107,7 @@ Sometimes it’s a little awkward establishing what happens next. Perhaps you’
 
 Always remember if you decide to move onto another reading partner, no one is left in the lurch. Right away we can find someone else for both of you.
 
-## STAYING SAFE
+## Staying Safe
 
 ### Is Audrey for all ages?
 
@@ -123,7 +123,7 @@ Please do not exchange your address or telephone number or bank details with you
 
 If somebody has been acting inappropriately please do not hesitate to contact us.
 
-##TECHNOLOGY
+##Technology
 
 ### What technology do I need to use Audrey?
 

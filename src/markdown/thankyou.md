@@ -17,4 +17,4 @@ you up with a reading partner.
 Expect to receive an email from us in the next day or two introducing
 you to your reading partner
 
-If you have any questions in the meantime, please
+If you have any questions in the meantime, please [contact us](/contact)

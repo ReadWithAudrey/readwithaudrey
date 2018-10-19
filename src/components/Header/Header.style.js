@@ -2,12 +2,13 @@ import styled from 'styled-components'
 
 export const HeaderStyled = styled.header.attrs({
   className:
-    'flex items-center justify-between ph3 pv2 montserrat white bg-green w-100 f3',
+    'flex items-center justify-between pl3 pr4 pv2 montserrat white bg-green w-100 f3 z-max',
 })`
   position: fixed;
   top: 0;
-  min-height: 5vh;
+  height: 10vh;
   margin-bottom: 7vh;
+  overflow: hidden;
   a {
     color: #fff;
     padding: 0;
@@ -54,6 +55,9 @@ export const MobileMenu = styled.section.attrs({
   className: 'montserrat  bg-green tc f4 page-padding',
 })`
   display: block;
+  position: fixed;
+  top: 10vh;
+  width: 100%;
   a {
     text-decoration: none;
     display: block;

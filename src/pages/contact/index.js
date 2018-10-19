@@ -18,7 +18,7 @@ const ContactUs = ({ data }) => {
   } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mb3 mt4">{header1}</h1>
+      <h1 className="f1 pink tc montserrat mb3 mt4 mt5-ns mb4-ns">{header1}</h1>
       <TextBox>{p1}</TextBox>
       <form
         method="POST"
