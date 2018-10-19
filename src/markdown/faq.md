@@ -1,9 +1,11 @@
 ---
-title: 'FAQs'
-footer: If you weren’t able to find an answer for your question please head over to the contact page.
+title: FAQs
+footer: >-
+  If you weren’t able to find an answer for your question please head over to
+  the contact page.
 ---
 
-## My Reading Partner
+## My Reading Partner. Im a test
 
 ### How does Audrey choose a reading partner for me?
 
