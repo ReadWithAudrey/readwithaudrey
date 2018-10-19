@@ -18,7 +18,7 @@ const Testimonials = () => (
           </TextBox>
           <p className="f3 tc">{footer}</p>
           <Link to="/Form1/" className="no-underline white w-100">
-            <Button type="register">Get started</Button>
+            <Button style="register" className="mt3">Get started</Button>
           </Link>
         </StyledTestimonials>
       )
