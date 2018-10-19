@@ -2,13 +2,11 @@ import styled from 'styled-components'
 
 export const HeaderStyled = styled.header.attrs({
   className:
-    'flex items-center justify-between ph3 pv2 montserrat white bg-green w-100 f3 z-max',
+    'flex items-center justify-between ph3 pv2 montserrat white bg-green vw-100 f3 z-max',
 })`
-  position: fixed;
+  position: sticky;
   top: 0;
   height: 10vh;
-  margin-bottom: 7vh;
-  overflow-x: hidden;
   a {
     color: #fff;
     padding: 0;

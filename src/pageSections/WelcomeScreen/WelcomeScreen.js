@@ -9,7 +9,7 @@ const WelcomeScreen = () => (
   <Welcome>
     <div
       id="homepage-top"
-      className="flex flex-column items-center justify-around w-100 absolute top-1 z-0"
+      className="flex flex-column items-center justify-around w-100 absolute top-1 vh-100"
     >
       <h1 className="pink tc f1 montserrat lh-title pt4 pt3-ns f-subheadline-ns">
         Read Aloud
@@ -24,7 +24,7 @@ const WelcomeScreen = () => (
         </Button>
       </Link>
     </div>
-    <img src={bookpeople} className="mt7" alt="Cartoon of people reading a book" />
+    <img src={bookpeople} className="mt7 w-auto img-no-margin" alt="Cartoon of people reading a book" />
   </Welcome>
 )
 
