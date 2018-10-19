@@ -5,7 +5,7 @@ footer: >-
   the contact page.
 ---
 
-## My Reading Partner. Im a test
+## My Reading Partner
 
 ### How does Audrey choose a reading partner for me?
 
@@ -125,7 +125,7 @@ Please do not exchange your address or telephone number or bank details with you
 
 If somebody has been acting inappropriately please do not hesitate to contact us.
 
-##Technology
+## Technology
 
 ### What technology do I need to use Audrey?
 
