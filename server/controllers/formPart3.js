@@ -15,5 +15,8 @@ exports.post = (req, res) => {
       console.log('success!');
       res.sendStatus(200);
     })
-    .catch(err => console.log(err.message));
+    .catch((err) => {
+      console.log(err.message);
+      res.end('server error');
+    });
 };
