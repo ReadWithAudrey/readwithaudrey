@@ -20,10 +20,10 @@ const postNewUser = (user) => {
         if (err) {
           reject(err);
         }
-        resolve();
+        resolve(user);
       },
     );
   });
 };
 
-module.exports = { postNewUser };
+module.exports = postNewUser;

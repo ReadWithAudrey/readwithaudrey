@@ -1,18 +1,19 @@
-const updateLeadStatus = require('../queries/postData/updateLeadStatus.js');
-const { postNewUser } = require('../queries/postData/postNewUser');
+const { postNewUser, updateLeadAccStatus } = require('../queries/postData/');
 const { getLeadId } = require('../queries/getData/getLeadId');
+const { welcomeEmail, saveContact, moveContact } = require('../emails/welcomeEmail');
 
 
 exports.post = (req, res) => {
   const user = req.body;
-  postNewUser(user).then(() => {
-    getLeadId(user.emailAddress)
-      .then((id) => {
-        if (id) {
-          updateLeadStatus(id);
-        }
-      })
-      .catch(err => console.log(err));
-  });
-  res.sendStatus(200);
+  postNewUser(user)
+    .then(getLeadId)
+    .then(updateLeadAccStatus)
+    .then(() => welcomeEmail(user))
+    .then(() => saveContact(user))
+    .then(moveContact)
+    .then(() => {
+      console.log('success!');
+      res.sendStatus(200);
+    })
+    .catch(err => console.log(err.message));
 };

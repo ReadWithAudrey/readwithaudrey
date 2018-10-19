@@ -1,2 +1,5 @@
-// Audrey users mailing list id = 5541826
-const newUser = require('../newUser');
+const welcomeEmail = require('./sendWelcomeEmail');
+const saveContact = require('./saveContact');
+const moveContact = require('./moveContact');
+
+module.exports = { welcomeEmail, saveContact, moveContact };
