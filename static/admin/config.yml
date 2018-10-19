@@ -11,6 +11,21 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - file: src/markdown/404.md
+        label: "404 Page"
+        name: "404"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "404", options: ["404"] }
+          - {label: "Header", name: "header1", widget: "string"}
+          - {label: "Paragraph 1", name: "p1", widget: "string"}
+      - file: src/markdown/thankyou-contact.md
+        label: "Thank You (Contact)"
+        name: "thankyou-contact"
+        fields:
+          - {label: "Title", name: "title", widget: "select", default: "Thank You Contact", options: ["Thank You Contact"] }
+          - {label: "Header", name: "header1", widget: "string"}
+          - {label: "Paragraph 1", name: "p1", widget: "string"}
+          - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/faq.md
         label: "FAQs"
         name: "faqs"
