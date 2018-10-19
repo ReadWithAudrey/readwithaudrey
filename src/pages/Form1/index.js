@@ -20,7 +20,7 @@ import {
 class Form1 extends React.Component {
   state = {
     error: false,
-    errorMessage: 'Test',
+    errorMessage: '',
   }
   handleSubmit = event => {
     const { firstName, secondName, emailAddress } = this.props.value
