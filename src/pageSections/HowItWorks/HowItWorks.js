@@ -16,24 +16,26 @@ const HowItWorks = () => (
       return (
         <StyledHowItWorks>
           <h2 className="f2 pink tc">{header}</h2>
-          <div id="step-1-register">
-            <h2 className="f3 pink tc">Join</h2>
-            <img src={man} alt="Icon of a man" className="small-icon" />
-            <TextBox>{p1}</TextBox>
-          </div>
-          <div id="step-2-connect">
-            <h2 className="f3 pink tc">Connect</h2>
-            <img
-              src={pair}
-              alt="Icon of a pair of people"
-              className="small-icon"
-            />
-            <TextBox>{p2}</TextBox>
-          </div>
-          <div id="step-3-read">
-            <h2 className="f3 pink tc">Read</h2>
-            <img src={book} alt="Icon of a man" className="small-icon" />
-            <TextBox>{p3}</TextBox>
+          <div id="steps" className="flex flex-column flex-row-ns justify-between h-100 mv4-ns">
+            <div id="step-1-register" className="ph2 mh2 h-100">
+              <h2 className="f3 pink tc">Join</h2>
+              <img src={man} alt="Icon of a man" className="small-icon" />
+              <TextBox>{p1}</TextBox>
+            </div>
+            <div id="step-2-connect" className="ph2 mh2 h-100">
+              <h2 className="f3 pink tc">Connect</h2>
+              <img
+                src={pair}
+                alt="Icon of a pair of people"
+                className="small-icon"
+              />
+              <TextBox>{p2}</TextBox>
+            </div>
+            <div id="step-3-read" className="ph2 mh2 h-100">
+              <h2 className="f3 pink tc">Read</h2>
+              <img src={book} alt="Icon of a man" className="small-icon" />
+              <TextBox>{p3}</TextBox>
+            </div>
           </div>
           <Link to="/Form1/" className="no-underline white w-100">
             <Button style="register">Get started</Button>
