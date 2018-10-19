@@ -12,9 +12,14 @@ import {
   TextBox,
   Layout,
   FormSection,
+  ErrorSpan,
 } from '../../components/'
 
 class Form3 extends React.Component {
+  state = {
+    error: false,
+    errorMessage: '',
+  }
   handleSubmit = event => {
     const {
       firstName,
@@ -42,8 +47,16 @@ class Form3 extends React.Component {
         story,
         specialRequests,
       })
-      .then(() => {
-        navigate('/thankyou/')
+      .then(res => {
+        if (res.data === 'server error') {
+          this.setState({
+            error: true,
+            errorMessage:
+              'Sorry, a server error has occured. Please try again.',
+          })
+        } else {
+          navigate('/thankyou/')
+        }
       })
   }
   render() {
@@ -71,6 +84,7 @@ class Form3 extends React.Component {
           <StatusBar>2. Further Details</StatusBar>
           <StatusBar type="active">3. Your Bio</StatusBar>
           <TextBox>{description}</TextBox>
+          {this.state.error && <ErrorSpan>{this.state.errorMessage}</ErrorSpan>}
           <form onSubmit={this.handleSubmit}>
             <Label>{q1}</Label>
             <TextArea
