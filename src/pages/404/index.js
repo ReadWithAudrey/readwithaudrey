@@ -1,17 +1,35 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 import { Layout, TextBox } from '../../components'
 
-const NotFoundPage = () => (
-  <Layout>
-    <h1 className="f2 pink tc montserrat mb3 mt4">404 NOT FOUND</h1>
-    <TextBox>
-      Ooops.. You just hit a page that doesn&#39;t exist... the sadness.
-    </TextBox>
-    <TextBox>
-      Please visit our <Link to="/">homepage</Link> to find out more about us.
-    </TextBox>
-  </Layout>
-)
+const NotFoundPage = ({ data }) => {
+  const { header1, p1 } = data.markdownRemark.frontmatter
+  return (
+    <Layout>
+      <h1 className="f2 pink tc montserrat mb3 mt4">{header1}</h1>
+      <TextBox>{p1}</TextBox>
+    </Layout>
+  )
+}
+NotFoundPage.propTypes = {
+  data: PropTypes.object,
+}
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    markdownRemark(frontmatter: { title: { eq: "404" } }) {
+      html
+      frontmatter {
+        header1
+        p1
+      }
+    }
+  }
+`
 
 export default NotFoundPage
