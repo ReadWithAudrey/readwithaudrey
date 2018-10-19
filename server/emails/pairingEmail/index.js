@@ -1,5 +1,5 @@
-const getNewPairs = require('../../queries/getData/getNewPairs');
-const updateSentStatus = require('../../queries/postData/updateSentStatus');
+const { getNewPairs } = require('../../queries/getData');
+const { updatePairingEmailStatus } = require('../../queries/postData');
 const {
   downloadAttachments,
   formatAttachments,
@@ -14,11 +14,11 @@ const sendAllPairingEmails = () => {
         .then(formatAttachments)
         .then(formatedAtt => orgAttachments(pair, formatedAtt))
         .then(orgAtt => sendPairingEmail(pair, orgAtt))
-        .then(() => updateSentStatus(pair))
+        .then(() => updatePairingEmailStatus(pair))
         .then(() => console.log('Success email sent'))
         .catch(e => console.log('A pair has raised an error', e.message));
     });
-  });
+  }).catch(e => console.log('getting pairs has raised an error', e.message));
 };
 
 module.exports = sendAllPairingEmails;
