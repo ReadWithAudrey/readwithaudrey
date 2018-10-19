@@ -9,9 +9,9 @@ const WelcomeScreen = () => (
   <Welcome>
     <div
       id="homepage-top"
-      className="flex flex-column items-center justify-around-ns justify-start w-100 absolute vh-100 z-999"
+      className="flex flex-column items-center justify-around-ns justify-start w-100 absolute top-0 z-999"
     >
-      <h1 className="pink tc f1 montserrat lh-title pt4 pt3-ns f-subheadline-ns">
+      <h1 className="pink tc f1 montserrat lh-title pt1 f-subheadline-ns">
         Read Aloud
         <br /> Together
       </h1>
