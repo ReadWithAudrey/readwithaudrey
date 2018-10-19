@@ -28,7 +28,7 @@ collections:
         label: "Terms"
         name: "terms"
         fields:
-          - {label: "Title", name: "title", widget: "select", default: "Terms", , options: ["Terms"] }
+          - {label: "Title", name: "title", widget: "select", default: "Terms", options: ["Terms"] }
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/privacy.md
         label: "Privacy"
