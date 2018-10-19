@@ -7,7 +7,7 @@ const updateSentStatus = ({ id }) => {
     base('pairings').update(
       id,
       {
-        pairing_email_sent: true,
+        pairing_email_sent: Date.now(),
       },
       (err) => {
         if (err) {
