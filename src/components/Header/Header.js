@@ -29,7 +29,10 @@ class Header extends Component {
               <Link to="/why/">Why?</Link>
               <Link to="/faq/">Questions</Link>
               <Link to="/contact/">Contact</Link>
-              <Link to="/Form1" className="mv2 white br2 ba bw1 b--white">
+              <Link
+                to="/Form1"
+                className="mv2 white br2 ba bw1 b--white hover-bg-pink"
+              >
                 Get Started
               </Link>
             </DesktopMenu>
