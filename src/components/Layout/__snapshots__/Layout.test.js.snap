@@ -38,7 +38,7 @@ Array [
         <Link
           to="/faq/"
         >
-          FAQ
+          Questions
         </Link>
         <Link
           to="/contact/"
@@ -46,7 +46,7 @@ Array [
           Contact
         </Link>
         <Link
-          className="mv2 white br2 ba bw1 b--white"
+          className="mv2 white br2 ba bw1 b--white hover-bg-pink"
           to="/Form1"
         >
           Get Started
