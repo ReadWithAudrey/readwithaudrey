@@ -1,4 +1,3 @@
-/* eslint-disable */
 
 import axios from 'axios'
 import React from 'react'
@@ -24,9 +23,13 @@ class Form1 extends React.Component {
   }
   handleSubmit = event => {
     const { firstName, secondName, emailAddress } = this.props.value
+    const backendURL =
+      process.env.NODE_ENV === 'development'
+        ? 'http://localhost:5000'
+        : 'https://readwithaudrey.herokuapp.com'
     event.preventDefault()
     axios
-      .post(`http://localhost:5000/formPart1`, {
+      .post(`${backendURL}/formPart1`, {
         firstName,
         secondName,
         emailAddress,
@@ -64,7 +67,9 @@ class Form1 extends React.Component {
     } = this.props.data.markdownRemark.frontmatter
     return (
       <Layout>
-        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">{heading}</h1>
+        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">
+          {heading}
+        </h1>
         <FormSection>
           <StatusBar type="active">1. Contact Details</StatusBar>
           <StatusBar>2. Further Details</StatusBar>
