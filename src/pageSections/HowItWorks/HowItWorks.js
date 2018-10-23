@@ -2,9 +2,9 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { TextBox } from '../../components'
 import StyledHowItWorks from './HowItWorks.style'
-import man from '../../images/manicon.svg'
-import pair from '../../images/pairicon.png'
-import book from '../../images/open-book-black.svg'
+import signUp from '../../images/HowItWorksImages/signUp.svg'
+import connect from '../../images/HowItWorksImages/connect.svg'
+import read from '../../images/HowItWorksImages/read.svg'
 import PropTypes from 'prop-types'
 import { Button } from '../../components/index'
 
@@ -19,13 +19,13 @@ const HowItWorks = () => (
           <div id="steps" className="flex flex-column flex-row-ns justify-between h-100 mv4-ns">
             <div id="step-1-register" className="ph2 mh2 h-100">
               <h2 className="f3 pink tc">Join</h2>
-              <img src={man} alt="Icon of a man" className="small-icon" />
+              <img src={signUp} alt="Icon of a man" className="small-icon" />
               <TextBox>{p1}</TextBox>
             </div>
             <div id="step-2-connect" className="ph2 mh2 h-100">
               <h2 className="f3 pink tc">Connect</h2>
               <img
-                src={pair}
+                src={connect}
                 alt="Icon of a pair of people"
                 className="small-icon"
               />
@@ -33,7 +33,7 @@ const HowItWorks = () => (
             </div>
             <div id="step-3-read" className="ph2 mh2 h-100">
               <h2 className="f3 pink tc">Read</h2>
-              <img src={book} alt="Icon of a man" className="small-icon" />
+              <img src={read} alt="Icon of a man" className="small-icon" />
               <TextBox>{p3}</TextBox>
             </div>
           </div>
