@@ -10,7 +10,7 @@ const getLeadId = ({ emailAddress }) => {
       }).firstPage((err, records) => {
         if (err) {
           reject(new Error('Server Error'));
-        } else if (records) {
+        } else if (records.length) {
           resolve(records[0].id);
         } else {
           reject(new Error('Every new user should have a lead'));
