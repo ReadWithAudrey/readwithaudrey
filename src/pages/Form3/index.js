@@ -33,9 +33,13 @@ class Form3 extends React.Component {
       story,
       specialRequests,
     } = this.props.value
+    const backendURL =
+      process.env.NODE_ENV === 'development'
+        ? 'http://localhost:5000'
+        : 'https://readwithaudrey.herokuapp.com'
     event.preventDefault()
     axios
-      .post(`http://localhost:5000/formPart3`, {
+      .post(`${backendURL}/formPart3`, {
         firstName,
         secondName,
         emailAddress,
@@ -78,7 +82,9 @@ class Form3 extends React.Component {
     } = this.props.data.markdownRemark.frontmatter
     return (
       <Layout>
-        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">{heading}</h1>
+        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">
+          {heading}
+        </h1>
         <FormSection>
           <StatusBar>1. Contact Details</StatusBar>
           <StatusBar>2. Further Details</StatusBar>
