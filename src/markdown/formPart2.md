@@ -10,7 +10,7 @@ readListen1: "Reader"
 readListen2: "Listener"
 readListen3: "Either/Both"
 q3: 'What time zone are you in?'
-q4: 'Would you rather be a Reader or a Listener, or Both'
+q4: 'Would you rather be a Reader or a Listener?'
 q5: 'What do you fancy reading?'
 bookType1: "Fiction"
 bookType2: "Non-Fiction"
