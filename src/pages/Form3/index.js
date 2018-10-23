@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { graphql, navigate } from 'gatsby'
+import { graphql, navigate, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import { withSignupContext } from '../../contexts/contextWrapper'
 
@@ -78,10 +78,16 @@ class Form3 extends React.Component {
     } = this.props.data.markdownRemark.frontmatter
     return (
       <Layout>
-        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">{heading}</h1>
+        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">
+          {heading}
+        </h1>
         <FormSection>
-          <StatusBar>1. Contact Details</StatusBar>
-          <StatusBar>2. Further Details</StatusBar>
+          <StatusBar>
+            <Link to="/Form1">1. Contact Details</Link>
+          </StatusBar>
+          <StatusBar>
+            <Link to="/Form2">2. Further Details</Link>
+          </StatusBar>
           <StatusBar type="active">3. Your Bio</StatusBar>
           <TextBox>{description}</TextBox>
           {this.state.error && <ErrorSpan>{this.state.errorMessage}</ErrorSpan>}
