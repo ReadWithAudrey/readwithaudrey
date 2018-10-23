@@ -6,9 +6,14 @@ information.'
 q1: 'What term reflects your gender? (optional)'
 q1Placeholder: 'Female'
 q2: 'What’s your age? (How rude!)'
-q2Placeholder: 'Age'
+readListen1: "Read"
+readListen2: "Listen"
+readListen3: "Either/Both"
 q3: 'What time zone are you in?'
 q4: 'Would you rather be a Reader or a Listener, or Both'
 q5: 'What do you fancy reading?'
+bookType1: "Fiction"
+bookType2: "Non-Fiction"
+bookType3: "Don't mind"
 
 ---
