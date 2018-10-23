@@ -6,8 +6,8 @@ information.'
 q1: 'What term reflects your gender? (optional)'
 q1Placeholder: 'Female'
 q2: 'What’s your age? (How rude!)'
-readListen1: "Read"
-readListen2: "Listen"
+readListen1: "Reader"
+readListen2: "Listener"
 readListen3: "Either/Both"
 q3: 'What time zone are you in?'
 q4: 'Would you rather be a Reader or a Listener, or Both'

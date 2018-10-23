@@ -143,11 +143,11 @@ collections:
           - {label: "readListen2", name: "readListen2", widget: "string"}
           - {label: "readListen3", name: "readListen3", widget: "string"}
           - {label: "q3", name: "q3", widget: "string"}
-          - {label: "q4", name: "q5", widget: "string"}
+          - {label: "q4", name: "q4", widget: "string"}
           - {label: "q5", name: "q5", widget: "string"}
           - {label: "bookType1", name: "bookType1", widget: "string"}
-          - {label: "bookType1", name: "bookType1", widget: "string"}
-          - {label: "bookType1", name: "bookType1", widget: "string"}
+          - {label: "bookType2", name: "bookType2", widget: "string"}
+          - {label: "bookType3", name: "bookType3", widget: "string"}
       - file: src/markdown/formPart3.md
         label: "Form 3"
         name: "form 3"
