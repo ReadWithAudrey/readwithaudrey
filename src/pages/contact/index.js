@@ -23,11 +23,13 @@ const ContactUs = ({ data }) => {
       <form
         method="POST"
         name="contact"
+        netlify="true"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         action="/thankyou-contact/"
       >
         <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         <Label>Your Name</Label>
         <InputBox
           placeholder="Your Name"
