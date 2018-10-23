@@ -64,7 +64,9 @@ class Form1 extends React.Component {
     } = this.props.data.markdownRemark.frontmatter
     return (
       <Layout>
-        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">{heading}</h1>
+        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">
+          {heading}
+        </h1>
         <FormSection>
           <StatusBar type="active">1. Contact Details</StatusBar>
           <StatusBar>2. Further Details</StatusBar>
