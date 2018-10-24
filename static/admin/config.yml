@@ -62,6 +62,11 @@ collections:
           - {label: "p2", name: "p2", widget: "string"}
           - {label: "p3", name: "p3", widget: "string"}
           - {label: "p4", name: "p4", widget: "string"}
+          - {label: "shareUrl", name: "shareUrl", widget: "string"}
+          - {label: "twitterText", name: "twitterText", widget: "string"}
+          - {label: "facebookText", name: "facebookText", widget: "string"}
+          - {label: "emailBody", name: "emailBody", widget: "string"}
+          - {label: "emailSubject", name: "emailSubject", widget: "string"}             
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/contact.md
         label: "Contact"
