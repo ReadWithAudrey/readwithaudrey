@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, navigate } from 'gatsby'
+import { graphql, navigate, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import { withSignupContext } from '../../contexts/contextWrapper'
 
@@ -40,9 +40,13 @@ class Form2 extends React.Component {
     const { gender, readlisten, updateForm } = this.props.value
     return (
       <Layout>
-        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">{heading}</h1>
+        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">
+          {heading}
+        </h1>
         <FormSection>
-          <StatusBar>1. Contact Details</StatusBar>
+          <StatusBar>
+            <Link to="/Form1">1. Contact Details</Link>
+          </StatusBar>
           <StatusBar type="active">2. Further Details</StatusBar>
           <StatusBar>3. Your Story</StatusBar>
           <TextBox>{description}</TextBox>
