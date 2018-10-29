@@ -1,7 +1,6 @@
 ---
-title: 'Terms'
+title: Terms
 ---
-
 ## Introduction
 
 These terms and conditions apply between you, the User of this Website (including any sub-domains, unless expressly excluded by their own terms and conditions), and Read With Audrey, the owner and operator of this Website. Please read these terms and conditions carefully, as they affect your legal rights. Your agreement to comply with and be bound by these terms and conditions is deemed to occur upon your first use of the Website. If you do not agree to be bound by these terms and conditions, you should stop using the Website immediately.
@@ -12,25 +11,25 @@ You must be at least 18 years of age to use this Website. By using the Website a
 
 ## Intellectual property and acceptable use
 
-1.  All Content included on the Website, unless uploaded by Users, is the property of Read With Audrey, our affiliates or other relevant third parties. In these terms and conditions, Content means any text, graphics, images, audio, video, software, data compilations, page layout, underlying code and software and any other form of information capable of being stored in a computer that appears on or forms part of this Website, including any such content uploaded by Users. By continuing to use the Website you acknowledge that such Content is protected by copyright, trademarks, database rights and other intellectual property rights. Nothing on this site shall be construed as granting, by implication, estoppel, or otherwise, any license or right to use any trademark, logo or service mark displayed on the site without the owner's prior written permission
-2.  You may, for your own personal, non-commercial use only, do the following:
-    a. retrieve, display and view the Content on a computer screen, mobile devise, laptop or tablet.
-3.  You must not otherwise reproduce, modify, copy, distribute or use for commercial purposes any Content without the written permission of Read With Audrey.
+1. All Content included on the Website, unless uploaded by Users, is the property of Read With Audrey, our affiliates or other relevant third parties. In these terms and conditions, Content means any text, graphics, images, audio, video, software, data compilations, page layout, underlying code and software and any other form of information capable of being stored in a computer that appears on or forms part of this Website, including any such content uploaded by Users. By continuing to use the Website you acknowledge that such Content is protected by copyright, trademarks, database rights and other intellectual property rights. Nothing on this site shall be construed as granting, by implication, estoppel, or otherwise, any license or right to use any trademark, logo or service mark displayed on the site without the owner's prior written permission
+2. You may, for your own personal, non-commercial use only, do the following:
+   a. retrieve, display and view the Content on a computer screen, mobile devise, laptop or tablet.
+3. You must not otherwise reproduce, modify, copy, distribute or use for commercial purposes any Content without the written permission of Read With Audrey.
 
 ## Prohibited use
 
-4.  You may not use the Website for any of the following purposes: (a) in any way which causes, or may cause, damage to the Website or interferes with any other person's use or enjoyment of the Website; (b) in any way which is harmful, unlawful, illegal, abusive, harassing, threatening or otherwise objectionable or in breach of any applicable law, regulation, governmental order; or (c) making, transmitting or storing electronic copies of Content protected by copyright without the permission of the owner.
+4. You may not use the Website for any of the following purposes: (a) in any way which causes, or may cause, damage to the Website or interferes with any other person's use or enjoyment of the Website; (b) in any way which is harmful, unlawful, illegal, abusive, harassing, threatening or otherwise objectionable or in breach of any applicable law, regulation, governmental order; or (c) making, transmitting or storing electronic copies of Content protected by copyright without the permission of the owner.
 
 ## Registration
 
-5.  You must ensure that the details provided by you on registration or at any time are correct and complete.
-6.  You must inform us immediately of any changes to the information that you provide when registering by updating your personal details to ensure we can communicate with you effectively.
-7.  We may suspend or cancel your registration with immediate effect for any reasonable purposes or if you breach these terms and conditions.
-8.  You may cancel your registration at any time by informing us in writing to the address at the end of these terms and conditions. If you do so, you must immediately stop using the Website. Cancellation or suspension of your registration does not affect any statutory rights.
+5. You must ensure that the details provided by you on registration or at any time are correct and complete.
+6. You must inform us immediately of any changes to the information that you provide when registering by updating your personal details to ensure we can communicate with you effectively.
+7. We may suspend or cancel your registration with immediate effect for any reasonable purposes or if you breach these terms and conditions.
+8. You may cancel your registration at any time by informing us in writing to the address at the end of these terms and conditions. If you do so, you must immediately stop using the Website. Cancellation or suspension of your registration does not affect any statutory rights.
 
 ## Privacy Policy
 
-9.  Use of the Website is also governed by our Privacy Policy, which is incorporated into these terms and conditions by this reference. To view the Privacy Policy, please click on the following: [www.readwithaudrey.com/privacy](/privacy).
+9. Use of the Website is also governed by our Privacy Policy, which is incorporated into these terms and conditions by this reference. To view the Privacy Policy, please click on the following: [www.readwithaudrey.com/privacy](/privacy).
 
 ## Availability of the Website and disclaimers
 
@@ -58,4 +57,4 @@ You must be at least 18 years of age to use this Website. By using the Website a
 ## Read With Audrey details
 
 24. Read With Audrey of 137 Brent Street, London, NW4 4DJ operates the Website www.readwithaudrey.com.
-    You can contact Read With Audrey by email on support@readwithaudrey.com.
+    You can contact Read With Audrey by email on readwithaudrey@gmail.com
