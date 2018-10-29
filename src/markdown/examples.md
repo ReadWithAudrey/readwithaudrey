@@ -1,6 +1,6 @@
 ---
 title: Examples
-header: Recent reading partners TEST
+header: Recent reading partners
 footer: We take great care to try to identify the right reading partner for you.
 ---
 
