@@ -1,6 +1,6 @@
 ---
 title: Testimonials
-header: What our community are saying TEST
+header: What our community are saying
 footer: Every week people are reading to each other all around the world.
 ---
 
