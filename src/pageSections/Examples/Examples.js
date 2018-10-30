@@ -11,8 +11,11 @@ const Examples = () => (
       const { header, footer } = data.markdownRemark.frontmatter
       return (
         <StyledExamples>
-          <h1 className="f1 pink tc">{header}</h1>
-          <div className="f4 mid-gray tc" dangerouslySetInnerHTML={{ __html: html }} />
+          <h1 className="f2 pink tc">{header}</h1>
+          <div
+            className="f4 mid-gray tc"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
           <p className="f3 tc mid-gray">{footer}</p>
         </StyledExamples>
       )
