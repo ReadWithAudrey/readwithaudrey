@@ -1,5 +1,5 @@
 ---
-title: 'Form Part 3'
+title: Form Part 3
 heading: 'Nearly there…'
 description: 'Please tell us about yourself in up to 100 words. We’ll use your story (bio) to match you up with a reading partner. We’ll also use it when we introduce you to your reading partner.'
 q1: 'Your Story'
