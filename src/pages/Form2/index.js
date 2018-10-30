@@ -26,10 +26,16 @@ class Form2 extends React.Component {
       description,
       q1,
       q1Placeholder,
+      readListen1,
+      readListen2,
+      readListen3,
       q2,
       q3,
       q4,
       q5,
+      bookType1,
+      bookType2,
+      bookType3
     } = this.props.data.markdownRemark.frontmatter
     const { gender, readlisten, updateForm } = this.props.value
     return (
@@ -67,31 +73,31 @@ class Form2 extends React.Component {
               onChange={updateForm}
               value={readlisten}
             >
-              Read
+              {readListen1}
             </RadioButton>
             <RadioButton
               name="readlisten"
               onChange={updateForm}
               value={readlisten}
             >
-              Listen
+              {readListen2}
             </RadioButton>
             <RadioButton
               name="readlisten"
               onChange={updateForm}
               value={readlisten}
             >
-              Both
+              {readListen3}
             </RadioButton>
             <Label>{q5}</Label>
             <RadioButton name="booktype" onChange={updateForm}>
-              Fiction
+              {bookType1}
             </RadioButton>
             <RadioButton name="booktype" onChange={updateForm}>
-              Non-Fiction
+              {bookType2}
             </RadioButton>
             <RadioButton name="booktype" onChange={updateForm}>
-              Don&#39;t Mind
+              {bookType3}
             </RadioButton>
             <Button style="register">Continue</Button>
           </form>
@@ -121,9 +127,15 @@ export const query = graphql`
         q1Placeholder
         q2
         q2Placeholder
+        readListen1
+        readListen2
+        readListen3
         q3
         q4
         q5
+        bookType1
+        bookType2
+        bookType3
       }
     }
   }
