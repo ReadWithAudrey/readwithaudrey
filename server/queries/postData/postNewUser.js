@@ -15,6 +15,7 @@ const postNewUser = (user) => {
         book_preference: user.booktype,
         user_bio: user.story,
         special_requirements: user.specialRequests,
+        looking_for_pair: true,
       },
       (err) => {
         if (err) {
