@@ -1,6 +1,6 @@
 ---
 title: Thank You
-header1: Great… you’re in… Welcome! TEST
+header1: Great… you’re in… Welcome!
 header2: Help Spread The Word
 p1: Why not share the story of Audrey and help us spread the word?
 p2: Have a great day!
