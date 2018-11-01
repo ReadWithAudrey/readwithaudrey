@@ -100,9 +100,9 @@ collections:
           - {label: "p1", name: "p1", widget: "string"}
           - {label: "p2", name: "p2", widget: "string"}
           - {label: "p3", name: "p3", widget: "string"}
-      - file: src/markdown/examples.md
+      - file: src/markdown/example.md
         label: "Examples"
-        name: "examples"
+        name: "example"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "Examples", options: ["Examples"] }
           - {label: "Header", name: "header", widget: "string"}
@@ -110,7 +110,7 @@ collections:
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/testimonials.md
         label: "Testimonials"
-        name: "testimonials"
+        name: "testimonial"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "Testimonials", options:["Testimonials"], }
           - {label: "Header", name: "header", widget: "string"}
