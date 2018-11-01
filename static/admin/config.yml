@@ -80,17 +80,17 @@ collections:
   - name: "welcome page"
     label: "Welcome Page"
     files:
-      - file: src/markdown/aboutaudrey.md
+      - file: src/markdown/about.md
         label: "About Audrey"
-        name: "aboutaudrey"
+        name: "about"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "About Audrey", options: ["About Audrey"] }
           - {label: "Header 1", name: "header1", widget: "string"}
-          - {label: "Text1", name: "text1", widget: "string"}
+          - {label: "Text 1", name: "text1", widget: "string"}
           - {label: "Header 2", name: "header2", widget: "string"}
-          - {label: "Text2", name: "text2", widget: "string"}
-          - {label: "Header 2", name: "header2", widget: "string"}
-          - {label: "Text3", name: "text3", widget: "string"}
+          - {label: "Text 2", name: "text2", widget: "string"}
+          - {label: "Header 3", name: "header3", widget: "string"}
+          - {label: "Text 3", name: "text3", widget: "string"}
       - file: src/markdown/howitworks.md
         label: "How It Works"
         name: "howitworks"
