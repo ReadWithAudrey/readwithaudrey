@@ -1,6 +1,6 @@
 ---
 title: Thank You Contact
-header1: Thank You! TEST
+header1: Thank You!
 p1: Return to homepage
 ---
 
