@@ -1,16 +1,18 @@
 ---
-title: 'Thank You'
-header1: Great… you’re in… Welcome!
+title: Thank You
+header1: Great… you’re in… Welcome! TEST
 header2: Help Spread The Word
 p1: Why not share the story of Audrey and help us spread the word?
 p2: Have a great day!
 p3: Rob and the Audrey team
 p4: Go back to the homepage
-shareUrl: https://www.readwithaudrey.com
+shareUrl: 'https://www.readwithaudrey.com'
 twitterText: Once upon a time I decided to read a book with a stranger – give it a try
 facebookText: Once upon a time I decided to read a book with a stranger – give it a try
-emailSubject: 'Have you met Audrey yet?'
-emailBody: 'Once upon a time I decided to read a book with a stranger – give it a try at https://www.readwithaudrey.com'
+emailBody: >-
+  Once upon a time I decided to read a book with a stranger – give it a try at
+  https://www.readwithaudrey.com
+emailSubject: Have you met Audrey yet?
 ---
 
 Thank you for completing the sign up. That’s the hard part done. Welcome
