@@ -1,6 +1,6 @@
 ---
 title: HowItWorks
-header: Three steps to begin your reading adventure TEST
+header: Three steps to begin your reading adventure
 p1: >-
   Tell us a little about yourself and decide how you’d like to use Audrey e.g.
   as a reader or listener, or both.
