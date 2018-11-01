@@ -2,7 +2,7 @@
 title: FAQs
 footer: >-
   If you weren’t able to find an answer for your question please head over to
-  the contact page. test
+  the contact page.
 ---
 
 ## My Reading Partner
