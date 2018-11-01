@@ -1,5 +1,5 @@
 ---
-title: HowItWorks
+title: How It Works
 header: Three steps to begin your reading adventure
 p1: 'Tell us a little about yourself and decide how you’d like to use Audrey e.g. as a reader or listener, or both.'
 p2: 'We’ll introduce you to your reading partner, share a hand-picked book, and help facilitate your first reading session.'
