@@ -1,9 +1,9 @@
 ---
 title: Form Part 1
-heading: Welcome to Audrey.
+heading: Welcome to Audrey
 description: >-
-  You're warmly invited to join our community. Let's get the ball rolling...
-  Please complete the questions below.
+  You're warmly invited to join our community. Please complete the questions
+  below.
 q1: What is your first name?
 q1Placeholder: First name
 q2: What is your surname?
