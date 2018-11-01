@@ -1,6 +1,6 @@
 ---
 title: Contact
-header1: How can we help you? TEST
+header1: How can we help you?
 p1: >-
   We would love to hear from you. Your questions and comments are important to
   us. The best way to reach us is in writing. Please fill out the contact form
