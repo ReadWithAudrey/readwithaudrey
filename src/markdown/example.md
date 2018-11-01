@@ -1,7 +1,7 @@
 ---
-title: 'Examples'
-header: 'Recent reading partners'
-footer: 'We take great care to try to identify the right reading partner for you.'
+title: Examples
+header: Recent reading partners TEST
+footer: We take great care to try to identify the right reading partner for you.
 ---
 
 A musician and a school teacher read Musicophilia, by Oliver Sacks.
