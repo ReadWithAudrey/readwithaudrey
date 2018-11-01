@@ -36,7 +36,7 @@ collections:
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/why.md
         label: "Our Why"
-        name: "our why"
+        name: "ourwhy"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "Our Why", options: ["Our Why"] }
           - {label: "Main text", name: "body", widget: "markdown"}
