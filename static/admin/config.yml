@@ -12,16 +12,16 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: src/markdown/404.md
+      - file: src/markdown/notfound.md
         label: "404 Page"
-        name: "404"
+        name: "notfound"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "404", options: ["404"] }
           - {label: "Header", name: "header1", widget: "string"}
           - {label: "Paragraph 1", name: "p1", widget: "string"}
-      - file: src/markdown/thankyou-contact.md
+      - file: src/markdown/thankyoucontact.md
         label: "Thank You (Contact)"
-        name: "thankyou-contact"
+        name: "thankyoucontact"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "Thank You Contact", options: ["Thank You Contact"] }
           - {label: "Header", name: "header1", widget: "string"}
@@ -36,7 +36,7 @@ collections:
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/why.md
         label: "Our Why"
-        name: "our why"
+        name: "ourwhy"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "Our Why", options: ["Our Why"] }
           - {label: "Main text", name: "body", widget: "markdown"}
@@ -80,17 +80,17 @@ collections:
   - name: "welcome page"
     label: "Welcome Page"
     files:
-      - file: src/markdown/aboutaudrey.md
+      - file: src/markdown/about.md
         label: "About Audrey"
-        name: "aboutaudrey"
+        name: "about"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "About Audrey", options: ["About Audrey"] }
           - {label: "Header 1", name: "header1", widget: "string"}
-          - {label: "Text1", name: "text1", widget: "string"}
+          - {label: "Text 1", name: "text1", widget: "string"}
           - {label: "Header 2", name: "header2", widget: "string"}
-          - {label: "Text2", name: "text2", widget: "string"}
-          - {label: "Header 2", name: "header2", widget: "string"}
-          - {label: "Text2", name: "text3", widget: "string"}
+          - {label: "Text 2", name: "text2", widget: "string"}
+          - {label: "Header 3", name: "header3", widget: "string"}
+          - {label: "Text 3", name: "text3", widget: "string"}
       - file: src/markdown/howitworks.md
         label: "How It Works"
         name: "howitworks"
@@ -100,9 +100,9 @@ collections:
           - {label: "p1", name: "p1", widget: "string"}
           - {label: "p2", name: "p2", widget: "string"}
           - {label: "p3", name: "p3", widget: "string"}
-      - file: src/markdown/examples.md
+      - file: src/markdown/example.md
         label: "Examples"
-        name: "examples"
+        name: "example"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "Examples", options: ["Examples"] }
           - {label: "Header", name: "header", widget: "string"}
@@ -110,7 +110,7 @@ collections:
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/testimonials.md
         label: "Testimonials"
-        name: "testimonials"
+        name: "testimonial"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "Testimonials", options:["Testimonials"], }
           - {label: "Header", name: "header", widget: "string"}
@@ -119,9 +119,9 @@ collections:
   - name: "forms"
     label: "Forms"
     files:
-      - file: src/markdown/formpart1.md
+      - file: src/markdown/formpartone.md
         label: "Form 1"
-        name: "form1"
+        name: "formone"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "Form 1", options: ["Form 1"]}
           - {label: "Heading", name: "heading", widget: "string"}
@@ -133,9 +133,9 @@ collections:
           - {label: "q3", name: "q3", widget: "string"}
           - {label: "q3 placeholder", name: "q3Placeholder", widget: "string"}
           - {label: "finalText", name: "finalText", widget: "string"}
-      - file: src/markdown/formpart2.md
+      - file: src/markdown/formparttwo.md
         label: "Form 2"
-        name: "form2"
+        name: "formtwo"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "Form 2", options: ["Form 2"]}
           - {label: "Heading", name: "heading", widget: "string"}
@@ -152,9 +152,9 @@ collections:
           - {label: "bookType1", name: "bookType1", widget: "string"}
           - {label: "bookType2", name: "bookType2", widget: "string"}
           - {label: "bookType3", name: "bookType3", widget: "string"}
-      - file: src/markdown/formpart3.md
+      - file: src/markdown/formpartthree.md
         label: "Form 3"
-        name: "form3"
+        name: "formthree"
         fields:
           - {label: "Title", name: "title", widget: "select", default: "Form 3", options: ["Form 3"]}
           - {label: "Heading", name: "heading", widget: "string"}

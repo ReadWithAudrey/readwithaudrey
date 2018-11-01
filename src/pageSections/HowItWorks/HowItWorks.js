@@ -58,7 +58,7 @@ const query = graphql`
         title
       }
     }
-    markdownRemark(frontmatter: { title: { eq: "HowItWorks" } }) {
+    markdownRemark(frontmatter: { title: { eq: "How It Works" } }) {
       frontmatter {
         header
         p1
