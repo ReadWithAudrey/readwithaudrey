@@ -22,6 +22,10 @@ export const RegisterButton = styled.button.attrs({
 })`
   border: none;
   display: block;
+  white-space: nowrap;
+  min-width: 200px;
+  max-width: 400px;
+
   a {
     color: #fff;
   }

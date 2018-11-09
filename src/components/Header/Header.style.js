@@ -32,8 +32,10 @@ export const DesktopMenu = styled.section.attrs({
   a {
     text-decoration: none;
     display: inline-block;
+    white-space: nowrap;
     padding: 10px;
   }
+
   a:hover {
     background: --var(--pink);
   }
@@ -41,6 +43,7 @@ export const DesktopMenu = styled.section.attrs({
     text-align: right;
     display: flex;
     justify-content: space-between;
+    margin-right: 30px;
   }
 `
 export const BurgerMenu = styled.section`

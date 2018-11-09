@@ -27,7 +27,7 @@ exports[`Header component snapshot test renders correctly 1`] = `
     className="sc-bwzfXH w-65 w-40-l montserrat f4 gQAWUv"
   >
     <section
-      className="sc-htpNat montserrat bRYTxq"
+      className="sc-htpNat montserrat euXoFv"
     >
       <Link
         to="/why/"
@@ -45,7 +45,7 @@ exports[`Header component snapshot test renders correctly 1`] = `
         Contact
       </Link>
       <Link
-        className="mv2 white br2 ba bw1 b--white hover-bg-pink"
+        className="white br2 ba bw1 b--white hover-bg-pink"
         to="/Form1"
       >
         Get Started

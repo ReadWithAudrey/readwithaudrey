@@ -15,16 +15,16 @@ const WelcomeScreen = () => (
         Read Aloud
         <br /> Together
       </h1>
-      <h2 className="green tc f4 montserrat m0 f3-ns">
-        Let&apos;s find you a reading partner
-      </h2>
       <Link to="/Form1/" className="white no-underline w-100">
         <Button style="register" className="mt3">
           Get started
         </Button>
+        <h2 className="green tc f4 montserrat m0 f3-ns">
+          Let&apos;s find you a reading partner
+        </h2>
       </Link>
     </div>
-    <img src={bookpeople} className="mt7 w-auto img-no-margin absolute static-ns bottom-0 z-0" alt="Cartoon of people reading a book" />
+    <img src={bookpeople} className="mt7 w-auto img-no-margin absolute static-ns bottom-0 z-0 o-50" alt="Cartoon of people reading a book" />
   </Welcome>
 )
 
