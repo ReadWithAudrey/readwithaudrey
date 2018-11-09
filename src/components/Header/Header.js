@@ -31,7 +31,7 @@ class Header extends Component {
               <Link to="/contact/">Contact</Link>
               <Link
                 to="/Form1"
-                className="mv2 white br2 ba bw1 b--white hover-bg-pink"
+                className="white br2 ba bw1 b--white hover-bg-pink"
               >
                 Get Started
               </Link>
