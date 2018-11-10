@@ -43,7 +43,7 @@ export const DesktopMenu = styled.section.attrs({
     text-align: right;
     display: flex;
     justify-content: space-between;
-    margin-right: 10px;
+    margin-right: 20px;
   }
 `
 export const BurgerMenu = styled.section`
