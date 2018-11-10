@@ -5,6 +5,7 @@ import StyledHowItWorks from './HowItWorks.style'
 import signUp from '../../images/howItWorksImages/signUp.svg'
 import connect from '../../images/howItWorksImages/connect.svg'
 import read from '../../images/howItWorksImages/read.svg'
+import arrow from '../../images/howItWorksImages/arrow-dotted.svg'
 import PropTypes from 'prop-types'
 import { Button } from '../../components/index'
 
@@ -22,6 +23,12 @@ const HowItWorks = () => (
               <img src={signUp} alt="Icon of a man" className="small-icon" />
               <TextBox>{p1}</TextBox>
             </div>
+            <img
+              src={arrow}
+              id = "dotted-arrow"
+              alt="arrow"
+              className="small-icon w5 relative top-2"
+            />
             <div id="step-2-connect" className="ph2 mh2 h-100">
               <h2 className="f3 pink tc">Connect</h2>
               <img
@@ -31,6 +38,12 @@ const HowItWorks = () => (
               />
               <TextBox>{p2}</TextBox>
             </div>
+            <img
+              src={arrow}
+              id = "dotted-arrow"
+              alt="arrow"
+              className="small-icon w5 relative top-2"
+            />
             <div id="step-3-read" className="ph2 mh2 h-100">
               <h2 className="f3 pink tc">Read</h2>
               <img src={read} alt="Icon of a man" className="small-icon" />

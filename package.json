@@ -43,7 +43,8 @@
     "tachyons": "^4.11.1",
     "tachyons-aspect-ratios": "^1.0.1",
     "tachyons-custom": "^4.9.5",
-    "tachyons-opacity": "^1.1.11"
+    "tachyons-opacity": "^1.1.11",
+    "tachyons-display": "^5.0.5"
   },
   "license": "MIT",
   "devDependencies": {
