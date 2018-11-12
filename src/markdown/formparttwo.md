@@ -4,7 +4,7 @@ heading: A few more details would be really helpful too.
 description: In order to find you a reading partner we’ll need a little more information.
 q1: What term reflects your gender? (optional)
 q1Placeholder: Female
-q2: What’s your age? (How rude!)
+q2: What’s your age?
 readListen1: Reader
 readListen2: Listener
 readListen3: Either/Both
