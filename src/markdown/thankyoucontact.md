@@ -1,7 +1,7 @@
 ---
-title: 'Thank You Contact'
-header1: 'Thank You!'
-p1: 'Return to homepage'
+title: Thank You Contact
+header1: Thank You For Contacting Us!
+p1: Return to homepage
 ---
 
 Thank you for contacting us.
