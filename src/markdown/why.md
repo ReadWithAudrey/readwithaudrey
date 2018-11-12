@@ -1,7 +1,7 @@
 ---
 title: Our Why
 ---
-TEST We passionately believe that by connecting people to read aloud together, Audrey can help to build relationships, remind us how much more we have in common than divides us, and create a more compassionate world. The shared experience of reading aloud together enables us to reflect on the human condition, stirs empathy and encourages conversations. 
+We believe that by connecting people to read aloud together, Audrey can help to build relationships, remind us how much more we have in common than divides us, and create a more compassionate world. The shared experience of reading aloud together enables us to reflect on the human condition, stirs empathy and encourages conversations. 
 
 Reading aloud together moves us to talk about our own stories and emotions and develop a real sense of connectedness with others. Reading aloud together can expose us to new ideas and help us to see things from another's viewpoint. It teaches the value of listening. 
 
