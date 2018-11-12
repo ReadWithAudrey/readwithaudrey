@@ -3,7 +3,4 @@ title: Thank You Contact
 header1: Thank You For Contacting Us!
 p1: Return to homepage
 ---
-
-Thank you for contacting us.
-
 We’ve received your response and we’ll reply to your message as soon as we can
