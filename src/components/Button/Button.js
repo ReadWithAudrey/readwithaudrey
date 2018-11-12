@@ -13,7 +13,7 @@ const Button = props => {
 }
 
 Button.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   type: PropTypes.string,
 }
 
