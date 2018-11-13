@@ -50,9 +50,11 @@ const HowItWorks = () => (
               <TextBox>{p3}</TextBox>
             </div>
           </div>
-          <Link to="/Form1/" className="no-underline white w-100">
-            <Button style="register">Get started</Button>
-          </Link>
+          <Button style="register">
+            <Link to="/Form1/" className="no-underline white w-100">
+            Get started
+            </Link>
+          </Button>
         </StyledHowItWorks>
       )
     }}

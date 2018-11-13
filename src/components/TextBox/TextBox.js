@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const TextBox = props => <StyledTextBox>{props.children}</StyledTextBox>
 
 TextBox.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.array, PropTypes.object]),
 }
 
 export default TextBox
