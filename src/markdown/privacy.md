@@ -7,7 +7,7 @@ This privacy policy should be read alongside, and in addition to, our Terms and 
 
 **Please read this privacy policy carefully.**
 
-## Definitions and interpretation
+### Definitions and interpretation
 
 1. In this privacy policy, the following definitions are used:
     * **Data**: collectively all information that you submit to Read With Audrey via the Website. This definition incorporates, where applicable, the definitions provided in the Data Protection Laws;                           

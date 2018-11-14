@@ -6,7 +6,7 @@ const Privacy = ({ data }) => {
   const { html } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f1 pink tc montserrat mb4 mt5">Privacy</h1>
+      <h1 className="tl f1 pink tc montserrat mb4 mt5">Privacy</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
