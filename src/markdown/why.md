@@ -1,8 +1,12 @@
 ---
 title: Our Why
 ---
-We believe that by connecting people to read aloud together, Audrey can help to build relationships, remind us how much more we have in common than divides us, and create a more compassionate world. The shared experience of reading aloud together enables us to reflect on the human condition, stirs empathy and encourages conversations. 
+Audrey is a space where people from all walks of life can meet online and read thought-provoking books aloud together to spark interesting conversations and build meaningful relationships. 
 
-Reading aloud together moves us to talk about our own stories and emotions and develop a real sense of connectedness with others. Reading aloud together can expose us to new ideas and help us to see things from another's viewpoint. It teaches the value of listening. 
+Reading aloud together is a relaxing, soulful, shared experience where you quickly develop a real sense of connectedness with someone else. You feel nourished with an invigorated state of mind.
 
-Audrey is founded upon the belief that the simple act of reading aloud with someone else can inspire us, help us to focus on what's important to us, and make a meaningful difference in our everyday lives.
+Reading aloud together moves us to talk about our own stories and emotions. This helps to remind us how much we have in common which encourages connection and compassion. 
+
+Reading aloud together exposes us to new ideas, enables us to see the world through the eyes of others, and teaches us the value of listening.
+
+The simplest experiences can inspire us, help us to focus on what's important to us, and make a meaningful difference in our everyday lives.
