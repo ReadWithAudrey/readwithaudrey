@@ -41,16 +41,17 @@ img {
 /* for markdown pages */
 
 h2 {
+  padding-top: 3rem;
   font-size: 2.25rem;
   color: #fd8181;
-  text-align: center;
+  text-align: left;
   font-family: "PT Serif", serif;
 }
 
 h3 {
   font-size: 1.5rem;
   color: #fd8181;
-  text-align: center;
+  text-align: left;
   font-family: "PT Serif", serif;
 }
 
@@ -61,7 +62,7 @@ p {
 }
 
 li {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #555;
   font-family: "PT Serif", serif;
   line-height: 1.2;
