@@ -5,9 +5,9 @@ const getLeadId = ({ emailAddress }) => {
   return new Promise((resolve, reject) => {
     base('leads')
       .select({
-        filterByFormula: `AND(email='${emailAddress}')`
-        ,
-      }).firstPage((err, records) => {
+        filterByFormula: `AND(email='${emailAddress}')`,
+      })
+      .firstPage((err, records) => {
         if (err) {
           reject(new Error('Server Error'));
         } else if (records.length) {

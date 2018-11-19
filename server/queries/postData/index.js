@@ -4,6 +4,7 @@ const updateLeadEmailSent = require('./updateLeadEmailSent');
 const updateLeadAccStatus = require('./updateLeadAccStatus');
 const updateFeedbackEmailStatus = require('./updateFeedbackEmailStatus');
 const updatePairingEmailStatus = require('./updatePairingEmailStatus');
+const updateUsersPairStatus = require('./updateUsersPairStatus');
 
 module.exports = {
   postLead,
@@ -12,4 +13,5 @@ module.exports = {
   updateLeadAccStatus,
   updateFeedbackEmailStatus,
   updatePairingEmailStatus,
+  updateUsersPairStatus,
 };
