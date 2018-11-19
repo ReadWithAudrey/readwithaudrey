@@ -1,6 +1,6 @@
 const { getNewPairs } = require('../../queries/getData');
 const { updatePairingEmailStatus } = require('../../queries/postData');
-const { getUserIdsOfPair } = require('../../queries/getData');
+const { getUserIdsOfPair } = require('../../queries/getData/getUserIdsOfPair');
 const { updateUsersPairStatus } = require('../../queries/postData');
 const {
   downloadAttachments,
