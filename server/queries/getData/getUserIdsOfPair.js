@@ -10,7 +10,6 @@ const getUserIdsOfPair = pair => new Promise((resolve, reject) => {
       if (err) {
         reject(new Error(`Server Error: ${err})`));
       } else if (records.length) {
-        console.log(records.length);
         resolve([records[0].id, records[1].id]);
       } else {
         reject(new Error('Could not find users with those email addresses'));
