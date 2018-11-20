@@ -7,7 +7,7 @@ const updateLeadEmailSent = ({ id }) => {
     base('leads').update(
       id,
       {
-        reminder_email_sent: true,
+        reminder_email_sent: Date.now(),
       },
       (err) => {
         if (err) {
