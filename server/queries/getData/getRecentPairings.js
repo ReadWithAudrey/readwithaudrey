@@ -29,6 +29,4 @@ const getRecentPairings = () => {
   });
 };
 
-getRecentPairings();
-
 module.exports = getRecentPairings;
