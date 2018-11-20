@@ -97,6 +97,12 @@ const sendPairingEmail = (pair, attachments) => {
             book_author: book_author[0],
             who_reads: whoReads(pair),
           },
+          bcc: [
+            {
+              email: 'readwithaudrey.data@gmail.com',
+              name: 'Audrey',
+            },
+          ],
         },
       ],
       from: {

@@ -11,13 +11,8 @@ const getLeads = () => {
     base('leads')
       .select({
         filterByFormula:
-        'AND((DATETIME_DIFF(NOW(), {date_of_lead}, "hours") >= 1), NOT({signup_complete}), NOT({reminder_email_sent}))',
-        fields: [
-          'email',
-          'first_name',
-          'surname',
-          'date_of_lead',
-        ],
+          'AND((DATETIME_DIFF(NOW(), {date_of_lead}, "hours") >= 24), NOT({signup_complete}), NOT({reminder_email_sent}))',
+        fields: ['email', 'first_name', 'surname', 'date_of_lead'],
       })
       .eachPage(
         (records, fetchNextPage) => {

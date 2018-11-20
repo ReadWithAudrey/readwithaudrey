@@ -21,6 +21,12 @@ const sendWelcomeEmail = (user) => {
           dynamic_template_data: {
             firstName,
           },
+          bcc: [
+            {
+              email: 'readwithaudrey.data@gmail.com',
+              name: 'Audrey',
+            },
+          ],
         },
       ],
       from: {
