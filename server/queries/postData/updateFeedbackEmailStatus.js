@@ -7,7 +7,7 @@ const updateFeedbackEmailStatus = ({ id }) => {
     base('pairings').update(
       id,
       {
-        feedback_email_sent: true,
+        feedback_email_sent: Date.now(),
       },
       (err) => {
         if (err) {

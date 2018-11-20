@@ -7,7 +7,7 @@ const updateLeadAccStatus = (id) => {
     base('leads').update(
       id,
       {
-        signup_complete: true,
+        signup_complete: Date.now(),
       },
       (err) => {
         if (err) {
