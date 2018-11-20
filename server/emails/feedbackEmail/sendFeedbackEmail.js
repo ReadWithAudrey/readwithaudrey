@@ -20,14 +20,18 @@ const sendFeedbackEmail = (pair) => {
     data: {
       personalizations: [
         {
-          to: [
-            user,
-          ],
+          to: [user],
           dynamic_template_data: {
             firstName: user.name,
-            partnerName: pairArr[(index) ? 0 : 1].name,
+            partnerName: pairArr[index ? 0 : 1].name,
             pairingId: id,
           },
+          bcc: [
+            {
+              email: 'readwithaudrey.data@gmail.com',
+              name: 'Audrey',
+            },
+          ],
         },
       ],
       from: {

@@ -24,6 +24,12 @@ const sendLeadEmail = (lead) => {
             surname,
             leadId: id,
           },
+          bcc: [
+            {
+              email: 'readwithaudrey.data@gmail.com',
+              name: 'Audrey',
+            },
+          ],
         },
       ],
       from: {

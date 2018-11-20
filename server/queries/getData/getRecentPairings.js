@@ -9,7 +9,7 @@ const getRecentPairings = () => {
     base('pairings')
       .select({
         filterByFormula:
-          'AND({user1_id}, {user2_id}, {reader}, {book_id},{confirm_pairing},NOT({feedback_email_sent}), {pairing_email_sent}, DATETIME_DIFF(NOW(), {pairing_email_sent}, "seconds") >= 8)',
+          'AND({user1_id}, {user2_id}, {reader}, {book_id},{confirm_pairing},NOT({feedback_email_sent}), {pairing_email_sent}, DATETIME_DIFF(NOW(), {pairing_email_sent}, "days") >= 8)',
         fields: ['user1_name', 'user1_email', 'user2_name', 'user2_email'],
       })
       .eachPage(
