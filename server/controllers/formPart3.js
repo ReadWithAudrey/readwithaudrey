@@ -2,7 +2,7 @@ const { postNewUser, updateLeadAccStatus } = require('../queries/postData/');
 const { getLeadId } = require('../queries/getData/getLeadId');
 const { welcomeEmail, saveContact, moveContact } = require('../emails/welcomeEmail');
 const { getUserId } = require('../queries/getData/getUserId');
-const { updateWelcomeEmailSentStatus } = require('../queries/postData/updateWelcomeEmailSentStatus');
+const updateWelcomeEmailSentStatus = require('../queries/postData/updateWelcomeEmailSentStatus');
 
 exports.post = (req, res) => {
   const user = req.body;

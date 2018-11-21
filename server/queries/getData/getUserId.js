@@ -1,6 +1,6 @@
 const base = require('../../dbConnection');
 
-const getUserId = ({ emailAddress }) => new Promise((resolve, reject) => {
+const getUserId = emailAddress => new Promise((resolve, reject) => {
   base('users')
     .select({
       filterByFormula: `AND(email='${emailAddress}')`,
