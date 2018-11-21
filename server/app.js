@@ -9,7 +9,6 @@ const sendFeedbackEmails = require('./emails/feedbackEmail');
 const app = express();
 app.set('PORT', process.env.PORT || 5000);
 
-
 setInterval(() => {
   pairingEmail();
   leadEmail();
