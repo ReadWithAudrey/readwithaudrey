@@ -1,7 +1,8 @@
 const { postNewUser, updateLeadAccStatus } = require('../queries/postData/');
 const { getLeadId } = require('../queries/getData/getLeadId');
 const { welcomeEmail, saveContact, moveContact } = require('../emails/welcomeEmail');
-
+const { getUserId } = require('../queries/getData/getUserId');
+const updateWelcomeEmailSentStatus = require('../queries/postData/updateWelcomeEmailSentStatus');
 
 exports.post = (req, res) => {
   const user = req.body;
@@ -9,6 +10,8 @@ exports.post = (req, res) => {
     .then(getLeadId)
     .then(updateLeadAccStatus)
     .then(() => welcomeEmail(user))
+    .then(() => getUserId(user.emailAddress))
+    .then(userId => updateWelcomeEmailSentStatus(userId))
     .then(() => saveContact(user))
     .then(moveContact)
     .then(() => {
