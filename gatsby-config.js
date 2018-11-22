@@ -35,7 +35,6 @@ module.exports = {
         head: true,
       },
     },
-    'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
