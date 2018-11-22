@@ -27,7 +27,6 @@ export default class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
           <script type="text/javascript" src="/static/admin/netlifyCMS.js" />
-          <script type="text/javascript" src="/pages/faq/dom.js" />
         </body>
       </html>
     )
