@@ -46,5 +46,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-eslint',
     `gatsby-plugin-favicon`,
+    `gatsby-plugin-remove-serviceworker`,
   ],
 }
