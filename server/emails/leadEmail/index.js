@@ -13,7 +13,8 @@ const sendLeadEmails = () => {
             .catch(e => console.log('error for an individual lead', e.message));
         });
       }
-    }).catch(console.log);
+    })
+    .catch(err => console.log(err));
 };
 
 module.exports = sendLeadEmails;
