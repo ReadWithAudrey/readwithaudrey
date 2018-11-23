@@ -31,10 +31,10 @@ const checkLeadTable = lead => new Promise((resolve, reject) => {
     .firstPage((err, records) => {
       if (err) {
         reject(err);
-      } else if (records.length === 0) {
-        resolve(true);
-      } else {
+      } else if (records.length > 0) {
         resolve(false);
+      } else {
+        resolve(true);
       }
     });
 });
