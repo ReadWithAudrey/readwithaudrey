@@ -7,14 +7,12 @@ const sendFeedbackEmails = () => {
     .then((pairs) => {
       pairs.forEach((pair) => {
         Promise.all(sendFeedbackEmail(pair))
-          .then(() => updateFeedbackEmailStatus(pair))
+          .then(() => updateFeedbackEmailStatus(pair.id))
           .then(() => console.log('feedback email sent'))
           .catch(e => console.log(e.message));
       });
     })
     .catch(console.log);
 };
-
-sendFeedbackEmails();
 
 module.exports = sendFeedbackEmails;

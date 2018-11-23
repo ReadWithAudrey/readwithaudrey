@@ -15,7 +15,6 @@ const getRecentPairings = () => {
       .eachPage(
         (records, fetchNextPage) => {
           allRecords = [...allRecords, ...records];
-
           fetchNextPage();
         },
         (err) => {
