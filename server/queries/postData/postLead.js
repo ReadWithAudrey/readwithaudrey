@@ -21,7 +21,7 @@ const checkUsersTable = lead => new Promise((resolve, reject) => {
     });
 });
 
-const checkLeadTable = (lead) => {
+const checkLeadTable = lead => new Promise((resolve, reject) => {
   base('leads')
     .select({
       maxRecords: 1,
@@ -30,14 +30,14 @@ const checkLeadTable = (lead) => {
     })
     .firstPage((err, records) => {
       if (err) {
-        console.log(err);
+        reject(err);
+      } else if (records.length === 0) {
+        resolve(true);
+      } else {
+        resolve(false);
       }
-      if (records.length > 0) {
-        return false;
-      }
-      return true;
     });
-};
+});
 
 const createLead = lead => new Promise((resolve, reject) => {
   base('leads').create(
