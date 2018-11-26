@@ -6,21 +6,11 @@
         "id": "recEya7cL9blZVukN",
         "fields": {
           "reader": "user1",
-          "user1_email": [
-            "readwithaudrey.data@gmail.com"
-          ],
-          "user2_email": [
-            "kentdenis6@hotmail.co.uk"
-          ],
-          "user1_name": [
-            "Ben"
-          ],
-          "user2_name": [
-            "Matt"
-          ],
-          "user2_bio": [
-            "Hi I am Matt, I hate programming."
-          ],
+          "user1_email": ["readwithaudrey.data@gmail.com"],
+          "user2_email": ["kentdenis6@hotmail.co.uk"],
+          "user1_name": ["Ben"],
+          "user2_name": ["Matt"],
+          "user2_bio": ["Hi I am Matt, I hate programming."],
           "user1_bio": [
             "Hi my name is Ben. I like to program. I like long walks in the park"
           ],
@@ -143,15 +133,11 @@
           "book_bio": [
             "The world is shrouded in snow. Transport has ground to a halt. Tom\nmust venture out into a treacherous landscape to collect his son, sick\nand stranded in student lodgings. During his solitary journey from\nBelfast to Sunderland by car and boat, Tom is drawn into another\njourney, one without map or guide, and is forced to chart pathways of\nfamily history haunted by memory and clouded in regret; meditating on\nlove, marriage, parenthood, grief and ambition. Tom reflects on his\nlife: the beloved wife he leaves behind, the son he is driving\ntowards, yet struggles to connect with; the disappointments of his\nphotography career; and the absence that is always there as a voice in\nhis head – his other son, Daniel."
           ],
-          "book_name": [
-            "Wind in the Willows"
-          ],
+          "book_name": ["Wind in the Willows"],
           "mini_book_bio": [
             "This novel is a psychologically astute, compassionately\nobserved, portrait of a father’s inner life and a family in crisis."
           ],
-          "book_author": [
-            "Kenneth Grahame"
-          ]
+          "book_author": ["Kenneth Grahame"]
         },
         "createdTime": "2018-10-10T09:54:27.000Z"
       },
@@ -159,21 +145,11 @@
         "id": "recGkK0TigkgXkolR",
         "fields": {
           "reader": "both",
-          "user1_email": [
-            "readwithaudrey.data@gmail.com"
-          ],
-          "user2_email": [
-            "kentdenis6@hotmail.co.uk"
-          ],
-          "user1_name": [
-            "Ben"
-          ],
-          "user2_name": [
-            "Matt"
-          ],
-          "user2_bio": [
-            "Hi I am Matt, I hate programming."
-          ],
+          "user1_email": ["readwithaudrey.data@gmail.com"],
+          "user2_email": ["kentdenis6@hotmail.co.uk"],
+          "user1_name": ["Ben"],
+          "user2_name": ["Matt"],
+          "user2_bio": ["Hi I am Matt, I hate programming."],
           "user1_bio": [
             "Hi my name is Ben. I like to program. I like long walks in the park"
           ],
@@ -296,15 +272,11 @@
           "book_bio": [
             "The world is shrouded in snow. Transport has ground to a halt. Tom\nmust venture out into a treacherous landscape to collect his son, sick\nand stranded in student lodgings. During his solitary journey from\nBelfast to Sunderland by car and boat, Tom is drawn into another\njourney, one without map or guide, and is forced to chart pathways of\nfamily history haunted by memory and clouded in regret; meditating on\nlove, marriage, parenthood, grief and ambition. Tom reflects on his\nlife: the beloved wife he leaves behind, the son he is driving\ntowards, yet struggles to connect with; the disappointments of his\nphotography career; and the absence that is always there as a voice in\nhis head – his other son, Daniel."
           ],
-          "book_name": [
-            "Brave New World"
-          ],
+          "book_name": ["Brave New World"],
           "mini_book_bio": [
             "This novel is a psychologically astute, compassionately\nobserved, portrait of a father’s inner life and a family in crisis."
           ],
-          "book_author": [
-            "Auxley Huxley"
-          ]
+          "book_author": ["Auxley Huxley"]
         },
         "createdTime": "2018-10-16T12:15:29.000Z"
       }
