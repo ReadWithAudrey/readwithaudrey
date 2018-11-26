@@ -19,7 +19,6 @@ const getNewPairs = () => new Promise((resolve, reject) => {
         'book_author',
         'book_attachments',
         'book_bio',
-        'mini_book_bio',
         'reader',
       ],
     })

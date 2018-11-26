@@ -19,6 +19,7 @@ class Form3 extends React.Component {
   state = {
     error: false,
     errorMessage: '',
+    disabled: false,
   }
   handleSubmit = event => {
     const {
@@ -59,6 +60,9 @@ class Form3 extends React.Component {
               'Sorry, a server error has occured. Please try again.',
           })
         } else {
+          this.setState({
+            disabled: true,
+          })
           navigate('/thankyou/')
         }
       })
@@ -116,7 +120,9 @@ class Form3 extends React.Component {
               name="specialRequests"
               value={specialRequests}
             />
-            <Button style="register">Submit</Button>
+            <Button style="register" disabled={this.state.disabled}>
+              Submit
+            </Button>
           </form>
         </FormSection>
       </Layout>

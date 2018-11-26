@@ -1,4 +1,3 @@
-
 import axios from 'axios'
 import React from 'react'
 import { graphql, navigate } from 'gatsby'
@@ -20,6 +19,7 @@ class Form1 extends React.Component {
   state = {
     error: false,
     errorMessage: '',
+    disabled: false,
   }
   handleSubmit = event => {
     const { firstName, secondName, emailAddress } = this.props.value
@@ -48,6 +48,9 @@ class Form1 extends React.Component {
               'Sorry, a server error has occured. Please try again.',
           })
         } else {
+          this.setState({
+            disabled: true,
+          })
           navigate('/Form2/')
         }
       })
@@ -105,7 +108,9 @@ class Form1 extends React.Component {
               required="true"
             />
             <TextBox>{finalText}</TextBox>
-            <Button style="register">Continue</Button>
+            <Button style="register" disabled={this.state.disabled}>
+              Continue
+            </Button>
           </form>
         </FormSection>
       </Layout>

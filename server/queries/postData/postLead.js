@@ -12,10 +12,10 @@ const checkUsersTable = lead => new Promise((resolve, reject) => {
       if (err) {
         reject(new Error('Server Error'));
       } else if (records.length > 0) {
-        console.log('email address already exists');
+        console.log('email address already exists in the users table');
         resolve(false);
       } else {
-        console.log('email address does not exist');
+        console.log('email address does not exist in the users table');
         resolve(true);
       }
     });
