@@ -53,7 +53,7 @@ const whoReads = (pair) => {
   } else if (reader === 'both') {
     return `You’ve both said you’d be happy to read and listen. Therefore we suggest ${user1_name} kicks off as the reader for your first chapter. Then perhaps you can take turns as the reader and listener alternating between chapters? If this doesn’t feel quite right, please have a chat and choose an arrangement you’re both comfortable with.`;
   }
-  return `Can I suggest ${reads} begins as the reader for the first chapter and see how it goes from there? But please choose an arrangement you’re both comfortable with.`;
+  return `Can I suggest ${reads} kicks off as the reader for the first chapter. Perhaps you can then have a chat about the reader/listener arrangement you’re both comfortable with. You could continue in the same way, or you could take turns as the reader and listener alternating between chapters.`;
 };
 
 const sendPairingEmail = (pair, attachments) => {
