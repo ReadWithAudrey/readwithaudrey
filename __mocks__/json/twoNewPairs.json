@@ -6,21 +6,11 @@
         "id": "recEya7cL9blZVukN",
         "fields": {
           "reader": "user1",
-          "user1_email": [
-            "readwithaudrey.data@gmail.com"
-          ],
-          "user2_email": [
-            "kentdenis6@hotmail.co.uk"
-          ],
-          "user1_name": [
-            "Ben"
-          ],
-          "user2_name": [
-            "Matt"
-          ],
-          "user2_bio": [
-            "Hi I am Matt, I hate programming."
-          ],
+          "user1_email": ["readwithaudrey.data@gmail.com"],
+          "user2_email": ["kentdenis6@hotmail.co.uk"],
+          "user1_name": ["Ben"],
+          "user2_name": ["Matt"],
+          "user2_bio": ["Hi I am Matt, I hate programming."],
           "user1_bio": [
             "Hi my name is Ben. I like to program. I like long walks in the park"
           ],
@@ -143,15 +133,8 @@
           "book_bio": [
             "The world is shrouded in snow. Transport has ground to a halt. Tom\nmust venture out into a treacherous landscape to collect his son, sick\nand stranded in student lodgings. During his solitary journey from\nBelfast to Sunderland by car and boat, Tom is drawn into another\njourney, one without map or guide, and is forced to chart pathways of\nfamily history haunted by memory and clouded in regret; meditating on\nlove, marriage, parenthood, grief and ambition. Tom reflects on his\nlife: the beloved wife he leaves behind, the son he is driving\ntowards, yet struggles to connect with; the disappointments of his\nphotography career; and the absence that is always there as a voice in\nhis head – his other son, Daniel."
           ],
-          "book_name": [
-            "Wind in the Willows"
-          ],
-          "mini_book_bio": [
-            "This novel is a psychologically astute, compassionately\nobserved, portrait of a father’s inner life and a family in crisis."
-          ],
-          "book_author": [
-            "Kenneth Grahame"
-          ]
+          "book_name": ["Wind in the Willows"],
+          "book_author": ["Kenneth Grahame"]
         },
         "createdTime": "2018-10-10T09:54:27.000Z"
       },
@@ -159,21 +142,11 @@
         "id": "recGkK0TigkgXkolR",
         "fields": {
           "reader": "both",
-          "user1_email": [
-            "readwithaudrey.data@gmail.com"
-          ],
-          "user2_email": [
-            "kentdenis6@hotmail.co.uk"
-          ],
-          "user1_name": [
-            "Ben"
-          ],
-          "user2_name": [
-            "Matt"
-          ],
-          "user2_bio": [
-            "Hi I am Matt, I hate programming."
-          ],
+          "user1_email": ["readwithaudrey.data@gmail.com"],
+          "user2_email": ["kentdenis6@hotmail.co.uk"],
+          "user1_name": ["Ben"],
+          "user2_name": ["Matt"],
+          "user2_bio": ["Hi I am Matt, I hate programming."],
           "user1_bio": [
             "Hi my name is Ben. I like to program. I like long walks in the park"
           ],
@@ -296,15 +269,8 @@
           "book_bio": [
             "The world is shrouded in snow. Transport has ground to a halt. Tom\nmust venture out into a treacherous landscape to collect his son, sick\nand stranded in student lodgings. During his solitary journey from\nBelfast to Sunderland by car and boat, Tom is drawn into another\njourney, one without map or guide, and is forced to chart pathways of\nfamily history haunted by memory and clouded in regret; meditating on\nlove, marriage, parenthood, grief and ambition. Tom reflects on his\nlife: the beloved wife he leaves behind, the son he is driving\ntowards, yet struggles to connect with; the disappointments of his\nphotography career; and the absence that is always there as a voice in\nhis head – his other son, Daniel."
           ],
-          "book_name": [
-            "Brave New World"
-          ],
-          "mini_book_bio": [
-            "This novel is a psychologically astute, compassionately\nobserved, portrait of a father’s inner life and a family in crisis."
-          ],
-          "book_author": [
-            "Auxley Huxley"
-          ]
+          "book_name": ["Brave New World"],
+          "book_author": ["Auxley Huxley"]
         },
         "createdTime": "2018-10-16T12:15:29.000Z"
       }
@@ -332,11 +298,11 @@
       "port": 443,
       "hostname": "api.airtable.com",
       "hash": null,
-      "search": "?filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=mini_book_bio&fields%5B%5D=reader",
-      "query": "filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=mini_book_bio&fields%5B%5D=reader",
+      "search": "?filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=reader",
+      "query": "filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=reader",
       "pathname": "/v0/appTrGvqQ9ItVRYOb/pairings",
-      "path": "/v0/appTrGvqQ9ItVRYOb/pairings?filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=mini_book_bio&fields%5B%5D=reader",
-      "href": "https://api.airtable.com/v0/appTrGvqQ9ItVRYOb/pairings?filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=mini_book_bio&fields%5B%5D=reader"
+      "path": "/v0/appTrGvqQ9ItVRYOb/pairings?filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=reader",
+      "href": "https://api.airtable.com/v0/appTrGvqQ9ItVRYOb/pairings?filterByFormula=AND(%7Buser1_id%7D%2C+%7Buser2_id%7D%2C+%7Breader%7D%2C+%7Bbook_id%7D%2C%7Bconfirm_pairing%7D%2C+NOT(%7Bpairing_email_sent%7D))&fields%5B%5D=user1_name&fields%5B%5D=user1_email&fields%5B%5D=user1_bio&fields%5B%5D=user2_name&fields%5B%5D=user2_email&fields%5B%5D=user2_bio&fields%5B%5D=book_name&fields%5B%5D=book_author&fields%5B%5D=book_attachments&fields%5B%5D=book_bio&fields%5B%5D=reader"
     },
     "method": "GET"
   }

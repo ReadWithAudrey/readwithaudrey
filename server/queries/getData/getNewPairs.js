@@ -9,7 +9,7 @@ const getNewPairs = () => {
     base('pairings')
       .select({
         filterByFormula:
-        'AND({user1_id}, {user2_id}, {reader}, {book_id},{confirm_pairing}, NOT({pairing_email_sent}))',
+          'AND({user1_id}, {user2_id}, {reader}, {book_id},{confirm_pairing}, NOT({pairing_email_sent}))',
         fields: [
           'user1_name',
           'user1_email',
@@ -21,13 +21,12 @@ const getNewPairs = () => {
           'book_author',
           'book_attachments',
           'book_bio',
-          'mini_book_bio',
           'reader',
         ],
       })
       .eachPage(
         (records, fetchNextPage) => {
-        // This function (`page`) will get called for each page of records.
+          // This function (`page`) will get called for each page of records.
           allRecords = [...allRecords, ...records];
           // To fetch the next page of records, call `fetchNextPage`.
           // If there are more records, `page` will get called again.
