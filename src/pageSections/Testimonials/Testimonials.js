@@ -17,11 +17,11 @@ const Testimonials = () => (
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </TextBox>
           <p className="f3 tc">{footer}</p>
-          <Button style="register" className="mt3">
-            <Link to="/Form1/" className="no-underline white w-100">
-Get started
-            </Link>
-          </Button>
+          <Link to="/Form1/" className="no-underline white">
+            <Button style="register" className="mt3">
+              Get started
+            </Button>
+          </Link>
         </StyledTestimonials>
       )
     }}

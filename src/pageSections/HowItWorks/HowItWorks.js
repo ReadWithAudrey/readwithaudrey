@@ -40,11 +40,9 @@ const HowItWorks = () => (
               <TextBox>{p3}</TextBox>
             </div>
           </div>
-          <Button style="register">
-            <Link to="/Form1/" className="no-underline white w-100">
-              Get started
-            </Link>
-          </Button>
+          <Link to="/Form1/" className="no-underline white">
+            <Button style="register">Get started</Button>
+          </Link>
         </StyledHowItWorks>
       )
     }}
