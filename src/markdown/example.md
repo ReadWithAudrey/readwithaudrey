@@ -1,16 +1,14 @@
 ---
 title: Examples
 header: Recent reading partners
-footer: We take care to try to identify the right reading partner for you.
+footer: We take care to identify the right reading partner for you.
 ---
-A musician and a school teacher read Musicophilia by Oliver Sacks
+A musician and a school teacher read Siddhartha, by Hermann Hesse.
 
-A counsellor and medical doctor read Attachment Theory by J Bowlby
+A doctor and a retired counsellor read The Invisible Man, by H G Wells.
 
-A retired judge and a history student read Darkest Hour by Anthony McCarten
+An engineer and a history student read A Christmas Carol, by Charles Dickens.
 
-A young playwright and an artist read short stories by Hector Munro
+A playwright and a retired nurse read Sherlock Holmes, by Arthur C Doyle.
 
-A photographer and a retired nurse read Language of Kindness by Christie Watson
-
-A film maker and a furniture restorer read The Wind in My Hair by Masih Alinejad
+A film maker and a furniture restorer read short stories, by Anton Checkov.
