@@ -18,7 +18,7 @@ export class SignupProvider extends React.Component {
     timezone: '0',
     readlisten: null,
     booktype: null,
-    OrgCode: null,
+    orgCode: null,
     withAnOrg: null,
     updateForm: this.updateForm,
     showTips: this.showTips,

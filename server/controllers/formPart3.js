@@ -6,6 +6,7 @@ const updateWelcomeEmailSentStatus = require('../queries/postData/updateWelcomeE
 const { checkUsersTable } = require('../queries/postData/postLead');
 
 exports.post = (req, res) => {
+  console.log('form3 backend -----------', req.body);
   const user = req.body;
   checkUsersTable(user)
     .then(() => {

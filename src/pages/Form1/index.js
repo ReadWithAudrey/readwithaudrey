@@ -20,10 +20,9 @@ class Form1 extends React.Component {
   state = {
     error: false,
     errorMessage: '',
-    disabled: '',
   }
   handleSubmit = event => {
-    const { firstName, secondName, emailAddress } = this.props.value
+    const { firstName, secondName, emailAddress, orgCode } = this.props.value
     const backendURL =
       process.env.NODE_ENV === 'development'
         ? 'http://localhost:5000'
@@ -35,6 +34,7 @@ class Form1 extends React.Component {
         firstName,
         secondName,
         emailAddress,
+        orgCode,
       })
       .then(res => {
         if (res.data === 'email exists') {
@@ -60,8 +60,7 @@ class Form1 extends React.Component {
       secondName,
       emailAddress,
       updateForm,
-      withAnOrg,
-      OrgCode,
+      orgCode,
     } = this.props.value
     const {
       heading,
@@ -124,14 +123,12 @@ class Form1 extends React.Component {
             <InputBox
               placeholder="e.g. 000000"
               onChange={updateForm}
-              name="OrgCode"
-              value={OrgCode}
+              name="orgCode"
+              value={orgCode}
               type="number"
             />
             <TextBox>{finalText}</TextBox>
-            <Button style="register" disabled>
-              Continue
-            </Button>
+            <Button style="register">Continue</Button>
           </form>
         </FormSection>
       </Layout>

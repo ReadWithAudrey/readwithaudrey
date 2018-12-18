@@ -1,6 +1,7 @@
 const { checkLeadTable, checkUsersTable, createLead } = require('../queries/postData/postLead');
 
 exports.post = (req, res) => {
+  console.log('form1 backend -------', req.body);
   const lead = req.body;
   checkUsersTable(lead)
     .then((uniqueEmail) => {
@@ -21,8 +22,8 @@ exports.post = (req, res) => {
       console.log('Ok');
       res.end('Ok');
     })
-    .catch(() => {
-      console.log('Error');
+    .catch((err) => {
+      console.log('Error posting to /Form1: ', err);
       res.end('server error');
     });
 };
