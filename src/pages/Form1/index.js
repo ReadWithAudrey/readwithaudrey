@@ -11,6 +11,7 @@ import {
   Layout,
   StatusBar,
   TextBox,
+  RadioButton,
   FormSection,
   ErrorSpan,
 } from '../../components/'
@@ -19,6 +20,7 @@ class Form1 extends React.Component {
   state = {
     error: false,
     errorMessage: '',
+    disabled: '',
   }
   handleSubmit = event => {
     const { firstName, secondName, emailAddress } = this.props.value
@@ -26,6 +28,7 @@ class Form1 extends React.Component {
       process.env.NODE_ENV === 'development'
         ? 'http://localhost:5000'
         : 'https://readwithaudrey.herokuapp.com'
+
     event.preventDefault()
     axios
       .post(`${backendURL}/formPart1`, {
@@ -52,7 +55,14 @@ class Form1 extends React.Component {
       })
   }
   render() {
-    const { firstName, secondName, emailAddress, updateForm } = this.props.value
+    const {
+      firstName,
+      secondName,
+      emailAddress,
+      updateForm,
+      withAnOrg,
+      OrgCode,
+    } = this.props.value
     const {
       heading,
       description,
@@ -103,8 +113,25 @@ class Form1 extends React.Component {
               type="email"
               required="true"
             />
+            <Label>Are you joining as part of an organisation?</Label>
+            <RadioButton name="withAnOrg" onChange={updateForm}>
+              No
+            </RadioButton>
+            <RadioButton name="withAnOrg" onChange={updateForm}>
+              Yes
+            </RadioButton>
+            <Label>If so, please input the organisation code below</Label>
+            <InputBox
+              placeholder="e.g. 000000"
+              onChange={updateForm}
+              name="OrgCode"
+              value={OrgCode}
+              type="number"
+            />
             <TextBox>{finalText}</TextBox>
-            <Button style="register">Continue</Button>
+            <Button style="register" disabled>
+              Continue
+            </Button>
           </form>
         </FormSection>
       </Layout>
