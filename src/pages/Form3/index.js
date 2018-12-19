@@ -38,7 +38,7 @@ class Form3 extends React.Component {
     const backendURL =
       process.env.NODE_ENV === 'development'
         ? 'http://localhost:5000'
-        : process.env.BACKEND_SERVER
+        : 'https://readwithaudrey-staging.herokuapp.com'
     event.preventDefault()
     axios
       .post(`${backendURL}/formPart3`, {

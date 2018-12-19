@@ -1,4 +1,3 @@
-require('dotenv').config()
 import axios from 'axios'
 import React from 'react'
 import { graphql, navigate } from 'gatsby'
@@ -27,7 +26,7 @@ class Form1 extends React.Component {
     const backendURL =
       process.env.NODE_ENV === 'development'
         ? 'http://localhost:5000'
-        : process.env.BACKEND_SERVER
+        : 'https://readwithaudrey-staging.herokuapp.com'
 
     event.preventDefault()
     axios
