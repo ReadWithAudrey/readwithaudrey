@@ -5,7 +5,7 @@ An app to help people read books with like-minded people who share their interes
 
 Live site: http://readwithaudrey.com/
 
-Staging site: readwithaudrey-staging.netlify.com
+Staging site: http://readwithaudrey-staging.netlify.com
 
 # Motivation
 We match people with shared interests, but diverse life journeys, and provide engaging books, in order that the reading experience is stimulating and meaningful. We have built this for people who are lonely, or those who just want to make friends interesting people.
