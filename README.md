@@ -3,7 +3,9 @@
 # Audrey
 An app to help people read books with like-minded people who share their interests. This iteration of the app is designed to fulfil the user journey from signup to finding their first pairing.  
 
-http://readwithaudrey.com/
+Live site: http://readwithaudrey.com/
+
+Staging site: readwithaudrey-staging.netlify.com
 
 # Motivation
 We match people with shared interests, but diverse life journeys, and provide engaging books, in order that the reading experience is stimulating and meaningful. We have built this for people who are lonely, or those who just want to make friends interesting people.
