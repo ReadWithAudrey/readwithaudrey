@@ -60,7 +60,9 @@ class Form1 extends React.Component {
       secondName,
       emailAddress,
       updateForm,
+      orgTipsBox,
       orgCode,
+      showOrgTips,
     } = this.props.value
     const {
       heading,
@@ -112,13 +114,24 @@ class Form1 extends React.Component {
               type="email"
               required="true"
             />
-            <Label>Are you joining as part of an organisation?</Label>
+            <Label className="pt4">
+              Are you joining as part of an organisation?
+            </Label>
             <RadioButton name="withAnOrg" onChange={updateForm}>
               No
             </RadioButton>
             <RadioButton name="withAnOrg" onChange={updateForm}>
               Yes
             </RadioButton>
+            <a
+              onClick={showOrgTips}
+              className="flex justify-center underline mb2"
+            >
+              (What does joining with an organisation mean?)
+            </a>
+            {orgTipsBox && (
+              <TextBox className="f">Come join as an organisation</TextBox>
+            )}
             <Label>If so, please input the organisation code below</Label>
             <InputBox
               placeholder="e.g. 000000"
