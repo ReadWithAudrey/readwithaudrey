@@ -26,7 +26,7 @@ class Form1 extends React.Component {
     const backendURL =
       process.env.NODE_ENV === 'development'
         ? 'http://localhost:5000'
-        : 'https://readwithaudrey.herokuapp.com'
+        : 'https://readwithaudrey-staging.herokuapp.com'
 
     event.preventDefault()
     axios
