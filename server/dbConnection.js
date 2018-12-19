@@ -8,4 +8,9 @@ Airtable.configure({
 
 const base = Airtable.base(process.env.AIRTABLE_BASE);
 
+const organisations = [
+  { organisation: 'main', orgCode: 100100, base: 'appTrGvqQ9ItVRYOb' },
+  { organisation: 'FAC', orgCode: 100101, base: 'appcbskDQClM2MGhA' },
+];
+
 module.exports = base;

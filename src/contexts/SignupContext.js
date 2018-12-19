@@ -6,10 +6,16 @@ export class SignupProvider extends React.Component {
     this.setState({ [event.target.name]: event.target.value })
   }
   showTips = () => this.setState({ storyTipsBox: !this.state.storyTipsBox })
+  showOrgTips = () => this.setState({ orgTipsBox: !this.state.storyTipsBox })
+
   state = {
     firstName: null,
     secondName: null,
     emailAddress: null,
+    withAnOrg: null,
+    orgTipsBox: false,
+    orgCode: null,
+    showOrgTips: this.showOrgTips,
     story: null,
     storyTipsBox: false,
     specialRequests: '',

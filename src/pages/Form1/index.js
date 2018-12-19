@@ -11,6 +11,7 @@ import {
   Layout,
   StatusBar,
   TextBox,
+  RadioButton,
   FormSection,
   ErrorSpan,
 } from '../../components/'
@@ -21,17 +22,19 @@ class Form1 extends React.Component {
     errorMessage: '',
   }
   handleSubmit = event => {
-    const { firstName, secondName, emailAddress } = this.props.value
+    const { firstName, secondName, emailAddress, orgCode } = this.props.value
     const backendURL =
       process.env.NODE_ENV === 'development'
         ? 'http://localhost:5000'
         : 'https://readwithaudrey.herokuapp.com'
+
     event.preventDefault()
     axios
       .post(`${backendURL}/formPart1`, {
         firstName,
         secondName,
         emailAddress,
+        orgCode,
       })
       .then(res => {
         if (res.data === 'email exists') {
@@ -52,7 +55,15 @@ class Form1 extends React.Component {
       })
   }
   render() {
-    const { firstName, secondName, emailAddress, updateForm } = this.props.value
+    const {
+      firstName,
+      secondName,
+      emailAddress,
+      updateForm,
+      orgTipsBox,
+      orgCode,
+      showOrgTips,
+    } = this.props.value
     const {
       heading,
       description,
@@ -102,6 +113,32 @@ class Form1 extends React.Component {
               value={emailAddress}
               type="email"
               required="true"
+            />
+            <Label className="pt4">
+              Are you joining as part of an organisation?
+            </Label>
+            <RadioButton name="withAnOrg" onChange={updateForm}>
+              No
+            </RadioButton>
+            <RadioButton name="withAnOrg" onChange={updateForm}>
+              Yes
+            </RadioButton>
+            <a
+              onClick={showOrgTips}
+              className="flex justify-center underline mb2"
+            >
+              (What does joining with an organisation mean?)
+            </a>
+            {orgTipsBox && (
+              <TextBox className="f">Come join as an organisation</TextBox>
+            )}
+            <Label>If so, please input the organisation code below</Label>
+            <InputBox
+              placeholder="e.g. 000000"
+              onChange={updateForm}
+              name="orgCode"
+              value={orgCode}
+              type="number"
             />
             <TextBox>{finalText}</TextBox>
             <Button style="register">Continue</Button>
