@@ -1,3 +1,4 @@
+require('dotenv').config()
 import React from 'react'
 import axios from 'axios'
 import { graphql, navigate, Link } from 'gatsby'
@@ -37,7 +38,7 @@ class Form3 extends React.Component {
     const backendURL =
       process.env.NODE_ENV === 'development'
         ? 'http://localhost:5000'
-        : 'https://readwithaudrey.herokuapp.com'
+        : process.env.BACKEND_SERVER
     event.preventDefault()
     axios
       .post(`${backendURL}/formPart3`, {
