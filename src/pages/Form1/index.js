@@ -1,5 +1,4 @@
 require('dotenv').config()
-
 import axios from 'axios'
 import React from 'react'
 import { graphql, navigate } from 'gatsby'
