@@ -62,6 +62,7 @@ class Form1 extends React.Component {
       updateForm,
       orgTipsBox,
       orgCode,
+      withAnOrg,
       showOrgTips,
     } = this.props.value
     const {
@@ -114,6 +115,7 @@ class Form1 extends React.Component {
               type="email"
               required="true"
             />
+            <TextBox>{finalText}</TextBox>
             <Label className="pt4">
               Are you joining as part of an organisation?
             </Label>
@@ -130,17 +132,29 @@ class Form1 extends React.Component {
               (What does joining with an organisation mean?)
             </a>
             {orgTipsBox && (
-              <TextBox className="f">Come join as an organisation</TextBox>
+              <TextBox className="f">
+                When joining Audrey, you have the choice of joining the general
+                Audrey community, or joining with an organisation or another
+                group to start to build your own smaller community. If you are
+                with a community and do not know your code, please contact your
+                ambassador. If you would like to set up your own community,
+                please click the Get Invloved link at the bottom of the page and
+                sign up. Thanks!
+              </TextBox>
             )}
-            <Label>If so, please input the organisation code below</Label>
-            <InputBox
-              placeholder="e.g. 000000"
-              onChange={updateForm}
-              name="orgCode"
-              value={orgCode}
-              type="number"
-            />
-            <TextBox>{finalText}</TextBox>
+            {withAnOrg === 'Yes' && (
+              <React.Fragment>
+                <Label>Please input the organisation code below</Label>
+                <InputBox
+                  placeholder="e.g. 000000"
+                  onChange={updateForm}
+                  name="orgCode"
+                  value={orgCode}
+                  type="number"
+                  required="true"
+                />
+              </React.Fragment>
+            )}
             <Button style="register">Continue</Button>
           </form>
         </FormSection>
