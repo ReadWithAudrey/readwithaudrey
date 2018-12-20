@@ -1,4 +1,4 @@
-const base = require('../../dbConnection');
+const { base } = require('../../dbConnection');
 
 const getLeadId = ({ emailAddress }) => {
   console.log('getting a lead');

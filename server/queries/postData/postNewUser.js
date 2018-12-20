@@ -1,4 +1,4 @@
-const base = require('../../dbConnection');
+const { base } = require('../../dbConnection');
 
 const postNewUser = (user) => {
   console.log('Posting new user');

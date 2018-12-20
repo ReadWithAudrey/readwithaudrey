@@ -1,5 +1,5 @@
 require('dotenv').config();
-const base = require('../../dbConnection');
+const { base } = require('../../dbConnection');
 
 const updateSentStatus = ({ id }) => {
   console.log('Updating sent status');

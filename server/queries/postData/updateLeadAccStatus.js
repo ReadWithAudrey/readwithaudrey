@@ -1,5 +1,5 @@
 require('dotenv').config();
-const base = require('../../dbConnection');
+const { base } = require('../../dbConnection');
 
 const updateLeadAccStatus = (id) => {
   console.log('Updating lead account status');

@@ -1,7 +1,6 @@
 require('dotenv').config();
-const base = require('../../dbConnection');
 
-const checkUsersTable = lead => new Promise((resolve, reject) => {
+const checkUsersTable = (base, lead) => new Promise((resolve, reject) => {
   base('users')
     .select({
       maxRecords: 1,
@@ -21,7 +20,7 @@ const checkUsersTable = lead => new Promise((resolve, reject) => {
     });
 });
 
-const checkLeadTable = lead => new Promise((resolve, reject) => {
+const checkLeadTable = (base, lead) => new Promise((resolve, reject) => {
   base('leads')
     .select({
       maxRecords: 1,
@@ -39,7 +38,7 @@ const checkLeadTable = lead => new Promise((resolve, reject) => {
     });
 });
 
-const createLead = lead => new Promise((resolve, reject) => {
+const createLead = (base, lead) => new Promise((resolve, reject) => {
   base('leads').create(
     {
       first_name: lead.firstName,

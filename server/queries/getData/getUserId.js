@@ -1,4 +1,4 @@
-const base = require('../../dbConnection');
+const { base } = require('../../dbConnection');
 
 const getUserId = emailAddress => new Promise((resolve, reject) => {
   base('users')
