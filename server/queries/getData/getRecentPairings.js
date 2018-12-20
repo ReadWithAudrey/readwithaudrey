@@ -1,5 +1,5 @@
 require('dotenv').config();
-const base = require('../../dbConnection');
+const { base } = require('../../dbConnection');
 
 // Returns an array of pairs. If there are no pairs returns empty array. If error returns an object (which doesn't always have a status code)
 const getRecentPairings = () => new Promise((resolve, reject) => {

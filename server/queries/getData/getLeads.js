@@ -1,5 +1,5 @@
 require('dotenv').config();
-const base = require('../../dbConnection');
+const { base } = require('../../dbConnection');
 
 // Returns an array leads which have been in the DB for at least an hour.
 // If there are no pairs returns empty array.
