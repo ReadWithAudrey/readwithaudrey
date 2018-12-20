@@ -4,6 +4,7 @@ const { twoNewPairs, noNewPairs, airtableConnectionErr } = require('../../../__m
 test('getPairs :: get all valid pairs', () => {
   expect.assertions(1);
   getNewPairs().then((data) => {
+    console.log(data);
     expect(data.length).toEqual(2);
   });
 });
