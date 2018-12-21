@@ -49,6 +49,12 @@ class Form1 extends React.Component {
             errorMessage:
               'Sorry, a server error has occured. Please try again.',
           })
+        } else if (res.data === 'No organisation with that code') {
+          this.setState({
+            error: true,
+            errorMessage:
+              'Sorry, an organisation with that code has not been found. Please contact your organisation ambassador or sign up as a general user',
+          })
         } else {
           navigate('/Form2/')
         }
