@@ -1,7 +1,6 @@
 require('dotenv').config();
-const { base } = require('../../dbConnection');
 
-const updateWelcomeEmailSentStatus = (id) => {
+const updateWelcomeEmailSentStatus = (base, id) => {
   console.log('Updating sent status');
   return new Promise((resolve, reject) => {
     base('users').update(

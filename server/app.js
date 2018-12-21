@@ -5,14 +5,15 @@ const controllers = require('./controllers');
 const pairingEmail = require('./emails/pairingEmail');
 const leadEmail = require('./emails/leadEmail');
 const sendFeedbackEmails = require('./emails/feedbackEmail');
+const { base } = require('./dbConnection');
 
 const app = express();
 app.set('PORT', process.env.PORT || 5000);
 
 setInterval(() => {
-  pairingEmail();
-  leadEmail();
-  sendFeedbackEmails();
+  pairingEmail(base);
+  leadEmail(base);
+  sendFeedbackEmails(base);
 }, 1000 * 10);
 
 // Enable CORS
