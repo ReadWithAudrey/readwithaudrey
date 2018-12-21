@@ -30,12 +30,16 @@ class Form1 extends React.Component {
 
     event.preventDefault()
     axios
-      .post(`${backendURL}/formPart1`, {
-        firstName,
-        secondName,
-        emailAddress,
-        orgCode,
-      })
+      .post(
+        `${backendURL}/formPart1`,
+        {
+          firstName,
+          secondName,
+          emailAddress,
+          orgCode,
+        },
+        { withCredentials: true }
+      )
       .then(res => {
         if (res.data === 'email exists') {
           this.setState({
