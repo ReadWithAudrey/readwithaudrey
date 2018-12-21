@@ -1,7 +1,6 @@
 require('dotenv').config();
-const { base } = require('../../dbConnection');
 
-const updateUsersPairStatus = id => new Promise((resolve, reject) => {
+const updateUsersPairStatus = (base, id) => new Promise((resolve, reject) => {
   base('users').update(
     id,
     {

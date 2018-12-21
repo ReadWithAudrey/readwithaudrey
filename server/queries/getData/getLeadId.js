@@ -1,6 +1,4 @@
-const { base } = require('../../dbConnection');
-
-const getLeadId = ({ emailAddress }) => {
+const getLeadId = ({ base, emailAddress }) => {
   console.log('getting a lead');
   return new Promise((resolve, reject) => {
     base('leads')

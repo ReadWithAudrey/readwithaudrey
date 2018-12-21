@@ -1,10 +1,9 @@
 require('dotenv').config();
-const { base } = require('../../dbConnection');
 
 // Returns an array leads which have been in the DB for at least an hour.
 // If there are no pairs returns empty array.
 //  If error returns an object (which doesn't always have a status code)
-const getLeads = () => new Promise((resolve, reject) => {
+const getLeads = base => new Promise((resolve, reject) => {
   let allRecords = [];
   base('leads')
     .select({
