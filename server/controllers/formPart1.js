@@ -36,7 +36,7 @@ exports.post = (req, res) => {
     getBaseId(req.body.orgCode)
       .then((baseId) => {
         console.log(baseId);
-        if (baseId === null) {
+        if (!baseId) {
           res.end('No organisation with that code');
           return Promise.reject(
             new Error(

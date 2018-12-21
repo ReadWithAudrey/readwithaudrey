@@ -35,6 +35,13 @@ const postUser = (base1, user, res) => {
 exports.post = (req, res) => {
   console.log('form3 backend -----------', req.body);
   const user = req.body;
-  const base2 = base;
-  postUser(base2, user, res);
+  if (req.body.orgCode !== null) {
+    getBaseId(req.body.orgCode)
+      .then((baseId) => {
+        postUser(baseGeneral(baseId), user, res);
+      })
+      .catch(err => console.log(err));
+  } else {
+    postUser(base, user, res);
+  }
 };
