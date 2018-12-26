@@ -4,17 +4,18 @@ const { welcomeEmail, saveContact, moveContact } = require('../emails/welcomeEma
 const { getUserId } = require('../queries/getData/getUserId');
 const updateWelcomeEmailSentStatus = require('../queries/postData/updateWelcomeEmailSentStatus');
 const { checkUsersTable } = require('../queries/postData/postLead');
+const getBaseId = require('../queries/getData/getBaseId');
+const { base, baseGeneral } = require('../dbConnection');
 
-exports.post = (req, res) => {
-  const user = req.body;
-  checkUsersTable(user)
+const postUser = (base1, user, res) => {
+  checkUsersTable(base, user)
     .then(() => {
-      postNewUser(user)
-        .then(getLeadId)
-        .then(updateLeadAccStatus)
+      postNewUser(base1, user)
+        .then(base1, getLeadId)
+        .then(base1, updateLeadAccStatus)
         .then(() => welcomeEmail(user))
-        .then(() => getUserId(user.emailAddress))
-        .then(userId => updateWelcomeEmailSentStatus(userId))
+        .then(() => getUserId(base1, user.emailAddress))
+        .then(userId => updateWelcomeEmailSentStatus(base1, userId))
         .then(() => saveContact(user))
         .then(moveContact)
         .then(() => {
@@ -22,11 +23,25 @@ exports.post = (req, res) => {
           res.sendStatus(200);
         })
         .catch((err) => {
-          console.log(err.message);
+          console.log(err);
           res.end('server error');
         });
     })
     .catch((err) => {
       console.log(err);
     });
+};
+
+exports.post = (req, res) => {
+  console.log('form3 backend -----------', req.body);
+  const user = req.body;
+  if (req.body.orgCode !== null) {
+    getBaseId(req.body.orgCode)
+      .then((baseId) => {
+        postUser(baseGeneral(baseId), user, res);
+      })
+      .catch(err => console.log(err));
+  } else {
+    postUser(base, user, res);
+  }
 };

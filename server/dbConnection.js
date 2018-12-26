@@ -6,6 +6,9 @@ Airtable.configure({
   apiKey: process.env.AIRTABLE_API_KEY,
 });
 
-const base = Airtable.base(process.env.AIRTABLE_BASE);
+const baseGeneral = BaseId => Airtable.base(BaseId);
 
-module.exports = base;
+const base = baseGeneral(process.env.AIRTABLE_BASE);
+const baseAdmin = baseGeneral(process.env.AIRTABLE_BASE_ADMIN);
+
+module.exports = { base, baseAdmin, baseGeneral };

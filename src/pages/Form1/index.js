@@ -11,6 +11,7 @@ import {
   Layout,
   StatusBar,
   TextBox,
+  RadioButton,
   FormSection,
   ErrorSpan,
 } from '../../components/'
@@ -21,18 +22,24 @@ class Form1 extends React.Component {
     errorMessage: '',
   }
   handleSubmit = event => {
-    const { firstName, secondName, emailAddress } = this.props.value
+    const { firstName, secondName, emailAddress, orgCode } = this.props.value
     const backendURL =
       process.env.NODE_ENV === 'development'
         ? 'http://localhost:5000'
-        : 'https://readwithaudrey.herokuapp.com'
+        : 'https://readwithaudrey-staging.herokuapp.com'
+
     event.preventDefault()
     axios
-      .post(`${backendURL}/formPart1`, {
-        firstName,
-        secondName,
-        emailAddress,
-      })
+      .post(
+        `${backendURL}/formPart1`,
+        {
+          firstName,
+          secondName,
+          emailAddress,
+          orgCode,
+        },
+        { withCredentials: true }
+      )
       .then(res => {
         if (res.data === 'email exists') {
           this.setState({
@@ -46,13 +53,28 @@ class Form1 extends React.Component {
             errorMessage:
               'Sorry, a server error has occured. Please try again.',
           })
+        } else if (res.data === 'No organisation with that code') {
+          this.setState({
+            error: true,
+            errorMessage:
+              'Sorry, an organisation with that code has not been found. Please contact your organisation ambassador or sign up as a general user',
+          })
         } else {
           navigate('/Form2/')
         }
       })
   }
   render() {
-    const { firstName, secondName, emailAddress, updateForm } = this.props.value
+    const {
+      firstName,
+      secondName,
+      emailAddress,
+      updateForm,
+      orgTipsBox,
+      orgCode,
+      withAnOrg,
+      showOrgTips,
+    } = this.props.value
     const {
       heading,
       description,
@@ -104,6 +126,45 @@ class Form1 extends React.Component {
               required="true"
             />
             <TextBox>{finalText}</TextBox>
+            <Label className="pt4">
+              Are you joining as part of an organisation?
+            </Label>
+            <RadioButton name="withAnOrg" onChange={updateForm}>
+              No
+            </RadioButton>
+            <RadioButton name="withAnOrg" onChange={updateForm}>
+              Yes
+            </RadioButton>
+            <a
+              onClick={showOrgTips}
+              className="flex justify-center underline mb2"
+            >
+              (What does joining with an organisation mean?)
+            </a>
+            {orgTipsBox && (
+              <TextBox className="f">
+                When joining Audrey, you have the choice of joining the general
+                Audrey community, or joining with an organisation or another
+                group to start to build your own smaller community. If you are
+                with a community and do not know your code, please contact your
+                ambassador. If you would like to set up your own community,
+                please click the Get Invloved link at the bottom of the page and
+                sign up. Thanks!
+              </TextBox>
+            )}
+            {withAnOrg === 'Yes' && (
+              <React.Fragment>
+                <Label>Please input the organisation code below</Label>
+                <InputBox
+                  placeholder="e.g. 000000"
+                  onChange={updateForm}
+                  name="orgCode"
+                  value={orgCode}
+                  type="number"
+                  required="true"
+                />
+              </React.Fragment>
+            )}
             <Button style="register">Continue</Button>
           </form>
         </FormSection>

@@ -1,24 +1,23 @@
 require('dotenv').config();
+const { baseAdmin } = require('../../dbConnection');
 
 // Returns an array of pairs. If there are no pairs returns empty array. If error returns an object (which doesn't always have a status code)
-const getNewPairs = base => new Promise((resolve, reject) => {
+const getAmbassadors = () => new Promise((resolve, reject) => {
   let allRecords = [];
-  base('pairings')
+  baseAdmin('ambassadors')
     .select({
-      filterByFormula:
-          'AND({user1_id}, {user2_id}, {reader}, {book_id},{confirm_pairing}, NOT({pairing_email_sent}))',
+      filterByFormula: 'AND({code}, {base_id}, {approved})',
       fields: [
-        'user1_name',
-        'user1_email',
-        'user1_bio',
-        'user2_name',
-        'user2_email',
-        'user2_bio',
-        'book_name',
-        'book_author',
-        'book_attachments',
-        'book_bio',
-        'reader',
+        'code',
+        'base_id',
+        'contact_first_name',
+        'contact_surname',
+        'contact_email',
+        'organisation',
+        'other_info',
+        'audrey_email',
+        'approved',
+        'email_sent',
       ],
     })
     .eachPage(
@@ -40,4 +39,16 @@ const getNewPairs = base => new Promise((resolve, reject) => {
     );
 });
 
-module.exports = getNewPairs;
+const getBaseId = code => getAmbassadors().then((ambassadors) => {
+  let baseId = null;
+  ambassadors.forEach((ambassador) => {
+    if (ambassador.fields.code == code) {
+      baseId = ambassador.fields.base_id;
+    }
+  });
+  return baseId;
+});
+
+// getBaseId(100100).then(id => console.log(id));
+
+module.exports = getBaseId;

@@ -28,18 +28,18 @@ const sendFeedbackEmail = (pair) => {
           },
           bcc: [
             {
-              email: 'readwithaudrey.data@gmail.com',
+              email: process.env.EMAIL,
               name: 'Audrey',
             },
           ],
         },
       ],
       from: {
-        email: 'readwithaudrey.data@gmail.com',
+        email: process.env.EMAIL,
         name: 'Audrey',
       },
       reply_to: {
-        email: 'readwithaudrey.data@gmail.com',
+        email: process.env.EMAIL,
         name: 'Audrey',
       },
       template_id: 'd-9eb1e4ed81794e12a3d2c4a1b7ce6302',

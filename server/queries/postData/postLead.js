@@ -1,7 +1,6 @@
 require('dotenv').config();
-const base = require('../../dbConnection');
 
-const checkUsersTable = lead => new Promise((resolve, reject) => {
+const checkUsersTable = (base, lead) => new Promise((resolve, reject) => {
   base('users')
     .select({
       maxRecords: 1,
@@ -10,18 +9,16 @@ const checkUsersTable = lead => new Promise((resolve, reject) => {
     })
     .firstPage((err, records) => {
       if (err) {
-        reject(new Error('Server Error'));
+        reject(new Error('error checking the users table: ', err));
       } else if (records.length > 0) {
-        console.log('email address already exists');
         resolve(false);
       } else {
-        console.log('email address does not exist');
         resolve(true);
       }
     });
 });
 
-const checkLeadTable = lead => new Promise((resolve, reject) => {
+const checkLeadTable = (base, lead) => new Promise((resolve, reject) => {
   base('leads')
     .select({
       maxRecords: 1,
@@ -39,7 +36,7 @@ const checkLeadTable = lead => new Promise((resolve, reject) => {
     });
 });
 
-const createLead = lead => new Promise((resolve, reject) => {
+const createLead = (base, lead) => new Promise((resolve, reject) => {
   base('leads').create(
     {
       first_name: lead.firstName,

@@ -26,18 +26,18 @@ const sendLeadEmail = (lead) => {
           },
           bcc: [
             {
-              email: 'readwithaudrey.data@gmail.com',
+              email: process.env.EMAIL,
               name: 'Audrey',
             },
           ],
         },
       ],
       from: {
-        email: 'readwithaudrey.data@gmail.com',
+        email: process.env.EMAIL,
         name: 'Audrey',
       },
       reply_to: {
-        email: 'readwithaudrey.data@gmail.com',
+        email: process.env.EMAIL,
         name: 'Audrey',
       },
       template_id: 'd-0fa6f8c4980341dda5bc4173b5378d92',
