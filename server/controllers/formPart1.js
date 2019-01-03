@@ -1,5 +1,5 @@
 const { checkLeadTable, checkUsersTable, createLead } = require('../queries/postData/postLead');
-const getBaseId = require('../queries/getData/getBaseId');
+const { getBaseId } = require('../queries/getData/getBaseId');
 const { base, baseGeneral } = require('../dbConnection');
 
 const checkForAndAddLead = (base1, lead, res) => {

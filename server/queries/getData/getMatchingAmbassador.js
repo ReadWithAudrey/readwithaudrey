@@ -51,4 +51,4 @@ const getBaseId = code => getAmbassadors().then((ambassadors) => {
 
 // getBaseId(100100).then(id => console.log(id));
 
-module.exports = getBaseId;
+module.exports = { getBaseId, getAmbassadors };

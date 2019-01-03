@@ -11,14 +11,14 @@ const app = express();
 app.set('PORT', process.env.PORT || 5000);
 
 setInterval(() => {
-  pairingEmail(base);
-  leadEmail(base);
-  sendFeedbackEmails(base);
+  pairingEmail(base, process.env.EMAIL);
+  leadEmail(base, process.env.EMAIL);
+  sendFeedbackEmails(base, process.env.EMAIL);
 }, 1000 * 10);
 
 // Enable CORS
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', process.env.FRONTEND_SERVER);
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
   res.header('Access-Control-Allow-Credentials', true);
   res.header('Access-Control-Allow-Headers', 'Content-Type');
