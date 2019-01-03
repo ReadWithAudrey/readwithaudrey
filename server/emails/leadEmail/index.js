@@ -8,9 +8,9 @@ const sendLeadEmails = (base) => {
       if (leads.length > 0) {
         leads.forEach((lead) => {
           sendLeadEmail(lead)
-            .then(() => updateLeadEmailSent(base, lead))
+            .then(() => updateLeadEmailSent(base, lead.id))
             .then(res => console.log('success', res))
-            .catch(e => console.log('Error in the lead email:', e));
+            .catch(err => console.log('Error in the lead email:', err));
         });
       }
     })
