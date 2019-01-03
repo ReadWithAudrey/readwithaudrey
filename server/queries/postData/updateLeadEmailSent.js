@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const updateLeadEmailSent = (base, id) => {
+const updateLeadEmailSent = ({ base, id }) => {
   console.log('Updating sent status');
   return new Promise((resolve, reject) => {
     base('leads').update(
