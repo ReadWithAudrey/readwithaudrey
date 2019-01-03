@@ -1,9 +1,8 @@
 /* eslint-disable camelcase */
-require('dotenv').config();
 const axios = require('axios');
 
 // Send lead email
-const sendFeedbackEmail = (pair) => {
+const sendFeedbackEmail = (pair, ambassadorEmail) => {
   console.log('sending feedback email');
   const { id } = pair;
   const {
@@ -28,18 +27,18 @@ const sendFeedbackEmail = (pair) => {
           },
           bcc: [
             {
-              email: process.env.EMAIL,
+              email: ambassadorEmail,
               name: 'Audrey',
             },
           ],
         },
       ],
       from: {
-        email: process.env.EMAIL,
+        email: ambassadorEmail,
         name: 'Audrey',
       },
       reply_to: {
-        email: process.env.EMAIL,
+        email: ambassadorEmail,
         name: 'Audrey',
       },
       template_id: 'd-9eb1e4ed81794e12a3d2c4a1b7ce6302',

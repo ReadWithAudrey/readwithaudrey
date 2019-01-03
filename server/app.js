@@ -11,9 +11,9 @@ const app = express();
 app.set('PORT', process.env.PORT || 5000);
 
 setInterval(() => {
-  pairingEmail(base);
-  leadEmail(base);
-  sendFeedbackEmails(base);
+  pairingEmail(base, process.env.EMAIL);
+  leadEmail(base, process.env.EMAIL);
+  sendFeedbackEmails(base, process.env.EMAIL);
 }, 1000 * 10);
 
 // Enable CORS

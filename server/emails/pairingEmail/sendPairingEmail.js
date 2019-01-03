@@ -1,5 +1,4 @@
 /* eslint-disable camelcase */
-require('dotenv').config();
 const axios = require('axios');
 
 // Download attachments as required by SendGrid
@@ -56,7 +55,7 @@ const whoReads = (pair) => {
   return `Can I suggest ${reads} kicks off as the reader for the first chapter. Perhaps you can then have a chat about the reader/listener arrangement you’re both comfortable with. You could continue in the same way, or you could take turns as the reader and listener alternating between chapters.`;
 };
 
-const sendPairingEmail = (pair, attachments) => {
+const sendPairingEmail = (pair, attachments, ambassadorEmail) => {
   console.log('sending pairing email');
   const { id } = pair;
   const { user1_name, user1_email, user1_bio } = pair.fields;
@@ -96,18 +95,18 @@ const sendPairingEmail = (pair, attachments) => {
           },
           bcc: [
             {
-              email: process.env.EMAIL,
+              email: ambassadorEmail,
               name: 'Audrey',
             },
           ],
         },
       ],
       from: {
-        email: process.env.EMAIL,
+        email: ambassadorEmail,
         name: 'Audrey',
       },
       reply_to: {
-        email: process.env.EMAIL,
+        email: ambassadorEmail,
         name: 'Audrey',
       },
       template_id: 'd-74d18868e6d84290860df912d769464d',

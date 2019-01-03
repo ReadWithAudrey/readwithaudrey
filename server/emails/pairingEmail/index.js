@@ -9,14 +9,14 @@ const {
   sendPairingEmail,
 } = require('./sendPairingEmail');
 
-const sendAllPairingEmails = (base) => {
+const sendAllPairingEmails = (base, ambassadorEmail) => {
   getNewPairs(base)
     .then((pairs) => {
       pairs.forEach((pair) => {
         downloadAttachments(pair)
           .then(formatAttachments)
           .then(formatedAtt => orgAttachments(pair, formatedAtt))
-          .then(orgAtt => sendPairingEmail(pair, orgAtt))
+          .then(orgAtt => sendPairingEmail(pair, orgAtt, ambassadorEmail))
           .then(() => updatePairingEmailStatus(base, pair.id))
           .then(() => getUserIdsOfPair(base, pair).then(userIds => userIds.forEach(userId => updateUsersPairStatus(base, userId))))
           .then(() => console.log('Success email sent'))
