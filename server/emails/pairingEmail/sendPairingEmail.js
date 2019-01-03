@@ -96,18 +96,18 @@ const sendPairingEmail = (pair, attachments) => {
           },
           bcc: [
             {
-              email: process.env.EMAIL,
+              email: 'readwithaudrey.data@gmail.com',
               name: 'Audrey',
             },
           ],
         },
       ],
       from: {
-        email: process.env.EMAIL,
+        email: 'readwithaudrey.data@gmail.com',
         name: 'Audrey',
       },
       reply_to: {
-        email: process.env.EMAIL,
+        email: 'readwithaudrey.data@gmail.com',
         name: 'Audrey',
       },
       template_id: 'd-74d18868e6d84290860df912d769464d',

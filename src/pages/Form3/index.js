@@ -25,7 +25,6 @@ class Form3 extends React.Component {
       firstName,
       secondName,
       emailAddress,
-      orgCode,
       gender,
       age,
       readlisten,
@@ -37,26 +36,21 @@ class Form3 extends React.Component {
     const backendURL =
       process.env.NODE_ENV === 'development'
         ? 'http://localhost:5000'
-        : 'https://readwithaudrey-staging.herokuapp.com'
+        : 'https://readwithaudrey.herokuapp.com'
     event.preventDefault()
     axios
-      .post(
-        `${backendURL}/formPart3`,
-        {
-          firstName,
-          secondName,
-          emailAddress,
-          orgCode,
-          gender,
-          timezone,
-          age,
-          readlisten,
-          booktype,
-          story,
-          specialRequests,
-        },
-        { withCredentials: true }
-      )
+      .post(`${backendURL}/formPart3`, {
+        firstName,
+        secondName,
+        emailAddress,
+        gender,
+        timezone,
+        age,
+        readlisten,
+        booktype,
+        story,
+        specialRequests,
+      })
       .then(res => {
         if (res.data === 'server error') {
           this.setState({
