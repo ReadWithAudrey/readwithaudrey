@@ -1,5 +1,5 @@
 const { checkLeadTable, checkUsersTable, createLead } = require('../queries/postData/postLead');
-const { getBaseId } = require('../queries/getData/getBaseId');
+const { getAmbassadorInfo } = require('../queries/getData/getAmbassadorInfo');
 const { base, baseGeneral } = require('../dbConnection');
 
 const checkForAndAddLead = (base1, lead, res) => {
@@ -33,10 +33,10 @@ exports.post = (req, res) => {
   const lead = req.body;
   if (req.body.orgCode !== null) {
     console.log('got a code');
-    getBaseId(req.body.orgCode)
-      .then((baseId) => {
-        console.log(baseId);
-        if (!baseId) {
+    getAmbassadorInfo(req.body.orgCode)
+      .then((ambassadorInfo) => {
+        console.log(ambassadorInfo.baseId);
+        if (!ambassadorInfo.baseId) {
           res.end('No organisation with that code');
           return Promise.reject(
             new Error(
@@ -44,7 +44,7 @@ exports.post = (req, res) => {
             ),
           );
         }
-        const base1 = baseGeneral(baseId);
+        const base1 = baseGeneral(ambassadorInfo.baseId);
         checkForAndAddLead(base1, lead, res);
       })
       .catch((err) => {

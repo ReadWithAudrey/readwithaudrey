@@ -39,16 +39,18 @@ const getAmbassadors = () => new Promise((resolve, reject) => {
     );
 });
 
-const getBaseId = code => getAmbassadors().then((ambassadors) => {
+const getAmbassadorInfo = code => getAmbassadors().then((ambassadors) => {
   let baseId = null;
+  let audreyEmail = null;
   ambassadors.forEach((ambassador) => {
     if (ambassador.fields.code == code) {
       baseId = ambassador.fields.base_id;
+      audreyEmail = ambassador.fields.audrey_email;
     }
   });
-  return baseId;
+  return { baseId, audreyEmail };
 });
 
 // getBaseId(100100).then(id => console.log(id));
 
-module.exports = { getBaseId, getAmbassadors };
+module.exports = { getAmbassadorInfo };

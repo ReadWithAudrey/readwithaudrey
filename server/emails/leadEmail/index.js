@@ -10,7 +10,7 @@ const sendLeadEmails = (base, ambassadorEmail) => {
           sendLeadEmail(lead, ambassadorEmail)
             .then(() => updateLeadEmailSent(base, lead.id))
             .then(res => console.log('success', res))
-            .catch(err => console.log('Error in the lead email:', err));
+            .catch(e => console.log('Error in the lead email:', e));
         });
       }
     })

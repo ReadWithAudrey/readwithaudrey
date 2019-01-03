@@ -5,7 +5,7 @@ const { welcomeEmail, saveContact, moveContact } = require('../emails/welcomeEma
 const { getUserId } = require('../queries/getData/getUserId');
 const updateWelcomeEmailSentStatus = require('../queries/postData/updateWelcomeEmailSentStatus');
 const { checkUsersTable } = require('../queries/postData/postLead');
-const { getBaseId } = require('../queries/getData/getBaseId');
+const { getAmbassadorInfo } = require('../queries/getData/getAmbassadorInfo');
 const { base, baseGeneral } = require('../dbConnection');
 
 const postUser = (base1, user, res, ambassadorEmail) => {
@@ -38,9 +38,10 @@ exports.post = (req, res) => {
   console.log('form3 backend -----------', process.env.EMAIL);
   const user = req.body;
   if (req.body.orgCode !== null) {
-    getBaseId(req.body.orgCode)
-      .then((baseId) => {
-        postUser(baseGeneral(baseId), user, res, process.env.EMAIL);
+    getAmbassadorInfo(req.body.orgCode)
+      .then((ambassadorInfo) => {
+        console.log('im the ambassadorInfo>>>>>>>>>>>>>>>>>', ambassadorInfo);
+        postUser(baseGeneral(ambassadorInfo.baseId), user, res, ambassadorInfo.audreyEmail);
       })
       .catch(err => console.log('Error in Form 3: ', err));
   } else {
