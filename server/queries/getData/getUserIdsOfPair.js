@@ -1,4 +1,6 @@
-const getUserIdsOfPair = (base, pair) => new Promise((resolve, reject) => {
+const base = require('../../dbConnection');
+
+const getUserIdsOfPair = pair => new Promise((resolve, reject) => {
   const { user1_email, user2_email } = pair.fields;
   base('users')
     .select({

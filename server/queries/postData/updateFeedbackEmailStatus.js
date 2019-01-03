@@ -1,6 +1,7 @@
 require('dotenv').config();
+const base = require('../../dbConnection');
 
-const updateFeedbackEmailStatus = (base, id) => {
+const updateFeedbackEmailStatus = (id) => {
   console.log('Updating sent status');
   return new Promise((resolve, reject) => {
     base('pairings').update(

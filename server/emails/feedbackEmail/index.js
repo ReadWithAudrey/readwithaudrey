@@ -2,12 +2,12 @@ const { getRecentPairings } = require('../../queries/getData');
 const sendFeedbackEmail = require('./sendFeedbackEmail');
 const { updateFeedbackEmailStatus } = require('../../queries/postData');
 
-const sendFeedbackEmails = (base) => {
-  getRecentPairings(base)
+const sendFeedbackEmails = () => {
+  getRecentPairings()
     .then((pairs) => {
       pairs.forEach((pair) => {
         Promise.all(sendFeedbackEmail(pair))
-          .then(() => updateFeedbackEmailStatus(base, pair.id))
+          .then(() => updateFeedbackEmailStatus(pair.id))
           .then(() => console.log('feedback email sent'))
           .catch(e => console.log(e.message));
       });

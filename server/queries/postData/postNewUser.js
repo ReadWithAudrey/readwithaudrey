@@ -1,4 +1,6 @@
-const postNewUser = (base, user) => {
+const base = require('../../dbConnection');
+
+const postNewUser = (user) => {
   console.log('Posting new user');
   return new Promise((resolve, reject) => {
     base('users').create(

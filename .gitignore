@@ -9,5 +9,3 @@ coverage
 .DS_Store
 npm-debug.log
 .env
-.env.development
-.env.production

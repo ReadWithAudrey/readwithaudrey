@@ -1,6 +1,7 @@
 require('dotenv').config();
+const base = require('../../dbConnection');
 
-const updateLeadAccStatus = (base, id) => {
+const updateLeadAccStatus = (id) => {
   console.log('Updating lead account status');
   return new Promise((resolve, reject) => {
     base('leads').update(

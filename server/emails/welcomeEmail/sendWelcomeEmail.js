@@ -23,18 +23,18 @@ const sendWelcomeEmail = (user) => {
           },
           bcc: [
             {
-              email: process.env.EMAIL,
+              email: 'readwithaudrey.data@gmail.com',
               name: 'Audrey',
             },
           ],
         },
       ],
       from: {
-        email: process.env.EMAIL,
+        email: 'readwithaudrey.data@gmail.com',
         name: 'Audrey',
       },
       reply_to: {
-        email: process.env.EMAIL,
+        email: 'readwithaudrey.data@gmail.com',
         name: 'Audrey',
       },
       template_id: 'd-203eb51da4104414b16353aca6e54689',
