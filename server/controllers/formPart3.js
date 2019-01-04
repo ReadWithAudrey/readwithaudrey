@@ -14,8 +14,8 @@ const postUser = (user, res, ambassadorFields) => {
   checkUsersTable(base, user)
     .then(() => {
       postNewUser(base1, user)
-        .then(base1, getLeadId)
-        .then(base1, updateLeadAccStatus)
+        .then(() => getLeadId(base1, user.emailAddress))
+        .then(LeadId => updateLeadAccStatus(base1, LeadId))
         .then(() => welcomeEmail(user, ambassadorFields))
         .then(() => getUserId(base1, user.emailAddress))
         .then(userId => updateWelcomeEmailSentStatus(base1, userId))
@@ -46,7 +46,11 @@ exports.post = (req, res) => {
       })
       .catch(err => console.log('Error in Form 3: ', err));
   } else {
-    const email = { audrey_email: process.env.EMAIL };
-    postUser(base, user, res, email);
+    const audreyGeneral = {
+      base_id: process.env.AIRTABLE_BASE,
+      audrey_email: process.env.EMAIL,
+      organisation: 'General',
+    };
+    postUser(user, res, audreyGeneral);
   }
 };
