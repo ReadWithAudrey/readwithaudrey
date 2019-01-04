@@ -24,7 +24,7 @@ const sendWelcomeEmail = (user, ambassadorFields) => {
           bcc: [
             {
               email: ambassadorFields.audrey_email,
-              name: 'Audrey',
+              name: `Audrey - ${ambassadorFields.organisation}`,
             },
           ],
         },
@@ -35,7 +35,7 @@ const sendWelcomeEmail = (user, ambassadorFields) => {
       },
       reply_to: {
         email: ambassadorFields.audrey_email,
-        name: 'Audrey',
+        name: `Audrey - ${ambassadorFields.organisation}`,
       },
       template_id: 'd-203eb51da4104414b16353aca6e54689',
     },

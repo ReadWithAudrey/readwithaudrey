@@ -2,7 +2,7 @@
 const axios = require('axios');
 
 // Send lead email
-const sendLeadEmail = (lead, ambassadorEmail) => {
+const sendLeadEmail = (lead, ambassadorFields) => {
   console.log('sending lead email');
   const { id } = lead;
   const { first_name, surname, email } = lead.fields;
@@ -25,19 +25,19 @@ const sendLeadEmail = (lead, ambassadorEmail) => {
           },
           bcc: [
             {
-              email: ambassadorEmail,
-              name: 'Audrey',
+              email: ambassadorFields.audrey_email,
+              name: `Audrey - ${ambassadorFields.organisation}`,
             },
           ],
         },
       ],
       from: {
-        email: ambassadorEmail,
-        name: 'Audrey',
+        email: ambassadorFields.audrey_email,
+        name: `Audrey - ${ambassadorFields.organisation}`,
       },
       reply_to: {
-        email: ambassadorEmail,
-        name: 'Audrey',
+        email: ambassadorFields.audrey_email,
+        name: `Audrey - ${ambassadorFields.organisation}`,
       },
       template_id: 'd-0fa6f8c4980341dda5bc4173b5378d92',
     },

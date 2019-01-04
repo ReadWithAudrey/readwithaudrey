@@ -1,13 +1,16 @@
 const { getLeads } = require('../../queries/getData');
 const { updateLeadEmailSent } = require('../../queries/postData');
 const { sendLeadEmail } = require('./sendLeadEmail');
+const { baseGeneral } = require('../../dbConnection');
 
-const sendLeadEmails = (base, ambassadorEmail) => {
+const sendLeadEmails = (ambassadorFields) => {
+  const base = baseGeneral(ambassadorFields.base_id);
+
   getLeads(base)
     .then((leads) => {
       if (leads.length > 0) {
         leads.forEach((lead) => {
-          sendLeadEmail(lead, ambassadorEmail)
+          sendLeadEmail(lead, ambassadorFields)
             .then(() => {
               updateLeadEmailSent(base, lead.id);
             })
