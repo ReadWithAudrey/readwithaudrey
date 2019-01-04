@@ -8,14 +8,15 @@ const { checkUsersTable } = require('../queries/postData/postLead');
 const { getAmbassadorInfo } = require('../queries/getData/getAmbassadorInfo');
 const { base, baseGeneral } = require('../dbConnection');
 
-const postUser = (base1, user, res, ambassadorEmail) => {
-  console.log('im in post user, this is the ambassador email:', ambassadorEmail);
+const postUser = (user, res, ambassadorFields) => {
+  console.log('im in post user, this is the ambassador fields:', ambassadorFields);
+  const base1 = baseGeneral(ambassadorFields.base_id);
   checkUsersTable(base, user)
     .then(() => {
       postNewUser(base1, user)
         .then(base1, getLeadId)
         .then(base1, updateLeadAccStatus)
-        .then(() => welcomeEmail(user, ambassadorEmail))
+        .then(() => welcomeEmail(user, ambassadorFields))
         .then(() => getUserId(base1, user.emailAddress))
         .then(userId => updateWelcomeEmailSentStatus(base1, userId))
         .then(() => saveContact(user))
@@ -39,12 +40,13 @@ exports.post = (req, res) => {
   const user = req.body;
   if (req.body.orgCode !== null) {
     getAmbassadorInfo(req.body.orgCode)
-      .then((ambassadorInfo) => {
-        console.log('im the ambassadorInfo>>>>>>>>>>>>>>>>>', ambassadorInfo);
-        postUser(baseGeneral(ambassadorInfo.baseId), user, res, ambassadorInfo.audreyEmail);
+      .then((ambassadorFields) => {
+        console.log('im the ambassadorInfo>>>>>>>>>>>>>>>>>', ambassadorFields);
+        postUser(user, res, ambassadorFields);
       })
       .catch(err => console.log('Error in Form 3: ', err));
   } else {
-    postUser(base, user, res, process.env.EMAIL);
+    const email = { audrey_email: process.env.EMAIL };
+    postUser(base, user, res, email);
   }
 };
