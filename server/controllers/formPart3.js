@@ -46,7 +46,11 @@ exports.post = (req, res) => {
       })
       .catch(err => console.log('Error in Form 3: ', err));
   } else {
-    const email = { audrey_email: process.env.EMAIL };
-    postUser(base, user, res, email);
+    const audreyGeneral = {
+      base_id: process.env.AIRTABLE_BASE,
+      audrey_email: process.env.EMAIL,
+      organisation: 'General',
+    };
+    postUser(user, res, audreyGeneral);
   }
 };
