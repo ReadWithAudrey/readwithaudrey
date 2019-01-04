@@ -14,8 +14,8 @@ const postUser = (user, res, ambassadorFields) => {
   checkUsersTable(base, user)
     .then(() => {
       postNewUser(base1, user)
-        .then(base1, getLeadId)
-        .then(base1, updateLeadAccStatus)
+        .then(() => getLeadId(base1, user.emailAddress))
+        .then(LeadId => updateLeadAccStatus(base1, LeadId))
         .then(() => welcomeEmail(user, ambassadorFields))
         .then(() => getUserId(base1, user.emailAddress))
         .then(userId => updateWelcomeEmailSentStatus(base1, userId))
