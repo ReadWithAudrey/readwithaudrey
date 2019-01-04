@@ -20,10 +20,10 @@ const sendAllPairingEmails = (base, ambassadorEmail) => {
           .then(() => updatePairingEmailStatus(base, pair.id))
           .then(() => getUserIdsOfPair(base, pair).then(userIds => userIds.forEach(userId => updateUsersPairStatus(base, userId))))
           .then(() => console.log('Success email sent'))
-          .catch(e => console.log('A pair has raised an error', e));
+          .catch(e => console.log('A pair has raised an error', e.message));
       });
     })
-    .catch(e => console.log('getting pairs has raised an error', e));
+    .catch(e => console.log('getting pairs has raised an error', e.message));
 };
 
 module.exports = sendAllPairingEmails;

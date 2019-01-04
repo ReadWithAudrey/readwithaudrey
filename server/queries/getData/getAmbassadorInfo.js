@@ -6,7 +6,7 @@ const getAmbassadors = () => new Promise((resolve, reject) => {
   let allRecords = [];
   baseAdmin('ambassadors')
     .select({
-      filterByFormula: 'AND({code}, {base_id}, {approved})',
+      filterByFormula: 'AND({code}, {base_id}, {audrey_email}, {approved})',
       fields: [
         'code',
         'base_id',
@@ -53,4 +53,4 @@ const getAmbassadorInfo = code => getAmbassadors().then((ambassadors) => {
 
 // getBaseId(100100).then(id => console.log(id));
 
-module.exports = { getAmbassadorInfo };
+module.exports = { getAmbassadorInfo, getAmbassadors };

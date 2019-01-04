@@ -8,13 +8,15 @@ const sendLeadEmails = (base, ambassadorEmail) => {
       if (leads.length > 0) {
         leads.forEach((lead) => {
           sendLeadEmail(lead, ambassadorEmail)
-            .then(() => updateLeadEmailSent(base, lead.id))
-            .then(res => console.log('success', res))
-            .catch(e => console.log('Error in the lead email:', e));
+            .then(() => {
+              updateLeadEmailSent(base, lead.id);
+            })
+            .then(() => console.log('success sending the lead email and updating the status'))
+            .catch(e => console.log('Error in the lead email:', e.message));
         });
       }
     })
-    .catch(console.log);
+    .catch(err => console.log(err.message));
 };
 
 module.exports = sendLeadEmails;
