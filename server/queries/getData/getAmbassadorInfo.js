@@ -40,15 +40,13 @@ const getAmbassadors = () => new Promise((resolve, reject) => {
 });
 
 const getAmbassadorInfo = code => getAmbassadors().then((ambassadors) => {
-  let baseId = null;
-  let audreyEmail = null;
+  let ambassadorFields = null;
   ambassadors.forEach((ambassador) => {
     if (ambassador.fields.code == code) {
-      baseId = ambassador.fields.base_id;
-      audreyEmail = ambassador.fields.audrey_email;
+      ambassadorFields = ambassador.fields;
     }
   });
-  return { baseId, audreyEmail };
+  return ambassadorFields;
 });
 
 // getBaseId(100100).then(id => console.log(id));

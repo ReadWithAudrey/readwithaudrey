@@ -16,8 +16,8 @@ const formatAttachments = (booksData) => {
       bookData => new Promise((resolve, reject) => {
         try {
           resolve(Buffer.from(bookData.data, 'binary').toString('base64'));
-        } catch (e) {
-          reject(e);
+        } catch (err) {
+          reject(err);
         }
       }),
     ),
@@ -36,8 +36,8 @@ const orgAttachments = (pair, attachArr) => new Promise((resolve, reject) => {
       filename: book.filename,
     }));
     resolve(attachments);
-  } catch (e) {
-    reject(e);
+  } catch (err) {
+    reject(err);
   }
 });
 
@@ -55,7 +55,7 @@ const whoReads = (pair) => {
   return `Can I suggest ${reads} kicks off as the reader for the first chapter. Perhaps you can then have a chat about the reader/listener arrangement you’re both comfortable with. You could continue in the same way, or you could take turns as the reader and listener alternating between chapters.`;
 };
 
-const sendPairingEmail = (pair, attachments, ambassadorEmail) => {
+const sendPairingEmail = (pair, attachments, ambassadorFields) => {
   console.log('sending pairing email');
   const { id } = pair;
   const { user1_name, user1_email, user1_bio } = pair.fields;
@@ -95,19 +95,19 @@ const sendPairingEmail = (pair, attachments, ambassadorEmail) => {
           },
           bcc: [
             {
-              email: ambassadorEmail,
-              name: 'Audrey',
+              email: ambassadorFields.audrey_email,
+              name: `Audrey - ${ambassadorFields.organisation}`,
             },
           ],
         },
       ],
       from: {
-        email: ambassadorEmail,
-        name: 'Audrey',
+        email: ambassadorFields.audrey_email,
+        name: `Audrey - ${ambassadorFields.organisation}`,
       },
       reply_to: {
-        email: ambassadorEmail,
-        name: 'Audrey',
+        email: ambassadorFields.audrey_email,
+        name: `Audrey - ${ambassadorFields.organisation}`,
       },
       template_id: 'd-74d18868e6d84290860df912d769464d',
 

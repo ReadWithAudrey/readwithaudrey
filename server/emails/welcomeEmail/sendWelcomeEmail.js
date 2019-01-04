@@ -3,9 +3,9 @@ require('dotenv').config();
 const axios = require('axios');
 
 // Send lead email
-const sendWelcomeEmail = (user, ambassadorEmail) => {
+const sendWelcomeEmail = (user, ambassadorFields) => {
   const { firstName, emailAddress } = user;
-  console.log('sending welcome email from: ', ambassadorEmail, ' to ', emailAddress);
+  console.log('sending welcome email from: ', ambassadorFields.audrey_email, ' to ', emailAddress);
   return axios('https://sendgrid.com/v3/mail/send', {
     headers: { Authorization: `Bearer ${process.env.SENDGRID_API_KEY}` },
     method: 'POST',
@@ -23,19 +23,19 @@ const sendWelcomeEmail = (user, ambassadorEmail) => {
           },
           bcc: [
             {
-              email: ambassadorEmail,
-              name: 'Audrey',
+              email: ambassadorFields.audrey_email,
+              name: `Audrey - ${ambassadorFields.organisation}`,
             },
           ],
         },
       ],
       from: {
-        email: ambassadorEmail,
-        name: 'Audrey',
+        email: ambassadorFields.audrey_email,
+        name: `Audrey - ${ambassadorFields.organisation}`,
       },
       reply_to: {
-        email: ambassadorEmail,
-        name: 'Audrey',
+        email: ambassadorFields.audrey_email,
+        name: `Audrey - ${ambassadorFields.organisation}`,
       },
       template_id: 'd-203eb51da4104414b16353aca6e54689',
     },

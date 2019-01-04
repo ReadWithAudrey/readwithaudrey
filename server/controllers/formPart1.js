@@ -34,9 +34,8 @@ exports.post = (req, res) => {
   if (req.body.orgCode !== null) {
     console.log('got a code');
     getAmbassadorInfo(req.body.orgCode)
-      .then((ambassadorInfo) => {
-        console.log(ambassadorInfo.baseId);
-        if (!ambassadorInfo.baseId) {
+      .then((ambassadorFields) => {
+        if (!ambassadorFields) {
           res.end('No organisation with that code');
           return Promise.reject(
             new Error(
@@ -44,7 +43,7 @@ exports.post = (req, res) => {
             ),
           );
         }
-        const base1 = baseGeneral(ambassadorInfo.baseId);
+        const base1 = baseGeneral(ambassadorFields.base_id);
         checkForAndAddLead(base1, lead, res);
       })
       .catch((err) => {
