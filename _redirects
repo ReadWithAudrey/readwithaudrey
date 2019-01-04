@@ -1,3 +1,0 @@
-# Redirect domain aliases to primary domain
-http://readwithaudrey.co.uk/* http://readwithaudrey.com/:splat 301!
-http://www.readwithaudrey.co.uk/* http://readwithaudrey.com/:splat 301!
