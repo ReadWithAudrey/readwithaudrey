@@ -40,7 +40,7 @@ You’ll find the book on our specially designed reading platform where you will
 
 ### What happens if I've already read the book?
 
-When we send our email introducing you, we will provide a description of the reading to avoid you receiving anything you’ve already read. If the reading is one you’ve already read, please let us know and we will send you an alternative. We try our best to pick unusual books that we think you might not have come across before.
+When we send our email introducing you, we will provide a description of the reading to avoid you receiving anything you’ve already read. If the reading is one you’ve already read, please let us know and we will send you an alternative. 
 
 ### How can we get through a book when each reading lasts about 15 minutes?
 
