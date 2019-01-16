@@ -5,7 +5,6 @@ const base = require('../../dbConnection');
 // If there are no pairs returns empty array.
 //  If error returns an object (which doesn't always have a status code)
 const getLeads = () => {
-  console.log('Querying for new leads');
   return new Promise((resolve, reject) => {
     let allRecords = [];
     base('leads')
