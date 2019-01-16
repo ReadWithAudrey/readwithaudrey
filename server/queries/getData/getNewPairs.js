@@ -3,7 +3,6 @@ const base = require('../../dbConnection');
 
 // Returns an array of pairs. If there are no pairs returns empty array. If error returns an object (which doesn't always have a status code)
 const getNewPairs = () => {
-  console.log('Querying for new pairs');
   return new Promise((resolve, reject) => {
     let allRecords = [];
     base('pairings')
