@@ -19,8 +19,12 @@ class Form1 extends React.Component {
   state = {
     error: false,
     errorMessage: '',
+    button: 'register',
   }
   handleSubmit = event => {
+    this.setState({
+      button: 'disabled',
+    })
     const { firstName, secondName, emailAddress } = this.props.value
     const backendURL =
       process.env.NODE_ENV === 'development'
@@ -50,6 +54,18 @@ class Form1 extends React.Component {
           navigate('/Form2/')
         }
       })
+      .then(() => {
+        this.setState({
+          button: 'register',
+        })
+      })
+  }
+  button = () => {
+    if (this.state.button === 'disabled') {
+      return <Button style="disabled">Continue</Button>
+    } else {
+      return <Button style="register">Continue</Button>
+    }
   }
   render() {
     const { firstName, secondName, emailAddress, updateForm } = this.props.value
@@ -104,7 +120,7 @@ class Form1 extends React.Component {
               required="true"
             />
             <TextBox>{finalText}</TextBox>
-            <Button style="register">Continue</Button>
+            {this.button()}
           </form>
         </FormSection>
       </Layout>

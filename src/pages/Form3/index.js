@@ -19,8 +19,12 @@ class Form3 extends React.Component {
   state = {
     error: false,
     errorMessage: '',
+    button: 'register',
   }
   handleSubmit = event => {
+    this.setState({
+      button: 'disabled',
+    })
     const {
       firstName,
       secondName,
@@ -62,6 +66,18 @@ class Form3 extends React.Component {
           navigate('/thankyou/')
         }
       })
+      .then(() => {
+        this.setState({
+          button: 'register',
+        })
+      })
+  }
+  button = () => {
+    if (this.state.button === 'disabled') {
+      return <Button style="disabled">Continue</Button>
+    } else {
+      return <Button style="register">Continue</Button>
+    }
   }
   render() {
     const {
@@ -116,7 +132,7 @@ class Form3 extends React.Component {
               name="specialRequests"
               value={specialRequests}
             />
-            <Button style="register">Submit</Button>
+            {this.button()}
           </form>
         </FormSection>
       </Layout>

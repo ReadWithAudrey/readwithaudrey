@@ -31,3 +31,17 @@ export const RegisterButton = styled.button.attrs({
     color: #fff;
   }
 `
+
+export const DisabledButton = styled.button.attrs({
+  className: 'bg-pink hover-bg-green white pa2 br2 h3 f3 center',
+})`
+  border: none;
+  display: block;
+  white-space: nowrap;
+  min-width: 200px;
+  max-width: 300px;
+  cursor: pointer;
+  a {
+    color: #fff;
+  }
+`
