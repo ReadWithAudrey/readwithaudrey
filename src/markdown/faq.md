@@ -2,9 +2,8 @@
 title: FAQs
 footer: >-
   If you weren’t able to find an answer for your question please head over to
-  the contact page.
+  the contact page. test
 ---
-
 ## My Reading Partner
 
 ### How does Audrey choose a reading partner for me?
@@ -37,11 +36,11 @@ We review your bios alongside each other, as well as both your sets of answers t
 
 ### How do we receive the book we’ll be reading together?
 
-In advance of your first reading session we will provide you both with a copy of the reading in a digital format.
+You’ll find the book on our specially designed reading platform where you will be able to select it and add it to your private reading room. The book has been divided into five chapters to correspond with the five reading sessions.
 
 ### What happens if I've already read the book?
 
-When we send our email introducing you, we will provide a description of the reading to avoid you receiving anything you’ve already read. If the reading is one you’ve already read, please let us know and we will send you an alternative. We try our best to pick unusual books that we think you might not have come across before.
+When we send our email introducing you, we will provide a description of the reading to avoid you receiving anything you’ve already read. If the reading is one you’ve already read, please let us know and we will send you an alternative. 
 
 ### How can we get through a book when each reading lasts about 15 minutes?
 
@@ -129,4 +128,12 @@ If somebody has been acting inappropriately please do not hesitate to contact us
 
 ### What technology do I need to use Audrey?
 
-The reading sessions can take place over the phone (audio only) or you can use a messaging app (e.g. Skype, Whatsapp, Facebook Messenger or Apple Facetime) where you’ll have access to audio and video. Reader and Listeners liaise directly with each other to decide their preferred medium for the reading sessions - most people begin sessions with audio only."
+Very little, beyond your device (computer, tablet or smartphone etc.) and an internet connection! 
+
+The reading sessions take place on the Audrey reading platform. This is a secure online space where you and your reading partner can create your own private reading room to read aloud together – with crystal clear sound quality! 
+
+Once you’re on the reading platform you’ll be able to select the book we’ve suggested for you to read, and add it to your reading room. 
+
+Our reading platform works right in your browser – there's absolutely nothing to download or install. Audrey currently works best in a Chrome browser on desktop and a Safari browser on iOS. Headphones are ideal, but not essential. 
+
+We’ll direct you to the reading platform when we introduce you to your reading partner.

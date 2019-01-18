@@ -2,11 +2,13 @@ require('dotenv').config();
 const base = require('../../dbConnection');
 
 // Returns an array of pairs. If there are no pairs returns empty array. If error returns an object (which doesn't always have a status code)
+
 const getNewPairs = () => new Promise((resolve, reject) => {
   let allRecords = [];
   base('pairings')
     .select({
       filterByFormula:
+
           'AND({user1_id}, {user2_id}, {reader}, {book_id},{confirm_pairing}, NOT({pairing_email_sent}))',
       fields: [
         'user1_name',
