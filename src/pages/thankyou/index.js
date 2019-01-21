@@ -34,7 +34,9 @@ const ThankYou = ({ data }) => {
         className="f4 mid-gray tc"
         dangerouslySetInnerHTML={{ __html: html }}
       />
-      <h2 className="f2 pink tc montserrat mt5 mb4">{header2}</h2>
+      <h2 className="f2 tc montserrat mt5 mb4" style={{ color: '#fd8181' }}>
+        {header2}
+      </h2>
       <TextBox>{p1}</TextBox>
       <div
         id="social-logos"
