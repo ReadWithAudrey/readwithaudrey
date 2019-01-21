@@ -11,7 +11,9 @@ const Examples = () => (
       const { header, footer } = data.markdownRemark.frontmatter
       return (
         <StyledExamples>
-          <h1 className="f2 pink tc">{header}</h1>
+          <h1 className="f2 tc" style={{ color: '#fd8181' }}>
+            {header}
+          </h1>
           <div
             className="f4 mid-gray tc"
             dangerouslySetInnerHTML={{ __html: html }}

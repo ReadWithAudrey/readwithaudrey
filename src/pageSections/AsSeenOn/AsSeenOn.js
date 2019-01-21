@@ -8,7 +8,9 @@ import thriveglobal from '../../images/thrivegloballogo.jpeg'
 
 const AsSeenOn = () => (
   <StyledAsSeenOn>
-    <h2 className="f2 pink tc fw7">As seen on:</h2>
+    <h2 className="f2 tc fw7" style={{ color: '#fd8181' }}>
+      As seen on:
+    </h2>
     <div
       id="logos"
       className="w-100 flex items-center justify-center flex-column flex-row-l"

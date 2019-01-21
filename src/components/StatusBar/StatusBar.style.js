@@ -12,8 +12,9 @@ export const Status = styled.section.attrs({
   }
 `
 export const StatusActive = styled(Status).attrs({
-  className: 'fl w-third bg-green montserrat',
+  className: 'fl w-third montserrat',
 })`
+  background-color: var(--green);
   color: #fff;
   font-weight: bold;
 `

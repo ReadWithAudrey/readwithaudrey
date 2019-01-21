@@ -6,6 +6,7 @@ import {
   DesktopMenu,
   BurgerMenu,
 } from './Header.style'
+import LinkButton from '../LinkButton/LinkButton'
 import { Link } from 'gatsby'
 import openbook from '../../images/open-book.svg'
 
@@ -29,12 +30,7 @@ class Header extends Component {
               <Link to="/why/">Why?</Link>
               <Link to="/faq/">Questions</Link>
               <Link to="/contact/">Contact</Link>
-              <Link
-                to="/Form1"
-                className="white br2 ba bw1 b--white hover-bg-pink"
-              >
-                Get Started
-              </Link>
+              <LinkButton>Get Started</LinkButton>
             </DesktopMenu>
             <BurgerMenu>
               <a

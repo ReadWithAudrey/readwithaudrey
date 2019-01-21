@@ -13,6 +13,7 @@ import {
   TextBox,
   Layout,
   FormSection,
+  Title,
 } from '../../components/'
 
 class Form2 extends React.Component {
@@ -35,14 +36,12 @@ class Form2 extends React.Component {
       q5,
       bookType1,
       bookType2,
-      bookType3
+      bookType3,
     } = this.props.data.markdownRemark.frontmatter
     const { gender, readlisten, updateForm } = this.props.value
     return (
       <Layout>
-        <h1 className="f2 pink tc montserrat mb3 mt4 mb4-ns mt5-ns">
-          {heading}
-        </h1>
+        <Title>{heading}</Title>
         <FormSection>
           <StatusBar>
             <Link to="/Form1">1. Contact Details</Link>

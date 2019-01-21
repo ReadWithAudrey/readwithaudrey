@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-export const StyledForm = styled.section.attrs({
-  className: 'b--green',
-})`
+export const StyledForm = styled.section.attrs({})`
+  border: var(--green);
   color: #000;
   margin: 0;
   padding: 0;

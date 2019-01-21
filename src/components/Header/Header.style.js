@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 export const HeaderStyled = styled.header.attrs({
   className:
-    'flex items-center justify-between ph3 pv2 montserrat white bg-green vw-100 f3 z-max',
+    'flex items-center justify-between ph3 pv2 montserrat white vw-100 f3 z-max',
 })`
+  background-color: var(--green);
   position: sticky;
   top: 0;
   height: 10vh;
@@ -53,8 +54,9 @@ export const BurgerMenu = styled.section`
 `
 
 export const MobileMenu = styled.section.attrs({
-  className: 'montserrat  bg-green tc f4 page-padding z-max',
+  className: 'montserrat tc f4 page-padding z-max',
 })`
+  background-color: var(--green);
   display: block;
   position: fixed;
   top: 10vh;

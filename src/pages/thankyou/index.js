@@ -10,7 +10,7 @@ import facebook from '../../images/facebook.svg'
 import email from '../../images/gmail.svg'
 import twitter from '../../images/twitter.svg'
 
-import { TextBox, Layout } from '../../components/'
+import { TextBox, Layout, Title } from '../../components/'
 
 const ThankYou = ({ data }) => {
   const {
@@ -29,7 +29,7 @@ const ThankYou = ({ data }) => {
   const { html } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f2 pink tc montserrat mt5 mb4">{header1}</h1>
+      <Title>{header1}</Title>
       <div
         className="f4 mid-gray tc"
         dangerouslySetInnerHTML={{ __html: html }}

@@ -2,10 +2,13 @@ import styled from 'styled-components'
 
 export const StyledFooter = styled.footer.attrs({
   className:
-    'flex flex-column justify-center items-center montserrat bg-green w-100 bt bw2 b--green mid-gray',
+    'flex flex-column justify-center items-center montserrat w-100 bt bw2 mid-gray',
 })`
+  border-color: var(--green);
+  background-color: var(--green);
   position: relative;
-  bottom: 0;`
+  bottom: 0;
+`
 
 export const Copyright = styled.span.attrs({
   className: 'flex justify-center items-center bg-white mid-gray w-100 pa2',

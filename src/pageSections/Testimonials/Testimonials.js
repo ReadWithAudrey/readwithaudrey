@@ -12,7 +12,9 @@ const Testimonials = () => (
       const { header, footer } = data.markdownRemark.frontmatter
       return (
         <StyledTestimonials>
-          <h1 className="f2 pink tc">{header}</h1>
+          <h1 className="f2 tc" style={{ color: '#fd8181' }}>
+            {header}
+          </h1>
           <TextBox>
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </TextBox>
