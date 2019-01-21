@@ -26,7 +26,6 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-
           <script type="text/javascript" src="/static/admin/netlifyCMS.js" />
         </body>
       </html>

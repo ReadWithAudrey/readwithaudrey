@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledForm = styled.section.attrs({})`
-  border: var(--green);
+  border-color: var(--green);
   color: #000;
   margin: 0;
   padding: 0;
