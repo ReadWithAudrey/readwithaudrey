@@ -44,21 +44,18 @@ class Form1 extends React.Component {
             error: true,
             errorMessage:
               'Sorry, a user with that e-mail address already exists, please chose another e-mail or check your inbox',
+            button: 'register',
           })
         } else if (res.data === 'server error') {
           this.setState({
             error: true,
             errorMessage:
               'Sorry, a server error has occured. Please try again.',
+            button: 'register',
           })
         } else {
           navigate('/Form2/')
         }
-      })
-      .then(() => {
-        this.setState({
-          button: 'register',
-        })
       })
   }
   button = () => {

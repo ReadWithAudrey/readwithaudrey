@@ -62,15 +62,11 @@ class Form3 extends React.Component {
             error: true,
             errorMessage:
               'Sorry, a server error has occured. Please try again.',
+            button: 'register',
           })
         } else {
           navigate('/thankyou/')
         }
-      })
-      .then(() => {
-        this.setState({
-          button: 'register',
-        })
       })
   }
   button = () => {
