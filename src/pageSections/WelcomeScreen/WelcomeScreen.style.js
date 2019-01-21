@@ -4,5 +4,6 @@ const Welcome = styled.div.attrs({
   className:
     'bg-white flex flex-column items-center justify-around-ns justify-between vw-100 vh-100 relative',
 })`
-  overflow: hidden`
+  overflow: hidden;
+`
 export default Welcome

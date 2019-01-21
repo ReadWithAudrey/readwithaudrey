@@ -2,6 +2,6 @@
 
 exports[`Label component snapshot test renders correctly 1`] = `
 <label
-  className="sc-bdVaJa pink montserrat fw9 f5 pv2 fpcbkF"
+  className="sc-bdVaJa white br2 ba bw1 b--white  jgcwPL"
 />
 `;

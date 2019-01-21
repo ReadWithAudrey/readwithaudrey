@@ -1,12 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import { Layout } from '../../components/'
+import { Layout, Title } from '../../components/'
 const FAQ = ({ data }) => {
   const { html } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f1 pink tc montserrat mb4 mt5">Questions</h1>
+      <Title>Questions</Title>
       <div id="FAQs" dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )

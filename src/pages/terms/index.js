@@ -1,14 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import { Layout } from '../../components/'
+import { Layout, Title } from '../../components/'
 const Terms = ({ data }) => {
   const { html } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f1 pink tc montserrat mb4 mt5">
-        Terms and conditions of use
-      </h1>
+      <Title>Terms and conditions of use</Title>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )

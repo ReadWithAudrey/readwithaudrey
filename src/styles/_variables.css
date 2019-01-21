@@ -1,6 +1,6 @@
 /*
 
-    VARIABLES   
+    VARIABLES
 
 */
 
@@ -19,7 +19,7 @@
                 'segoe ui',
                 arial,
                 sans-serif;
-  --serif: georgia, serif;  
+  --serif: georgia, serif;
   --code: consolas, monaco, monospace;
 
   --font-size-headline: 6rem;

@@ -9,6 +9,7 @@ import {
   TextArea,
   Button,
   InputBox,
+  Title,
 } from '../../components/'
 
 const ContactUs = ({ data }) => {
@@ -18,7 +19,7 @@ const ContactUs = ({ data }) => {
   } = data.markdownRemark
   return (
     <Layout>
-      <h1 className="f1 pink tc montserrat mb3 mt4 mt5-ns mb4-ns">{header1}</h1>
+      <Title>{header1}</Title>
       <TextBox>{p1}</TextBox>
       <form
         method="POST"

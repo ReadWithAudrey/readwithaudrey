@@ -19,11 +19,17 @@ const AboutAudrey = () => (
       return (
         <About>
           <div id="why-maintext">
-            <h3 className="f2 pink tc">{header1}</h3>
+            <h3 className="f2 tc" style={{ color: '#fd8181' }}>
+              {header1}
+            </h3>
             <TextBox className="tc lh-copy f4">{text1}</TextBox>
-            <h3 className="f2 pink tc">{header2}</h3>
+            <h3 className="f2 tc" style={{ color: '#fd8181' }}>
+              {header2}
+            </h3>
             <TextBox className="tc lh-copy f4">{text2}</TextBox>
-            <h3 className="f2 pink tc">{header3}</h3>
+            <h3 className="f2 tc" style={{ color: '#fd8181' }}>
+              {header3}
+            </h3>
             <TextBox className="tc lh-copy f4">{text3}</TextBox>
           </div>
         </About>

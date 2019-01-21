@@ -12,6 +12,8 @@ import TextBox from './TextBox/TextBox'
 import TextArea from './TextArea/TextArea'
 import FormSection from './FormSection/FormSection'
 import ErrorSpan from './ErrorSpan/ErrorSpan'
+import Title from './Title/Title'
+import LinkButton from './LinkButton/LinkButton'
 
 export {
   HomepageLayout,
@@ -28,4 +30,6 @@ export {
   TextArea,
   FormSection,
   ErrorSpan,
+  Title,
+  LinkButton,
 }
