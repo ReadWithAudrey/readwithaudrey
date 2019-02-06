@@ -10,7 +10,7 @@ We match people with shared interests, but diverse life journeys, and provide en
 We have also utilised a Content Management System to enable the app to be edited without coding knowledge.
 
 # Build status
-The app is not ready for use, but continuous integration will be deployed soon.
+The app is up and running. 
 
 # Tech stack used
 Built with:
@@ -26,7 +26,6 @@ Built with:
 * Netlify
 * Heroku
 * SendGrid
-* Mailchimp
 
 
 # Code Examples
