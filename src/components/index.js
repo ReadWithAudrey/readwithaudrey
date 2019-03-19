@@ -14,6 +14,7 @@ import FormSection from './FormSection/FormSection'
 import ErrorSpan from './ErrorSpan/ErrorSpan'
 import Title from './Title/Title'
 import LinkButton from './LinkButton/LinkButton'
+import BlogCard from './BlogCard/BlogCard'
 
 export {
   HomepageLayout,
@@ -32,4 +33,5 @@ export {
   ErrorSpan,
   Title,
   LinkButton,
+  BlogCard
 }

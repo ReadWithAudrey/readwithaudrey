@@ -60,3 +60,26 @@ export const DisabledButton = styled.button.attrs({
     color: #fff;
   }
 `
+export const BlogButton = styled.button.attrs({
+  className: 'black pa2 br2 f3',
+})`
+  background-color: var(--pink);
+  :hover {
+    background-color: var(--green);
+  }
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  display: block;
+  white-space: nowrap;
+  min-width: 200px;
+  max-width: 300px;s
+  cursor: pointer;
+  position: relative;
+  bottom: -18px;
+  left: -2px;
+
+  a {
+    color: #fff;
+  }
+`
