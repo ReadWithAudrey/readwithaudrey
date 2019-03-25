@@ -10,8 +10,8 @@ const BlogCard = (props) => {
       <MainDiv>
         <article>
         <p>
-          <Link to = {props.link}> {props.title}</Link>
-          <span> &bull; </span> <br/>
+          <Link to = {props.title}> {props.title}</Link>
+          <span> </span> <br/>
           <span>
                     {props.date}
                   </span>
@@ -19,7 +19,7 @@ const BlogCard = (props) => {
           <p style={{ fontSize: '16px' }}> {props.excerpt}
           <br />
             <br />
-            <Link style={{ textDecoration: 'none' }} to = {props.link}>
+            <Link style={{ textDecoration: 'none' }} to = {props.title}>
             <Button style="blog"> Keep Reading →</Button>
 
                   </Link>

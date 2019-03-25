@@ -30,6 +30,12 @@ collections:
           - {label: "Title", name: "title", widget: "select", default: "404", options: ["404"] }
           - {label: "Header", name: "header1", widget: "string"}
           - {label: "Paragraph 1", name: "p1", widget: "string"}
+      - file: src/markdown/blog.md
+        label: "Blog Page"
+        name: "blogPage"
+        fields:
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Text", name: "finalText", widget: "string"}
       - file: src/markdown/thankyoucontact.md
         label: "Thank You (Contact)"
         name: "thankyoucontact"

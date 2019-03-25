@@ -15,7 +15,7 @@ const BlogPost = ({data}) => {
         {description}
       </TextBox>
       <div id="FAQs" dangerouslySetInnerHTML={{ __html: html }} />
-      {date}
+      <TextBox>Posted on {date}</TextBox>
 
 
     </Layout>
