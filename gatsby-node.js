@@ -38,7 +38,7 @@ exports.createPages = ({ actions, graphql }) => {
           ),
           // additional data can be passed via context
           context: {
-            id,
+            title: edge.node.frontmatter.title
           },
         })
     }})

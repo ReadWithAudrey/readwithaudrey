@@ -4,31 +4,42 @@ import PropTypes from 'prop-types'
 import { TextBox, Layout, Title } from '../components/'
 
 
-const BlogPost = () => {
+const BlogPost = ({data}) => {
+  const { html } = data.markdownRemark
+  const { date, title, description } = data.markdownRemark.frontmatter
+
   return (
     <Layout>
-      <Title>Our Why?</Title>
+      <Title>{title}</Title>
       <TextBox>
-        im a blog
+        {description}
       </TextBox>
+      <div id="FAQs" dangerouslySetInnerHTML={{ __html: html }} />
+      {date}
+
+
     </Layout>
   )
 }
 
 BlogPost.propTypes = {
   data: PropTypes.object,
+  description: PropTypes.string,
+  title: PropTypes.string,
 }
 
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(frontmatter: { title: { eq: "Our Why" } }) {
+export default BlogPost
+
+export const pageQuery = graphql`
+  query BlogPostByTitle($title: String!) {
+    markdownRemark(frontmatter: { title: { eq: $title } }) {
+      id
       html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        description
+      }
     }
   }
 `
-export default BlogPost
