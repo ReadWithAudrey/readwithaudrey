@@ -6,7 +6,7 @@ description: >-
   This is the story of Audrey, where complete strangers read books aloud
   together.
 ---
-![A random book](/static/images/uploads/book.jpeg "A picture of a random book")
+![A random book](/images/uploads/book.jpeg "A picture of a random book")
 
 Audrey set off on 18th March this year with an emotional farewell. She was about to embark on an unpredictable journey fraught with danger. Her safety left in the hands of complete strangers. 
 
