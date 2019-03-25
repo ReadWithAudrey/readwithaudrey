@@ -16,7 +16,6 @@ import {
 const Blog = ({
   data
 }) => {
-  console.log(data.Page);
   const posts = data.BlogCard.edges
 
   const heading = data.Page.frontmatter.heading
