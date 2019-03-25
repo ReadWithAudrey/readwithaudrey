@@ -36,22 +36,22 @@ module.exports = {
       },
     },
     {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          path: `${__dirname}/src/markdown`,
-          name: 'markdown-pages',
-        },
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/markdown`,
+        name: 'markdown-pages',
       },
-      {
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
-    },
+      },
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
-    'gatsby-plugin-eslint',
+    // 'gatsby-plugin-eslint',
     `gatsby-plugin-favicon`,
     `gatsby-plugin-remove-serviceworker`,
   ],
