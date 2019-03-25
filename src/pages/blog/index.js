@@ -11,7 +11,7 @@ import {
 } from '../../components'
 import {
   ContainerDiv
-} from './index.style'
+} from '../../styles/blog.style'
 
 const Blog = ({
   data
@@ -44,8 +44,8 @@ const Blog = ({
     }
 
     <
-    /ContainerDiv> <
-    /Layout>
+    /ContainerDiv> < /
+    Layout >
   )
 }
 Blog.propTypes = {
