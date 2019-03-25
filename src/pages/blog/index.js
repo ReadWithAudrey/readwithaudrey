@@ -16,14 +16,16 @@ import {
 const Blog = ({
   data
 }) => {
-  const {
-    edges: posts
-  } = data.allMarkdownRemark
+  console.log(data.Page);
+  const posts = data.BlogCard.edges
+
+  const heading = data.Page.frontmatter.heading
+  const finalText = data.Page.frontmatter.finalText
   return ( <
     Layout >
     <
-    Title > The Read With Audrey blog < /Title> <
-    TextBox > random text < /TextBox> <
+    Title > {heading} < /Title> <
+    TextBox > {finalText}< /TextBox> <
     ContainerDiv > {
       posts && posts.map(({
         node: post
@@ -31,7 +33,7 @@ const Blog = ({
 
         <
         BlogCard key = 'fds'
-        link = {
+        title = {
           post.frontmatter.title
         }
         date = {
@@ -53,10 +55,11 @@ Blog.propTypes = {
 }
 export const query = graphql `
   query {
-        allMarkdownRemark(
+        BlogCard: allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-        ) {
+
+         ) {
           edges {
             node {
               excerpt(pruneLength: 400)
@@ -70,6 +73,12 @@ export const query = graphql `
             }
           }
         }
+        Page: markdownRemark(frontmatter: { title: { eq: "Blog" } }) {
+              frontmatter {
+                heading
+                finalText
+              }
+            }
       }
 `
 
