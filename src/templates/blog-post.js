@@ -10,12 +10,12 @@ const BlogPost = ({data}) => {
 
   return (
     <Layout>
-      <Title>{title}</Title>
+      <Title>{title}</Title>       <TextBox>Posted on {date}</TextBox>
       <TextBox>
         {description}
       </TextBox>
       <div id="FAQs" dangerouslySetInnerHTML={{ __html: html }} />
-      <TextBox>Posted on {date}</TextBox>
+
 
 
     </Layout>
