@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Audrey Blog Introduction
+image: /static/images/uploads/fun.jpeg
 date: 2019-03-25T13:25:58.563Z
 description: >-
   This is the story of Audrey, where complete strangers read books aloud
