@@ -5,11 +5,14 @@ import {
   HeaderButton,
   RegisterButton,
   DisabledButton,
+  BlogButton
 } from './Button.style'
 
 const Button = props => {
   if (props.style === 'header') {
     return <HeaderButton>{props.children}</HeaderButton>
+  } else if (props.style === 'blog') {
+    return <BlogButton>{props.children}</BlogButton>
   } else if (props.style === 'register') {
     return <RegisterButton type={props.type}>{props.children}</RegisterButton>
   } else if (props.style === 'disabled') {
