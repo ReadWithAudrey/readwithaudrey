@@ -24,7 +24,7 @@ export const PureLayout = ({ children, data }) => {
         <html lang="en" />
       </Helmet>
       <Header siteTitle={title} />
-      <div className="page-padding ph4 ph7-ns vw-100 center mw9">
+      <div className="page-padding ph4 ph5-m vw-80 center mw8">
         {children}
       </div>
       <Footer />
