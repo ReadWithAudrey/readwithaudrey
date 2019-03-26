@@ -7,7 +7,6 @@ import { TextBox, Layout, Title } from '../components/'
 const BlogPost = ({data}) => {
   const { html } = data.markdownRemark
   const { date, title, description } = data.markdownRemark.frontmatter
-
   return (
     <Layout>
       <Title>{title}</Title>       <TextBox>Posted on {date}</TextBox>
