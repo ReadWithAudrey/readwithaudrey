@@ -17,14 +17,16 @@ const Blog = ({
   data
 }) => {
   const posts = data.BlogCard.edges
-
+  const { html } = data.Page
   const heading = data.Page.frontmatter.heading
   const finalText = data.Page.frontmatter.finalText
   return ( <
     Layout >
     <
-    Title > {heading} < /Title> <
-    TextBox > {finalText}< /TextBox> <
+    Title > {heading} < /Title>
+    <div id="FAQs" dangerouslySetInnerHTML={{ __html: html }} />
+
+     <
     ContainerDiv > {
       posts && posts.map(({
         node: post
@@ -73,9 +75,9 @@ export const query = graphql `
           }
         }
         Page: markdownRemark(frontmatter: { title: { eq: "Blog" } }) {
+              html
               frontmatter {
                 heading
-                finalText
               }
             }
       }
