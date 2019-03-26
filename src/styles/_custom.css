@@ -68,6 +68,10 @@ li {
   line-height: 1.2;
 }
 
+p img {
+  width: 100%;
+}
+
 .overflow {
   overflow-x: hidden;
 }
