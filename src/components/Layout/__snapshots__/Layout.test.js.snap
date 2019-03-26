@@ -70,7 +70,7 @@ Array [
     </nav>
   </header>,
   <div
-    className="page-padding ph4 ph6-ns vw-100 center mw9"
+    className="page-padding ph4 ph7-ns vw-100 center mw9"
   />,
   <footer
     className="sc-bZQynM flex flex-column justify-center items-center montserrat w-100 bt bw2 mid-gray cYxVbM"
