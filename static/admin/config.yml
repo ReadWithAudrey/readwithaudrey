@@ -36,7 +36,7 @@ collections:
         name: "blogPage"
         fields:
           - {label: "Heading", name: "heading", widget: "string"}
-          - {label: "Text", name: "finalText", widget: "string"}
+          - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/thankyoucontact.md
         label: "Thank You (Contact)"
         name: "thankyoucontact"
