@@ -1,13 +1,13 @@
 ---
 templateKey: blog-post
 title: Good friends
-image: /static/images/uploads/apple-and-book.jpg
+image: /static/images/uploads/book.jpeg
 date: 2016-12-17T15:04:10.000Z
 description: >-
   “Good friends, good books, and a sleepy conscience: this is the ideal life.” ―
   Mark Twain
 ---
-![kids having fun](/static/images/uploads/fun.jpeg)
+![kids having fun](/images/uploads/fun.jpeg)
 
 
 
