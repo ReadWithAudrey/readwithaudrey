@@ -1,38 +1,36 @@
 ---
 templateKey: blog-post
-title: Audrey Blog Introduction
+title: The Race of the Patient Motorcyclists
+image: /static/images/uploads/motorbike-post-1.jpg
 date: 2019-03-25T13:25:58.563Z
-description: >-
-  This is the story of Audrey, where complete strangers read books aloud
-  together.
+description: 'Audrey''s journey gets under way - the first call.  '
 ---
-![A random book](/images/uploads/book.jpeg "A picture of a random book" )
+After only a couple of hours I received my first call. It was Jenny. She’d decided to pick up the Audrey phone in the supermarket. Having just completed her Tesco weekly shop, she was now sitting in her car in the car park making the call. Pressing the ‘Read me a Story’ button. 
 
-Audrey set off on 18th March this year with an emotional farewell. She was about to embark on an unpredictable journey fraught with danger. Her safety left in the hands of complete strangers.
+I was a little caught out because I was cycling home from work on my bike. Still, there was no way I was missing my first caller! I pulled over to the side of the towpath. Opened with a warm ‘hello, how’s it going’. Grabbed a folded up piece of A4 paper from my back pocket with a short story printed on it. And sat down to catch my breath on a park bench. 
 
-I’d absolutely no idea where she was headed or who would take care of her. Whether she could survive a single night alone. An overwhelming sense of trepidation seemed befitting of what Audrey was putting on the line.
+We exchanged a little light-hearted conversation. Apparently Tesco were out of reduced-salt soy sauce  And Jenny’s kids are a little too old to be read to nowadays. (That’s nonsense I said). Dinner tonight would be a veg stir fry. 
 
-I took comfort from a faint whisper of intuition that tickled my heart - reassuring me she would be okay… ‘I would hear from her sooner or later’. The softly spoken voice channelled some sound logic. Audrey’s smart - streetwise. Left to her own devices she loves to roam. And she feeds off genuine connection.
-They seem to me like an ideal set of components for a solo traveller.
 
-I should explain. Audrey is a ‘phone’. With a difference. Well several actually. In fact, it’s rather a disservice to call her that. Your brain downloads a bunch of stereotypes.
-A ‘phone book’ is perhaps a more apt description. Literally. But even then I’m not quite sure it conjures up the right mental model. So here’s a real one!
 
-Audrey’s handset has just one button you can press. A single feature. One number to call. But boy is that one button special….If you press it, a real human being (that’s me!) answers and reads you a short story. Anyone who serendipitously stumbles across Audrey can press the button. Enjoy a short story. And then set her free, anywhere, to wander and enjoy another chance encounter.
+![](/images/uploads/motorbike-post-1.jpg)
 
-Is this beginning to make any sense?
 
-Why read stories to people you’ve never met?
 
-Well, something magical takes place when one stranger reads to another. They share a fleeting yet profound moment of humanity. A genuine emotional connection. It’s a beautiful interruption of the daily routine. Plus it sparks some surprisingly wholesome conversations. 
+Our first reading was ‘The Race of the Patient Motorcyclists’. The story images a motorbike race where the object is to go as slowly as possible! The winning entrant is the one who takes the longest to complete the hundred-yard course without stopping. Lydia Davis, the author understands how to make you simultaneously laugh and think. Her marvellously surreal stories are semi-comic, semi-tragic investigation of the oddness of existence. 
 
-On 18th March Audrey was left all by herself in a Tesco’s supermarket trolley - aisle No.  7 to be precise – between the Weetabix and McDougall’s self-raising flour.
+Elaborately equipped machines line up at the start, fitted with gleaming chrome and leather, mahogany inlays and antlers - whose potential speed proves difficult to resist, for this is a race in which only the slowest contestant wins. The race’s novices inevitably grow impatient with the slow pace and “gun their engines with a happy racket, and let their machines wrest them from the still dust of their companions.”
 
-That’s it. That’s the premise ;) Audrey comes with no fixed plans. Only unlimited possibilities.
+Like life itself, the point is to hold one’s ground, to defy the seduction of what seems like an easy victory and stick it out for the long haul.
 
-What would happen to Audrey?  Who would take care of her? Where would she go? Would anyone press the button?  
+The reading prompted a chat about whether we’d ever rode motorbikes. Turns out neither of us have. Whether we have any tattoos. And if we’ve spent any time in the desert. We then chatted about patience… waiting, watching, knowing when to make your move … enjoying an unexpected pause… mastering patience as a way to find emotional freedom. 
 
-Well, here’s where you’ll find out. This diary charts Audrey’s big adventure. The challenges, the mishaps, the unforgettable moments along the way. We celebrate the whole journey. We count the miles and the friendships. The chance encounters. The faraway places she visits. The stories of the strangers she talks to. And of course the stories they read together.
+Jenny describing the feeling of being in a long, slow-moving queue in Tesco. The steady build-up of irritation. 
+
+Just before we said our goodbyes, out of curiosity I asked Jenny what she planned to do with the phone.  She hadn’t thought about it. It would be a surprise.  
+
+Then off she went to prepare the stir fry. And I hopped back on my bike.
+
 Happy reading!
 
 You can follow Audrey’s adventure on twitter [@readwithaudrey](https://twitter.com/readwithaudrey)
