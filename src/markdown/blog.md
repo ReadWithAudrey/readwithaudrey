@@ -5,7 +5,7 @@ Audrey set off on 18th March this year with an emotional farewell. She was about
 
 I’d absolutely no idea where she was headed or who would take care of her. Whether she could survive a single night alone. An overwhelming sense of trepidation seemed befitting of what Audrey was putting on the line.
 
-I took comfort from a faint whisper of intuition that tickled my heart - reassuring me she would be okay… **‘I would hear from her sooner or later’**. The softly spoken voice channelled some sound logic. Audrey’s smart - streetwise. Left to her own devices she loves to roam. And she feeds off genuine connection.
+I took comfort from a faint whisper of intuition that tickled my heart - reassuring me she would be okay… *‘I would hear from her sooner or later’*. The softly spoken voice channelled some sound logic. Audrey’s smart - streetwise. Left to her own devices she loves to roam. And she feeds off genuine connection.
 
 They seem to me like an ideal set of components for a solo traveller.
 
