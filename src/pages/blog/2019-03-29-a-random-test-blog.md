@@ -1,17 +1,49 @@
 ---
 templateKey: blog-post
-title: A random test blog
+title: Guava
 date: 2019-03-29T10:46:40.273Z
-description: This is the description.... not sure if i m really needed
+description: >-
+  If you were to be reincarnated as a nonhuman, what would your best option look
+  like?
 ---
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+![](/static/images/uploads/plane-and-clouds-post-2.jpg)
 
-Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
-![I'm the alt text of children having fun](/images/uploads/fun.jpeg "Im the title")
+It’s 10:45 in the evening and I’ve just asked Juan, who I only meet 10 minutes ago, _‘if you were to be reincarnated as a nonhuman, what would your best option look like?'_ 
 
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+Juan is thinking. 
 
-The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing 
-* packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites
- * still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+I like silences. They have a sound. 
+
+_'He who does not understand your silence will probably not understand your words.'_ 
+― Elbert Hubbard
+
+Strange question to ask, shortly before bed, to a complete stranger. 
+
+We’ve just had a quick discussion about our favourite fruit. A classic, old-school question, but not an easy one either. Controversially I say papaya. It has a marmite quality to it – not the taste – the way it divides opinion. He says watermelon. 
+
+In our busy world, when a little window of time presents itself, a short story is great to have nearby for a quick escape. To share it with someone else is like adding double cream to the experience. 
+
+That’s what happening here. 
+
+I’ve just finished reading to Juan the short story ‘[Guava](https://electricliterature.com/happy-holidays-from-electric-literature-and-etgar-keret/)’ by Etgar Keret. 
+
+In six hundred words it addresses life and death and peace on earth - not necessarily in that order. It’s a moving and perplexing parable-like story about a man who becomes a piece of fruit!
+
+You’re taken on a creative journey – which makes you laugh, makes you sad, and pushes you to wonder. It’s a great example of Keret’s stories - fantastical, imaginative, absurd, surreal, playful, comic, bizarre and dark. 
+
+His stories provoke you to think in a totally different light. 
+
+Returning to the question of reincarnation. 
+
+‘Are mythical animals allowed’ he asks. ‘Why not’.
+
+In the end Juan opts for a tree. Japanese maple.
+
+‘Nice’, I think to myself. 
+
+‘The Moon’ I say. I’m not really sure why that came out my mouth. But it did. 
+
+Interesting how we both opted for nature. Perhaps it says something about what we crave. 
+
+Juan says he has to make a move. Early start he tells me. He works on the London Underground. Keeping us all moving.
