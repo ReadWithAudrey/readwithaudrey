@@ -17,7 +17,6 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: Image, name: image, widget: image}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -35,6 +34,7 @@ collections:
         label: "Blog Page"
         name: "blogPage"
         fields:
+          - {label: "Title", name: "title", widget: "hidden", default: "Blog"}
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Main text", name: "body", widget: "markdown"}
       - file: src/markdown/thankyoucontact.md
