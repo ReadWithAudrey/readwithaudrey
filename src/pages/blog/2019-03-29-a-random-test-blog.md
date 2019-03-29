@@ -3,8 +3,8 @@ templateKey: blog-post
 title: Guava
 date: 2019-03-29T10:46:40.273Z
 description: >-
-  If you were to be reincarnated as a nonhuman, what would your best option look
-  like?
+  **If you were to be reincarnated as a nonhuman, what would your best option
+  look like?**
 ---
 ![](/images/uploads/plane-and-clouds-post-2.jpg)
 
