@@ -14,9 +14,6 @@ const BlogPost = ({data}) => {
         {description}
       </TextBox>
       <div id="FAQs" dangerouslySetInnerHTML={{ __html: html }} />
-
-
-
     </Layout>
   )
 }
