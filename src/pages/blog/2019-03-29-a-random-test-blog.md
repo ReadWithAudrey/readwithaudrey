@@ -9,7 +9,6 @@ description: >-
 ![](/static/images/uploads/plane-and-clouds-post-2.jpg)
 
 
-
 It’s 10:45 in the evening and I’ve just asked Juan, who I only meet 10 minutes ago, _‘if you were to be reincarnated as a nonhuman, what would your best option look like?'_ 
 
 Juan is thinking. 
