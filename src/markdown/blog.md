@@ -8,13 +8,13 @@ I’d absolutely no idea where she was headed or who would take care of her. Whe
 
 I took comfort from a faint whisper of intuition that tickled my heart - reassuring me she would be okay… _‘I would hear from her sooner or later’_. The softly spoken voice channelled some sound logic. Audrey’s smart - streetwise. Left to her own devices she loves to roam. And she feeds off genuine connection.
 
-![](/images/uploads/apple-and-book.jpg)
-
 They seem to me like an ideal set of components for a solo traveller.
 
 I should explain. Audrey is a ‘phone’. With a difference. Well several actually. In fact, it’s rather a disservice to call her that. Your brain downloads a bunch of stereotypes.
 
 A ‘phone book’ is perhaps a more apt description. Literally. But even then I’m not quite sure it conjures up the right mental model. So here’s a real one!
+
+![](/images/uploads/blog_phone_photo.jpg)
 
 Audrey’s handset has just one button you can press. A single feature. One number to call. But boy is that one button special… If you press it, a real human being (that’s me!) answers and reads you a short story. Anyone who serendipitously stumbles across Audrey can press the button. Enjoy a short story. And then set her free, anywhere, to wander and enjoy another chance encounter.
 
