@@ -3,16 +3,12 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import { TextBox, Layout, Title } from '../components/'
 
-
-const BlogPost = ({data}) => {
+const BlogPost = ({ data }) => {
   const { html } = data.markdownRemark
   const { date, title, description } = data.markdownRemark.frontmatter
   return (
     <Layout>
-      <Title>{title}</Title>       <TextBox>Posted on {date}</TextBox>
-      <TextBox>
-        {description}
-      </TextBox>
+      <Title>{title}</Title> <TextBox>Posted on {date}</TextBox>
       <div id="FAQs" dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
@@ -34,7 +30,6 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        description
       }
     }
   }
