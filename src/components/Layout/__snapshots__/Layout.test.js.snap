@@ -79,24 +79,24 @@ Array [
       className="sc-gzVnrw flex justify-center items-center bg-white mid-gray w-100 pa2 hZtFAF"
     >
       <p
-        className="mid-gray ph1 ph4-ns f5"
+        className="mid-gray pl1 pr0 ph4-ns f5"
       >
         © Audrey
       </p>
       <Link
-        className="no-underline mid-gray pr2 pl4 ph4-ns"
+        className="no-underline mid-gray pr4 pl4 ph4-ns"
         to="/contact/"
       >
         Contact
       </Link>
       <Link
-        className="no-underline mid-gray pr4 pl4 ph4-ns"
+        className="no-underline mid-gray pr4 pl2 ph4-ns"
         to="/blog/"
       >
         Blog
       </Link>
       <a
-        className="no-underline mid-gray ph2 ph4-ns"
+        className="no-underline mid-gray pl0 pr1 ph4-ns"
         href="https://www.instagram.com/readwithaudrey/"
       >
         <img

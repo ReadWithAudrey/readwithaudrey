@@ -7,15 +7,15 @@ import instagram from '../../images/instagram-mid-grey.png'
 const Footer = () => (
   <StyledFooter>
     <Copyright>
-        <p className="mid-gray ph1 ph4-ns f5">&copy; Audrey</p>
+        <p className="mid-gray pl1 pr0 ph4-ns f5">&copy; Audrey</p>
 
-      <Link to="/contact/" className="no-underline mid-gray pr2 pl4 ph4-ns">
+      <Link to="/contact/" className="no-underline mid-gray pr4 pl4 ph4-ns">
         Contact
       </Link>
-      <Link to="/blog/" className="no-underline mid-gray pr4 pl4 ph4-ns">
+      <Link to="/blog/" className="no-underline mid-gray pr4 pl2 ph4-ns">
         Blog
       </Link>
-      <a href="https://www.instagram.com/readwithaudrey/" className="no-underline mid-gray ph2 ph4-ns">
+      <a href="https://www.instagram.com/readwithaudrey/" className="no-underline mid-gray pl0 pr1 ph4-ns">
       <img src={instagram} alt="book icon" className="h2 ph1" />
 
       </a>
