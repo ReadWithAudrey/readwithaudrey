@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Guava
-date: 2019-03-29T10:46:40.273Z
+date: 2019-06-16T22:45:40.273Z
 ---
 
 _If you were to be reincarnated as a nonhuman, what would your best option
