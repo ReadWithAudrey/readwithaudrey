@@ -4,7 +4,7 @@ title: The Race of the Patient Motorcyclists
 date: 2019-06-15T12:25:58.563Z
 ---
 
-_Audrey''s journey gets under way - the first call._
+_Audrey's journey gets under way - the first call._
 
 After only a couple of hours I received my first call. It was Jenny. She’d decided to pick up the Audrey phone in the supermarket. Having just completed her Tesco weekly shop, she was now sitting in her car in the car park making the call. Pressing the ‘Read me a Story’ button.
 
