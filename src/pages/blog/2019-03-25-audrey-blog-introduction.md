@@ -1,8 +1,7 @@
 ---
 templateKey: blog-post
 title: The Race of the Patient Motorcyclists
-image: /static/images/uploads/motorbike-post-1.jpg
-date: 2019-03-25T13:25:58.563Z
+date: 2019-06-15T12:25:58.563Z
 ---
 
 _Audrey''s journey gets under way - the first call._
