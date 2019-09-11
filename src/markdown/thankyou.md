@@ -21,7 +21,7 @@ to our community. We’re delighted to have you on board!
 We’ve received your responses and now we’ll begin the process of pairing
 you up with a reading partner.
 
-Expect to receive an email from us in the next day or two introducing
-you to your reading partner
+Expect to receive an email from us in the next few days introducing
+you to your reading partner.
 
 If you have any questions in the meantime, please [contact us](/contact)
